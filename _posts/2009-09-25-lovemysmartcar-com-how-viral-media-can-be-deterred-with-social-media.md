@@ -1,0 +1,24 @@
+---
+layout: post
+title: "lovemysmartcar.com: How viral media can be deterred with social media"
+excerpt: When I fell in love with my new smart car, I knew I had to create a blog all about the experience of owning one of these beauties. Little did I realize that lovemysmartcar.com would prove instrumental in dousing the flames of a viral if not inflammatory photograph. This site is a case in point for how social media can be used to deter viral bad press.
+permalink: /2009/09/lovemysmartcar-com-how-viral-media-can-be-deterred-with-social-media/
+categories: 
+---
+When I fell in love with my new smart car, I knew I had to create a blog all about the experience of owning one of these beauties. Little did I realize that <a href="http://lovemysmartcar.com">lovemysmartcar.com</a> would prove instrumental in dousing the flames of a viral (if not fake) photograph. This site is a case in point for how social media can be used to deter viral bad press.
+
+Fending off bad viral <abbr title="Public Relations">PR</abbr> is a lot like surviving grade school. Say you're in class and you or someone near you farts (it doesn't matter who actually did the deed). The guy next to you shouts, "Hey everybody! Johnny farted!" and the classroom immediately starts laughing at you. There are two ways to combat this negative publicity. You can insist that you didn't do it. "No guys! Honestly it wasn't me! It wasn't! Honest!" But no one will be listening to you because they're all too busy laughing. They will believe whatever interests them most, and won't hear you. Or, you could retaliate with a snappy comeback, "He who smelt it dealt it!"
+
+Now everybody is laughing at your accuser.
+
+When I saw pictures of what was obviously <em>not</em> a smart car in an accident with two trucks, I knew I could either reply to every post and tweet I could find with, "That's so obviously not a smart car, stupid!" (don't ever do this), or I could turn the tables on whoever first released the photo as that of a "smart car." It was important <em>not</em> to attack the intelligence or the cars of the people laughing at the picture and spreading it. Angering them would only cement their dislike for the car and would more likely than not spur them into further spreading the rumor out of spite. I needed to attack the viability of the source and get the people spreading the pictures laughing with me.
+
+A quick trip to Snopes turned up no article about a smart car accident, so I trawled auto forums until I found <a href="http://www.smartcarofamerica.com/forums/f3/crash-not-24793/">post where users identified the wheel in the photo as not belonging to a smart car</a>. Additionally I drew upon my own knowledge of Photoshopping pictures and composed <a href="http://lovemysmartcar.com/2009/fake-smart-car-crash-picture/">a post debunking the fake smart car crash photo</a>. I included <a href="http://www.youtube.com/watch?v=CJHpUO-S0i8&amp;feature=player_embedded">smart car crash footage from YouTube</a> to underscore the lack of evidence that the car could have been a smart while increasing the relevance of the post. And lastly, I found out what keywords people would be searching for this photo with, and I optimized the whole post to reflect keywords.
+
+Before my blog was even a month old, before I had even finished its design, Google had my post listed as the number one result for "fake smart car crash", "fake smart car accident", "fake smart car photo", and "fake smart car picture." I had 1500 unique visitors over the span of a few weeks and 2700 by the end of the month. I posted the link to my article in reply to a few tweets and on one forum. From then on out, people would find my article via search and post links to it in any conversations that arose about the topic. That's how social media works best. With today's technology it's easy to spread lies, but luckily, it's just as easy to spread the truth.
+
+A week after my post, <a href="http://www.snopes.com/photos/accident/smallcar.asp">the photo was posted on Snopes</a>, and is now roundly debunked, not showing up at all in the Twitterverse.
+
+Do I think<em> love my smart car</em> singlehandedly thwarted the viral photo? Not at all. Snopes and the natural cycle of viral birth and decay can take most of that credit. But I can proudly say that for a full week before Snopes debunked the photo, whenever people went looking for "fake smart car crash" or what have you, they at least found my post which discouraged the falsehoods surrounding the picture. If those 2700 people took what I wrote to heart, that's 2700 people not believing a lie. I'd say that's a win.
+
+<em>Part 2 of this entry will come when I put the finishing touches on the site. I'll go into more depth about the nifty code I used, the inspiration behind the design, and it's public reception when I officially launched it.</em>

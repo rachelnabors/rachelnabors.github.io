@@ -1,0 +1,17 @@
+---
+layout: post
+title: Are Startups Worse as Single-Gender Affairs?
+excerpt: Penelope Trunk's op ed "Are Startups Better as Single-Gender Affairs?" article raised a few eyebrows and a few voices in the female web workers community. My two cents? People are people, and startups should be like families, not monocultures.
+permalink: /2011/08/are-startups-worse-as-single-gender-affairs/
+categories: 
+  - women
+---
+My friend <a href="http://www.kahnlab.com/">Sarah Kahn</a> <a href="https://twitter.com/#!/aarahkahak/statuses/99839362501574656">tweeted</a> about this op ed by Penelope Trunk, <a href="http://www.bnet.com/blog/startup-tips/are-startups-better-as-single-gender-affairs/168?promo=857&amp;tag=nl.e857">"Are Startups Better as Single-Gender Affairs?"</a> The thing that irked me the most was how many assumptions this author makes. The gist is that if you're the only lady in a startup, all the men will want to have sex with you and your incessant crying and tantrum-throwing will distract them from "sewious bidness." She says that "men and women are different at work," and that she was "too emotional" for her male coworkers. That ma ybe true for her, but not all women are alike! For  instance, I have never once cried on a job, and I've been a waitress under the worst of conditions! I've never felt the need to have someone pat my back and tell me, "There, there, it's hard for all of us." Not on the job, anyway.
+
+Right now I am the only woman at the startup I work for. I work with seven guys. They have Nerf guns. They have guy habits. Sometimes, they get on my nerves. I own that. But I know there are things about me that rub them the wrong way, like how I like to turn the lights on in the morning (as opposed to working in perpetual twilight--my eyes aren't that good). But you know what? <em>It doesn't matter!</em> Because we are there to <strong>get shit done!</strong> And guess what? I've worked with all female crews, and women can rub each other the wrong way <em>just fine.</em>
+
+A startup is like a family. Nobody in a family gets along with everybody 100% of the time. What keeps a family together is how you work through your differences and hold tight when faced with big challenges (like looming deadlines). You have to be honest with each other, and acknowledge when you've messed up or the shit is hitting the fan or yes, that menu would totally work better horizontally and I'll fix it right away. There is no room for pride, only love and acceptance.
+
+And no family is just one gender. A gender homogenous startup could be likened to the lost boys of Neverland or, well, aside from My Little Ponies I can't think of an all female Utopia that's out of whack right now. Sure, it looks like paradise, but admittedly <em>something is missing</em>. Penelope said women distract men from work. Um, hello? Men distract each other just fine! (I've had to interrupt a few Nerf firefights to remind people to focus!)
+
+I attend many all-male events, like JavaScript and Ruby meetups. I felt awkward about it at first, but someone (a man) told me, "We need more women at these events. Keeps us men civil." Now I don't feel so weird. And I'd like to think that one woman opens the door for others who may feel more shy. It's true, mixed genders keep things balanced and keep things moving. It's way too easy for humans to fall into "complacency mode" without another faction forcing them to their feet, to try harder, to walk the straight and narrow, and to persevere when shit goes down. That's a family, that's a startup.
