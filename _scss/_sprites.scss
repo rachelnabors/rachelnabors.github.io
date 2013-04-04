@@ -1,0 +1,56 @@
+@import "compass/utilities/sprites/base";
+
+// General Sprite Defaults
+// You can override them before you import this file.
+$sprites-sprite-base-class: ".sprites-sprite" !default;
+$sprites-sprite-dimensions: false !default;
+$sprites-position: 0% !default;
+$sprites-spacing: 0 !default;
+$sprites-repeat: no-repeat !default;
+$sprites-prefix: '' !default;
+$sprites-clean-up: true !default;
+$sprites-layout:vertical !default;
+$sprites-inline: false !default;
+
+ 
+  $sprites-sprites: sprite-map("sprites/*.png", $layout: $sprites-layout, $cleanup: $sprites-clean-up);
+
+//sass functions to return the dimensions of a sprite image as units
+
+  @function sprites-sprite-width($name) {
+    $file: sprite_file($sprites-sprites, $name);
+    @return image-width($file);
+  }
+
+  @function sprites-sprite-height($name) {
+    $file: sprite_file($sprites-sprites, $name);
+    @return image-height($file);
+  }
+
+
+// Use this to set the dimensions of an element
+// based on the size of the original image.
+@mixin sprites-sprite-dimensions($name) {
+  @include sprite-dimensions($sprites-sprites, $name)
+}
+
+// Move the background position to display the sprite.
+@mixin sprites-sprite-position($name, $offset-x: 0, $offset-y: 0) {
+  @include sprite-background-position($sprites-sprites, $name, $offset-x, $offset-y)
+}
+
+// Extends the sprite base class and set the background position for the desired sprite.
+// It will also apply the image dimensions if $dimensions is true.
+@mixin sprites-sprite($name, $dimensions: $sprites-sprite-dimensions, $offset-x: 0, $offset-y: 0) {
+  @extend #{$sprites-sprite-base-class};
+  @include sprite($sprites-sprites, $name, $dimensions, $offset-x, $offset-y)
+}
+
+@mixin sprites-sprites($sprite-names, $dimensions: $sprites-sprite-dimensions, $prefix: sprite-map-name($sprites-sprites), $offset-x: 0, $offset-y: 0) {
+  @include sprites($sprites-sprites, $sprite-names, $sprites-sprite-base-class, $dimensions, $prefix, $offset-x, $offset-y)
+}
+
+// Generates a class for each sprited image.
+@mixin all-sprites-sprites($dimensions: $sprites-sprite-dimensions, $prefix: sprite-map-name($sprites-sprites), $offset-x: 0, $offset-y: 0) {
+  @include sprites-sprites(arrow_left_blue_mini arrow_right_blue_mini i_activity_completed i_activity_current i_activity_hover i_activity_incomplete i_checked i_cross i_download i_home i_movie i_photo, $dimensions, $prefix, $offset-x, $offset-y);
+}

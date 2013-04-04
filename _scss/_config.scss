@@ -1,0 +1,49 @@
+// Susy Grids
+
+$total-columns  : 9;             // a 12-column grid
+$column-width   : 90px;            // each column is 4em wide
+$gutter-width   : 40px;            // 1em gutters between columns
+$grid-padding   : $gutter-width;  // grid-padding equal to gutters
+
+
+// Site Colors
+
+$black: #141f31;
+$bg_blue: #e3edf2;
+//$lite_blue: #dfeff6; //more saturated
+$lime: #ced92e;
+$cyan: #0097c0; //a bit bright on the bg_blue
+$lavender: #a69feb;
+$mauve: #c774b3;
+$magenta: #e64988;
+$rust: #56001d;
+
+
+// Font Families
+
+@font-face {
+    font-family: 'LeagueGothicRegular';
+    src: url('http://fonts.rachelnabors.com/league_gothic-webfont.eot');
+    src: url('http://fonts.rachelnabors.com/league_gothic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('http://fonts.rachelnabors.com/league_gothic-webfont.woff') format('woff'),
+         url('http://fonts.rachelnabors.com/league_gothic-webfont.ttf') format('truetype'),
+         url('http://fonts.rachelnabors.com/league_gothic-webfont.svg#LeagueGothicRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'OstrichSansMedium';
+    src: url('http://fonts.rachelnabors.com/ostrich-regular-webfont.eot');
+    src: url('http://fonts.rachelnabors.com/ostrich-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('http://fonts.rachelnabors.com/ostrich-regular-webfont.woff') format('woff'),
+         url('http://fonts.rachelnabors.com/ostrich-regular-webfont.ttf') format('truetype'),
+         url('http://fonts.rachelnabors.com/ostrich-regular-webfont.svg#OstrichSansMedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+$league: 'LeagueGothicRegular', sans-serif;
+$ostrich: 'OstrichSansMedium', sans-serif;
