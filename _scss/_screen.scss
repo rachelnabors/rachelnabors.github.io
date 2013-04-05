@@ -1,4 +1,58 @@
 //Core stylings
+body {
+	background: $bg_blue;
+	font-family: sans-serif;
+}
 .container {
+	background: $black;
 	@include container();
+	margin: 0;
+	@include susy-grid-background;
+}
+
+.masthead {
+	@include padding-leader();
+	@include span-columns(2, 9);
+	margin-right: gutter(9)*.5;
+	font-family: $league;
+	text-align: right;
+	text-transform: uppercase;
+	nav { 
+		@include padding-leader();
+		@include adjust-font-size-to(24px);
+	}
+	a:link, a:visited, a:hover, a:active {
+		color: $lavender;
+		text-decoration: none;
+	}
+	a:hover, a:active, a:focus {
+		color: $magenta
+	}
+}
+.site-logo {
+	@include adjust-font-size-to(36px);
+	a:link, a:visited {
+		color: #fff;
+	}
+	a:hover, a:active, a:focus {
+		color: $magenta;
+	}
+}
+
+.main {
+	@include opacity(.75);
+	background: $bg_blue;	
+	color: $black;
+	@include span-columns(6 omega, 9);
+	padding-left: gutter(9)*1.5 + columns(1, 9);
+	@include padding-leader(3);
+  	@include adjust-leading-to(4);
+}
+
+strong, b { font-weight: bold;}
+em, i {font-style: italic;}
+
+.headline {
+	font-family: $ostrich;
+	@include adjust-font-size-to(48px);
 }

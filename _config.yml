@@ -3,8 +3,18 @@ description: "Where I post musigins about web development, comics, and the futur
 
 url: "http://localhost:4000" #http://rachelnabors.com
 
-paginate: 10
+google_analytics_tracking_id: UA-3631048-6
 
 markdown: rdiscount
 permalink: pretty
 pygments: true
+
+# Default date format is "ordinal" (resulting in "July 22nd 2007")
+# You can customize the format as defined in
+# http://www.ruby-doc.org/core-1.9.2/Time.html#method-i-strftime
+# Additionally, %o will give you the ordinal representation of the day
+date_format: "ordinal"
+
+# # Disqus Comments
+# disqus_short_name: #rachelnabors
+# disqus_show_comment_count: true

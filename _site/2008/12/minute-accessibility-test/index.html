@@ -1,24 +1,57 @@
 <!DOCTYPE html>
 <html class="no-js">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>The Three Minute Accessibility Test - Rachel Nabors, award-winning cartoonist turned front-end developer</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>The Three Minute Accessibility Test - </title>
+		
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width">
 
-        <script>(function(H){H.className=H.className.replace(/\bno-js\b/,'js')})(document.documentElement)</script>
-    </head>
-    <body>
-        <!--[if lt IE 10]>
-            <p class="chromeframe">Hmm. Your browser doesn't support the animations I'm sporting. You might <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to get the full experience.</p>
-        <![endif]-->
-    <header class="post-header">
-        <h1>The Three Minute Accessibility Test</h1>
-        <time>03 December 2008</time> | disqus TODO
-    </header>
-    <div class="post-body">
-        <p>Some time after reading <a href="http://www.amazon.com/gp/product/0321344758?ie=UTF8&amp;tag=mangapunk-20&amp;linkCode=as2&amp;camp=1789&amp;creative=390957&amp;creativeASIN=0321344758">Steve Krug's fascinating <em>Don't Make Me Think</em></a>, which is a fantastic introduction to usability and accessibility that any web monkey worth their salt should read immediately, I began implementing something I like to call my Three Minute Accessibility Test. It's a fast, simple way of making sure that your page makes sense to 90% of the population--and search engines as well! Mind you, it works best if you use it several times during the development of aone site rather than all at once at the end. Let's have a look.</p>
+		<script>(function(H){H.className=H.className.replace(/\bno-js\b/,'js')})(document.documentElement)</script>
+
+		
+		<link rel="canonical" href="http://localhost:4000/2008/12/minute-accessibility-test/">
+		<link href="/css/style.css" rel="stylesheet" type="text/css">
+
+		
+		  <script type="text/javascript">
+			var _gaq = _gaq || [];
+			_gaq.push(['_setAccount', 'UA-3631048-6']);
+			_gaq.push(['_trackPageview']);
+
+			(function() {
+			  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+			})();
+		  </script>
+		
+	</head>
+	<body>
+		<!--[if lt IE 10]>
+			<p class="chromeframe">Hmm. Your browser doesn't support the animations I'm sporting. You might <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to get the full experience.</p>
+		<![endif]-->
+
+<nav role="navigation">
+	<a href="/">Rachel Nabors</a>
+Speaking
+	<a href="/archive">Blog</a>
+	<a href="mailto:aloha@rachelnabors.com">Contact</a>
+</nav>
+<div id="main">
+	<div id="content">
+
+	<article class="hentry" role="article">
+		<header class="entry-header">
+			<h1 class="entry-title">The Three Minute Accessibility Test</h1>
+			<p class="meta">
+				<time>03 December 2008</time> 
+				
+	    	</p>
+		</header>
+		<div class="entry-content">
+			<p>Some time after reading <a href="http://www.amazon.com/gp/product/0321344758?ie=UTF8&amp;tag=mangapunk-20&amp;linkCode=as2&amp;camp=1789&amp;creative=390957&amp;creativeASIN=0321344758">Steve Krug's fascinating <em>Don't Make Me Think</em></a>, which is a fantastic introduction to usability and accessibility that any web monkey worth their salt should read immediately, I began implementing something I like to call my Three Minute Accessibility Test. It's a fast, simple way of making sure that your page makes sense to 90% of the population--and search engines as well! Mind you, it works best if you use it several times during the development of aone site rather than all at once at the end. Let's have a look.</p>
 
 <ol>
   <li><strong>Increase and decrease the font size by two sizes.</strong> Many visually impaired visitors have their browser's font sizes set one or two higher than the default, and some of us, myself included, like to keep their fonts one size smaller than the default. But on many sites, resizing fonts in this manner will break the design, causing navigation elements to disappear, text to run off the page without the appearance of scrollbars, and all sorts of disasters.<em>Example:</em> I'm not using live examples in this article because sites change so much, but I once visited a site that had a dark navigation bar set upon a white page. The text in the navigation bar was also white. But, if you resized the text, it was pushed down, and you could not see that it was there, being white on top of white!Usually this sort of thing happens when the designer doesn't plan for a worst case scenario. In a storm of pixel perfection, they build a house of cards with their code, and all it takes are a few non-standard settings, and the whole thing falls apart! Usually this situation can be avoided by using bulletproof CSS techniques and testing frequently.</li>
@@ -39,12 +72,19 @@
 
 <p><em>Notice:</em> I feel like I came up with these steps on my own, but truthfully, I've been using them so long that I cannot remember where or when I started employing them! It's perfectly possible that I read an article outlining these steps or steps like these then adopted them as my own. There are many such articles on the Internet. (In fact, there is even a <a href="http://www.punkchip.com/2006/07/accessibility-testing/"><em>ten minute accessibility test</em></a> already!) Thus, if someone out there can claim credit for this, I am by all means more than happy to give credit where credit is due!</p>
 
-    </div>
-    <nav class="post-footer">
-        <a href="/2008/11/world/" class="previous-post">Hello, World.</a>
-        <a href="/2008/12/asp-flash-and-other-purple-ponies/" class="next-post">ASP, Flash, and other Purple Ponies</a>
-    </nav>
-
+		</div>
+		<nav class="post-footer">
+		  
+			<a class="nav-prev" href="/2008/11/world/" title="Previous Post: Hello, World.">Hello, World.</a>
+		  
+		  
+			<a class="nav-next" href="/2008/12/asp-flash-and-other-purple-ponies/" title="Next Post: ASP, Flash, and other Purple Ponies">ASP, Flash, and other Purple Ponies</a>
+		  
+		</nav>
+	</article>
+	
+</div>
+		<footer>Copyright &copy; 2013 - </footer>
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
             var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];

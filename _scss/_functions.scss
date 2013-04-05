@@ -20,3 +20,17 @@
     }
   }
 }
+
+// SVG w/ PNG fallback for IE8 cuz all browsers that support multiple bgs support SVG. 
+// via http://germanforblack.com/post/43975575422/protip-all-browsers-that-support-svg-background-images
+// $public_path: ./;
+ 
+// @mixin vector-bg-with-fallback($name) {
+//   background-image: url('#{$public_path}images/#{$name}.png');
+//   background-image: none, url('#{$public_path}images/#{$name}.svg');
+// }
+
+// converts px to em values via http://thesassway.com/intermediate/responsive-web-design-part-1
+@function calc-em($target-px, $context) {
+  @return ($target-px / $context) * 1em;
+}

@@ -1,0 +1,132 @@
+.hentry {
+	@include span-columns(5, 6);
+	@include post(1);
+}
+
+.entry-header {
+	@include padding-trailer(4);
+}
+
+header .meta {
+	@include adjust-font-size-to(14px);
+	font-family: $georgia;
+	font-style: italic;
+	a:link, a:visited, a:hover, a:active, a:focus {
+		color: darken($cyan, 40%);
+	}
+}
+
+.entry-content {
+	p, ul, ol {
+		@include padding-trailer(4);
+	}
+	ul, ol {
+		margin-left: gutter(5);
+	}
+	ol {
+		list-style: decimal outside;
+	}
+	li {
+		@include padding-trailer(2);		
+	}
+	h2, h3 {
+		@include adjust-font-size-to(32px);
+		@include padding-leader(2, 32px);
+		@include padding-trailer(1, 32px);
+	  	@include adjust-leading-to(6, 32px);
+		text-transform: uppercase;
+	}
+	h2 {font-family: $league;}
+	h3 { font-family: $ostrich;	}
+	a { padding: 2px;}
+	a:link {color: $link;}
+	a:visited {color: $link-visited;}
+	a:hover, a:active, a:focus {
+		background: $magenta;
+		color: #fff;
+		text-decoration: none;
+	}
+	img {
+		max-width: 100%;
+	}
+	figure {
+		line-height:0;
+		margin-left: -(columns(1,5) + gutter(5));
+		text-align: center;
+		width: columns(7, 5);
+		@include padding-trailer(4);
+	}
+	figcaption {
+		@include adjust-font-size-to(14px);
+	  	@include adjust-leading-to(4, 14px);
+		@include padding-leader(2, 14px);
+		font-family: $georgia;
+		font-style: italic;
+		margin: 0 auto;
+		width: columns(5, 7);
+		em, i { font-style: normal;}
+	}
+	code {
+		color: $mauve;
+		font-family: $monospace;
+	}
+	pre {
+		background: $mauve;
+		color: #fff;
+		font-family: $monospace;
+		@include adjust-font-size-to(14px);
+		margin-left: -(gutter(5)*.5);
+		@include box-sizing(border-box);
+		overflow: auto;
+		padding: 0 gutter(5)*.5;
+		@include padding-leader(2, 14px);
+		@include padding-trailer(2, 14px);
+		@include margin-trailer(4, 14px);
+		width: space(5,5);
+		// &:hover {
+		// 	overflow: visible;
+		// 	width: auto;
+		// }
+	}
+	cite {font-style: italic;}
+	blockquote {
+		color: lighten($black, 40%);
+		font-family: $league;
+		@include adjust-font-size-to(32px);
+		margin: 0 auto;
+		@include padding-trailer(4, 32px);
+	  	@include adjust-leading-to(8, 32px);
+		width: space(3, 5);
+		text-align: center;
+		&:before { content: "\201C"; }
+		&:after { content: "\201D"; }
+		cite {
+			@include adjust-font-size-to(14px);
+			display: block;
+			text-align: right;
+			&:before {content: "\2014";	}
+		}
+	}
+}
+
+.post-nav {
+	// background: $rust;
+	@extend %clearfix;
+	@include leading-border(1px, 1);
+	@include trailing-border(1px, 1);
+	border-color: darken($cyan, 30%);
+	a:link, a:visited, a:hover, a:active, a:focus {
+		color: darken($cyan, 30%);
+	}
+}
+
+.prev-post {
+	@include span-columns(2, 5);	
+	@include ellipsis();
+}
+
+.next-post {
+	@include span-columns(2 omega, 5);
+	@include ellipsis();
+	text-align: right;
+}
