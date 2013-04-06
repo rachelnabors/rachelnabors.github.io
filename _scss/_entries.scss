@@ -16,10 +16,9 @@ header .meta {
 	}
 }
 
-.entry-title {
-	@include adjust-font-size-to(40px);
-	font-family: $ostrich;
-	text-transform: uppercase;
+.entry-title {	
+	@extend .page-title;
+	// @include padding-leader(3, 40px);
 }
 
 .entry-content {

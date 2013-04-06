@@ -2,17 +2,45 @@
 title: "Blog Archives"
 layout: default
 ---
-<h2>Bloggage over the years</h2>
-<ul>
+
+<ul id="archive-featured">
+  {% for post in site.posts limit: 3 %}
+    <li><a href="{{ post.url }}"><img src="{{post.featured-image}}" />{{ post.title }}</a></li>
+  {% endfor %}
+</ul>
+
+<div class="archive-search">
+  <script>
+    (function() {
+      var cx = '002428664232771263876:m1vbqio4y8u';
+      var gcse = document.createElement('script');
+      gcse.type = 'text/javascript';
+      gcse.async = true;
+      gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+          '//www.google.com/cse/cse.js?cx=' + cx;
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(gcse, s);
+    })();
+  </script>
+  <gcse:search></gcse:search>
+</div>
+
+<ul id="archive-list">
   {% for post in site.posts %}
 
     {% unless post.next %}
-      <h3>{{ post.date | date: '%Y' }}</h3>
+      <li>
+        <h2>{{ post.date | date: '%Y' }}</h2>
+        <ul>
     {% else %}
       {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
       {% capture nyear %}{{ post.next.date | date: '%Y' }}{% endcapture %}
       {% if year != nyear %}
-        <h3>{{ post.date | date: '%Y' }}</h3>
+          </ul>
+        </li>
+        <li>
+          <h2>{{ post.date | date: '%Y' }}</h2>
+          <ul>
       {% endif %}
     {% endunless %}
 

@@ -21,10 +21,13 @@
   //     background: $sprites-sprites no-repeat;
   //   }
   // }
+
+  // defaults
   @import "screen";
-  @import "entries";
 
   //modules here
+  @import "entries";
+  @import "archive";
 }
 /* =============================================================================
    Print Styles

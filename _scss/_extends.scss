@@ -1,0 +1,6 @@
+.page-title {
+	@include adjust-font-size-to(40px);
+	font-family: $ostrich;
+	text-transform: uppercase;
+	@include padding-leader(9, 40px);
+}
