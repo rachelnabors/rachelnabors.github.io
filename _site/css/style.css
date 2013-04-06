@@ -207,47 +207,61 @@ html {
 
   /* line 13, ../../_scss/_screen.scss */
   .masthead {
+    background: #141f31;
+    color: #fff;
     padding-top: 0.375em;
     width: 19.46903%;
     float: left;
     margin-right: 3.53982%;
     display: inline;
     margin-right: 1.76991%;
-    font-family: "LeagueGothicRegular", sans-serif;
     text-align: right;
-    text-transform: uppercase;
   }
   /* line 20, ../../_scss/_screen.scss */
+  .masthead .site-logo {
+    font-size: 1.5em;
+    line-height: 0.66667em;
+    margin-bottom: 0.66667em;
+  }
+  /* line 23, ../../_scss/_screen.scss */
+  .masthead .site-logo:link, .masthead .site-logo:visited {
+    color: #fff;
+  }
+  /* line 26, ../../_scss/_screen.scss */
+  .masthead .site-logo:hover, .masthead .site-logo:active, .masthead .site-logo:focus {
+    color: #e64988;
+  }
+  /* line 30, ../../_scss/_screen.scss */
   .masthead nav {
+    font-family: "LeagueGothicRegular", sans-serif;
+    text-transform: uppercase;
     padding-top: 0.375em;
+    padding-bottom: 0.375em;
     font-size: 1.5em;
     line-height: 1.25em;
   }
-  /* line 24, ../../_scss/_screen.scss */
+  /* line 37, ../../_scss/_screen.scss */
+  .masthead small {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
+    opacity: 0.5;
+    font-size: 0.75em;
+    line-height: 1.5em;
+  }
+  /* line 41, ../../_scss/_screen.scss */
+  .masthead a {
+    display: block;
+  }
+  /* line 42, ../../_scss/_screen.scss */
   .masthead a:link, .masthead a:visited, .masthead a:hover, .masthead a:active {
     color: #a69feb;
     text-decoration: none;
   }
-  /* line 28, ../../_scss/_screen.scss */
-  .masthead a:hover, .masthead a:active, .masthead a:focus {
+  /* line 46, ../../_scss/_screen.scss */
+  .masthead a:hover, .masthead a:active, .masthead a:focus, .masthead .logo:hover, .masthead .logo:active, .masthead .logo:focus {
     color: #e64988;
   }
 
-  /* line 32, ../../_scss/_screen.scss */
-  .site-logo {
-    font-size: 2.25em;
-    line-height: 1.16667em;
-  }
-  /* line 34, ../../_scss/_screen.scss */
-  .site-logo a:link, .site-logo a:visited {
-    color: #fff;
-  }
-  /* line 37, ../../_scss/_screen.scss */
-  .site-logo a:hover, .site-logo a:active, .site-logo a:focus {
-    color: #e64988;
-  }
-
-  /* line 42, ../../_scss/_screen.scss */
+  /* line 51, ../../_scss/_screen.scss */
   .main {
     filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=75);
     opacity: 0.75;
@@ -263,17 +277,17 @@ html {
     line-height: 1.5em;
   }
 
-  /* line 52, ../../_scss/_screen.scss */
+  /* line 61, ../../_scss/_screen.scss */
   strong, b {
     font-weight: bold;
   }
 
-  /* line 53, ../../_scss/_screen.scss */
+  /* line 62, ../../_scss/_screen.scss */
   em, i {
     font-style: italic;
   }
 
-  /* line 55, ../../_scss/_screen.scss */
+  /* line 64, ../../_scss/_screen.scss */
   .headline {
     font-family: "OstrichSansMedium", sans-serif;
     font-size: 3em;
@@ -281,7 +295,7 @@ html {
   }
 
   /* line 1, ../../_scss/_entries.scss */
-  .hentry {
+  .hentry, #comments {
     width: 82.43243%;
     float: left;
     margin-right: 5.40541%;
@@ -306,23 +320,31 @@ html {
     color: black;
   }
 
-  /* line 20, ../../_scss/_entries.scss */
+  /* line 19, ../../_scss/_entries.scss */
+  .entry-title {
+    font-size: 2.5em;
+    line-height: 1.2em;
+    font-family: "OstrichSansMedium", sans-serif;
+    text-transform: uppercase;
+  }
+
+  /* line 26, ../../_scss/_entries.scss */
   .entry-content p, .entry-content ul, .entry-content ol {
     padding-bottom: 1.5em;
   }
-  /* line 23, ../../_scss/_entries.scss */
+  /* line 29, ../../_scss/_entries.scss */
   .entry-content ul, .entry-content ol {
     margin-left: 6.55738%;
   }
-  /* line 26, ../../_scss/_entries.scss */
+  /* line 32, ../../_scss/_entries.scss */
   .entry-content ol {
     list-style: decimal outside;
   }
-  /* line 29, ../../_scss/_entries.scss */
+  /* line 35, ../../_scss/_entries.scss */
   .entry-content li {
     padding-bottom: 0.75em;
   }
-  /* line 32, ../../_scss/_entries.scss */
+  /* line 38, ../../_scss/_entries.scss */
   .entry-content h2, .entry-content h3 {
     font-size: 2em;
     line-height: 1.125em;
@@ -331,37 +353,38 @@ html {
     line-height: 1.125em;
     text-transform: uppercase;
   }
-  /* line 39, ../../_scss/_entries.scss */
+  /* line 45, ../../_scss/_entries.scss */
   .entry-content h2 {
     font-family: "LeagueGothicRegular", sans-serif;
   }
-  /* line 40, ../../_scss/_entries.scss */
+  /* line 46, ../../_scss/_entries.scss */
   .entry-content h3 {
     font-family: "OstrichSansMedium", sans-serif;
   }
-  /* line 41, ../../_scss/_entries.scss */
+  /* line 47, ../../_scss/_entries.scss */
   .entry-content a {
     padding: 2px;
   }
-  /* line 42, ../../_scss/_entries.scss */
+  /* line 48, ../../_scss/_entries.scss */
   .entry-content a:link {
     color: #56001d;
   }
-  /* line 43, ../../_scss/_entries.scss */
+  /* line 49, ../../_scss/_entries.scss */
   .entry-content a:visited {
     color: black;
   }
-  /* line 44, ../../_scss/_entries.scss */
+  /* line 50, ../../_scss/_entries.scss */
   .entry-content a:hover, .entry-content a:active, .entry-content a:focus {
     background: #e64988;
     color: #fff;
     text-decoration: none;
   }
-  /* line 49, ../../_scss/_entries.scss */
+  /* line 55, ../../_scss/_entries.scss */
   .entry-content img {
     max-width: 100%;
+    height: auto;
   }
-  /* line 52, ../../_scss/_entries.scss */
+  /* line 59, ../../_scss/_entries.scss */
   .entry-content figure {
     line-height: 0;
     margin-left: -21.31148%;
@@ -369,7 +392,7 @@ html {
     width: 142.62295%;
     padding-bottom: 1.5em;
   }
-  /* line 59, ../../_scss/_entries.scss */
+  /* line 66, ../../_scss/_entries.scss */
   .entry-content figcaption {
     font-size: 0.875em;
     line-height: 1.28571em;
@@ -380,16 +403,16 @@ html {
     margin: 0 auto;
     width: 70.11494%;
   }
-  /* line 67, ../../_scss/_entries.scss */
+  /* line 74, ../../_scss/_entries.scss */
   .entry-content figcaption em, .entry-content figcaption i {
     font-style: normal;
   }
-  /* line 69, ../../_scss/_entries.scss */
+  /* line 76, ../../_scss/_entries.scss */
   .entry-content code {
     color: #c774b3;
     font-family: monospace;
   }
-  /* line 73, ../../_scss/_entries.scss */
+  /* line 80, ../../_scss/_entries.scss */
   .entry-content pre {
     background: #c774b3;
     color: #fff;
@@ -407,13 +430,13 @@ html {
     margin-bottom: 1.71429em;
     width: 106.55738%;
   }
-  /* line 91, ../../_scss/_entries.scss */
+  /* line 98, ../../_scss/_entries.scss */
   .entry-content cite {
     font-style: italic;
   }
-  /* line 92, ../../_scss/_entries.scss */
+  /* line 99, ../../_scss/_entries.scss */
   .entry-content blockquote {
-    color: #577cba;
+    color: #5f697a;
     font-family: "LeagueGothicRegular", sans-serif;
     font-size: 2em;
     line-height: 1.125em;
@@ -423,27 +446,33 @@ html {
     width: 63.93443%;
     text-align: center;
   }
-  /* line 101, ../../_scss/_entries.scss */
+  /* line 108, ../../_scss/_entries.scss */
   .entry-content blockquote:before {
     content: "\201C";
   }
-  /* line 102, ../../_scss/_entries.scss */
+  /* line 109, ../../_scss/_entries.scss */
   .entry-content blockquote:after {
     content: "\201D";
   }
-  /* line 103, ../../_scss/_entries.scss */
-  .entry-content blockquote cite {
+  /* line 110, ../../_scss/_entries.scss */
+  .entry-content blockquote + p cite {
+    color: #778295;
+    margin: 0 auto;
+    width: 63.93443%;
+    font-family: "Georgia", serif;
     font-size: 0.875em;
     line-height: 1.28571em;
     display: block;
     text-align: right;
+    padding-bottom: 0.75em;
+    margin-top: -1.125em;
   }
-  /* line 107, ../../_scss/_entries.scss */
-  .entry-content blockquote cite:before {
+  /* line 118, ../../_scss/_entries.scss */
+  .entry-content blockquote + p cite:before {
     content: "\2014";
   }
 
-  /* line 112, ../../_scss/_entries.scss */
+  /* line 125, ../../_scss/_entries.scss */
   .post-nav {
     border-top-style: solid;
     border-top-width: 0.0625em;
@@ -451,14 +480,15 @@ html {
     border-bottom-style: solid;
     border-bottom-width: 0.0625em;
     padding-bottom: 0.3125em;
+    margin-bottom: 1.5em;
     border-color: #001f27;
   }
-  /* line 118, ../../_scss/_entries.scss */
+  /* line 132, ../../_scss/_entries.scss */
   .post-nav a:link, .post-nav a:visited, .post-nav a:hover, .post-nav a:active, .post-nav a:focus {
     color: #001f27;
   }
 
-  /* line 123, ../../_scss/_entries.scss */
+  /* line 137, ../../_scss/_entries.scss */
   .prev-post {
     width: 36.06557%;
     float: left;
@@ -471,7 +501,7 @@ html {
     text-overflow: ellipsis;
   }
 
-  /* line 128, ../../_scss/_entries.scss */
+  /* line 142, ../../_scss/_entries.scss */
   .next-post {
     width: 36.06557%;
     float: right;
@@ -484,6 +514,17 @@ html {
     -o-text-overflow: ellipsis;
     text-overflow: ellipsis;
     text-align: right;
+  }
+
+  /* line 148, ../../_scss/_entries.scss */
+  #comments h1 {
+    font-size: 2em;
+    line-height: 1.125em;
+    padding-top: 0.375em;
+    padding-bottom: 0.1875em;
+    line-height: 1.125em;
+    text-transform: uppercase;
+    font-family: "LeagueGothicRegular", sans-serif;
   }
 }
 /* =============================================================================

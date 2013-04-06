@@ -32,26 +32,30 @@
 		<!--[if lt IE 10]>
 			<p class="chromeframe">Hmm. Your browser doesn't support the animations I'm sporting. You might <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to get the full experience.</p>
 		<![endif]-->
+		<div class="container">
 
-<nav role="navigation">
-	<a href="/">Rachel Nabors</a>
-Speaking
-	<a href="/archive">Blog</a>
-	<a href="mailto:aloha@rachelnabors.com">Contact</a>
-</nav>
-<div id="main">
-	<div id="content">
-
-	<article class="hentry" role="article">
-		<header class="entry-header">
-			<h1 class="entry-title">Making a case for the dialog element in HTML 5</h1>
-			<p class="meta">
-				<time>19 September 2009</time> 
-				
-	    	</p>
-		</header>
-		<div class="entry-content">
-			<p>I'd spent a lot of time writing a post about the glorious new tags introduced in HTML 5, but unfortunately, just as I was about to put it up, I caught wind that <a href="http://html5doctor.com/september-html5-spec-changes/">the spec for the &lt;dialog&gt; tag has been nixed</a>. Considering that a hefty portion of my article was devoted to illustrating how the new tag could be put to use to display dynamically generated web comics of instant message conversations, I was understandably put out.</p>
+<div class="masthead">
+	<nav role="navigation">
+		<a href="/" class="site-logo">Rachel Nabors</a>
+	Speaking
+		<a href="/archive">Blog</a>
+		<a href="mailto:aloha@rachelnabors.com">Contact</a>
+	</nav>
+	<small>Copyright &copy; 2008 &ndash; 2013 Rachel Nabors</small>
+</div>
+	<div class="main">
+		<article class="hentry" role="article">
+			<header class="entry-header">
+				<h1 class="entry-title">Making a case for the dialog element in HTML 5</h1>
+				<p class="meta">
+					<time>19 September 2009</time> 
+					
+						| <a href="#disqus_thread">Comments</a>
+					
+				</p>
+			</header>
+			<div class="entry-content">
+				<p>I'd spent a lot of time writing a post about the glorious new tags introduced in HTML 5, but unfortunately, just as I was about to put it up, I caught wind that <a href="http://html5doctor.com/september-html5-spec-changes/">the spec for the &lt;dialog&gt; tag has been nixed</a>. Considering that a hefty portion of my article was devoted to illustrating how the new tag could be put to use to display dynamically generated web comics of instant message conversations, I was understandably put out.</p>
 
 <h2>The dialog element was just a glorified definition list.</h2>
 
@@ -135,25 +139,46 @@ Yes, <code>&lt;dialog&gt;</code> is unabashedly based on the definition list. It
 
 <p>How would <em>you</em> markup a conversation?</p>
 
-		</div>
-		<nav class="post-footer">
-		  
-			<a class="nav-prev" href="/2009/05/twitter-for-fun-but-not-so-much-for-profit/" title="Previous Post: Twitter for Fun, but not so much for profit.">Twitter for Fun, but not so much for profit.</a>
-		  
-		  
-			<a class="nav-next" href="/2009/09/lovemysmartcar-com-how-viral-media-can-be-deterred-with-social-media/" title="Next Post: lovemysmartcar.com: How viral media can be deterred with social media">lovemysmartcar.com: How viral media can be deterred with social media</a>
-		  
-		</nav>
-	</article>
-	
-</div>
-		<footer>Copyright &copy; 2013 - </footer>
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-        <script>
-            var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
-            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-            g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
-            s.parentNode.insertBefore(g,s)}(document,'script'));
-        </script>
-    </body>
+			</div>
+			<nav class="post-nav">
+			  
+				<a class="prev-post" href="/2009/05/twitter-for-fun-but-not-so-much-for-profit/" title="Previous Post: Twitter for Fun, but not so much for profit.">Twitter for Fun, but not so much for profit.</a>
+			  
+			  
+				<a class="next-post" href="/2009/09/lovemysmartcar-com-how-viral-media-can-be-deterred-with-social-media/" title="Next Post: lovemysmartcar.com: How viral media can be deterred with social media">lovemysmartcar.com: How viral media can be deterred with social media</a>
+			  
+			</nav>
+		</article>
+		
+		<section id="comments">
+			<h1>Comments</h1>
+			<div id="disqus_thread" aria-live="polite"></div>
+			<script type="text/javascript">
+				var disqus_shortname = 'rachelnabors';
+				(function() {
+					var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+					dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+					(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+
+					var s = document.createElement('script'); s.async = true;
+					s.type = 'text/javascript';
+					s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+					(document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+
+				})();
+			</script>
+			<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+			<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+		</section>
+		
+	</div>
+	</div>
+		<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+		<script>
+			var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+			(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+			g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+			s.parentNode.insertBefore(g,s)}(document,'script'));
+		</script>
+	</body>
 </html>

@@ -4,7 +4,7 @@ title: Of GitHub and Pull Requests (and comics)
 excerpt: I wanted to contribute to a few GitHub repos, but all of my pull requests got shot down. Where did I go wrong? How would you recommend I go about it in the future?
 permalink: /2012/04/of-github-and-pull-requests-and-comics/
 featured-image: http://media.rachelnabors.com/wp-content/uploads/2012/04/github_web.png
-categories: 
+comments: true 
 ---
 A few months ago I decided I wanted to contribute to projects on GitHub. I admit I was largely inspired to do so when, after signing up at coderwall, <a href="http://coderwall.com/rachelnabors">my profile page</a> was bereft of contribution badges. The talks I'd given, the meetups I'd organized and faithfully attended, the comics I'd made: none of it was gonna get me my hutzpah badge. If I wanted coderwall-approved geek cred, I needed to knuckle down and give back to the community, damn it.
 

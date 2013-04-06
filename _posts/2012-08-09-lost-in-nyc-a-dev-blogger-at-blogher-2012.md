@@ -36,9 +36,7 @@ This was probably the best panel I've done yet. The BlogHer organizers did a gre
 
 <figure>
   <img title="JC Little cartoon of BlogHer 12 panel" alt="A cartoon of all three panelists" src="http://www.rachelnabors.com/wp-content/uploads/2012/08/JCLittle_cakespy-crowchick-booksnchickens_555.jpeg" width="555" height="388" />
-  <figcaption>
-    JC Little did this cartoon of us on her iPad while we talked. She was doing all kinds of neat cartoons of panelists at BlogHer.
-  </figcaption>
+  <figcaption>JC Little did this cartoon of us on her iPad while we talked. She was doing all kinds of neat cartoons of panelists at BlogHer.</figcaption>
 </figure>
 
 I heard from three people that it was the best panel they'd seen at the conference, and one person even said it beat out the panels she'd seen at SXSW and Geek Girl Con. High praise indeed!
@@ -63,7 +61,7 @@ The Expo Hall was also a source of many tech demos, and I managed to find a numb
 
 <figure>
   <img title="Samsung motion capture" alt="Samsung TV with motion capture apparatus mounted on top" src="http://www.rachelnabors.com/wp-content/uploads/2012/08/HNI_0019.jpg" width="640" height="480" />
-  <figure>This television from Samsung can recognize motion via a sensor on top. You can play games and change channels just by waving your hands. Truly I felt like I was watching the future as an old woman played Angry Birds without a controller.</figure>
+  <figcaption>This television from Samsung can recognize motion via a sensor on top. You can play games and change channels just by waving your hands. Truly I felt like I was watching the future as an old woman played Angry Birds without a controller.</figcaption>
 </figure>
 
 <figure>

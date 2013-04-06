@@ -1,4 +1,4 @@
-.hentry {
+.hentry, #comments {
 	@include span-columns(5, 6);
 	@include post(1);
 }
@@ -14,6 +14,12 @@ header .meta {
 	a:link, a:visited, a:hover, a:active, a:focus {
 		color: darken($cyan, 40%);
 	}
+}
+
+.entry-title {
+	@include adjust-font-size-to(40px);
+	font-family: $ostrich;
+	text-transform: uppercase;
 }
 
 .entry-content {
@@ -48,6 +54,7 @@ header .meta {
 	}
 	img {
 		max-width: 100%;
+		height: auto;
 	}
 	figure {
 		line-height:0;
@@ -90,7 +97,7 @@ header .meta {
 	}
 	cite {font-style: italic;}
 	blockquote {
-		color: lighten($black, 40%);
+		color: $grey;
 		font-family: $league;
 		@include adjust-font-size-to(32px);
 		margin: 0 auto;
@@ -100,11 +107,17 @@ header .meta {
 		text-align: center;
 		&:before { content: "\201C"; }
 		&:after { content: "\201D"; }
-		cite {
+		+ p cite {
+			color: lighten($grey, 10%);
+			margin: 0 auto;
+			width: space(3, 5);
+			font-family: $georgia;
 			@include adjust-font-size-to(14px);
 			display: block;
 			text-align: right;
 			&:before {content: "\2014";	}
+			@include padding-trailer(4, 32px);
+			@include margin-leader(-6, 32px);
 		}
 	}
 }
@@ -114,6 +127,7 @@ header .meta {
 	@extend %clearfix;
 	@include leading-border(1px, 1);
 	@include trailing-border(1px, 1);
+	@include margin-trailer(4);
 	border-color: darken($cyan, 30%);
 	a:link, a:visited, a:hover, a:active, a:focus {
 		color: darken($cyan, 30%);
@@ -129,4 +143,13 @@ header .meta {
 	@include span-columns(2 omega, 5);
 	@include ellipsis();
 	text-align: right;
+}
+
+#comments h1 {
+	@include adjust-font-size-to(32px);
+	@include padding-leader(2, 32px);
+	@include padding-trailer(1, 32px);
+  	@include adjust-leading-to(6, 32px);
+  	text-transform: uppercase;
+  	font-family: $league;
 }

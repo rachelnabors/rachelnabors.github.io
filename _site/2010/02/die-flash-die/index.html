@@ -32,26 +32,30 @@
 		<!--[if lt IE 10]>
 			<p class="chromeframe">Hmm. Your browser doesn't support the animations I'm sporting. You might <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to get the full experience.</p>
 		<![endif]-->
+		<div class="container">
 
-<nav role="navigation">
-	<a href="/">Rachel Nabors</a>
-Speaking
-	<a href="/archive">Blog</a>
-	<a href="mailto:aloha@rachelnabors.com">Contact</a>
-</nav>
-<div id="main">
-	<div id="content">
-
-	<article class="hentry" role="article">
-		<header class="entry-header">
-			<h1 class="entry-title">Die Flash, die.</h1>
-			<p class="meta">
-				<time>01 February 2010</time> 
-				
-	    	</p>
-		</header>
-		<div class="entry-content">
-			<p>I used to say that there were only three real uses for Flash: media players, animations, and games. (Everything else can be replicated with jQuery and AJAX.) These were the fingers with which Flash clung to the Internet. But one by one, they are being stomped on by <a href="http://diveintohtml5.org/video.html">HTML 5</a> and <a href="http://webdesignledger.com/tutorials/13-excellent-jquery-animation-techniques">Javascript</a>. And now that <a href="http://http://www.zeldman.com/2010/02/01/flash-ipad-standards/">the ipad and iphone don't support Flash</a>, the tide is begining to turn for Adobe's darling, <a href="http://yourhead.tumblr.com/post/366259676/just-a-flash-wound">albeit not as quickly as I would have it</a>.</p>
+<div class="masthead">
+	<nav role="navigation">
+		<a href="/" class="site-logo">Rachel Nabors</a>
+	Speaking
+		<a href="/archive">Blog</a>
+		<a href="mailto:aloha@rachelnabors.com">Contact</a>
+	</nav>
+	<small>Copyright &copy; 2008 &ndash; 2013 Rachel Nabors</small>
+</div>
+	<div class="main">
+		<article class="hentry" role="article">
+			<header class="entry-header">
+				<h1 class="entry-title">Die Flash, die.</h1>
+				<p class="meta">
+					<time>01 February 2010</time> 
+					
+						| <a href="#disqus_thread">Comments</a>
+					
+				</p>
+			</header>
+			<div class="entry-content">
+				<p>I used to say that there were only three real uses for Flash: media players, animations, and games. (Everything else can be replicated with jQuery and AJAX.) These were the fingers with which Flash clung to the Internet. But one by one, they are being stomped on by <a href="http://diveintohtml5.org/video.html">HTML 5</a> and <a href="http://webdesignledger.com/tutorials/13-excellent-jquery-animation-techniques">Javascript</a>. And now that <a href="http://http://www.zeldman.com/2010/02/01/flash-ipad-standards/">the ipad and iphone don't support Flash</a>, the tide is begining to turn for Adobe's darling, <a href="http://yourhead.tumblr.com/post/366259676/just-a-flash-wound">albeit not as quickly as I would have it</a>.</p>
 
 <p><em>I'm so happy.</em></p>
 
@@ -69,25 +73,46 @@ Speaking
 
 <p>Thank you, Apple, for indulging me in this brief bout of schadenfreude.</p>
 
-		</div>
-		<nav class="post-footer">
-		  
-			<a class="nav-prev" href="/2010/01/wordpress-best-of-2009-and-trends-of-2010/" title="Previous Post: WordPress: Best of 2009 and Trends of 2010">WordPress: Best of 2009 and Trends of 2010</a>
-		  
-		  
-			<a class="nav-next" href="/2010/02/check-out-my-illustrations-at-uxbooth-com/" title="Next Post: Check out my illustrations at UXBooth.com!">Check out my illustrations at UXBooth.com!</a>
-		  
-		</nav>
-	</article>
-	
-</div>
-		<footer>Copyright &copy; 2013 - </footer>
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-        <script>
-            var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
-            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-            g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
-            s.parentNode.insertBefore(g,s)}(document,'script'));
-        </script>
-    </body>
+			</div>
+			<nav class="post-nav">
+			  
+				<a class="prev-post" href="/2010/01/wordpress-best-of-2009-and-trends-of-2010/" title="Previous Post: WordPress: Best of 2009 and Trends of 2010">WordPress: Best of 2009 and Trends of 2010</a>
+			  
+			  
+				<a class="next-post" href="/2010/02/check-out-my-illustrations-at-uxbooth-com/" title="Next Post: Check out my illustrations at UXBooth.com!">Check out my illustrations at UXBooth.com!</a>
+			  
+			</nav>
+		</article>
+		
+		<section id="comments">
+			<h1>Comments</h1>
+			<div id="disqus_thread" aria-live="polite"></div>
+			<script type="text/javascript">
+				var disqus_shortname = 'rachelnabors';
+				(function() {
+					var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+					dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+					(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+
+					var s = document.createElement('script'); s.async = true;
+					s.type = 'text/javascript';
+					s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+					(document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+
+				})();
+			</script>
+			<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+			<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+		</section>
+		
+	</div>
+	</div>
+		<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+		<script>
+			var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+			(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+			g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+			s.parentNode.insertBefore(g,s)}(document,'script'));
+		</script>
+	</body>
 </html>

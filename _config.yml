@@ -1,5 +1,5 @@
 name: "Rachel Nabors, award-winning cartoonist turned front-end developer"
-description: "Where I post musigins about web development, comics, and the future of online interaction."
+description: "Where I post musings about web development, comics, and the future of online interaction."
 
 url: "http://localhost:4000" #http://rachelnabors.com
 
@@ -15,6 +15,6 @@ pygments: true
 # Additionally, %o will give you the ordinal representation of the day
 date_format: "ordinal"
 
-# # Disqus Comments
-# disqus_short_name: #rachelnabors
-# disqus_show_comment_count: true
+# Disqus Comments
+disqus_short_name: rachelnabors
+disqus_show_comment_count: true

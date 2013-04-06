@@ -24,11 +24,11 @@ The panelists were <a href="http://jessicaivins.net/">Jessica Ivins</a> (pronou
 <h2>Wabi-sabi lightning talk</h2>
 There were lightning talks in the evening, of which I gave one on <em>wabi-sabi,</em> the Japanese concept of "imperfect beauty." It got some great tweets, so I suppose people liked it!
 
-<blockquote class="twitter-tweet"><p>@<a href="https://twitter.com/crowchick">crowchick</a> Great presentation. I felt truly small and yet freed. Simply perfect.</p>&mdash; Jessi Sparks (@jessisparks) <a href="https://twitter.com/jessisparks/status/208661353794256896">June 1, 2012</a></blockquote>
+<blockquote class="twitter-tweet">@<a href="https://twitter.com/crowchick">crowchick</a> Great presentation. I felt truly small and yet freed. Simply perfect.</blockquote> <cite>Jessi Sparks (@jessisparks) <a href="https://twitter.com/jessisparks/status/208661353794256896">June 1, 2012</a></cite>
 
-<blockquote class="twitter-tweet"><p>You guys, @<a href="https://twitter.com/crowchick">crowchick</a>'s talk on wabi sabi just gave me chills <a href="https://twitter.com/search/%23MWUX12">#MWUX12</a></p>&mdash; Denise Chroninger P. (@theguigirl) <a href="https://twitter.com/theguigirl/status/208661963419566080">June 1, 2012</a></blockquote>
+<blockquote class="twitter-tweet">You guys, @<a href="https://twitter.com/crowchick">crowchick</a>'s talk on wabi sabi just gave me chills <a href="https://twitter.com/search/%23MWUX12">#MWUX12</a></blockquote> <cite>Denise Chroninger P. (@theguigirl) <a href="https://twitter.com/theguigirl/status/208661963419566080">June 1, 2012</a></cite>
 
-<blockquote class="twitter-tweet"><p>word. RT @<a href="https://twitter.com/laurentgc">laurentgc</a>: You can't buy wabi-sabi at pottery barn @<a href="https://twitter.com/crowchick">crowchick</a> <a href="https://twitter.com/search/%23mwux12">#mwux12</a></p>&mdash; Adam Schweigert (@aschweig) <a href="https://twitter.com/aschweig/status/208661665875623936">June 1, 2012</a></blockquote>
+<blockquote class="twitter-tweet">word. RT @<a href="https://twitter.com/laurentgc">laurentgc</a>: You can't buy wabi-sabi at pottery barn @<a href="https://twitter.com/crowchick">crowchick</a> <a href="https://twitter.com/search/%23mwux12">#mwux12</a></blockquote> <cite>Adam Schweigert (@aschweig) <a href="https://twitter.com/aschweig/status/208661665875623936">June 1, 2012</a></cite>
 
 <h2>People, Talks and Events</h2>
 Responsive design was a major theme at this year's Midwest UX. Many of the talks I went to were sure to factor it in to any discussion of process. Generally, I think everyone is still uncertain how to make the best of this new tool, but I expect the dust to settle by next year. Responsive images were not brought up once, thankfully.
@@ -68,10 +68,7 @@ So many people complimented me on my blue dress after the panel and talk on Frid
 I was poorly prepared for an unexpected cold snap, but made do for day 2, pulling together some jeans, a scarf, my sister's hoodie, and my <a href="http://www.fluevog.com/code/?w=attribute%3AUnisex&amp;pp=2&amp;view=detail&amp;p=17&amp;colourID=2432">Fluevog "Earl of Warwick" boots</a>. I looked a bit like a pirate, arr!
 
 <figure>
-  <img title="MidwestUX2012_Jen" src="http://www.rachelnabors.com/wp-content/uploads/2012/06/MidwestUX2012_Jen-e1338870860493.jpg" alt="Jen and Elizabeth Myers and Rachel Nabors at Midwest UX 2012" width="240" height="320" />
-  <figcaption>
-    Me in pirate gear with Jen Myers and her daughter Elizabeth. Photo kindly provided by Erin Faulkner.
-  </figcaption>
+  <img title="MidwestUX2012_Jen" src="http://www.rachelnabors.com/wp-content/uploads/2012/06/MidwestUX2012_Jen-e1338870860493.jpg" alt="Jen and Elizabeth Myers and Rachel Nabors at Midwest UX 2012" width="240" height="320" /><figcaption>Me in pirate gear with Jen Myers and her daughter Elizabeth. Photo kindly provided by Erin Faulkner.</figcaption>
 </figure>
 
 I'm not used to seeing so many well dressed people at conferences! I wish I could have taken some pictures of them, but alas, my phone's batteries prevented me from capturing any UX <em>haute couture.</em>
@@ -92,14 +89,12 @@ People kept telling me how much they liked my <em>wabi-sabi </em>talk, so I assu
 </ul>
 <h3>Travel</h3>
 I did many things <em>right</em> on this road trip. Iced tea was plentiful, <em>Sense and Sensibility </em>was loaded into the CD player, and I even had six dollars in ones for toll fees tucked into the passenger's seat. But two major complications did mar what would have otherwise been a pitch-perfect travel adventure.
-<div>
 <ul>
   <li><strong>Always pack for the unexpected. </strong>I failed to notice the weather report changed drastically at the last minute. I spent much time shivering in my warm weather fashions and was grateful that I tossed in my boots and a pair of jeans at the last minute. Always double check the weather on your way out, and pack something that will aid you should the opposite forecast occur.</li>
   <li><strong>When traveling with companions, have a plan B for last minute emergencies.</strong> Originally this was going to be an ultra girly road trip with Sarah Kahn in my smart car, and she was going to be on the Women in UX panel. But the day before departure she got very sick and was not able to travel. I had to figure out if I should wait for her or move out. It's good to make these alternate plans in advance so you spend less time dithering.</li>
   <li><strong>Have a backup battery.</strong> My Android phone was unable to hold a charge for more than 10 hours. I had to conserve energy by not taking pictures. If you have any pictures of me, would you be so kind as to share them?</li>
 </ul>
 <h2>Final Views</h2>
-</div>
 Midwest UX was put together very well. The location, <a href="http://cosi.org/">the Center of Science and Industry (COSI)</a>, was professional and spacious. Many attendees brought their spouses and children, who would spend the day exploring the exhibits. The catering was delicious, high quality, and well-timed. (Bonus points for providing hot water and tea bags.) The conference badges and goodie bags were carefully planned. There was always a panel I wanted to see or a lunch event or afterparty I wanted to attend. In short, the organizing committee did a fantastic job, and Midwest UX is the best conference I have been to yet. I cannot recommend it enough to UX designers and even to non-UXers: Seeing real UX at work will invigorate your process and inspire you to build better things. And isn't that what we're here to do?
 
 <em>If I have gotten any names or events wrong, please do correct me. Although my notes were copious, I am faceblind and was without a camera and sleep deprived. If I've made a mistake, please do point it out!</em>

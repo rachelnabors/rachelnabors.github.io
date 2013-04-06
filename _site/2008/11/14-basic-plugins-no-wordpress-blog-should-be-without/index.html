@@ -32,26 +32,30 @@
 		<!--[if lt IE 10]>
 			<p class="chromeframe">Hmm. Your browser doesn't support the animations I'm sporting. You might <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to get the full experience.</p>
 		<![endif]-->
+		<div class="container">
 
-<nav role="navigation">
-	<a href="/">Rachel Nabors</a>
-Speaking
-	<a href="/archive">Blog</a>
-	<a href="mailto:aloha@rachelnabors.com">Contact</a>
-</nav>
-<div id="main">
-	<div id="content">
-
-	<article class="hentry" role="article">
-		<header class="entry-header">
-			<h1 class="entry-title">14 basic plugins no Wordpress blog should be without</h1>
-			<p class="meta">
-				<time>15 November 2008</time> 
-				
-	    	</p>
-		</header>
-		<div class="entry-content">
-			<p>While I was setting up the Wordpress backend that runs this site, I found myself installing some of the same old plugins I have used-- and seen used-- time and time again. These are basic plugins that I can't imagine installing Wordpress without, plugins which improve performance, secure, or otherwise basically improve Wordpress's work functionality. I thought I would list them here, because in my searches for "top 10" plugins, I have not found a list quite like this. Consider it a "basic 14".</p>
+<div class="masthead">
+	<nav role="navigation">
+		<a href="/" class="site-logo">Rachel Nabors</a>
+	Speaking
+		<a href="/archive">Blog</a>
+		<a href="mailto:aloha@rachelnabors.com">Contact</a>
+	</nav>
+	<small>Copyright &copy; 2008 &ndash; 2013 Rachel Nabors</small>
+</div>
+	<div class="main">
+		<article class="hentry" role="article">
+			<header class="entry-header">
+				<h1 class="entry-title">14 basic plugins no Wordpress blog should be without</h1>
+				<p class="meta">
+					<time>15 November 2008</time> 
+					
+						| <a href="#disqus_thread">Comments</a>
+					
+				</p>
+			</header>
+			<div class="entry-content">
+				<p>While I was setting up the Wordpress backend that runs this site, I found myself installing some of the same old plugins I have used-- and seen used-- time and time again. These are basic plugins that I can't imagine installing Wordpress without, plugins which improve performance, secure, or otherwise basically improve Wordpress's work functionality. I thought I would list them here, because in my searches for "top 10" plugins, I have not found a list quite like this. Consider it a "basic 14".</p>
 
 <ol>
   <li><a href="http://akismet.com/">Akismet</a> It comes with Wordpress and protects you from a lot of spam. An obvious choice, but I thought I would put it here in case anyone new to WP was wondering if they should activate it or not (answer: YES).</li>
@@ -74,23 +78,44 @@ Speaking
 
 <p>Do you have any plugins that you recommend for a basic install?</p>
 
-		</div>
-		<nav class="post-footer">
-		  
-		  
-			<a class="nav-next" href="/2008/11/world/" title="Next Post: Hello, World.">Hello, World.</a>
-		  
-		</nav>
-	</article>
-	
-</div>
-		<footer>Copyright &copy; 2013 - </footer>
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-        <script>
-            var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
-            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-            g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
-            s.parentNode.insertBefore(g,s)}(document,'script'));
-        </script>
-    </body>
+			</div>
+			<nav class="post-nav">
+			  
+			  
+				<a class="next-post" href="/2008/11/world/" title="Next Post: Hello, World.">Hello, World.</a>
+			  
+			</nav>
+		</article>
+		
+		<section id="comments">
+			<h1>Comments</h1>
+			<div id="disqus_thread" aria-live="polite"></div>
+			<script type="text/javascript">
+				var disqus_shortname = 'rachelnabors';
+				(function() {
+					var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+					dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+					(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+
+					var s = document.createElement('script'); s.async = true;
+					s.type = 'text/javascript';
+					s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+					(document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+
+				})();
+			</script>
+			<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+			<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+		</section>
+		
+	</div>
+	</div>
+		<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+		<script>
+			var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+			(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+			g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+			s.parentNode.insertBefore(g,s)}(document,'script'));
+		</script>
+	</body>
 </html>

@@ -11,31 +11,40 @@ body {
 }
 
 .masthead {
+	background: $black;
+	color: #fff;
 	@include padding-leader();
 	@include span-columns(2, 9);
 	margin-right: gutter(9)*.5;
-	font-family: $league;
 	text-align: right;
-	text-transform: uppercase;
+	.site-logo {
+		@include adjust-font-size-to(36px, 4, 24px);
+		@include margin-trailer(4, 36px);
+		&:link, &:visited {
+			color: #fff;
+		}
+		&:hover, &:active, &:focus {
+			color: $magenta;
+		}
+	}
 	nav { 
+		font-family: $league;
+		text-transform: uppercase;
 		@include padding-leader();
+		@include padding-trailer();
 		@include adjust-font-size-to(24px);
 	}
+	small {
+		@include opacity(.5);
+		@include adjust-font-size-to(12px)
+	}
+	a { display: block;}	
 	a:link, a:visited, a:hover, a:active {
 		color: $lavender;
 		text-decoration: none;
 	}
-	a:hover, a:active, a:focus {
+	a:hover, a:active, a:focus, .logo:hover, .logo:active, .logo:focus {
 		color: $magenta
-	}
-}
-.site-logo {
-	@include adjust-font-size-to(36px);
-	a:link, a:visited {
-		color: #fff;
-	}
-	a:hover, a:active, a:focus {
-		color: $magenta;
 	}
 }
 

@@ -32,26 +32,30 @@
 		<!--[if lt IE 10]>
 			<p class="chromeframe">Hmm. Your browser doesn't support the animations I'm sporting. You might <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to get the full experience.</p>
 		<![endif]-->
+		<div class="container">
 
-<nav role="navigation">
-	<a href="/">Rachel Nabors</a>
-Speaking
-	<a href="/archive">Blog</a>
-	<a href="mailto:aloha@rachelnabors.com">Contact</a>
-</nav>
-<div id="main">
-	<div id="content">
-
-	<article class="hentry" role="article">
-		<header class="entry-header">
-			<h1 class="entry-title">JavaScript Study for Designers</h1>
-			<p class="meta">
-				<time>12 January 2013</time> 
-				
-	    	</p>
-		</header>
-		<div class="entry-content">
-			<p>When I was 10, I loved playing video games so much that I wanted to learn how to make my own. I marched to the library and checked out their only book on programming--a manual mostly about wiring circuit boards. I had no circuit boards to wire, and I could not understand any portion of the book. I did not learn to program anything that day.</p>
+<div class="masthead">
+	<nav role="navigation">
+		<a href="/" class="site-logo">Rachel Nabors</a>
+	Speaking
+		<a href="/archive">Blog</a>
+		<a href="mailto:aloha@rachelnabors.com">Contact</a>
+	</nav>
+	<small>Copyright &copy; 2008 &ndash; 2013 Rachel Nabors</small>
+</div>
+	<div class="main">
+		<article class="hentry" role="article">
+			<header class="entry-header">
+				<h1 class="entry-title">JavaScript Study for Designers</h1>
+				<p class="meta">
+					<time>12 January 2013</time> 
+					
+						| <a href="#disqus_thread">Comments</a>
+					
+				</p>
+			</header>
+			<div class="entry-content">
+				<p>When I was 10, I loved playing video games so much that I wanted to learn how to make my own. I marched to the library and checked out their only book on programming--a manual mostly about wiring circuit boards. I had no circuit boards to wire, and I could not understand any portion of the book. I did not learn to program anything that day.</p>
 
 <p>Now, almost 18 years later, I feel like I am finally learning to program. Specifically, I’m learning JavaScript. No matter how ace your CSS is, you can’t call yourself a front-end developer without at least intermediate JavaScript skills. But, as a person without a computer science degree, I often feel JavaScript resources are made for people with a much deeper knowledge of programming, like the manual I tried to understand at 10. Now that I’ve found a learning path that works for me, I want to share it with others who might be struggling in their JavaScript education.</p>
 
@@ -186,25 +190,46 @@ Speaking
 
 <p>Have you successfully learned JavaScript from a non-programming background? What worked for you? What didn’t? Sharing is a great way to make headway in your own studies, and I'd love to hear how you're doing!</p>
 
-		</div>
-		<nav class="post-footer">
-		  
-			<a class="nav-prev" href="/2012/12/css-dev-conf-recap/" title="Previous Post: CSS Dev Conf Recap">CSS Dev Conf Recap</a>
-		  
-		  
-			<a class="nav-next" href="/2013/02/20/title/" title="Next Post: title">title</a>
-		  
-		</nav>
-	</article>
-	
-</div>
-		<footer>Copyright &copy; 2013 - </footer>
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-        <script>
-            var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
-            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-            g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
-            s.parentNode.insertBefore(g,s)}(document,'script'));
-        </script>
-    </body>
+			</div>
+			<nav class="post-nav">
+			  
+				<a class="prev-post" href="/2012/12/css-dev-conf-recap/" title="Previous Post: CSS Dev Conf Recap">CSS Dev Conf Recap</a>
+			  
+			  
+				<a class="next-post" href="/2013/02/20/title/" title="Next Post: title">title</a>
+			  
+			</nav>
+		</article>
+		
+		<section id="comments">
+			<h1>Comments</h1>
+			<div id="disqus_thread" aria-live="polite"></div>
+			<script type="text/javascript">
+				var disqus_shortname = 'rachelnabors';
+				(function() {
+					var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+					dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+					(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+
+					var s = document.createElement('script'); s.async = true;
+					s.type = 'text/javascript';
+					s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+					(document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+
+				})();
+			</script>
+			<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+			<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+		</section>
+		
+	</div>
+	</div>
+		<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+		<script>
+			var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+			(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+			g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+			s.parentNode.insertBefore(g,s)}(document,'script'));
+		</script>
+	</body>
 </html>

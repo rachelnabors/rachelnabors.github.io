@@ -32,26 +32,30 @@
 		<!--[if lt IE 10]>
 			<p class="chromeframe">Hmm. Your browser doesn't support the animations I'm sporting. You might <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to get the full experience.</p>
 		<![endif]-->
+		<div class="container">
 
-<nav role="navigation">
-	<a href="/">Rachel Nabors</a>
-Speaking
-	<a href="/archive">Blog</a>
-	<a href="mailto:aloha@rachelnabors.com">Contact</a>
-</nav>
-<div id="main">
-	<div id="content">
-
-	<article class="hentry" role="article">
-		<header class="entry-header">
-			<h1 class="entry-title">Responsive Design vs. the (real) World</h1>
-			<p class="meta">
-				<time>27 June 2011</time> 
-				
-	    	</p>
-		</header>
-		<div class="entry-content">
-			<p>Recently I designed a page using nothing but fonts, HTML and CSS for a competition at fontdeck. I decided to use responsive design, that is to say I used media queries to style the page differently depending on your browser width. The process got me thinking about responsive design and its practical--and impractical--uses.</p>
+<div class="masthead">
+	<nav role="navigation">
+		<a href="/" class="site-logo">Rachel Nabors</a>
+	Speaking
+		<a href="/archive">Blog</a>
+		<a href="mailto:aloha@rachelnabors.com">Contact</a>
+	</nav>
+	<small>Copyright &copy; 2008 &ndash; 2013 Rachel Nabors</small>
+</div>
+	<div class="main">
+		<article class="hentry" role="article">
+			<header class="entry-header">
+				<h1 class="entry-title">Responsive Design vs. the (real) World</h1>
+				<p class="meta">
+					<time>27 June 2011</time> 
+					
+						| <a href="#disqus_thread">Comments</a>
+					
+				</p>
+			</header>
+			<div class="entry-content">
+				<p>Recently I designed a page using nothing but fonts, HTML and CSS for a competition at fontdeck. I decided to use responsive design, that is to say I used media queries to style the page differently depending on your browser width. The process got me thinking about responsive design and its practical--and impractical--uses.</p>
 
 <p>Personally, I do not think responsive design a the be-all and end-all solution for the mobile web, and by "mobile web" I mean "the web on small screens over sluggish connections." But I think media queries are actually one of the best things to happen to web design in recent years, right up there with decent font embedding.</p>
 
@@ -87,25 +91,46 @@ Speaking
 
 <p>As designers and developers, it's easy for us to get caught up in the "how" and lose track of the "why." Every time we do something, we need to ask ourselves, "How am I benefitting people with this?" If you're only impressing your peers or your coworkers, you need to step back and re-evaluate your approach. There are lots of ways to make the Internet a better place. It pays to pick and choose your battles.</p>
 
-		</div>
-		<nav class="post-footer">
-		  
-			<a class="nav-prev" href="/2011/05/simple-steps-to-wordpress-security-talk/" title="Previous Post: Simple Steps To WordPress Security Talk">Simple Steps To WordPress Security Talk</a>
-		  
-		  
-			<a class="nav-next" href="/2011/07/dont-wiggle-away-from-responsibility/" title="Next Post: Don't wiggle away from responsibility">Don't wiggle away from responsibility</a>
-		  
-		</nav>
-	</article>
-	
-</div>
-		<footer>Copyright &copy; 2013 - </footer>
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-        <script>
-            var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
-            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-            g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
-            s.parentNode.insertBefore(g,s)}(document,'script'));
-        </script>
-    </body>
+			</div>
+			<nav class="post-nav">
+			  
+				<a class="prev-post" href="/2011/05/simple-steps-to-wordpress-security-talk/" title="Previous Post: Simple Steps To WordPress Security Talk">Simple Steps To WordPress Security Talk</a>
+			  
+			  
+				<a class="next-post" href="/2011/07/dont-wiggle-away-from-responsibility/" title="Next Post: Don't wiggle away from responsibility">Don't wiggle away from responsibility</a>
+			  
+			</nav>
+		</article>
+		
+		<section id="comments">
+			<h1>Comments</h1>
+			<div id="disqus_thread" aria-live="polite"></div>
+			<script type="text/javascript">
+				var disqus_shortname = 'rachelnabors';
+				(function() {
+					var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+					dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+					(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+
+					var s = document.createElement('script'); s.async = true;
+					s.type = 'text/javascript';
+					s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+					(document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+
+				})();
+			</script>
+			<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+			<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+		</section>
+		
+	</div>
+	</div>
+		<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+		<script>
+			var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+			(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+			g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+			s.parentNode.insertBefore(g,s)}(document,'script'));
+		</script>
+	</body>
 </html>
