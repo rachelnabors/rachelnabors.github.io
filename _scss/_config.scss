@@ -36,11 +36,11 @@ $base-line-height: 6px;
 
 @font-face {
     font-family: 'LeagueGothicRegular';
-    src: url('http://fonts.rachelnabors.com/league_gothic-webfont.eot');
-    src: url('http://fonts.rachelnabors.com/league_gothic-webfont.eot?#iefix') format('embedded-opentype'),
-         url('http://fonts.rachelnabors.com/league_gothic-webfont.woff') format('woff'),
-         url('http://fonts.rachelnabors.com/league_gothic-webfont.ttf') format('truetype'),
-         url('http://fonts.rachelnabors.com/league_gothic-webfont.svg#LeagueGothicRegular') format('svg');
+    src: url('/fonts/league_gothic-webfont.eot');
+    src: url('/fonts/league_gothic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/league_gothic-webfont.woff') format('woff'),
+         url('/fonts/league_gothic-webfont.ttf') format('truetype'),
+         url('/fonts/league_gothic-webfont.svg#LeagueGothicRegular') format('svg');
     font-weight: normal;
     font-style: normal;
 
@@ -48,22 +48,22 @@ $base-line-height: 6px;
 
 @font-face {
     font-family: 'OstrichSansMedium';
-    src: url('http://fonts.rachelnabors.com/ostrich-regular-webfont.eot');
-    src: url('http://fonts.rachelnabors.com/ostrich-regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('http://fonts.rachelnabors.com/ostrich-regular-webfont.woff') format('woff'),
-         url('http://fonts.rachelnabors.com/ostrich-regular-webfont.ttf') format('truetype'),
-         url('http://fonts.rachelnabors.com/ostrich-regular-webfont.svg#OstrichSansMedium') format('svg');
+    src: url('/fonts/ostrich-regular-webfont.eot');
+    src: url('/fonts/ostrich-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/ostrich-regular-webfont.woff') format('woff'),
+         url('/fonts/ostrich-regular-webfont.ttf') format('truetype'),
+         url('/fonts/ostrich-regular-webfont.svg#OstrichSansMedium') format('svg');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'RNicons';
-    src: url('http://fonts.rachelnabors.com/rn-icons.eot');
-    src: url('http://fonts.rachelnabors.com/rn-icons.eot?#iefix') format('embedded-opentype'),
-         url('http://fonts.rachelnabors.com/rn-icons.woff') format('woff'),
-         url('http://fonts.rachelnabors.com/rn-icons.ttf') format('truetype'),
-         url('http://fonts.rachelnabors.com/rn-icons.svg#icomoon') format('svg');
+    src: url('/fonts/rn-icons.eot');
+    src: url('/fonts/rn-icons.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/rn-icons.woff') format('woff'),
+         url('/fonts/rn-icons.ttf') format('truetype'),
+         url('/fonts/rn-icons.svg#icomoon') format('svg');
     font-weight: normal;
     font-style: normal;
 

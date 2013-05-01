@@ -1,0 +1,6 @@
+#add access control header for fonts
+<FilesMatch "\.(ttf|otf|eot|woff)$">
+  <IfModule mod_headers.c>
+    Header set Access-Control-Allow-Origin "http://rachelnabors.com"
+  </IfModule>
+</FilesMatch>
