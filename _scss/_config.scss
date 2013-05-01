@@ -25,7 +25,8 @@ $link-visited:darken($rust,10%);
 
 
 // Vertical Rhythm
-
+$browser-default-font-size: 16px;
+$relative-font-sizing: true;
 $base-font-size: 16px;
 $base-line-height: 6px;
 @include establish-baseline;
