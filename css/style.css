@@ -216,10 +216,6 @@ headphones: "\e008" &#57352
     color: #23000c;
   }
 
-  html {
-    font-size: 100% !important;
-  }
-
   body {
     background: #e3edf2;
     font-family: sans-serif;
