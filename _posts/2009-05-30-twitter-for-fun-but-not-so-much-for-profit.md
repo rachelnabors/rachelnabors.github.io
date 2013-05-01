@@ -5,7 +5,7 @@ excerpt: In this article, I'll try to dispel some Twitter myths and provide some
 permalink: /2009/05/twitter-for-fun-but-not-so-much-for-profit/
 categories: 
 ---
-Over Memorial Day Weekend, I made a new background image and coordinating avatar for <a href="http://twitter.com/crowchick">my Twitter account</a> (psst, I'm CrowChick). It was oodles of fun, but before I started, I did my research (as always) and scoured the Web for resources that might help me improve my background (see the bottom of this post for a list of said resources).
+Over Memorial Day Weekend, I made a new background image and coordinating avatar for <a href="http://twitter.com/rachelnabors">my Twitter account</a> (psst, I'm rachelnabors). It was oodles of fun, but before I started, I did my research (as always) and scoured the Web for resources that might help me improve my background (see the bottom of this post for a list of said resources).
 
 I kept running into articles about "how to get the most out of Twitter," articles from people who promised that with Twitter, you could "build a publicity powerhouse" and "harness the power of the masses." This is of course, a very tall order for the microblogging site to fulfill. This contrasts nicely with the opinion of a coworker of mine, who stated that, "Twitter is a waste of time." And they're not the only person who thinks so!
 

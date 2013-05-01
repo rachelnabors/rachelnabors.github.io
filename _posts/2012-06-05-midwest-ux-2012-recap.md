@@ -24,11 +24,11 @@ The panelists were <a href="http://jessicaivins.net/">Jessica Ivins</a> (pronou
 <h2>Wabi-sabi lightning talk</h2>
 There were lightning talks in the evening, of which I gave one on <em>wabi-sabi,</em> the Japanese concept of "imperfect beauty." It got some great tweets, so I suppose people liked it!
 
-<blockquote class="twitter-tweet">@<a href="https://twitter.com/crowchick">crowchick</a> Great presentation. I felt truly small and yet freed. Simply perfect.</blockquote> <cite>Jessi Sparks (@jessisparks) <a href="https://twitter.com/jessisparks/status/208661353794256896">June 1, 2012</a></cite>
+<blockquote class="twitter-tweet">@<a href="https://twitter.com/rachelnabors">rachelnabors</a> Great presentation. I felt truly small and yet freed. Simply perfect.</blockquote> <cite>Jessi Sparks (@jessisparks) <a href="https://twitter.com/jessisparks/status/208661353794256896">June 1, 2012</a></cite>
 
-<blockquote class="twitter-tweet">You guys, @<a href="https://twitter.com/crowchick">crowchick</a>'s talk on wabi sabi just gave me chills <a href="https://twitter.com/search/%23MWUX12">#MWUX12</a></blockquote> <cite>Denise Chroninger P. (@theguigirl) <a href="https://twitter.com/theguigirl/status/208661963419566080">June 1, 2012</a></cite>
+<blockquote class="twitter-tweet">You guys, @<a href="https://twitter.com/rachelnabors">rachelnabors</a>'s talk on wabi sabi just gave me chills <a href="https://twitter.com/search/%23MWUX12">#MWUX12</a></blockquote> <cite>Denise Chroninger P. (@theguigirl) <a href="https://twitter.com/theguigirl/status/208661963419566080">June 1, 2012</a></cite>
 
-<blockquote class="twitter-tweet">word. RT @<a href="https://twitter.com/laurentgc">laurentgc</a>: You can't buy wabi-sabi at pottery barn @<a href="https://twitter.com/crowchick">crowchick</a> <a href="https://twitter.com/search/%23mwux12">#mwux12</a></blockquote> <cite>Adam Schweigert (@aschweig) <a href="https://twitter.com/aschweig/status/208661665875623936">June 1, 2012</a></cite>
+<blockquote class="twitter-tweet">word. RT @<a href="https://twitter.com/laurentgc">laurentgc</a>: You can't buy wabi-sabi at pottery barn @<a href="https://twitter.com/rachelnabors">rachelnabors</a> <a href="https://twitter.com/search/%23mwux12">#mwux12</a></blockquote> <cite>Adam Schweigert (@aschweig) <a href="https://twitter.com/aschweig/status/208661665875623936">June 1, 2012</a></cite>
 
 <h2>People, Talks and Events</h2>
 Responsive design was a major theme at this year's Midwest UX. Many of the talks I went to were sure to factor it in to any discussion of process. Generally, I think everyone is still uncertain how to make the best of this new tool, but I expect the dust to settle by next year. Responsive images were not brought up once, thankfully.

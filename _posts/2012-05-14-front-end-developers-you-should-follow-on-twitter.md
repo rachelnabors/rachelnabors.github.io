@@ -55,7 +55,7 @@ Have <em>at least</em> 1k in followers. You may or may not be following these gu
   <li><a href="https://twitter.com/#!/mathias">mathias</a></li>
   <li><a href="https://twitter.com/#!/jonikorpi">jonikorpi</a> is a grid nerd and inventor of the <a href="http://goldengridsystem.com/">Golden Grid</a> and <a href="http://framelessgrid.com/">Frameless</a> systems</li>
   <li><a href="https://twitter.com/#!/todd">todd</a> is an accessibility advocate</li>
-  <li><a href="https://twitter.com/#!/crowchick">CrowChick</a> (that's me! I draw comics about <a href="http://www.rachelnabors.com/2012/04/of-github-and-pull-requests-and-comics/">github</a> and <a href="http://www.rachelthegreat.com">things</a>.)</li>
+  <li><a href="https://twitter.com/#!/rachelnabors">rachelnabors</a> (that's me! I draw comics about <a href="http://www.rachelnabors.com/2012/04/of-github-and-pull-requests-and-comics/">github</a> and <a href="http://www.rachelthegreat.com">things</a>.)</li>
 </ul>
 <h2>Big names you probably already follow</h2>
 At least 10k in followers and constantly retweeted by the above.

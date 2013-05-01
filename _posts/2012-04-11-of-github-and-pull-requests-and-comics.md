@@ -21,7 +21,7 @@ All the rejections were polite. All of them were justified. I felt like I'd run 
 
 I bemoaned my situation on Twitter, and <a href="https://twitter.com/#!/averydistracted">Doug Avery</a> replied thusly:
 
-<blockquote class="twitter-tweet"><p>@<a href="https://twitter.com/crowchick">crowchick</a> personally, i get irked when people pull without emailing me first or filing an issue to discuss. but i guess it's contextual</p>&mdash; Doug N. Avery (@averyquery) <a href="https://twitter.com/averyquery/status/189450321246949376">April 9, 2012</a></blockquote>
+<blockquote class="twitter-tweet"><p>@<a href="https://twitter.com/rachelnabors">rachelnabors</a> personally, i get irked when people pull without emailing me first or filing an issue to discuss. but i guess it's contextual</p>&mdash; Doug N. Avery (@averyquery) <a href="https://twitter.com/averyquery/status/189450321246949376">April 9, 2012</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 I'm supposed to email people first? Have I been the Crazy Pull-Request-without Emailing-First Lady?

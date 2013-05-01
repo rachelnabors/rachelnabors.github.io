@@ -117,6 +117,6 @@ It was the <em>crémé de la crémé</em> of CSS geeks, and I'm honored to have 
   <li><a href="http://www.rachelnabors.com/animation/candyHalo1/final/">My Animation</a></li>
   <li><a href="http://www.flickr.com/photos/crowchick/sets/72157632219392614/">Photos</a></li>
   <li>
-<p style="display: inline !important;"><a href="https://twitter.com/CrowChick/css-dev-conf-2012/members">Twitter list of the speakers</a></p>
+<p style="display: inline !important;"><a href="https://twitter.com/rachelnabors/css-dev-conf-2012/members">Twitter list of the speakers</a></p>
 </li>
 </ul>
