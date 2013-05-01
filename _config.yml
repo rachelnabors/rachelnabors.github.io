@@ -3,11 +3,14 @@ description: "Where I post musings about web development, comics, and the future
 
 url: "http://localhost:4000" #http://rachelnabors.com
 
-google_analytics_tracking_id: UA-3631048-6
-
 markdown: rdiscount
 permalink: pretty
 pygments: true
+
+safe: true
+#source: git@github.com:rachelnabors/rachelnabors.git
+#destination: rachelnabors/rachelnabors.github.io
+lsi: false
 
 # Default date format is "ordinal" (resulting in "July 22nd 2007")
 # You can customize the format as defined in
