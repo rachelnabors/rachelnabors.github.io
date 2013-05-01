@@ -3,4 +3,12 @@
 	font-family: $ostrich;
 	text-transform: uppercase;
 	@include padding-leader(9, 40px);
+	@include padding-trailer(2, 40px);
+}
+
+%default-links {
+  	a:link, a:visited, a:hover, a:active {
+		color: $link;
+	}
+	a:visited { color: $link-visited;}
 }

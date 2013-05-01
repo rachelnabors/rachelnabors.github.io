@@ -9,6 +9,7 @@ $grid-padding   : 0;  // grid-padding equal to gutters
 // Site Colors
 
 $black: #141f31;
+$dark_grey: #333b47;
 $grey: #5f697a;
 $bg_blue: #e3edf2;
 //$lite_blue: #dfeff6; //more saturated
@@ -53,6 +54,17 @@ $base-line-height: 6px;
          url('http://fonts.rachelnabors.com/ostrich-regular-webfont.svg#OstrichSansMedium') format('svg');
     font-weight: normal;
     font-style: normal;
+}
+
+@font-face {
+    font-family: 'RNicons';
+    src: url('http://fonts.rachelnabors.com/rn-icons.eot');
+    src: url('http://fonts.rachelnabors.com/rn-icons.eot?#iefix') format('embedded-opentype'),
+         url('http://fonts.rachelnabors.com/rn-icons.woff') format('woff'),
+         url('http://fonts.rachelnabors.com/rn-icons.ttf') format('truetype'),
+         url('http://fonts.rachelnabors.com/rn-icons.svg#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
 
 }
 
@@ -63,3 +75,33 @@ $monospace: monospace;
 $franklin: franklin-gothic-urw, sans-serif;
     $bold: 700;
     $normal: 400;
+
+// Icon short-list
+/*
+deviantart: "\e000" &#57344
+
+feed: "\e001" &#57345
+
+twitter: "\e002" &#57346
+
+google-plus: "\e005" &#57349
+
+forrst: "\e006" &#57350
+
+dribbble: "\e003" &#57347
+
+codepen "\e004" &#57348
+
+linkedin: "\e007" &#57351
+
+star: "\2729" &#10025
+
+arrow-right: "\27f6" &#10230
+
+arrow-left: "\27f5" &#10229
+
+heart: "\2764" &#10084
+
+headphones: "\e008" &#57352
+
+*/

@@ -18,7 +18,7 @@ header .meta {
 
 .entry-title {	
 	@extend .page-title;
-	// @include padding-leader(3, 40px);
+	padding-bottom: 0;
 }
 
 .entry-content {
@@ -30,6 +30,18 @@ header .meta {
 	}
 	ol {
 		list-style: decimal outside;
+	}
+	ul li:before {
+	    font-family: 'RNicons';
+		speak: none;
+		font-style: normal;
+		font-weight: normal;
+		font-variant: normal;
+		text-transform: none;
+		line-height: 1;
+		-webkit-font-smoothing: antialiased;
+	    content: "\2729";
+		margin-left: -1em;
 	}
 	li {
 		@include padding-trailer(2);		

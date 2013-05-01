@@ -3,8 +3,9 @@ layout: post
 title: CSS3 Animations Roundup
 excerpt: Lately I've been on a CSS3 Animations/HTML5 audio jag. It's just so much fun,﻿ I've been working hard to share my techniques with everyone.
 permalink: /2012/12/css3-animations-roundup/
-featured-image: http://media.rachelnabors.com/wp-content/uploads/2012/09/tuna-waits_dribbble.jpg?5c0150
+featured-image: http://media.rachelnabors.com/wp-content/uploads/2012/09/tuna-waits_dribbble.jpg
 categories: animation
+featured: true
 ---
 Lately I've been on a CSS3 Animations/HTML5 audio jag. It's <strong>just so much fun,</strong> I've been working hard to share my techniques with everyone:
 <ul>

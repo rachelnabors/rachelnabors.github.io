@@ -34,3 +34,12 @@
 @function calc-em($target-px, $context) {
   @return ($target-px / $context) * 1em;
 }
+
+// CSS Filters mixins via Eppstein https://gist.github.com/chriseppstein/2884618
+@mixin filter( $var ) {
+  -webkit-filter: $var;
+  -moz-filter: $var;
+  -ms-filter: $var;
+  -o-filter: $var;
+  filter: $var;
+}

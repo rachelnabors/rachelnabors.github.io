@@ -7,19 +7,36 @@ body {
 	background: $black;
 	@include container();
 	margin: 0;
-	@include susy-grid-background;
+	// @include susy-grid-background;
+}
+
+//anything iconic
+[data-icon]:before {
+  font-family: 'RNicons'; /* BYO icon font, mapped smartly */
+  content: attr(data-icon);
+  speak: none; /* Not to be trusted, but hey. */
+}
+
+// Current Page indicator--should prolly have a star or sumfin, too.
+#body-archives .nav-archives, #body-post .nav-archives {
+	color: $mauve !important;
 }
 
 .masthead {
 	background: $black;
 	color: #fff;
-	@include padding-leader();
 	@include span-columns(2, 9);
 	margin-right: gutter(9)*.5;
 	text-align: right;
 	.site-logo {
 		@include adjust-font-size-to(36px, 4, 24px);
 		@include margin-trailer(4, 36px);
+		@include margin-leader(2, 36px);
+		.icon { 
+			font-size: .6em;
+			margin-right: .25em;
+			position: relative; top: -.25em;
+		}
 		&:link, &:visited {
 			color: #fff;
 		}
@@ -32,11 +49,7 @@ body {
 		text-transform: uppercase;
 		@include padding-leader(1, 24px);
 		@include padding-trailer(1, 24px);
-		@include adjust-font-size-to(24px);
-	}
-	small {
-		@include opacity(.5);
-		@include adjust-font-size-to(12px)
+		@include adjust-font-size-to(24px, 4, 16px);
 	}
 	a { display: block;}	
 	a:link, a:visited, a:hover, a:active {
@@ -49,16 +62,14 @@ body {
 }
 
 .main {
-	@include opacity(.75);
+	// @include opacity(.75);
 	background: $bg_blue;	
 	color: $black;
 	@include span-columns(6 omega, 9);
 	padding-left: gutter(9)*1.5 + columns(1, 9);
+	position: relative;
   	@include adjust-leading-to(4);
-  	a:link, a:visited, a:hover, a:active {
-		color: $link;
-	}
-	a:visited { color: $link-visited;}
+  	@extend %default-links;
 }
 
 strong, b { font-weight: bold;}
@@ -67,4 +78,13 @@ em, i {font-style: italic;}
 .headline {
 	font-family: $ostrich;
 	@include adjust-font-size-to(48px);
+}
+
+.page-section {
+	@include margin-trailer(6);
+}
+
+.copyright {
+	@include opacity(.5);
+	@include adjust-font-size-to(12px)
 }

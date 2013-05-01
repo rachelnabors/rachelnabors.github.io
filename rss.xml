@@ -1,0 +1,28 @@
+---
+layout: nil
+---
+<?xml version="1.0"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+
+  <channel>
+    <title>{{ site.title }}</title>
+    <link>http://rachelnabors.com/</link>
+    <atom:link href="http://rachelnabors.com/rss.xml" rel="self" type="application/rss+xml" />
+    <description>{{ site.description }}</description>
+    <language>en-us</language>
+    <pubDate>{{ site.time | date: "%a, %d %b %Y %H:%M:%S %Z" }}</pubDate>
+    <lastBuildDate>{{ site.time | date: "%a, %d %b %Y %H:%M:%S %Z" }}</lastBuildDate>
+
+    {% for post in site.posts %}
+      <item>
+        <title>{{ post.title }}</title>
+        <link>http://rachelnabors.com{{ post.url }}</link>
+        <pubDate>{{ post.date | date: "%a, %d %b %Y %H:%M:%S %Z" }}</pubDate>
+        <author>Rachel Nabors</author>
+        <guid>http://rachelnabors.com{{ post.url }}</guid>
+        <description>{{ post.excerpt }}</description>
+      </item>
+    {% endfor %}
+
+  </channel>
+</rss>
