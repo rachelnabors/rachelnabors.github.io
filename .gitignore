@@ -2,5 +2,7 @@
 .DS_Store
 .sass-cache
 .pygments-cache
+_site
+_site/*
 _deploy
 vendor
