@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html class="no-js">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>What--I don't even: Comment tags and HTML5 - </title>
+		
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width">
+
+		<script>(function(H){H.className=H.className.replace(/\bno-js\b/,'js')})(document.documentElement)</script>
+
+		
+		<link rel="canonical" href="http://localhost:4000/2012/02/what-i-dont-even-comment-tags-and-html5/">
+		<link href="/css/style.css" rel="stylesheet" type="text/css">
+
+		
+	</head>
+	<body  id="body-post" >
+		<!--[if lt IE 10]>
+			<p class="chromeframe">Hmm. Your browser doesn't support the animations I'm sporting. You might <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to get the full experience.</p>
+		<![endif]-->
+		<div class="container">
+
+<div class="masthead">
+	<nav role="navigation">
+		<a href="/" class="site-logo"><span aria-hidden="true" data-icon="&#10025;" class="icon"></span>Rachel Nabors</a>
+	<!-- Speaking -->
+		<a href="/archive" class="nav-archives">Blog</a>
+		<a href="mailto:aloha@rachelnabors.com">Contact</a>
+	</nav>
+	<small class="copyright">Copyright &copy; 2008 &ndash; 2013 Rachel Nabors</small>
+</div>
+	<div class="main">
+		<article class="hentry" role="article">
+			<header class="entry-header">
+				<h1 class="entry-title">What--I don't even: Comment tags and HTML5</h1>
+				<p class="meta">
+					<time>03 February 2012</time> 
+					
+						| <a href="#disqus_thread">Comments</a>
+					
+				</p>
+			</header>
+			<div class="entry-content">
+				<p>I have complained that the HTML5 spec is too blog-centric ever since my beloved dialong tag got cut. (I will never forget it. <em>Never!</em>) But apparently <a href="http://lists.whatwg.org/pipermail/whatwg-whatwg.org/2012-January/034506.html">it's not blog-centric enough to have a comment tag</a>. In HTML5, we're supposed to markup comments as articles nested within the article they comment on! Ian Hickson, aka <a href="http://twitter.com/hixie">@hixie</a>, thinks that comments stand just fine on their own and are not subservient to the content they comment upon in meaning or weight. That's a very egalitarian view often pushed by people in technocratic online societies where members often do have valid comments that could stand on equal footing with the original article in question.</p>
+
+<p>However, the rest of the Internet is not so enlightened. Other communities online are often not as legitimate as the ones we developers and designers use. Music and teen sites, for instance, have lots of "OMG I LUV YOU!" comments that do not add to the body of human knowledge nor express an opinion worth weighing.</p>
+
+<p>The original often weighs more than its comments, and most comments cannot be interpreted without reference to that which they commented upon or the other comments surrounding it. If someone made a comment that was perfectly understandable without the context of the original article and encompassing discussion, they'd have essentially written a new article worthy of publication, filled with blockquotes, references, and citations. But this comment type makes up perhaps .05% of online discussion threads. It is the place of an editor to decide what is an is not an article, not the machine interpreting markup. The machine can only interpret hierarchy, not worth.</p>
+
+<p>"Words are cheap," as old folks say, "'cuz everybody's got 'em." You ever stumble onto a user group thread in a Google search? A single, stand alone comment, no context for what is being commented on, and only a small, hard to follow chain of links to other messages in the thread to go on. Maybe if you grew up using user groups you can navigate this train of thought. But for the majority of Internet users (myself, mother, sister and niece included), this is a <em>fragment</em> of thought, and it's not very useful.</p>
+
+<p>Then there's what I call the "messiness" factor. As a front-ender, I have a hate-hate relationship with nested elements--lists specifically. If you've styled or parsed lists within lists, you know it is a pain in the arse. And if someone, like a human being, forgets to close a tag, two lists become a one list with a child list. Imagine what happens on a page with many articles. If someone leaves out but one closing tag for one of the articles, suddenly all the articles following it are interpreted as comments! To me this doesn't fit with HTML5's flexible, forgiving nature. HTML5 moves away from XHTML's "all tags must be closed or self-closing!" demands.<a href="http://stackoverflow.com/questions/3008593/html-include-or-exclude-optional-closing-tags"> In HTML5, it's okay if you don't close your <code>&lt;head&gt;</code></a>, heck you don't even need a <code>&lt;head&gt;</code>! This way we maintain forward-compatibility and don't break the legacy half of the Internet. But you <em>have</em> to include closing tags for articles (although not for head or body tags) lest you run the risk of them being significantly misinterpreted. That's not foolproof. That's punishment!</p>
+
+<p>Am I saying we need a comment tag? Not necessarily. But I think interpreting nested articles as comments will only cause trouble down the line. I'm not opposed to a comment tag. I think people would use the heck out of it, and it would give browsers, search engines, and machines in general a very useful hook to better understand data relationships on the page. That's my rant! What's your beef?</p>
+
+			</div>
+			<nav class="post-nav">
+			  
+				<a class="prev-post" href="/2012/01/new-year-new-company-new-site/" title="Previous Post: New Year, New Company, New Site">New Year, New Company, New Site</a>
+			  
+			  
+				<a class="next-post" href="/2012/02/how-to-scare-off-female-developers/" title="Next Post: How to scare off female developers">How to scare off female developers</a>
+			  
+			</nav>
+		</article>
+		
+		<section id="comments">
+			<h1>Comments</h1>
+			<div id="disqus_thread" aria-live="polite"></div>
+			<script type="text/javascript">
+				var disqus_shortname = 'rachelnabors';
+				(function() {
+					var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+					dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+					(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+
+					var s = document.createElement('script'); s.async = true;
+					s.type = 'text/javascript';
+					s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+					(document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+
+				})();
+			</script>
+			<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+			<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+		</section>
+		
+	</div>
+	</div>
+	</body>
+</html>

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html class="no-js">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>Making a case for the dialog element in HTML 5 - </title>
+		
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width">
+
+		<script>(function(H){H.className=H.className.replace(/\bno-js\b/,'js')})(document.documentElement)</script>
+
+		
+		<link rel="canonical" href="http://localhost:4000/2009/09/making-a-case-for-dialog-in-html-5/">
+		<link href="/css/style.css" rel="stylesheet" type="text/css">
+
+		
+	</head>
+	<body  id="body-post" >
+		<!--[if lt IE 10]>
+			<p class="chromeframe">Hmm. Your browser doesn't support the animations I'm sporting. You might <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to get the full experience.</p>
+		<![endif]-->
+		<div class="container">
+
+<div class="masthead">
+	<nav role="navigation">
+		<a href="/" class="site-logo"><span aria-hidden="true" data-icon="&#10025;" class="icon"></span>Rachel Nabors</a>
+	<!-- Speaking -->
+		<a href="/archive" class="nav-archives">Blog</a>
+		<a href="mailto:aloha@rachelnabors.com">Contact</a>
+	</nav>
+	<small class="copyright">Copyright &copy; 2008 &ndash; 2013 Rachel Nabors</small>
+</div>
+	<div class="main">
+		<article class="hentry" role="article">
+			<header class="entry-header">
+				<h1 class="entry-title">Making a case for the dialog element in HTML 5</h1>
+				<p class="meta">
+					<time>19 September 2009</time> 
+					
+						| <a href="#disqus_thread">Comments</a>
+					
+				</p>
+			</header>
+			<div class="entry-content">
+				<p>I'd spent a lot of time writing a post about the glorious new tags introduced in HTML 5, but unfortunately, just as I was about to put it up, I caught wind that <a href="http://html5doctor.com/september-html5-spec-changes/">the spec for the &lt;dialog&gt; tag has been nixed</a>. Considering that a hefty portion of my article was devoted to illustrating how the new tag could be put to use to display dynamically generated web comics of instant message conversations, I was understandably put out.</p>
+
+<h2>The dialog element was just a glorified definition list.</h2>
+
+
+<p>Originally, this was the suggestion for <a href="http://html5doctor.com/a-little-more-conversation-with-dialog/">how to use <code>&lt;dialog&gt;</code></a>:
+<code>
+&lt;dialog&gt;
+&lt;dt&gt;Brenda&lt;/dt&gt;
+&lt;dd&gt;I love Coco Wheats!&lt;/dd&gt;
+&lt;dt&gt;Jason&lt;/dt&gt;
+&lt;dd&gt;I prefer Malt-O-Meal.&lt;/dd&gt;
+&lt;/dialog&gt;
+</code>
+Look familiar?
+<code>
+&lt;dl&gt;
+&lt;dt&gt;Coco Wheats&lt;/dt&gt;
+&lt;dd&gt;A cream hot cereal with a cocoa treat.&lt;/dd&gt;
+&lt;dt&gt;Malt-O-Meal&lt;/dt&gt;
+&lt;dd&gt;Like Coco Wheats only with malt instead of coca powder.&lt;/dd&gt;
+&lt;/dl&gt;
+</code>
+Yes, <code>&lt;dialog&gt;</code> is unabashedly based on the definition list. It doesn't even try to hide the "data term" and "data definition" tags as it appropriates them. Admittedly, most people either don't use or don't know how to use definition lists because <a href="http://www.w3.org/TR/html401/struct/lists.html#h-10.3">the official definition list specification</a> is rather sketchy. But that's no reason to hijack its structure! Personally, I do not think the definiton list structure is perfectly suitable for dialog markup because:</p>
+
+<ol>
+  <li>It allows multiple definitions for one term (or quotes for one speaker... I feel it would be better to lump these into one element and use paragraph elements to break up longer monologues).</li>
+  <li>There is no way to indicate time.</li>
+  <li>There is no way to make comments, as in an interview when the author inserts an explanatory note or in a play when the scene changes)</li>
+</ol>
+
+
+<h2>Why do we need dialog markup, anyway?</h2>
+
+
+<p><a href="http://lists.w3.org/Archives/Public/public-html/2009Sep/0041.html">Microsoft complained that they didn't see the point in adding semantic tags for marking up conversations,</a> something people currently use p and div elements to do. <em>(Do recall that Microsoft doesn't exactly have a stellar track record for leading the Web browsing experience to new heights of excellence.</em>) They are also concerned that adding such an element to the HTML 5 spec would make more work for them.</p>
+
+<p>Most discussions on this matter only use chat logs as examples of what dialog markup could be used for. Yes, chat logs seem rather trivial in the grand scheme of things. But what about plays? Interviews? <strong>Dynamically generated comics books? </strong>(Not to push my own cause!) Okay, excluding that last one, the other two are potentially big deals. Imagine if screen readers adopted a different tone when reading transcripts to the visually impaired. Imagine if we could use this to convey great plays of yore to little kids one day. None of this would happen tomorrow of course, but it can't happen at all without proper markup.</p>
+
+<p>We are told that plenty of people are currently <a href="http://www.whatwg.org/specs/web-apps/current-work/multipage/commands.html#conversations">using the paragraph element with a sprinkling of non-semantic tags and a few extra classes to get by</a> and that that'll have to do. To me, this sounds a lot like <a href="http://microformats.org/">microformats</a>. The semantics harpy in me wants special tags.</p>
+
+<h2>Ideas for <code>&lt;dialog&gt;</code></h2>
+
+
+<h3>For simple conversations</h3>
+
+
+<p><code>&lt;dialog&gt;
+&lt;speaker&gt;Brenda&lt;/speaker&gt;
+&lt;line&gt;I love Coco Wheats!&lt;/line&gt;
+&lt;speaker&gt;Jason&lt;/speaker&gt;
+&lt;line&gt;I prefer Malt-O-Meal.&lt;/line&gt;
+&lt;/dialog&gt;</code></p>
+
+<h3>For plays</h3>
+
+
+<p><code>&lt;dialog&gt;</code><code>
+&lt;time&gt;11:20am&lt;/time&gt;
+&lt;speaker&gt;Brenda&lt;/speaker&gt;
+&lt;line&gt;I love Coco Wheats!&lt;/line&gt;
+&lt;speaker&gt;Jason&lt;/speaker&gt;
+</code><code> &lt;line&gt;I prefer Malt-O-Meal.&lt;/line&gt;
+</code><code> &lt;time&gt;11:30am&lt;/time&gt;
+&lt;aside&gt;They have finished eating.&lt;/aside&gt;
+&lt;speaker&gt;Brenda&lt;/speaker&gt;</code><code>
+&lt;line&gt;I think I ate too much.&lt;/line&gt;
+&lt;aside</code><code>&gt;Brenda burps&lt;/aside&gt;
+</code><code>&lt;/dialog&gt;</code></p>
+
+<h3>For chat logs</h3>
+
+
+<p><code>&lt;dialog&gt;</code><code>
+&lt;time&gt;11:20am&lt;/time&gt;
+&lt;speaker&gt;Brenda&lt;/speaker&gt;
+&lt;line&gt;Hiya Jason!&lt;/line&gt;
+</code><code>&lt;time&gt;11:30am&lt;/time&gt;
+&lt;speaker&gt;Jason&lt;/speaker&gt;</code><code>
+&lt;line&gt;</code><code>Sorry, I was away from my computer!&lt;/line&gt;</code><code>
+</code><code>&lt;/dialog&gt;</code></p>
+
+<p>How would <em>you</em> markup a conversation?</p>
+
+			</div>
+			<nav class="post-nav">
+			  
+				<a class="prev-post" href="/2009/05/twitter-for-fun-but-not-so-much-for-profit/" title="Previous Post: Twitter for Fun, but not so much for profit.">Twitter for Fun, but not so much for profit.</a>
+			  
+			  
+				<a class="next-post" href="/2009/09/lovemysmartcar-com-how-viral-media-can-be-deterred-with-social-media/" title="Next Post: lovemysmartcar.com: How viral media can be deterred with social media">lovemysmartcar.com: How viral media can be deterred with social media</a>
+			  
+			</nav>
+		</article>
+		
+		<section id="comments">
+			<h1>Comments</h1>
+			<div id="disqus_thread" aria-live="polite"></div>
+			<script type="text/javascript">
+				var disqus_shortname = 'rachelnabors';
+				(function() {
+					var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+					dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+					(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+
+					var s = document.createElement('script'); s.async = true;
+					s.type = 'text/javascript';
+					s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+					(document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+
+				})();
+			</script>
+			<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+			<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+		</section>
+		
+	</div>
+	</div>
+	</body>
+</html>

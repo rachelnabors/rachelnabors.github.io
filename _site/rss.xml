@@ -1,0 +1,412 @@
+<?xml version="1.0"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+
+  <channel>
+    <title></title>
+    <link>http://rachelnabors.com/</link>
+    <atom:link href="http://rachelnabors.com/rss.xml" rel="self" type="application/rss+xml" />
+    <description>Where I post musings about web development, comics, and the future of online interaction.</description>
+    <language>en-us</language>
+    <pubDate>Thu, 02 May 2013 18:27:39 EDT</pubDate>
+    <lastBuildDate>Thu, 02 May 2013 18:27:39 EDT</lastBuildDate>
+
+    
+      <item>
+        <title>JavaScript Study for Designers</title>
+        <link>http://rachelnabors.com/2013/01/javascript-study-for-designers/</link>
+        <pubDate>Sat, 12 Jan 2013 00:00:00 EST</pubDate>
+        <author>Rachel Nabors</author>
+        <guid>http://rachelnabors.com/2013/01/javascript-study-for-designers/</guid>
+        <description>I always thought I was bad at JavaScript. It turned out I was just trying to read books that were way above my learning level. I don't have a programming background like the authors of those books, so I only started making headway after coming at the problem from a different, more fun angle.</description>
+      </item>
+    
+      <item>
+        <title>CSS Dev Conf Recap</title>
+        <link>http://rachelnabors.com/2012/12/css-dev-conf-recap/</link>
+        <pubDate>Wed, 19 Dec 2012 00:00:00 EST</pubDate>
+        <author>Rachel Nabors</author>
+        <guid>http://rachelnabors.com/2012/12/css-dev-conf-recap/</guid>
+        <description>CSS Dev Conf was just wow. I had a blast and got to meet so many intelligent and witty CSS lovers. My talk on CSS animations was a hit. The ocean tried to kill me. And I broke out in hives. I'd do it all again!</description>
+      </item>
+    
+      <item>
+        <title>CSS3 Animations Roundup</title>
+        <link>http://rachelnabors.com/2012/12/css3-animations-roundup/</link>
+        <pubDate>Sat, 08 Dec 2012 00:00:00 EST</pubDate>
+        <author>Rachel Nabors</author>
+        <guid>http://rachelnabors.com/2012/12/css3-animations-roundup/</guid>
+        <description>Lately I've been on a CSS3 Animations/HTML5 audio jag. It's just so much fun,﻿ I've been working hard to share my techniques with everyone.</description>
+      </item>
+    
+      <item>
+        <title>Crib sheet + demo: CSS3 transitions, transformations, and animations</title>
+        <link>http://rachelnabors.com/2012/10/crib-sheet-demo-css3-transitions-transformations-and-animations/</link>
+        <pubDate>Mon, 01 Oct 2012 00:00:00 EDT</pubDate>
+        <author>Rachel Nabors</author>
+        <guid>http://rachelnabors.com/2012/10/crib-sheet-demo-css3-transitions-transformations-and-animations/</guid>
+        <description>In my preparations for my CSS Dev Conference session on music videos with CSS3 and HTML5 audio, I've been keeping notes and making some sample animations. Please enjoy the fruits of my experimentation and a demo page featuring a small furry dude...</description>
+      </item>
+    
+      <item>
+        <title>Recruiters, you're doing it wrong</title>
+        <link>http://rachelnabors.com/2012/09/recruiters-youre-doing-it-wrong/</link>
+        <pubDate>Wed, 19 Sep 2012 00:00:00 EDT</pubDate>
+        <author>Rachel Nabors</author>
+        <guid>http://rachelnabors.com/2012/09/recruiters-youre-doing-it-wrong/</guid>
+        <description>If I'd known it was Bash Recruiters Week, I might have abstained from posting this, but I already had the comics drawn, so what the hey. TLDR? Recruiters: Stop being lazy and do your own damn work.</description>
+      </item>
+    
+      <item>
+        <title>CSS Dev Conference, here I come!</title>
+        <link>http://rachelnabors.com/2012/09/css-dev-conference-here-i-come/</link>
+        <pubDate>Mon, 10 Sep 2012 00:00:00 EDT</pubDate>
+        <author>Rachel Nabors</author>
+        <guid>http://rachelnabors.com/2012/09/css-dev-conference-here-i-come/</guid>
+        <description>I'm speaking at CSS Dev Conf in December alongside Kyle Weems, Estelle Weyl, Dan Cederholm... And I'm speaking about making music videos with CSS3 and HTML5! But first, some questions for you... (plus coupon!)</description>
+      </item>
+    
+      <item>
+        <title>Portland, OSCON, and World Domination Summit</title>
+        <link>http://rachelnabors.com/2012/09/portland-oscon-and-world-domination-summit/</link>
+        <pubDate>Sun, 19 Aug 2012 00:00:00 EDT</pubDate>
+        <author>Rachel Nabors</author>
+        <guid>http://rachelnabors.com/2012/09/portland-oscon-and-world-domination-summit/</guid>
+        <description>I spent July in Portland where I attended World Domination Summit and OSCON. I attended many meetups and reconnected with people I'd only ever known on Twitter. The verdict on Portland's dev scene? Pure win.</description>
+      </item>
+    
+      <item>
+        <title>Lost in NYC: A dev blogger at BlogHer 2012</title>
+        <link>http://rachelnabors.com/2012/09/lost-in-nyc-a-dev-blogger-at-blogher-2012/</link>
+        <pubDate>Thu, 09 Aug 2012 00:00:00 EDT</pubDate>
+        <author>Rachel Nabors</author>
+        <guid>http://rachelnabors.com/2012/09/lost-in-nyc-a-dev-blogger-at-blogher-2012/</guid>
+        <description>I just got back from speaking at BlogHer 2012, not only the world's largest blogger conference, but also almost entirely attended by women! As a person who builds the Internet, it was interesting to connect with the people who write the Internet. (And I got this great picture of me and Twilight Sparkle to show for it!)</description>
+      </item>
+    
+      <item>
+        <title>Midwest UX 2012 Recap</title>
+        <link>http://rachelnabors.com/2012/06/midwest-ux-2012-recap/</link>
+        <pubDate>Tue, 05 Jun 2012 00:00:00 EDT</pubDate>
+        <author>Rachel Nabors</author>
+        <guid>http://rachelnabors.com/2012/06/midwest-ux-2012-recap/</guid>
+        <description>Midwest UX was the best conference I have been to yet, period. It was organized and run like a well-oiled machine, surprising in such a young conference. I was able to meet many people I have only know on Twitter and made friends with many more I have never known before. In spite of a freak cold snap, I survived, pirate boots and all.</description>
+      </item>
+    
+      <item>
+        <title>Comics and UX</title>
+        <link>http://rachelnabors.com/2012/05/comics-and-ux/</link>
+        <pubDate>Thu, 24 May 2012 00:00:00 EDT</pubDate>
+        <author>Rachel Nabors</author>
+        <guid>http://rachelnabors.com/2012/05/comics-and-ux/</guid>
+        <description>Check out my two new articles on UX Booth about comics and UX!</description>
+      </item>
+    
+      <item>
+        <title>Front End Developers you should follow on Twitter</title>
+        <link>http://rachelnabors.com/2012/05/front-end-developers-you-should-follow-on-twitter/</link>
+        <pubDate>Mon, 14 May 2012 00:00:00 EDT</pubDate>
+        <author>Rachel Nabors</author>
+        <guid>http://rachelnabors.com/2012/05/front-end-developers-you-should-follow-on-twitter/</guid>
+        <description>When culling my Twitter stream, I wondered why so many great front-end developers I follow have so few followers. A fellow frontie convinced me to list them all here for your convenience!</description>
+      </item>
+    
+      <item>
+        <title>Work is never done.</title>
+        <link>http://rachelnabors.com/2012/05/work-is-never-done/</link>
+        <pubDate>Tue, 01 May 2012 00:00:00 EDT</pubDate>
+        <author>Rachel Nabors</author>
+        <guid>http://rachelnabors.com/2012/05/work-is-never-done/</guid>
+        <description>Sometimes I have to be firm with myself to release projects, even if I'm tempted to keep pushing deadlines back in hopes of achieving 'perfection.' But today's perfection is tomorrow's failure. Weigh your time, your manpower, and the needs of your users against your to-do list, and don't shortchange the most important people in the equation to satisfy your own sense of achievement.</description>
+      </item>
+    
+      <item>
+        <title>Of GitHub and Pull Requests (and comics)</title>
+        <link>http://rachelnabors.com/2012/04/of-github-and-pull-requests-and-comics/</link>
+        <pubDate>Wed, 11 Apr 2012 00:00:00 EDT</pubDate>
+        <author>Rachel Nabors</author>
+        <guid>http://rachelnabors.com/2012/04/of-github-and-pull-requests-and-comics/</guid>
+        <description>I wanted to contribute to a few GitHub repos, but all of my pull requests got shot down. Where did I go wrong? How would you recommend I go about it in the future?</description>
+      </item>
+    
+      <item>
+        <title>Golden Uterus Redux</title>
+        <link>http://rachelnabors.com/2012/03/golden-uterus-redux/</link>
+        <pubDate>Mon, 05 Mar 2012 00:00:00 EST</pubDate>
+        <author>Rachel Nabors</author>
+        <guid>http://rachelnabors.com/2012/03/golden-uterus-redux/</guid>
+        <description>A retrospect on the discussion surrounding my previous post, 'How to Scare off Female Developers,' and Mark Jaquith's Golden Uterus... in comic form!</description>
+      </item>
+    
+      <item>
+        <title>How to scare off female developers</title>
+        <link>http://rachelnabors.com/2012/02/how-to-scare-off-female-developers/</link>
+        <pubDate>Sun, 19 Feb 2012 00:00:00 EST</pubDate>
+        <author>Rachel Nabors</author>
+        <guid>http://rachelnabors.com/2012/02/how-to-scare-off-female-developers/</guid>
+        <description>I know developers of both sexes don't have a reputation for being the most socially adept creatures. But would it hurt male developers like Mark Jaquith to try to not piss female developers off?</description>
+      </item>
+    
+      <item>
+        <title>What--I don't even: Comment tags and HTML5</title>
+        <link>http://rachelnabors.com/2012/02/what-i-dont-even-comment-tags-and-html5/</link>
+        <pubDate>Fri, 03 Feb 2012 00:00:00 EST</pubDate>
+        <author>Rachel Nabors</author>
+        <guid>http://rachelnabors.com/2012/02/what-i-dont-even-comment-tags-and-html5/</guid>
+        <description>I have complained that the HTML5 spec is too blog-centric ever since my beloved dialong tag got cut. But apparently it's not blog-centric enough to have a comment tag. In HTML5, we're supposed to markup comments as articles nested within the article they comment on. I see a number of ways this method could fail, both in implementation and interpretation.</description>
+      </item>
+    
+      <item>
+        <title>New Year, New Company, New Site</title>
+        <link>http://rachelnabors.com/2012/01/new-year-new-company-new-site/</link>
+        <pubDate>Mon, 23 Jan 2012 00:00:00 EST</pubDate>
+        <author>Rachel Nabors</author>
+        <guid>http://rachelnabors.com/2012/01/new-year-new-company-new-site/</guid>
+        <description>Somehow I managed to change jobs just at the beginning of 2012. I've built this new site, shut down my old, and have embarked on yet another leg of my career journey. Year of the Dragon, I'm going to kick your ass.</description>
+      </item>
+    
+      <item>
+        <title>Between the head and the hand there must be User Experience</title>
+        <link>http://rachelnabors.com/2011/10/user-experience/</link>
+        <pubDate>Sat, 01 Oct 2011 00:00:00 EDT</pubDate>
+        <author>Rachel Nabors</author>
+        <guid>http://rachelnabors.com/2011/10/user-experience/</guid>
+        <description>Recently at the Web Professional's Book Club some of my cohorts professed a lack of faith in "UX" or "User Experience" professionals, casting them alongside SEO salesmen. I was shocked. In all my career, I have always looked up to UXers as a sort of glowing stag in the forest of the Internet. We are surrounded by bad design and clumsy interfaces. I always imagined user experience designers as the people behind the bright spots on the Internet, a force to be respected and emulated. So naturally I was a bit bewildered. Do we really need User Experience Designers? I think so.</description>
+      </item>
+    
+      <item>
+        <title>Are Startups Worse as Single-Gender Affairs?</title>
+        <link>http://rachelnabors.com/2011/08/are-startups-worse-as-single-gender-affairs/</link>
+        <pubDate>Sat, 06 Aug 2011 00:00:00 EDT</pubDate>
+        <author>Rachel Nabors</author>
+        <guid>http://rachelnabors.com/2011/08/are-startups-worse-as-single-gender-affairs/</guid>
+        <description>Penelope Trunk's op ed "Are Startups Better as Single-Gender Affairs?" article raised a few eyebrows and a few voices in the female web workers community. My two cents? People are people, and startups should be like families, not monocultures.</description>
+      </item>
+    
+      <item>
+        <title>Of WordPress, comics, and webdesign: Speaking at function pink() and NC Dev Con</title>
+        <link>http://rachelnabors.com/2011/08/of-wordpress-comics-and-webdesign-speaking-at-function-pink-and-nc-dev-con/</link>
+        <pubDate>Thu, 04 Aug 2011 00:00:00 EDT</pubDate>
+        <author>Rachel Nabors</author>
+        <guid>http://rachelnabors.com/2011/08/of-wordpress-comics-and-webdesign-speaking-at-function-pink-and-nc-dev-con/</guid>
+        <description>I'm giving two talks in the next two months: a workshop on WordPress theme development and a talk about telling your site's story with words and pictures based on my experience as a cartoonist. Do pop by and have a look if you're in Raleigh!</description>
+      </item>
+    
+      <item>
+        <title>Don't wiggle away from responsibility</title>
+        <link>http://rachelnabors.com/2011/07/dont-wiggle-away-from-responsibility/</link>
+        <pubDate>Fri, 15 Jul 2011 00:00:00 EDT</pubDate>
+        <author>Rachel Nabors</author>
+        <guid>http://rachelnabors.com/2011/07/dont-wiggle-away-from-responsibility/</guid>
+        <description>When we must confront something negative, like letting a client down on a deadline, or telling a junior to get back to work on a task, we want to slither away and hide under a rock until... until what? The difficulty passes? It doesn't pass. It just gets bigger and harder to avoid.</description>
+      </item>
+    
+      <item>
+        <title>Responsive Design vs. the (real) World</title>
+        <link>http://rachelnabors.com/2011/06/responsive-design-vs-the-real-world/</link>
+        <pubDate>Mon, 27 Jun 2011 00:00:00 EDT</pubDate>
+        <author>Rachel Nabors</author>
+        <guid>http://rachelnabors.com/2011/06/responsive-design-vs-the-real-world/</guid>
+        <description>I do not think responsive design a the be-all and end-all solution for the mobile web, and by "mobile web" I mean "the web on small screens over sluggish connections." But I think media queries are actually one of the best things to happen to web design in recent years, right up there with decent font embedding.</description>
+      </item>
+    
+      <item>
+        <title>Simple Steps To WordPress Security Talk</title>
+        <link>http://rachelnabors.com/2011/05/simple-steps-to-wordpress-security-talk/</link>
+        <pubDate>Sat, 21 May 2011 00:00:00 EDT</pubDate>
+        <author>Rachel Nabors</author>
+        <guid>http://rachelnabors.com/2011/05/simple-steps-to-wordpress-security-talk/</guid>
+        <description></description>
+      </item>
+    
+      <item>
+        <title>I'll be speaking about Security at WordCamp Raleigh in May</title>
+        <link>http://rachelnabors.com/2011/04/ill-be-speaking-about-security-at-wordcamp-raleigh-in-may/</link>
+        <pubDate>Sun, 24 Apr 2011 00:00:00 EDT</pubDate>
+        <author>Rachel Nabors</author>
+        <guid>http://rachelnabors.com/2011/04/ill-be-speaking-about-security-at-wordcamp-raleigh-in-may/</guid>
+        <description>I'll be giving a talk on Simple Steps to WordPress Security at WordCamp Raleigh on Saturday, May 1st, from 11am to 12pm. Come, join me, and we shall make the Internet a safer, less hackable space!</description>
+      </item>
+    
+      <item>
+        <title>Featured on istockphoto for use of Pantone's color of the year</title>
+        <link>http://rachelnabors.com/2011/01/featured-on-istockphoto-pink-honeysuckle/</link>
+        <pubDate>Mon, 31 Jan 2011 00:00:00 EST</pubDate>
+        <author>Rachel Nabors</author>
+        <guid>http://rachelnabors.com/2011/01/featured-on-istockphoto-pink-honeysuckle/</guid>
+        <description></description>
+      </item>
+    
+      <item>
+        <title>Rant: Whiny web developers on IE and AJAX</title>
+        <link>http://rachelnabors.com/2011/01/rant-whiny-web-developers-on-ie-and-ajax/</link>
+        <pubDate>Sun, 23 Jan 2011 00:00:00 EST</pubDate>
+        <author>Rachel Nabors</author>
+        <guid>http://rachelnabors.com/2011/01/rant-whiny-web-developers-on-ie-and-ajax/</guid>
+        <description>I am deeply disappointed in some of my fellow designers and developers. There seems to be trend of shifting blame from ourselves to the people who use our sites. I hear lots of whining about how "Internet Explorer broke my design!" and "Why would anyone ever use our site without JavaScript enabled? We don't need to have a fallback process. That's more work." Oh noes! I think that's a bum attitude. Commence ranting...</description>
+      </item>
+    
+      <item>
+        <title>Redesigning Webcomics: design your site for readers</title>
+        <link>http://rachelnabors.com/2011/01/redesigning-webcomics-design-your-site-for-readers/</link>
+        <pubDate>Tue, 04 Jan 2011 00:00:00 EST</pubDate>
+        <author>Rachel Nabors</author>
+        <guid>http://rachelnabors.com/2011/01/redesigning-webcomics-design-your-site-for-readers/</guid>
+        <description>In my second readership survey, I asked readers how they use other web comics sites. Their responses helped me formulate the following best practices guide to designing a web comics site, from what to put on your front page to how to organize your archives. If you find this article useful, I encourage you to pass it on to others.</description>
+      </item>
+    
+      <item>
+        <title>Redesigning Web Comics: organizing the content</title>
+        <link>http://rachelnabors.com/2010/12/redesigning-web-comics-the-importance-of-organized-content/</link>
+        <pubDate>Fri, 31 Dec 2010 00:00:00 EST</pubDate>
+        <author>Rachel Nabors</author>
+        <guid>http://rachelnabors.com/2010/12/redesigning-web-comics-the-importance-of-organized-content/</guid>
+        <description>WordPress 3.1 introduces "custom post formats," which are easy to confuse with "custom content types". Which is the best to use to organize web comics? I weight the pros and cons and sketch out two content structures to make sense of it all.</description>
+      </item>
+    
+      <item>
+        <title>Redesigning Web Comics: reader survey revelations</title>
+        <link>http://rachelnabors.com/2010/12/redesigning-webcomics-reader-survey-revelations/</link>
+        <pubDate>Sun, 12 Dec 2010 00:00:00 EST</pubDate>
+        <author>Rachel Nabors</author>
+        <guid>http://rachelnabors.com/2010/12/redesigning-webcomics-reader-survey-revelations/</guid>
+        <description>Before designing my web comics site, I ran two reader surveys. Hearing what readers have to say can only help you build a better site. This first survey reveals how my readership has changed over the years and what site they're using. Some things I was expecting, but there were some surprises and revelations as well.</description>
+      </item>
+    
+      <item>
+        <title>Redesigning Web Comics, Prologue</title>
+        <link>http://rachelnabors.com/2010/11/redesigning-web-comics-prologue/</link>
+        <pubDate>Wed, 17 Nov 2010 00:00:00 EST</pubDate>
+        <author>Rachel Nabors</author>
+        <guid>http://rachelnabors.com/2010/11/redesigning-web-comics-prologue/</guid>
+        <description>I've been wanting to get back to drawing web comics for some time now. But first I need to build and design a new site to put them on. This is the first in a series of posts chronicling building my web comics site, from concept, to reader surveys, to design and completion.</description>
+      </item>
+    
+      <item>
+        <title>What's a front end designer/developer?</title>
+        <link>http://rachelnabors.com/2010/11/whats-a-front-end-designerdeveloper/</link>
+        <pubDate>Mon, 08 Nov 2010 00:00:00 EST</pubDate>
+        <author>Rachel Nabors</author>
+        <guid>http://rachelnabors.com/2010/11/whats-a-front-end-designerdeveloper/</guid>
+        <description>I'm a front-end designer. When I go to Refresh, a local web design/development meetup, and the host asks the crowd who's a developer and who's a designer, I never know when to raise my hand. Just what is a front-end designer/developer anyway?</description>
+      </item>
+    
+      <item>
+        <title>Announcing the Triangle Web Professionals Book Club</title>
+        <link>http://rachelnabors.com/2010/05/announcing-the-triangle-web-professionals-book-club/</link>
+        <pubDate>Sun, 09 May 2010 00:00:00 EDT</pubDate>
+        <author>Rachel Nabors</author>
+        <guid>http://rachelnabors.com/2010/05/announcing-the-triangle-web-professionals-book-club/</guid>
+        <description>I love reading books, specifically books relating to my craft, even tagentially. So I started a book club for web professionals in the Triangle/Raleigh/Durham/Chapel Hill/Carborro area. Who is a web professional? Web pros are designers, developers, project managers and marketers. Our first meet is on the 19th, where we review Steve Krug's "Rocket Surgery Made Easy."</description>
+      </item>
+    
+      <item>
+        <title>My Fizzled Durham presentation: Everything I needed to know about Social Media I learned from Pikachu</title>
+        <link>http://rachelnabors.com/2010/03/fizzled-durham-social-media-pikachu/</link>
+        <pubDate>Wed, 10 Mar 2010 00:00:00 EST</pubDate>
+        <author>Rachel Nabors</author>
+        <guid>http://rachelnabors.com/2010/03/fizzled-durham-social-media-pikachu/</guid>
+        <description>At Fizzled Durham, I gave a presentation on how to build a more interactive social media experience by taking a few notes from Pikachu.</description>
+      </item>
+    
+      <item>
+        <title>Check out my illustrations at UXBooth.com!</title>
+        <link>http://rachelnabors.com/2010/02/check-out-my-illustrations-at-uxbooth-com/</link>
+        <pubDate>Tue, 09 Feb 2010 00:00:00 EST</pubDate>
+        <author>Rachel Nabors</author>
+        <guid>http://rachelnabors.com/2010/02/check-out-my-illustrations-at-uxbooth-com/</guid>
+        <description></description>
+      </item>
+    
+      <item>
+        <title>Die Flash, die.</title>
+        <link>http://rachelnabors.com/2010/02/die-flash-die/</link>
+        <pubDate>Mon, 01 Feb 2010 00:00:00 EST</pubDate>
+        <author>Rachel Nabors</author>
+        <guid>http://rachelnabors.com/2010/02/die-flash-die/</guid>
+        <description>I used to say that there were only three real uses for Flash: media players, animations, and games. (Everything else can be replicated with jQuery and AJAX.) These were the fingers with which Flash clung to the Internet. But one by one, they are being stomped on by HTML 5 and Javascript. And now that the ipad and iphone don't support Flash, the tide is begining to turn for Adobe's darling. Share with me this moment of schadenfreude...</description>
+      </item>
+    
+      <item>
+        <title>WordPress: Best of 2009 and Trends of 2010</title>
+        <link>http://rachelnabors.com/2010/01/wordpress-best-of-2009-and-trends-of-2010/</link>
+        <pubDate>Sat, 09 Jan 2010 00:00:00 EST</pubDate>
+        <author>Rachel Nabors</author>
+        <guid>http://rachelnabors.com/2010/01/wordpress-best-of-2009-and-trends-of-2010/</guid>
+        <description>When I fell in love with my new smart car, I knew I had to create a blog all about the experience of owning one of these beauties. Little did I realize that lovemysmartcar.com would prove instrumental in dousing the flames of a viral if not inflammatory photograph. This site is a case in point for how social media can be used to deter viral bad press.</description>
+      </item>
+    
+      <item>
+        <title>lovemysmartcar.com: How viral media can be deterred with social media</title>
+        <link>http://rachelnabors.com/2009/09/lovemysmartcar-com-how-viral-media-can-be-deterred-with-social-media/</link>
+        <pubDate>Fri, 25 Sep 2009 00:00:00 EDT</pubDate>
+        <author>Rachel Nabors</author>
+        <guid>http://rachelnabors.com/2009/09/lovemysmartcar-com-how-viral-media-can-be-deterred-with-social-media/</guid>
+        <description>When I fell in love with my new smart car, I knew I had to create a blog all about the experience of owning one of these beauties. Little did I realize that lovemysmartcar.com would prove instrumental in dousing the flames of a viral if not inflammatory photograph. This site is a case in point for how social media can be used to deter viral bad press.</description>
+      </item>
+    
+      <item>
+        <title>Making a case for the dialog element in HTML 5</title>
+        <link>http://rachelnabors.com/2009/09/making-a-case-for-dialog-in-html-5/</link>
+        <pubDate>Sat, 19 Sep 2009 00:00:00 EDT</pubDate>
+        <author>Rachel Nabors</author>
+        <guid>http://rachelnabors.com/2009/09/making-a-case-for-dialog-in-html-5/</guid>
+        <description></description>
+      </item>
+    
+      <item>
+        <title>Twitter for Fun, but not so much for profit.</title>
+        <link>http://rachelnabors.com/2009/05/twitter-for-fun-but-not-so-much-for-profit/</link>
+        <pubDate>Sat, 30 May 2009 00:00:00 EDT</pubDate>
+        <author>Rachel Nabors</author>
+        <guid>http://rachelnabors.com/2009/05/twitter-for-fun-but-not-so-much-for-profit/</guid>
+        <description>In this article, I'll try to dispel some Twitter myths and provide some insight to how you can get the most out of your Twitter account.</description>
+      </item>
+    
+      <item>
+        <title>3 WordPress Security Plugins you must have to keep hackers at bay.</title>
+        <link>http://rachelnabors.com/2009/02/3-wordpress-security-plugins-you-must-have-to-keep-hackers-at-bay/</link>
+        <pubDate>Mon, 02 Feb 2009 00:00:00 EST</pubDate>
+        <author>Rachel Nabors</author>
+        <guid>http://rachelnabors.com/2009/02/3-wordpress-security-plugins-you-must-have-to-keep-hackers-at-bay/</guid>
+        <description>WordPress has a bad reputation for getting hacked. It's opensource, so anyone can figure out how it works and where it's weaknesses are. And most new owners don't take very basic measures to protect themselves because they don't know how. So here's an excerpt from my resource Essential WordPress Plugins to help guide would-be victims.</description>
+      </item>
+    
+      <item>
+        <title>ASP, Flash, and other Purple Ponies</title>
+        <link>http://rachelnabors.com/2008/12/asp-flash-and-other-purple-ponies/</link>
+        <pubDate>Mon, 15 Dec 2008 00:00:00 EST</pubDate>
+        <author>Rachel Nabors</author>
+        <guid>http://rachelnabors.com/2008/12/asp-flash-and-other-purple-ponies/</guid>
+        <description>Some employers want it all, but what do you really need in a web designer?</description>
+      </item>
+    
+      <item>
+        <title>The Three Minute Accessibility Test</title>
+        <link>http://rachelnabors.com/2008/12/minute-accessibility-test/</link>
+        <pubDate>Wed, 03 Dec 2008 00:00:00 EST</pubDate>
+        <author>Rachel Nabors</author>
+        <guid>http://rachelnabors.com/2008/12/minute-accessibility-test/</guid>
+        <description></description>
+      </item>
+    
+      <item>
+        <title>Hello, World.</title>
+        <link>http://rachelnabors.com/2008/11/world/</link>
+        <pubDate>Sat, 29 Nov 2008 00:00:00 EST</pubDate>
+        <author>Rachel Nabors</author>
+        <guid>http://rachelnabors.com/2008/11/world/</guid>
+        <description>These are basic plugins that I can't imagine installing Wordpress without, plugins which improve performance, secure, or otherwise basically improve Wordpress's work functionality. I thought I would list them here, because in my searches for top 10 plugins, I have not found a list quite like this. Consider it a basic 14.</description>
+      </item>
+    
+      <item>
+        <title>14 basic plugins no Wordpress blog should be without</title>
+        <link>http://rachelnabors.com/2008/11/14-basic-plugins-no-wordpress-blog-should-be-without/</link>
+        <pubDate>Sat, 15 Nov 2008 00:00:00 EST</pubDate>
+        <author>Rachel Nabors</author>
+        <guid>http://rachelnabors.com/2008/11/14-basic-plugins-no-wordpress-blog-should-be-without/</guid>
+        <description>These are basic plugins that I can't imagine installing Wordpress without, plugins which improve performance, secure, or otherwise basically improve Wordpress's work functionality. I thought I would list them here, because in my searches for top 10 plugins, I have not found a list quite like this. Consider it a basic 14.</description>
+      </item>
+    
+
+  </channel>
+</rss>
