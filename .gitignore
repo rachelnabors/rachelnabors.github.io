@@ -1,6 +1,8 @@
 .bundle
 .DS_Store
 .sass-cache
+*/.sass-cache
+*/*/.sass-cache
 .pygments-cache
 _site
 _site/*

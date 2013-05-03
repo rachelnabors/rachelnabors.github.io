@@ -7,9 +7,6 @@ markdown: rdiscount
 permalink: pretty
 pygments: true
 
-safe: true
-#source: git@github.com:rachelnabors/rachelnabors.git
-#destination: rachelnabors/rachelnabors.github.io
 lsi: false
 
 # Default date format is "ordinal" (resulting in "July 22nd 2007")

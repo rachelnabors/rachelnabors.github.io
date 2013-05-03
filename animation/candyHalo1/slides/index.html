@@ -1,3 +1,6 @@
+---
+alias: [/cssdevconf2012, /webvisionsNYC2013, /webvisionsnyc2013, /cltfed2013, /refresh2013]
+---
 <!DOCTYPE html>
 <html>
 <head>
@@ -41,7 +44,7 @@
             <h2>with CSS3 Animations and HTML5 Audio</h2>
         </hgroup>
         <p>With cartoonist turned web developer Rachel Nabors! <br /><a href="http://www.rachelnabors.com">RachelNabors.com</a> <a href="http://twitter.com/crowchick">@CrowChick</a></p>
-        <p>Follow along at <a href="http://www.rachelnabors.com/cssdevconf2012">RachelNabors.com/cssdevconf2012</a></p>
+        <p>Follow along at <a href="http://www.rachelnabors.com/cltfed2013">RachelNabors.com/cltfed2013</a></p>
         <img src="img/bg_no-flash.png" alt="No Flash Allowed">
     </div>
     <figure class="self-portrait">
@@ -78,8 +81,8 @@
     <h2>Some assumptions</h2>
     <ul>
         <li>We're using Chrome, but these animations will work in all recent browsers except IE9.</li>
-        <li>Using <a href="http://leaverou.github.com/prefixfree/">-prefix-free</a> because you should be paying attention to Ideal Syntax, not prefixes.</li>
-        <li>Using jQuery because even if they don't know Vanilla.js, most CSS Freaks have used jQuery.</li>
+        <li>Using <a href="http://leaverou.github.com/prefixfree/">-prefix-free</a> instead of adding vendor prefixes.</li>
+        <li>Using jQuery because everyone knows jQuery.</li>
     </ul>
 </section>
 
@@ -106,7 +109,7 @@
 
 <section class="slide">
     <h2>Storyboarding</h2>
-    <p>I made a storyboard for us at <a href="../storyboard/index.html" target="_blank">rachelnabors.com/cssdevconf2012/storyboard</a></p>
+    <p>I made a storyboard for us at <a href="../storyboard/index.html" target="_blank">rachelnabors.com/cltfed2013/storyboard</a></p>
     <p><em>(Shoo shoo, go analyze.)</em></p>
     <ul>
         <li class="slide">Storyboards will save you time</li>
@@ -155,7 +158,7 @@
     <pre class="codepen" data-height="300" data-type="result" data-href="bpAJH" data-user="CrowChick"><code></code></pre>
 <script async src="http://codepen.io/assets/embed/ei.js"></script>
     <ul>
-        <li class="slide">The magic is all in <code>animation: walk-cycle 1s <strong>steps(12)</strong> infinite;</code> (also, the keyframes and the <a href="http://www.rachelnabors.com/animation/toys/img/tuna-walking_sprite.png">sprite</a>)</li>
+        <li class="slide">The magic is all in <code>animation: walk-cycle 1s <strong>steps(12)</strong> infinite;</code> (also, the keyframes and the <a href="http://www.rachelnabors.com/animation/candyHalo1/toys/img/tuna-walking_sprite.png">sprite</a>)</li>
         <li class="slide">...which breaks down to <code>animation: &lt;name&gt; &lt;duration&gt; &lt;timing-function&gt; &lt;iteration-count&gt;;</code></li>
     </ul>
 </section>
@@ -164,8 +167,8 @@
     <h2>Sprites: Bundling many states into one</h2>
     <ul>
         <!-- Todo: link -->
-        <li class="slide"><a href="../final/img/tuna_sprite.png">This is the huge sprite</a> we're using in the final animation. Note the 3 portions.</li>
-        <li class="slide">Sprites are the only way to animate with CSS3 and steps()...</li>
+        <li class="slide"><a href="../final/img/tuna_sprite.png">This is the huge sprite</a> we're using in the final animation. Note the 2 portions.</li>
+        <!-- <li class="slide">Sprites are the only way to animate with CSS3 and steps()...</li> -->
     </ul>
 </section>
 
@@ -177,10 +180,7 @@
     <ul>
         <li class="slide">A step divides the animation's states equally into your defined number of snapshots</li>
         <li class="slide">Then it hops between each snapshot</code>
-        <li class="slide">Then it eats the last one by default. (<a href="http://software.hixie.ch/utilities/js/live-dom-viewer/?saved=1993">Tab Atkins tried to explain why this is so.</a> But I'm still confused.)</li>
-        <li class="slide">I think someone like this wrote the spec.
-            <img src="img/tears-for-breakfast.jpeg" />
-        </li>
+        <li class="slide">Then it eats the last one by default. (<a href="http://software.hixie.ch/utilities/js/live-dom-viewer/?saved=1993">Tab Atkins explains why this is so better than I.</a></li>
     </ul>
 </section>
 
@@ -192,7 +192,7 @@
         <li class="slide"><a href="../final/img/sprite_tuna_boss.png">Check out this sprite.</a></li>
         <li class="slide"><pre class="codepen" data-height="300" data-type="result" data-href="kEeBl" data-user="CrowChick"><code></code></pre>
 <script async src="http://codepen.io/assets/embed/ei.js"></script></li>
-        <li class="slide"><a href="http://codepen.io/CrowChick/pen/BIhvs">We could use animations on pseudo elements instead <code>.expression</code></a>, but only FireFox supports them.</li>
+        <li class="slide"><a href="http://codepen.io/CrowChick/pen/BIhvs">We could use animations on pseudo elements instead <code>.expression</code></a>, but only FireFox supported them until recently.</li>
     </ul>
 </section>
 
@@ -233,18 +233,6 @@
     <ul>
         <li class="slide"><code>animation: &lt;name&gt; &lt;duration&gt; &lt;timing-function&gt; <strong>&lt;animation-delay&gt;</strong> &lt;iteration-count&gt;;</code></li>
         <li class="slide">The magic is in two places: <code>sit-down .5s steps(5) <strong>4s</strong> 1;</code> and <code>animation-fill-mode: forwards;</code></li>
-    </ul>
-</section>
-
-<section class="slide">
-    <h2>Describing the Third Dimension with 3D Transforms</h2>
-    <p>At 7.5 seconds, Tuna carves a room in 3D.</p>
-    <ul>
-        <li class="slide">Welcome to 3D transforms!</li>
-        <li class="slide"><pre class="codepen" data-height="300" data-type="result" data-href="pykvc" data-user="CrowChick"><code></code></pre>
-<script async src="http://codepen.io/assets/embed/ei.js"></script></li>
-        <li class="slide">Add perspective to <code>#stage1</code></li>
-        <li class="slide">Use a delayed transition.</li>        
     </ul>
 </section>
 
@@ -392,16 +380,10 @@ if (canPlayMP3===true) {
 
 <section class="slide">
     <h1>Just the Beginning!</h1>
-    <p>With these skills, you can build all kinds of nifty interactions.</p>
-    <p>Part II is coming in Spring. <a href="https://twitter.com/crowchick">Follow me on Twitter (@CrowChick)</a> to keep up with the cool new things I'm uncovering.</p>
-    <p>Find these slides at <a href="http://www.rachelnabors.com/cssdevconf2012">rachelnabors.com/cssdevconf2012</a></p>
-    <p>Lastly...</p>
-</section>
-
-
-<section class="slide">
-    <img src="img/poster_drink-n-draw.png" />
-    <p style="text-align:center"><a href="https://twitter.com/crowchick">@CrowChick</a> | <a href="http://www.rachelnabors.com/cssdevconf2012">rachelnabors.com/cssdevconf2012</a></p>
+    <p>With these skills, you can build all kinds of nifty interactions, like <a href="http://cdpn.io/lqswg">this</a>.</p>
+    <p><a href="https://twitter.com/crowchick">Follow me on Twitter @CrowChick</a> to keep up with the cool new things I'm uncovering.</p>
+    <p>Slides: <a href="http://www.rachelnabors.com/cltfed2013">rachelnabors.com/cltfed2013</a></p>
+    <p>Animation links and insights: <a href="http://rachelcoding.tumblr.com/">rachelcoding.tumblr.com</a></p>
 </section>
 
 <!-- Begin extension snippets. Add or remove as needed. -->
