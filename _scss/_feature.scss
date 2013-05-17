@@ -1,14 +1,38 @@
+@include keyframes(show) {
+  100% {opacity:1;}
+}
+
+@include keyframes(hide) {
+  100% {opacity:0;}
+}
+
+@include keyframes(pfft) {
+  0% { background-position: 0 0;}
+  100% {background-position: 0 -121px;}
+}
+
+@include keyframes(haha) {
+  0% { background-position: 0 -243px;}
+  100% {background-position: 0 -486px;}
+}
+
+@include keyframes(oops) {
+  0% { background-position: 0 -486px;}
+  100% {background-position: 0 -607px;}
+}
+
+@include keyframes(uh-oh) {
+  0%, 100% {margin-left: 0;}
+  25% {margin-left:7px;}
+  75% {margin-left:-7px;}
+}
+@include keyframes(spin) {
+  0% {background-position: 0 0;}
+  100% {background-position: 0 -1015px;}
+}
 .featurette {
 	@include padding-leader(10);
 	@include padding-trailer(10);
-
-	@include keyframes(show) {
-	  100% {opacity:1;}
-	}
-
-	@include keyframes(hide) {
-	  100% {opacity:0;}
-	}
 
 	.body {
 	  background: url(http://stash.rachelnabors.com/codepen/spinner/bg_spinner-body.png);
@@ -66,21 +90,6 @@
 	  width: 133px; height: 121px;
 	}
 
-	@include keyframes(pfft) {
-	  0% { background-position: 0 0;}
-	  100% {background-position: 0 -121px;}
-	}
-
-	@include keyframes(haha) {
-	  0% { background-position: 0 -243px;}
-	  100% {background-position: 0 -486px;}
-	}
-
-	@include keyframes(oops) {
-	  0% { background-position: 0 -486px;}
-	  100% {background-position: 0 -607px;}
-	}
-
 	.pupils { 
 	  background: url(http://stash.rachelnabors.com/codepen/spinner/bg_spinner-pupils.png);
 	  opacity: 0;
@@ -92,21 +101,10 @@
 	    hide .01s linear 1 26s forwards
 	)}
 
-	@include keyframes(uh-oh) {
-	  0%, 100% {margin-left: 0;}
-	  25% {margin-left:7px;}
-	  75% {margin-left:-7px;}
-	}
-
 	.hands {
 	  @include animation( spin .5s steps(5) infinite);
 	  background: url(http://stash.rachelnabors.com/codepen/spinner/sprite_spinner-hands.png);
 	  width: 307px; height: 202px;
-	}
-
-	@include keyframes(spin) {
-	  0% {background-position: 0 0;}
-	  100% {background-position: 0 -1015px;}
 	}
 
 	.rachel {  
@@ -129,14 +127,20 @@
 	  width: space(3, 6); height: rhythm(40);
 	}
 
+	.message {
+		color: $bg_blue;
+	  margin: 0 auto;
+	  position: relative;
+		width: space(3, 6);
+		height: rhythm(4);
+	}
 	.message p {
 	  @include animation-fill-mode(forwards);
+		@include padding-leader(2);
 	  opacity: 0;
 	  text-align: center;
-	  margin-left: -150px;
-	  margin-top: 160px ;
 	  position: absolute;
-	  top: 50%; left: 50%;
-	  width: 300px;
+	  top: 0; left: 0;
+	  width: 100%;
 	}
 }
