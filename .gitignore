@@ -4,5 +4,5 @@
 */.sass-cache
 */*/.sass-cache
 .pygments-cache
-_deploy
+_plugins
 vendor
