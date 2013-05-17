@@ -1,5 +1,6 @@
 @import "compass";
 @import "susy";
+@import "animation";
 
 @import "config";
 @import "functions";
@@ -27,6 +28,7 @@
 
   //modules here
   @import "home";
+  @import "feature";
   @import "entries";
   @import "archive";
 }

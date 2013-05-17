@@ -1,0 +1,153 @@
+@keyframes show {
+  100% {opacity:1;}
+}
+
+@keyframes hide {
+  100% {opacity:0;}
+}
+
+.body {
+  background: url(http://stash.rachelnabors.com/codepen/spinner/bg_spinner-body.png);
+  left: 50%; margin-left: -62px;
+  width: 224px; height: 332px;  
+}
+
+.message p:nth-child(1) { 
+  animation: 
+    show .5s 1 forwards,
+    hide .5s 1 3s forwards;
+}
+
+.message p:nth-child(2) { 
+  animation: 
+    show .5s 1 4s forwards,
+    hide .5s 1 7s forwards;
+}
+
+.message p:nth-child(3) { 
+  animation: 
+    show .5s 1 9s forwards,
+    hide .5s 1 10s forwards;
+}
+
+.message p:nth-child(4) { 
+  animation: 
+    show .5s 1 11s forwards,
+    hide .5s 1 12s forwards;
+}
+
+.message p:nth-child(5) { 
+  animation: 
+    show .5s 1 12s forwards,
+    hide .5s 1 16s forwards;
+}
+
+.message p:nth-child(6) { 
+  animation: 
+    show .5s 1 17s forwards,
+    hide .5s 1 21s forwards;
+}
+
+.message p:nth-child(7) { 
+  animation: show .5s 1 26s forwards;}
+
+.face {
+  animation: 
+    pfft 1s steps(1) 1 8s,
+    haha .5s steps(2, end) 11s 10,
+    oops 10s steps(1) 16s 1;
+  animation-fill-mode: forwards;
+  background: url(http://stash.rachelnabors.com/codepen/spinner/sprite_spinner-expressions.png);
+  top: 73px; left: 120px;
+  width: 133px; height: 121px;
+}
+
+@keyframes pfft {
+  0% { background-position: 0 0;}
+  100% {background-position: 0 -121px;}
+}
+
+@keyframes haha {
+  0% { background-position: 0 -243px;}
+  100% {background-position: 0 -486px;}
+}
+
+@keyframes oops {
+  0% { background-position: 0 -486px;}
+  100% {background-position: 0 -607px;}
+}
+
+.pupils { 
+  background: url(http://stash.rachelnabors.com/codepen/spinner/bg_spinner-pupils.png);
+  opacity: 0;
+  top: 47px; left: 27px;
+  width: 72px; height: 12px;
+  animation: 
+    show .01s linear 1 16s forwards,
+    uh-oh 5s 1 18s,
+    hide .01s linear 1 26s forwards;
+}
+
+@keyframes uh-oh {
+  0%, 100% {margin-left: 0;}
+  25% {margin-left:7px;}
+  75% {margin-left:-7px;}
+}
+
+.hands {
+  animation: spin .5s steps(5) infinite;
+  background: url(http://stash.rachelnabors.com/codepen/spinner/sprite_spinner-hands.png);
+  width: 307px; height: 202px;
+}
+
+@keyframes spin {
+  0% {background-position: 0 0;}
+  100% {background-position: 0 -1015px;}
+}
+
+.rachel {  
+  width: 307px; height: 332px;
+  position: absolute;
+  top: 50%; left: 50%;
+  margin-left: -152px;
+  margin-top: -166px;
+}
+
+.rachel .ir { 
+  position: absolute;
+  bottom: 0;
+}
+
+.spinner {
+  background: #e64988;
+  margin-left: -150px; margin-top: -150px;
+  overflow: hidden;
+  position: absolute;
+  top: 50%; left: 50%;
+  width: 300px; height: 300px;
+}
+
+/* Image replacement */
+.ir {
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  position: absolute;
+}
+.ir br { display: none; }
+
+.message p {
+  animation-fill-mode: forwards;
+  opacity: 0;
+  text-align: center;
+  margin-left: -150px;
+  margin-top: 160px ;
+  position: absolute;
+  top: 50%; left: 50%;
+  width: 300px;
+}
+
+html {
+  background: #141f31; 
+  color: #e3edf2;
+}

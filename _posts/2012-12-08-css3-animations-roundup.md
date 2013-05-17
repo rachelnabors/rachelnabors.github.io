@@ -16,7 +16,7 @@ Additionally, you can check out some of the live demos I've done directly:
 <ul>
   <li><a href="/animation/nyantuna/">NyanTuna</a></li>
   <li><a href="/animation/candyHalo1/final/">Final "Candy Candy" animation</a></li>
-  <li><a href="/animation/candyHalo1/final/toys/cssdevconf/">"Coming Soon" animation</a></li>
+  <li><a href="/animation/candyHalo1/toys/cssdevconf/">"Coming Soon" animation</a></li>
   <li><a href="http://codepen.io/CrowChick/full/rCost">"Cat in Byakkoya" parallax animation</a></li>
 </ul>
 Hope you get inspired. Please, show me what you come up with!

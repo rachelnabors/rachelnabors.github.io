@@ -1,0 +1,690 @@
+<!doctype html>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7 ]> <html class="no-js ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]>    <html class="no-js ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]>    <html class="no-js ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+
+  <!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
+       Remove this if you use the .htaccess -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title>WordPress Themeing Fun Times with Rachel (the Great) Nabors</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile viewport optimized: j.mp/bplateviewport -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Place favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+
+  <!-- CSS: implied media="all" -->
+  <link rel="stylesheet" href="styles/screen.css?v=2">
+
+  <!-- Uncomment if you are specifically targeting less enabled mobile browsers
+  <link rel="stylesheet" media="handheld" href="css/handheld.css?v=2">  -->
+
+  <!-- All JavaScript at the bottom, except for Modernizr which enables HTML5 elements & feature detects -->
+  <script src="js/libs/modernizr-1.7.min.js"></script>
+  
+  <script src="js/mylibs/fout-b-gone.js" type="text/javascript"></script>
+	<script type="text/javascript">
+        fbg.hideFOUT('asap', 400);
+    </script>
+</head>
+
+<body>
+
+  <div class="wrapper" role="main">
+  	<section class="group title" role="banner">
+		<hgroup>
+	        <h1>Modern WordPress Themeing</h1>
+	        <h2>2011 Edition</h2>
+    	</hgroup>
+    	<figure class="self-portrait">
+	    	<img src="img/p_rachelnabors.png" alt="A manga-inspired self-portrait of Rachel, clutching a laptop and looking adorable." />
+    		<figcaption class="ir">with Rachel the Great (aka Rachel Nabors)</figcaption>
+        </figure>
+        <p>Follow along at <a href="http://rachelnabors.com/wordpress-themeing-2011">RachelNabors.com/wordpress-themeing-2011</a></p>
+        <p>Follow me at <a href="http://rachelnabors.com">RachelNabors.com</a> and @<a href="http://twitter.com/CrowChick">Crowchick</a></p>
+        
+    </section>
+    
+    <section>
+    	<h2>The Story</h2>
+    	<div class="group">
+	    	<figure>
+		        <img src="http://farm4.static.flickr.com/3098/2382259814_da12de147f.jpg" alt="Photographer" />
+		        <figcaption>Lisa, your long-time photographer friend.<a href="#footnote1" class="footnote">*</a></figcaption>
+		    </figure>
+	        <div class="instruction">
+		        <p>This is Lisa<a href="#footnote1" class="footnote">*</a>. She's your good friend and a quasi-professional photographer. She took photos of you at your last wedding/promotional event/shindig. You owe her one.</p>
+		        <p>She has a blog. A <a href="http://wordpress.org">WordPress</a> blog. She'd like to add a gallery of her photography to it without terribly changing how the whole site looks. (So a new theme or overhaul is out of the question.)</p>
+			</div>
+	        <p class="footnote" id="footer1">*Actually, there is no Lisa. That's a picture of <a href="http://www.flickr.com/photos/amanky/">Amancay Maahs from flickr</a> I found by searching for photos of photographers under the creative commons license. She's a fake friend. <abbr title="User Experience">UX</abbr> designers have lots of these fake friends. We call them &quot;personas&quot;. Sometimes, when nobody is looking, we sit them up around a table and serve them fake tea while crying silently because we have no real friends. Well, no we don't. But thank you for reading this footnote! Remind me to give you a cookie.</p>
+		</div>	
+		<h3>Your mission, should you choose to accept it</h3>
+		<p>Extend Lisa's current theme to allow her to post and showcase her art without using a third-party plugin.</p>
+	</section>
+    
+    <section>
+    	<h2>The <abbr title="Information Architecture">IA</abbr></h2>
+    	<div class="group">
+	        <figure>
+		        <img src="../images/ia.png" alt="Graph of information architecture showing blog and gallery categories spilling down into separate long tails of files." />
+		        <figcaption>Figure A: Our working sitemap</figcaption>
+	    	</figure>
+	    	<div class="instruction">
+		    	<p>First of all, visualize how you want to store the data in relation to other data types on the blog.</p>
+		        <p>In this case, you want to store the art separately from the blog posts. They will have separate archives, separate RSS feeds, separate beds.</p>
+		   </div>
+		</div>
+    </section>
+    
+    <section>
+        <h2>Making a Child Theme</h2>
+        <div class="group">
+	        <blockquote>Making a child theme is very simple. Create a directory, put a properly formatted <code>style.css</code> file in it, and you have a child theme! <strong>...child themes are the recommended way of making modifications to a theme.</strong>
+	            <cite><a href="http://codex.wordpress.org/Child_Themes">WordPress Codex: Child Themes</a></cite>
+	        </blockquote>
+			<div class="instruction">
+		        <ul>
+		            <li>All you need is a <code>style.css</code></li>
+		            <li>All other files, like <code>index.php</code>, <code>search.php</code>, <code>functions.php</code>, etc. are optional.</li>
+		            <li>Each file overwrites the parent theme's file i.e., <code>child-theme/index.php</code> &gt; <code>parent-theme/index.php</code></li>
+		        </ul>
+        	</div>
+        </div>
+        
+        <div class="group alert">
+            <h3>A word about <code>functions.php</code></h3>
+        	<p>Unlike other template files, <code>functions.php</code> does not overwrite the parent theme's <code>functions.php</code>. It merely lays on top of it.</p>
+        </div>
+        
+        <div class="group">
+	        <h3>Formatting the child theme's style.css</h3> 
+			<div class="instruction">
+				<p>Making a child theme is easy as making a stylesheet. Just put this at the top of it.</p>
+			</div>	
+	        <pre>
+/*
+<strong>Theme Name:     Name of Child Theme</strong>
+Theme URI:      http://example.com/
+Description:    Child theme for foobar theme 
+Author:         Your name here
+Author URI:     http://example.com/about/
+<strong>Template:       twentyten</strong>
+Version:        0.1.0
+*/
+</pre>        
+		</div>
+		
+        <div class="group">
+			<h3>Import Your Parent Theme's Styles</h3>
+			<div class="instruction">
+				<p>Just like all the other files in the child theme, <code>style.css</code> will overwrite the parent theme's stylesheet. If you want to keep your parent theme's css, use an @import first thing in your child theme's stylesheet! <strong>Do not put any rules above the @import rule.</strong></p>
+			</div>
+			<pre>@import url(&quot;../parent-theme/style.css&quot;);</pre>
+        </div>
+
+    </section>
+    
+    <section>
+    	<h2>Post Formats</h2>
+    	<div class="group">
+	    	<blockquote>
+	        	A Post Format is a piece of meta information that can be used by a theme to customize its presentation of a post. ...(A) blogger can change how each post looks by choosing a Post Format from a radio-button list.
+	            <cite><a href="http://codex.wordpress.org/Post_Formats">WordPress Codex: Post Formats</a></cite>
+	        </blockquote>
+	        <div class="instruction">
+		        <ul>
+		        	<li>There are a set number of different post formats you can enable: aside, chat, gallery, image, link, quote, status, video, audio</li>
+		            <li>You cannot define new post formats at this time.</li>
+		            <li>Do not mistake for <em>custom post/content types!</em></li>
+		        </ul>
+        	</div>
+       	</div>
+       	<div class="group">
+	        <h3>Enabling Post Formats</h3>
+<pre>
+add_theme_support('post-formats', array('aside', 'chat', 'gallery', 'image', 'link', 'quote', 'status', 'video', 'audio'));
+</pre>
+	        
+	        <div class="instruction">
+		        <p>Add this code to your child theme's <code>functions.php</code>.</p>
+			</div>
+    	</div>
+    	<aside>
+    		<h3>Extra Credit</h3>
+    			<p><a href="http://wordpress.mfields.org/2011/post-format-queries/">Post Format Queries</a> with Michael Fields</p>
+    	</aside>
+    </section>
+    
+    <section>
+    	<h2><abbr title="Information Architecture">IA</abbr> Revisited</h2>
+    	<div class="group">
+	        <figure>
+		        <img src="../images/ia_alternative.png" alt="A graph showing how with this solution, the two post types condense into one long tail." />
+		        <ficaption>Figure B: Our sitemap on post formats</ficaption>
+	    	</figure>
+    		<div class="instruction">
+		        <p>With mere post types, the different types of posts are still blog posts. They still show in the blog's RSS and in blog archives.</p>
+		        <p>Lisa wants to keep her work separate from her ramblings, so let's look for another solution.</p>
+		  	</div>
+		</div>
+    </section>
+    
+    <section>
+    	<h2>Custom Post Types</h2>
+        <div class="group">
+	        <div class="instruction">
+		        <p>Add this code to your <code>functions.php</code> (replace &quot;books&quot; with your own values).</p>
+	        </div>
+        
+<pre>
+add_action( 'init', 'namespace_create_post_type' );
+function namespace_create_post_type() {
+	register_post_type( 'acme_product',
+		array(
+			'labels' => array(
+				'name' => __( 'Products' ),
+				'singular_name' => __( 'Product' )
+			),
+		    'description' => 'A short description of this post type.',
+			'public' => true,
+			'has_archive' => true,
+			'rewrite' => array(
+            	'slug' => 'products',
+                'with_front' => false // if your permalink structure is /blog/, then your links will be: false->/news/, true->/blog/news/) - defaults to true
+			),
+            'hierarchical' => false, // set to true to "nest" like pages
+			'menu_position' => null, // where on the menu it should appear; 5 = below posts, 10 = below media, etc
+            'supports' => array('title','editor','author','thumbnail','excerpt','comments')
+		)
+	);
+}
+</pre>
+	      <div class="instruction">  
+		        <ul>
+		        	<li>Namespace your post types.</li>
+		        	<li>If you get a 404 on a custom content page, just re-save your permalinks to regenerate the URL :)</li>
+		            <li>Custom post types in many ways behave more like &quot;pages&quot; than blog posts. You can nest them, for instance.</li>
+		            <li><a href="http://digwp.com/2011/06/dont-use-postname/#comment-25582">According to Nacin</a>, there are no server penalties for excluding date from permalink structure as there are with blog posts (that's a good thing). (<strong>Update: </strong>As of WordPress 3.3, there are no server penalties for a dateless permalink structure, period!)</li>
+		        </ul>
+	            <div class="resources">
+	            	<h3>Resources</h3>
+			        <ul>
+			        	<li><a href="http://codex.wordpress.org/Post_Types">WordPress Codex: Post Types</a></li>
+			            <li><a href="http://codex.wordpress.org/Function_Reference/register_post_type">WordPress Codex: Register Post Type</a></li>
+			        </ul>
+	            </div>
+	            <aside>
+	                <h3>Extra Credit</h3>
+	                <p><a href="http://yoast.com/custom-post-type-snippets/">Custom Post Type snippets for admin pages</a></p>
+	            </aside>
+	         </div>
+	   	</div>
+    </section>
+    
+    <section>
+    	<h2>Custom Taxonomies</h2>
+    	<div class="group">
+	        <blockquote>
+	        	In WordPress, a &quot;taxonomy&quot; is a grouping mechanism for some posts (or links or custom post types).
+	        	<cite><a href="http://codex.wordpress.org/Taxonomies">WordPress Codex: Taxonomies</a></cite>
+	        </blockquote>
+        	<div class="instruction">
+		        <ul>
+		        	<li>Categories, tags, and link categories are all taxonomies WordPress comes with out of the box</li>
+		            <li>Categories are &quot;hierarchical&quot; whereas tags are not.</li>
+		        </ul>
+    		</div>
+    	</div>
+    	<div class="group">    
+	        <pre>
+//hook into the init action and call create_book_taxonomies when it fires
+add_action( 'init', 'create_book_taxonomies', 0 );
+
+//create two taxonomies, genres and writers for the post type "book"
+function create_book_taxonomies() 
+{
+  // Add new taxonomy
+  $labels = array(
+    'name' => _x( 'Writers', 'taxonomy general name' ),
+    'singular_name' => _x( 'Writer', 'taxonomy singular name' ),
+    'search_items' =>  __( 'Search Writers' ),
+    'popular_items' => __( 'Popular Writers' ),
+    'all_items' => __( 'All Writers' ),
+    'parent_item' => null, //null for non-hierarchical, defaults to "Parent Category" otherwise
+    'parent_item_colon' => null, // same as above, but with a colon! Like "Parent Category:"
+    'edit_item' => __( 'Edit Writer' ), 
+    'update_item' => __( 'Update Writer' ),
+    'add_new_item' => __( 'Add New Writer' ),
+    'new_item_name' => __( 'New Writer Name' ),
+    'separate_items_with_commas' => __( 'Separate writers with commas' ),
+    'add_or_remove_items' => __( 'Add or remove writers' ),
+    'choose_from_most_used' => __( 'Choose from the most used writers' ),
+    'menu_name' => __( 'Writers' )
+  ); 
+
+  register_taxonomy('writer','book',array( // 'book' here is the name of your custom post type you want to associate this with
+    'hierarchical' => false, // creates tag-like taxonomy. Set to true for category-like taxonomy
+    'labels' => $labels,
+    'show_ui' => true,
+    'update_count_callback' => '_update_post_term_count', //only necessary for non-hierarchicals
+    'query_var' => true,
+    'rewrite' => array( 'slug' => 'writer' ) //this is used in the archive and page URLs!
+  ));
+  
+  //repeat the above for genres, only use hierarchical options
+}
+</pre>
+    <div class="instruction alert">    
+        <h3>Don't Forget!</h3>
+        <blockquote>
+        	If you want to ensure that your custom taxonomy behaves like a tag, you must add the option <code>'update_count_callback' => '_update_post_term_count'</code>. Not doing so will result in multiple comma-separated items added at once being saved as a single value, not as separate values. This can cause undue stress when using get_the_term_list and other term display functions.
+            <cite><a href="http://codex.wordpress.org/Function_Reference/register_taxonomy">WordPress Codex: Register Taxonomy</a></cite>
+       </blockquote>
+    </div>
+    </div>
+    </section>
+    
+    <section>
+    	<h2>Custom Post Type and Taxonomy Templates</h2>
+        <div class="group">
+	        <ul>
+	        	<li>You create a new kind of archive for every custom post type and taxonomy you generate.</li>
+	            <li>Custom post type pages can be targeted with <code>single-postype.php</code>, and archived with <code>archive-posttype.php</code>.</li>
+	            <li>Otherwise custom post types will use <code>single.php</code> and <code>archive.php</code> just like blog posts.</li>
+	            <li>Taxonomy archives will also use <code>archive.php</code> by default.</li>
+	            <li>But you can get more granular with them, too: <code>taxonomy.php</code> &lt; <code>taxonomy-taxonomy.php</code> &lt; <code>taxonomy-taxonomy-term.php</code></li>
+	        </ul>
+	        
+			<div class="resources">
+				<h3>Resources</h3>
+			    <ul>
+		        	<li><a href="http://codex.wordpress.org/Template_Hierarchy">WordPress Codex: Template Hierarchy</a></li>
+		            <li><a href="http://codex.wordpress.org/File:Template_Hierarchy.png">A flow chart of said hierarchy</a></li>
+		        </ul>
+		    </div>
+		</div>
+		
+		<div class="group">
+		   <h3>Listing your Taxonomy Terms</h3>
+<pre>
+&lt;?php get_the_term_list( $id, $taxonomy, $before, $sep, $after ); ?&gt;
+</pre>
+	      <div class="instruction">  
+	        <p>An example:</p>
+			<code>
+			 &lt;?php echo get_the_term_list( $post->ID, 'people', 'People: ', ' ', '' ); ?&gt; 
+			</code>
+		  </div>
+		</div>
+    </section>
+    
+    <section>
+    	<h2>Post Thumbnails</h2>
+        <div class="group">
+	        <h3>Activating Post Thumbnails in Older WordPress Themes</h3>
+			<div class="instruction">
+				<p>Add this snippet to your <code>functions.php</code>.</p>
+			</div>
+			<pre>
+add_theme_support( 'post-thumbnails' );
+
+set_post_thumbnail_size( 200, 200 ); //add a default size
+</pre>
+		</div>
+		<div class="group">
+	    	<h3>Adding Post Thumbnails to WordPress Templates</h3>
+			<div class="instruction">
+			    <p>To add the default thumbnail size to your WordPress theme templates, just pop in this code.</p>
+			</div>
+			<pre>
+&lt;?php the_post_thumbnail(); ?&gt;
+</pre>
+		</div>
+	   	<div class="group alert">
+	   		<h3>Regenerate Those Thumbnails</h3>
+	   		<p>From this point onward, you will most likely want to install the <a href="http://wordpress.org/extend/plugins/regenerate-thumbnails/">regenerate thumbnails plugin.</a> WordPress does not generate new thumbnails when you change your thumbnail settings in <code>functions.php</code>. The new settings are only applied to new image uploads. To retroactively apply the new settings, you'll need to force WordPress to regenerate all its thumbnails with this plugin.</p>
+		</div>
+		<div class="group">
+			<h3>Defining Thumbnail Dimensions</h3>
+			<pre>
+add_image_size( 'koi_art_full', 500, 9000, false );
+</pre>
+			<div class="instruction">			        
+		        <p>To define a thumbnail type with special dimensions, use this snippet in your <code>functions.php</code>.</p>
+		
+				<p>The values work like this: <code>add_image_size( 'unique_identifier', width, height, cropping );</code> So the above gives us images that are scaled up or down to be 500 pixels wide and no more than 9000 pixels tall (the image is always <em>scaled</em> to meet the lowest value).</p>
+			</div>
+		</div>
+		<div class="group">
+			<div class="instruction">
+				<p>You can also use the default size that you set in Settings &gt; Media, <code>thumbnail</code>, <code>medium</code>, <code>large</code>, and even <code>full</code>. </p>
+			</div>
+			<pre>
+&lt;?php the_post_thumbnail('medium'); ?&gt;
+</pre>
+		</div>
+		<h3>Wrapping your Post Thumbnails in Permalinks</h3>
+		<div class="group">
+	        <pre>
+ &lt;?php if ( has_post_thumbnail()) : ?&gt;
+   &lt;a href="&lt;?php the_permalink(); ?&gt;" title="&lt;?php the_title_attribute(); ?&gt;" &gt;
+   &lt;?php the_post_thumbnail(); ?&gt;
+ &lt;/a&gt;
+   </a>
+ &lt;?php endif; ?&gt; </pre>
+	        <div class="instruction">
+		        <p>To wrap your post thumbnail in a permalink, pop this into your template file.</p>
+		    </div>
+		</div>
+		<div class="group">    
+	    	<pre>
+add_filter( 'post_thumbnail_html', 'my_post_image_html', 10, 3 );
+
+function my_post_image_html( $html, $post_id, $post_image_id ) {
+
+  $html = '&lt;a href="' . get_permalink( $post_id ) . '" title="' . esc_attr( get_post_field( 'post_title', $post_id ) ) . '"&gt;' . $html . '&lt;/a&gt;';
+  return $html;
+
+}
+</pre>
+		<div class="instruction">
+			<p>Or to link <strong>all</strong> post thumbnails to their permalinks, site-wide, use the following in your <code>functions.php</code>:</p>
+		</div>
+	</div>
+	
+	<div class="group">
+		<h3>Adding a class to Post Thumbnails</h3>
+<pre>
+&lt;?php the_post_thumbnail('thumbnail', array('class' => 'gallery-tn')); ?&gt;
+</pre> 
+		<div class="instruction">
+			<p>Adding a class to thumbnails is also pretty easy with an array.</p>
+    	</div>
+	</div>
+	<div class="resources group">
+		<h3>Resources</h3>
+	    <ul>
+	     	<li><a href="http://codex.wordpress.org/Post_Thumbnails">WordPress Codex: Post Thumbnails</a></li>
+	        <li><a href="http://codex.wordpress.org/Function_Reference/get_the_post_thumbnail">WordPress Codex: Function Reference/get_the_post_thumbnail</a></li>
+	    	<li><a href="http://wpengineer.com/1930/the-ultimative-guide-for-the_post_thumbnail-in-wordpress-2-9/">The Ultimative Guide for the_post_thumbnail in WordPress 2.9</a> with comments by Matt Mullenweg</li>
+	        <li><a href="http://www.zubair.info/2010/11/19/how-to-use-post-thumbnails-feature-in-wordpress.html">How to Use Post Thumbnails Feature in WordPress</a></li>
+	    </ul>
+	</div>
+
+    </section>
+    
+    <section>
+    	<h2>Widgetized Areas</h2>
+        <p>You can put widgetized areas anywhere in your template files. <strong>Anywhere.</strong></p>
+        
+        <p>This code was 100% lifted from <a href="http://digwp.com/2010/02/how-to-widgetize-wordpress-theme/">Digging into WordPress: How to Widgetize Your WordPress Theme in 2 Steps</a>. Credit where credit is due!</p>
+        
+		<div class="group">
+			<div class="instruction"> 
+	    	    <p>First, add this to functions.php.</p>
+		</div>
+<pre>
+if (function_exists('register_sidebar')) {
+  register_sidebar(array(
+    'name' => 'Widgetized Area', //the name of this area, as used in the WP admin
+    'id'   => 'widgetized-area', //a unique identifier for your widgetized area
+    'description'   => 'This is a widgetized area.',
+    'before_widget' => '&lt;div id=&quot;%1$s&quot; class=&quot;widget %2$s&quot;&gt;',
+    'after_widget'  => '&lt;/div&gt;',
+    'before_title'  => '&lt;h4&gt;', //note, titles sit outside of widgets
+    'after_title'   => '&lt;/h4&gt;'
+  ));
+}
+</pre>
+		</div>
+		<div class="group">
+			<div class="instruction">         
+		        <p>Then add this to your theme's template files.</p>
+		    </div>
+			<pre>        
+&lt;?php if (function_exists('dynamic_sidebar') && dynamic_sidebar('widgetized-area')) : else : ?&gt;
+
+	&lt;h4&gt;Widgetized Area&lt;/h4&gt;
+	&lt;div class=&quot;widget&quot;&gt;
+		&lt;p&gt;This panel is active and ready for you to add some widgets via the WP Admin&lt;/p&gt;
+	&lt;/div&gt;
+
+&lt;?php endif; ?&gt;
+</pre>
+		</div>
+		<div class="group">
+	        <h3>Reminding admins to edit things</h3>
+	        <div class="instruction">
+		        <p>Sometimes, you want to remind an admin that a section of the site is widgetized or otherwise editable, but you don't want normal visitors to see the reminder. In which case, use this.</p>
+	    	</div>
+	        <pre>
+&lt;?php if (current_user_can('edit_theme_options') ) : ?&gt;
+</pre>
+        </div>
+        <aside class="group">
+        	<h3>Fun Fact</h3>
+        	<p>A dynamic sidebar is just a widgetized sidebar.</p>
+        </aside>
+        <div class="resources group">
+        	<h3>Resources</h3>
+            <ul>
+            	<li><a href="http://codex.wordpress.org/Function_Reference/register_sidebar">WordPress Codex: Function Reference/register_sidebar</a></li>
+            </ul>
+        </div>
+    </section>
+    
+    <section>
+    
+    	<h2>Menus</h2>
+        <div class="group">
+        	<div class="instruction">
+		        <p>Add this to your <code>functions.php</code>.</p>
+        	</div>
+        	<pre>
+if ( function_exists( 'register_nav_menu' ) ) {
+	register_nav_menu( 'koi-art_menu', 'Arty Menu' );
+}
+</pre>
+        </div>
+        <div class="group">
+			<div class="instruction">
+		        <p>Then pop this wherever you want a shiny menu in your templates.</p>
+		    </div>
+		    <pre>
+&lt;?php wp_nav_menu( array( 'theme_location' => 'koi-art_menu' ) ); ?&gt;
+</pre>
+		</div>
+		<div class="group alert">
+			<h3>Gross</h3>
+		    <p><strong>The default is ugly.</strong> By default, if you don't tell WordPress what pages to put in a menu, it will use them <em>all</em>. That's why your site looks messed up now.</p>
+		</div>
+		<div class="group resources">
+			<h3>Resources</h3>
+			<ul>
+				<li><a href="http://codex.wordpress.org/Function_Reference/register_nav_menu">WordPress Codex: Function Reference/register_nav_menus</a></li>
+				<li><a href="http://codex.wordpress.org/Navigation_Menus">WordPress Codex: Navigation Menus</a></li>
+			    <li><a href="http://codex.wordpress.org/Appearance_Menus_Screen">WordPress Codex: Appearance Menus Screen</a></li>
+			</ul>
+		</div>
+    </section>
+    
+    <section>
+    	<h2>RSS for your Custom Content Types</h2>
+        <div class="group">
+        	<div class="instruction">
+		        <p>Custom Content Types generate an RSS feed of their own.</p>
+		        <p>You can combine it with your site's blog post feed.</p>
+		        <p>Add this code gleened from <a href="http://www.wpbeginner.com/wp-tutorials/how-to-add-custom-post-types-to-your-main-wordpress-rss-feed/">WP Beginner</a> to your <code>functions.php</code>.</p>
+		   </div>
+<pre>
+function myfeed_request($qv) {
+	if (isset($qv['feed']))
+		$qv['post_type'] = get_post_types();
+	return $qv;
+}
+add_filter('request', 'myfeed_request');
+</pre>
+		</div>
+		<h3>Individual feeds for custom content types and taxonomies</h3>
+		<div class="group">
+			<div class="instruction">
+				<p>But if you want to use just your Custom Content Type's individual RSS feed, you need no extra code.</p>
+				<p>Just use this URL structure.</p>
+				<p>(<a href="http://www.wpbeginner.com/wp-tutorials/how-to-make-a-separate-rss-feed-for-each-custom-post-type-in-wordpress/">WP Beginner explains custom content RSS really well</a>)</p>
+			</div>
+<pre>
+http://www.yoursite.com/feed/?post_type=book
+</pre>
+		</div>
+		<div class="group">
+			<div class="instruction">
+				<p>And it works with taxonomies, too!</p>
+			</div>
+<pre>
+http://www.yoursite.com/feed/?post_type=book&amp;genre=romance
+</pre>    
+		</div>
+    </section>
+    
+    <section>
+    	<h2>Sidebars, dynamic and otherwise</h2>
+        
+        <p>There are two &quot;sidebars&quot; in WordPress:</p>
+        
+        <ul>
+        	<li><strong>Dynamic Sidebars</strong> which are just widgetized areas. You met them already above. Let's move on.</li>
+        	<li><strong>Sidebar Includes</strong> which are include files that you can put static as well as dynamic code in.</li>
+        </ul>
+        <div class="alert">
+	        <h3>Rule of Thumb</h3>
+	        <p>If you need lots of extra markup with your widgetized area or you plan to use the same sidebar code in more than one template file, consider putting it in a sidebar template.</p>    
+    	</div>
+    	        
+        <div class="group">
+        	<h3>Adding a sidebar to your theme templates</h3>
+	        <div class="instruction">
+		        <p>Your theme probably already has a <code>sidebar.php</code>. You can also make additional sidebars like <code>sidebar-primary.php</code> or <code>sidebar-awesome.php</code>.</p>
+		        <p>Call sidebars in your templates with this code.</p>
+		   </div>
+			<pre>
+&lt;?php get_sidebar( 'primary' ); ?&gt;
+</pre>
+        </div>
+        <div class="group resources">
+        	<h3>Resources</h3>
+            <ul>
+            	<li><a href="http://justintadlock.com/archives/2010/11/08/sidebars-in-wordpress">Sidebars in WordPress</a> by Justin Tadlock</li>
+            	<li><a href="http://codex.wordpress.org/Function_Reference/dynamic_sidebar">WordPress Codex: Function Reference/dynamic_sidebar</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+    	<h2>Bonus: Putting it in a Plugin</h2>
+        <div class="group">
+        
+        	<blockquote>
+        		A WordPress Plugin is a program, or a set of one or more functions, written in the PHP scripting language, that adds a specific set of features or services to the WordPress weblog
+        		<cite><a href="http://codex.wordpress.org/Writing_a_Plugin">WordPress Codex: Writing a Plugin</a></cite>
+        	</blockquote>
+	        <div class="instruction">
+           		<p>If you can put it in your <code>functions.php</code>, you can make a plugin with it!</p>
+		        <p>Making a plugin isn't that hard. Like when making a child theme, you only need one file with one header, and it only <em>requires</em> one line of code, its name.</p>
+		   </div>
+		</div>
+		<div class="group">
+		   	<h3>Initiating a plugin</h3>
+		   	<div class="instruction">
+				<p>So make a new PHP file, named for your plugin, pop this code into it, and stick it in your plugins folder.</p>
+				<div class="alert">
+					<h4>Keep things tidy</h4>
+					<p>It's usually a good idea to put your plugin files in a folder rather than directly into your plugin directory. You'll inevitably want to add a readme file or other supplementary files, and you don't want them knocking about all over the place.</p>
+				</div>
+			</div>
+			<pre>
+&lt;?php
+/*
+<strong>Plugin Name: Name Of The Plugin</strong>
+Plugin URI: http://URI_Of_Page_Describing_Plugin_and_Updates
+Description: A brief description of the Plugin.
+Version: The Plugin's Version Number, e.g.: 1.0
+Author: Name Of The Plugin Author
+Author URI: http://URI_Of_The_Plugin_Author
+License: A "Slug" license name e.g. GPL2
+*/
+?&gt;</pre>
+			
+        </div>
+		<div class="group">
+			<p>Here's the ridiculously easy part. Grab all the functions from your <code>functions.php</code> that you want to put in your plugin, and put them in your new plugin file. Seriously. That's it.</p>
+			<p>Congratulations. You are now a plugin author. Have some chocolate or a beer or something, and pat yourself on the back.</p>
+		</div>
+		
+    </section>
+
+    
+    <section>
+    	<h2>It's been fun!</h2>
+    	
+        <div class="group resources">
+    
+	    	<h3>Further Reading</h3>
+	    	<p>This is only the tip of the iceberg. If you're excited and can't wait to do more, check out these fine resources and people. They're Rachel-approved&trade;.</p>
+	    	
+	    	<ul>
+	    		<li><a href="http://codex.wordpress.org">The WordPress Codex</a>: Go here before sniffing around at WordPress &quot;tips and tricks&quot; sites, as the information in the Codex is tended better and kept current.</li>
+	    		<li>Digging into WordPress, <a href="http://digwp.com">the site</a> and <a href="http://d4340lj3mankcl84u12cckbl8d.hop.clickbank.net/">the book</a>. This is my favorite book on WordPress. Chris Coyier and Jeff Starr update it regularly with new chapters for every new WordPress release, and you get the updates digitally for free.</li>
+	    		<li><a href="http://wordpress.mfields.org/">Michael Fields</a>, plugin developer with an excellent blog on plugin and theme development</li>
+	    		<li><a href="http://yoast.com">Yoast.com</a>, run by Joost de Valk. Covers the minutia of how search engines crawl your site and gives sound WordPress advice. Also on the <a href="http://wp-community.org/">WordPress Podcast</a>.</li>
+	    	</ul>
+	    </div>
+		<footer role="contentinfo">
+			<p>Written in 2011 by <a href="http://rachelnabors.com">Rachel Nabors</a>.</p> 
+			<p>Say hi when you're in the neighborhood: @<a href="http://twitter.com/crowchick">CrowChick</a> <a href="http://dribbble.com/rachelthegreat">Dribbble</a> <a href="http://thepinkcrow.com/">ThePinkCrow.com</a> <a href="http://rachelthegreat.com">RacheltheGreat.com (comics)</a></p>
+			<p>Also, I'll be speaking at <a href="http://ncdevcon.com/">NCDevCon</a> September 17th, 2011, on <em>Comics and Design: How To Tell Stories With Pictures And Words.</em> Hope to see you there!
+			</p>
+		</footer>
+    </section>
+
+    </div>
+
+  <!-- JavaScript at the bottom for fast page loading -->
+
+  <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if necessary -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.js"></script>
+  <script>window.jQuery || document.write("<script src='js/libs/jquery-1.5.1.min.js'>\x3C/script>")</script>
+
+
+  <!-- scripts concatenated and minified via ant build script-->
+  <!-- <script src="js/plugins.js"></script>-->
+  <script src="js/mylibs/jquery.hoverIntent.6.min.js"></script>
+  <script src="js/script.js"></script>
+  <!-- end scripts-->
+
+
+  <!--[if lt IE 7 ]>
+    <script src="js/libs/dd_belatedpng.js"></script>
+    <script>DD_belatedPNG.fix("img, .png_bg"); // Fix any <img> or .png_bg bg-images. Also, please read goo.gl/mZiyb </script>
+  <![endif]-->
+
+
+  <!-- mathiasbynens.be/notes/async-analytics-snippet Change UA-XXXXX-X to be your site's ID -->
+  <script>
+    var _gaq=[["_setAccount","UA-3631048-6"],["_trackPageview"]];
+    (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.async=1;
+    g.src=("https:"==location.protocol?"//ssl":"//www")+".google-analytics.com/ga.js";
+    s.parentNode.insertBefore(g,s)}(document,"script"));
+  </script>
+
+</body>
+</html>
