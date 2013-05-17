@@ -303,7 +303,7 @@ headphones: "\e008" &#57352
     width: 65.48673%;
     float: right;
     margin-right: 0;
-    *margin-left: -40px;
+    #margin-left: -40px;
     display: inline;
     padding-left: 13.27434%;
     position: relative;
@@ -360,7 +360,7 @@ headphones: "\e008" &#57352
     width: 30.97345%;
     float: right;
     margin-right: 0;
-    *margin-left: -40px;
+    #margin-left: -40px;
     display: inline;
     padding-left: 1.76991%;
     padding-right: 3.53982%;
@@ -678,7 +678,7 @@ headphones: "\e008" &#57352
     -o-border-radius: 0.25em;
     border-radius: 0.25em;
     color: #e3edf2 !important;
-    padding: .25em .25em 0;
+    padding: 0.25em 0.25em 0;
     text-decoration: none;
     -webkit-transition: background, ease-in, 0.25s;
     -moz-transition: background, ease-in, 0.25s;
@@ -687,6 +687,473 @@ headphones: "\e008" &#57352
   }
   .social-footer a:hover, .social-footer a:active, .social-footer a:focus {
     background: #e64988;
+  }
+
+  .featurette {
+    padding-top: 3.75em;
+    padding-bottom: 3.75em;
+    @-moz-keyframes show {
+      100% {
+        opacity: 1;
+      }
+}
+
+    @-webkit-keyframes show {
+      100% {
+        opacity: 1;
+      }
+}
+
+    @-o-keyframes show {
+      100% {
+        opacity: 1;
+      }
+}
+
+    @-ms-keyframes show {
+      100% {
+        opacity: 1;
+      }
+}
+
+    @keyframes show {
+      100% {
+        opacity: 1;
+      }
+}
+
+    @-moz-keyframes hide {
+      100% {
+        opacity: 0;
+      }
+}
+
+    @-webkit-keyframes hide {
+      100% {
+        opacity: 0;
+      }
+}
+
+    @-o-keyframes hide {
+      100% {
+        opacity: 0;
+      }
+}
+
+    @-ms-keyframes hide {
+      100% {
+        opacity: 0;
+      }
+}
+
+    @keyframes hide {
+      100% {
+        opacity: 0;
+      }
+}
+
+    @-moz-keyframes pfft {
+      0% {
+        background-position: 0 0;
+      }
+
+      100% {
+        background-position: 0 -121px;
+      }
+}
+
+    @-webkit-keyframes pfft {
+      0% {
+        background-position: 0 0;
+      }
+
+      100% {
+        background-position: 0 -121px;
+      }
+}
+
+    @-o-keyframes pfft {
+      0% {
+        background-position: 0 0;
+      }
+
+      100% {
+        background-position: 0 -121px;
+      }
+}
+
+    @-ms-keyframes pfft {
+      0% {
+        background-position: 0 0;
+      }
+
+      100% {
+        background-position: 0 -121px;
+      }
+}
+
+    @keyframes pfft {
+      0% {
+        background-position: 0 0;
+      }
+
+      100% {
+        background-position: 0 -121px;
+      }
+}
+
+    @-moz-keyframes haha {
+      0% {
+        background-position: 0 -243px;
+      }
+
+      100% {
+        background-position: 0 -486px;
+      }
+}
+
+    @-webkit-keyframes haha {
+      0% {
+        background-position: 0 -243px;
+      }
+
+      100% {
+        background-position: 0 -486px;
+      }
+}
+
+    @-o-keyframes haha {
+      0% {
+        background-position: 0 -243px;
+      }
+
+      100% {
+        background-position: 0 -486px;
+      }
+}
+
+    @-ms-keyframes haha {
+      0% {
+        background-position: 0 -243px;
+      }
+
+      100% {
+        background-position: 0 -486px;
+      }
+}
+
+    @keyframes haha {
+      0% {
+        background-position: 0 -243px;
+      }
+
+      100% {
+        background-position: 0 -486px;
+      }
+}
+
+    @-moz-keyframes oops {
+      0% {
+        background-position: 0 -486px;
+      }
+
+      100% {
+        background-position: 0 -607px;
+      }
+}
+
+    @-webkit-keyframes oops {
+      0% {
+        background-position: 0 -486px;
+      }
+
+      100% {
+        background-position: 0 -607px;
+      }
+}
+
+    @-o-keyframes oops {
+      0% {
+        background-position: 0 -486px;
+      }
+
+      100% {
+        background-position: 0 -607px;
+      }
+}
+
+    @-ms-keyframes oops {
+      0% {
+        background-position: 0 -486px;
+      }
+
+      100% {
+        background-position: 0 -607px;
+      }
+}
+
+    @keyframes oops {
+      0% {
+        background-position: 0 -486px;
+      }
+
+      100% {
+        background-position: 0 -607px;
+      }
+}
+
+    @-moz-keyframes uh-oh {
+      0%, 100% {
+        margin-left: 0;
+      }
+
+      25% {
+        margin-left: 7px;
+      }
+
+      75% {
+        margin-left: -7px;
+      }
+}
+
+    @-webkit-keyframes uh-oh {
+      0%, 100% {
+        margin-left: 0;
+      }
+
+      25% {
+        margin-left: 7px;
+      }
+
+      75% {
+        margin-left: -7px;
+      }
+}
+
+    @-o-keyframes uh-oh {
+      0%, 100% {
+        margin-left: 0;
+      }
+
+      25% {
+        margin-left: 7px;
+      }
+
+      75% {
+        margin-left: -7px;
+      }
+}
+
+    @-ms-keyframes uh-oh {
+      0%, 100% {
+        margin-left: 0;
+      }
+
+      25% {
+        margin-left: 7px;
+      }
+
+      75% {
+        margin-left: -7px;
+      }
+}
+
+    @keyframes uh-oh {
+      0%, 100% {
+        margin-left: 0;
+      }
+
+      25% {
+        margin-left: 7px;
+      }
+
+      75% {
+        margin-left: -7px;
+      }
+}
+
+    @-moz-keyframes spin {
+      0% {
+        background-position: 0 0;
+      }
+
+      100% {
+        background-position: 0 -1015px;
+      }
+}
+
+    @-webkit-keyframes spin {
+      0% {
+        background-position: 0 0;
+      }
+
+      100% {
+        background-position: 0 -1015px;
+      }
+}
+
+    @-o-keyframes spin {
+      0% {
+        background-position: 0 0;
+      }
+
+      100% {
+        background-position: 0 -1015px;
+      }
+}
+
+    @-ms-keyframes spin {
+      0% {
+        background-position: 0 0;
+      }
+
+      100% {
+        background-position: 0 -1015px;
+      }
+}
+
+    @keyframes spin {
+      0% {
+        background-position: 0 0;
+      }
+
+      100% {
+        background-position: 0 -1015px;
+      }
+}
+
+  }
+  .featurette .body {
+    background: url(http://stash.rachelnabors.com/codepen/spinner/bg_spinner-body.png);
+    left: 50%;
+    margin-left: -62px;
+    width: 224px;
+    height: 332px;
+  }
+  .featurette .message p:nth-child(1) {
+    -webkit-animation: show 0.5s 1 forwards, hide 0.5s 1 3s forwards;
+    -moz-animation: show 0.5s 1 forwards, hide 0.5s 1 3s forwards;
+    -ms-animation: show 0.5s 1 forwards, hide 0.5s 1 3s forwards;
+    -o-animation: show 0.5s 1 forwards, hide 0.5s 1 3s forwards;
+    animation: show 0.5s 1 forwards, hide 0.5s 1 3s forwards;
+  }
+  .featurette .message p:nth-child(2) {
+    -webkit-animation: show 0.5s 1 4s forwards, hide 0.5s 1 7s forwards;
+    -moz-animation: show 0.5s 1 4s forwards, hide 0.5s 1 7s forwards;
+    -ms-animation: show 0.5s 1 4s forwards, hide 0.5s 1 7s forwards;
+    -o-animation: show 0.5s 1 4s forwards, hide 0.5s 1 7s forwards;
+    animation: show 0.5s 1 4s forwards, hide 0.5s 1 7s forwards;
+  }
+  .featurette .message p:nth-child(3) {
+    -webkit-animation: show 0.5s 1 9s forwards, hide 0.5s 1 10s forwards;
+    -moz-animation: show 0.5s 1 9s forwards, hide 0.5s 1 10s forwards;
+    -ms-animation: show 0.5s 1 9s forwards, hide 0.5s 1 10s forwards;
+    -o-animation: show 0.5s 1 9s forwards, hide 0.5s 1 10s forwards;
+    animation: show 0.5s 1 9s forwards, hide 0.5s 1 10s forwards;
+  }
+  .featurette .message p:nth-child(4) {
+    -webkit-animation: show 0.5s 1 11s forwards, hide 0.5s 1 12s forwards;
+    -moz-animation: show 0.5s 1 11s forwards, hide 0.5s 1 12s forwards;
+    -ms-animation: show 0.5s 1 11s forwards, hide 0.5s 1 12s forwards;
+    -o-animation: show 0.5s 1 11s forwards, hide 0.5s 1 12s forwards;
+    animation: show 0.5s 1 11s forwards, hide 0.5s 1 12s forwards;
+  }
+  .featurette .message p:nth-child(5) {
+    -webkit-animation: show 0.5s 1 12s forwards, hide 0.5s 1 16s forwards;
+    -moz-animation: show 0.5s 1 12s forwards, hide 0.5s 1 16s forwards;
+    -ms-animation: show 0.5s 1 12s forwards, hide 0.5s 1 16s forwards;
+    -o-animation: show 0.5s 1 12s forwards, hide 0.5s 1 16s forwards;
+    animation: show 0.5s 1 12s forwards, hide 0.5s 1 16s forwards;
+  }
+  .featurette .message p:nth-child(6) {
+    -webkit-animation: show 0.5s 1 17s forwards, hide 0.5s 1 21s forwards;
+    -moz-animation: show 0.5s 1 17s forwards, hide 0.5s 1 21s forwards;
+    -ms-animation: show 0.5s 1 17s forwards, hide 0.5s 1 21s forwards;
+    -o-animation: show 0.5s 1 17s forwards, hide 0.5s 1 21s forwards;
+    animation: show 0.5s 1 17s forwards, hide 0.5s 1 21s forwards;
+  }
+  .featurette .message p:nth-child(7) {
+    -webkit-animation: show 0.5s 1 26s forwards;
+    -moz-animation: show 0.5s 1 26s forwards;
+    -ms-animation: show 0.5s 1 26s forwards;
+    -o-animation: show 0.5s 1 26s forwards;
+    animation: show 0.5s 1 26s forwards;
+  }
+  .featurette .face {
+    -webkit-animation: pfft 1s steps(1) 1 8s, haha 0.5s steps(2, end) 11s 10, oops 10s steps(1) 16s 1;
+    -moz-animation: pfft 1s steps(1) 1 8s, haha 0.5s steps(2, end) 11s 10, oops 10s steps(1) 16s 1;
+    -ms-animation: pfft 1s steps(1) 1 8s, haha 0.5s steps(2, end) 11s 10, oops 10s steps(1) 16s 1;
+    -o-animation: pfft 1s steps(1) 1 8s, haha 0.5s steps(2, end) 11s 10, oops 10s steps(1) 16s 1;
+    animation: pfft 1s steps(1) 1 8s, haha 0.5s steps(2, end) 11s 10, oops 10s steps(1) 16s 1;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    -ms-animation-fill-mode: forwards;
+    -o-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    background: url(http://stash.rachelnabors.com/codepen/spinner/sprite_spinner-expressions.png);
+    top: 73px;
+    left: 120px;
+    width: 133px;
+    height: 121px;
+  }
+  .featurette .pupils {
+    background: url(http://stash.rachelnabors.com/codepen/spinner/bg_spinner-pupils.png);
+    opacity: 0;
+    top: 47px;
+    left: 27px;
+    width: 72px;
+    height: 12px;
+    -webkit-animation: show 0.01s linear 1 16s forwards, uh-oh 5s 1 18s, hide 0.01s linear 1 26s forwards;
+    -moz-animation: show 0.01s linear 1 16s forwards, uh-oh 5s 1 18s, hide 0.01s linear 1 26s forwards;
+    -ms-animation: show 0.01s linear 1 16s forwards, uh-oh 5s 1 18s, hide 0.01s linear 1 26s forwards;
+    -o-animation: show 0.01s linear 1 16s forwards, uh-oh 5s 1 18s, hide 0.01s linear 1 26s forwards;
+    animation: show 0.01s linear 1 16s forwards, uh-oh 5s 1 18s, hide 0.01s linear 1 26s forwards;
+  }
+  .featurette .hands {
+    -webkit-animation: spin 0.5s steps(5) infinite;
+    -moz-animation: spin 0.5s steps(5) infinite;
+    -ms-animation: spin 0.5s steps(5) infinite;
+    -o-animation: spin 0.5s steps(5) infinite;
+    animation: spin 0.5s steps(5) infinite;
+    background: url(http://stash.rachelnabors.com/codepen/spinner/sprite_spinner-hands.png);
+    width: 307px;
+    height: 202px;
+  }
+  .featurette .rachel {
+    width: 307px;
+    height: 332px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -152px;
+    margin-top: -166px;
+  }
+  .featurette .rachel .ir {
+    position: absolute;
+    bottom: 0;
+  }
+  .featurette .spinner {
+    background: #e64988;
+    overflow: hidden;
+    margin: 0 auto;
+    position: relative;
+    width: 52.7027%;
+    height: 15em;
+  }
+  .featurette .message p {
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    -ms-animation-fill-mode: forwards;
+    -o-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    opacity: 0;
+    text-align: center;
+    margin-left: -150px;
+    margin-top: 160px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300px;
   }
 
   .hentry, #comments {
@@ -878,7 +1345,7 @@ headphones: "\e008" &#57352
     width: 36.06557%;
     float: right;
     margin-right: 0;
-    *margin-left: -40px;
+    #margin-left: -40px;
     display: inline;
     white-space: nowrap;
     overflow: hidden;
@@ -910,7 +1377,7 @@ headphones: "\e008" &#57352
   #archive-featured li:nth-child(3) {
     float: right;
     margin-right: 0;
-    *margin-left: -40px;
+    #margin-left: -40px;
     display: inline;
   }
   #archive-featured img {
@@ -985,7 +1452,7 @@ headphones: "\e008" &#57352
   #archive-list > li:nth-child(even) {
     float: right;
     margin-right: 0;
-    *margin-left: -40px;
+    #margin-left: -40px;
     display: inline;
     float: left;
   }
