@@ -495,8 +495,8 @@ headphones: "\e008" &#57352
     font-size: 3em;
     line-height: 0.75em;
     position: relative;
-    display: inline-block;
-    width: 48.57143%;
+    float: left;
+    width: 3.25em;
   }
   .hotspots .bravado strong {
     font-family: "LeagueGothicRegular", sans-serif;
@@ -522,7 +522,7 @@ headphones: "\e008" &#57352
     line-height: 0.5625em;
     float: right;
     text-align: right;
-    width: 48.57143%;
+    width: 2.25em;
   }
   .hotspots .site-cons a {
     float: right;
