@@ -246,7 +246,7 @@ headphones: "\e008" &#57352
     /* Not to be trusted, but hey. */
   }
 
-  #body-archives .nav-archives, #body-post .nav-archives {
+  #body-archives .nav-archives, #body-post .nav-archives, #body-about .nav-about {
     color: #c774b3 !important;
   }
 
@@ -1246,7 +1246,7 @@ headphones: "\e008" &#57352
   }
   .entry-content figure {
     line-height: 0;
-    margin-left: -21.31148%;
+    margin-left: -20.32787%;
     text-align: center;
     width: 142.62295%;
     padding-bottom: 1.5em;

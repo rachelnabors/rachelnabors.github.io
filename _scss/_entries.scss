@@ -69,7 +69,7 @@ header .meta {
 	}
 	figure {
 		line-height:0;
-		margin-left: -(columns(1,5) + gutter(5));
+		margin-left: -(columns(1,5) + (gutter(5)*.85));
 		text-align: center;
 		width: columns(7, 5);
 		@include padding-trailer(4);
