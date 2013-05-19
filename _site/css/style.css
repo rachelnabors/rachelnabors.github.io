@@ -1394,29 +1394,6 @@ headphones: "\e008" &#57352
     width: 100%;
     height: auto;
   }
-  #archive-featured h2 {
-    color: #141f31;
-    font-family: "LeagueGothicRegular", sans-serif;
-    font-size: 2em;
-    line-height: 1.125em;
-    -webkit-transform: rotate(-90deg);
-    -moz-transform: rotate(-90deg);
-    -ms-transform: rotate(-90deg);
-    -o-transform: rotate(-90deg);
-    transform: rotate(-90deg);
-    -webkit-transform-origin: bottom right;
-    -moz-transform-origin: bottom right;
-    -ms-transform-origin: bottom right;
-    -o-transform-origin: bottom right;
-    transform-origin: bottom right;
-    margin-top: 2.625em;
-    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=15);
-    opacity: 0.15;
-    position: absolute;
-    top: 0;
-    left: -1em;
-    text-transform: uppercase;
-  }
   #archive-featured h3 {
     white-space: nowrap;
     overflow: hidden;

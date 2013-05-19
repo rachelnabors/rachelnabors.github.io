@@ -15,18 +15,6 @@
 		top: 0; left: 0;
 		width: 100%; height: auto;
 	}
-	h2 {
-		color: $black;
-		font-family: $league;
-		@include adjust-font-size-to(32px);
-		@include rotate(-90deg);
-		@include transform-origin(bottom, right);
-		@include margin-leader(7);
-		@include opacity(.15);
-		position: absolute;
-		top: 0; left: -1em;
-		text-transform: uppercase;
-	}
 	h3 {
 		@include ellipsis();
 		@include adjust-font-size-to(24px);
