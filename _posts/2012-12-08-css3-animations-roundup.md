@@ -10,7 +10,7 @@ featured: true
 Lately I've been on a CSS3 Animations/HTML5 audio jag. It's <strong>just so much fun,</strong> I've been working hard to share my techniques with everyone:
 <ul>
   <li><a href="http://24ways.org/2012/flashless-animation/">24 Ways posted my article about Flashless Animation</a></li>
-  <li>Check out my <a href="http://www.rachelnabors.com/animation/candyHalo1/slides/index_cssdevconf2012.html">slides from my CSS Dev Conf talk "Animated Music Videos with CSS Animations and HTML5 Audio"</a></li>
+  <li>Check out my <a href="http://rachelnabors.com/css-amv-talk">slides from my CSS Dev Conf talk "Animated Music Videos with CSS Animations and HTML5 Audio"</a></li>
 </ul>
 Additionally, you can check out some of the live demos I've done directly:
 <ul>
