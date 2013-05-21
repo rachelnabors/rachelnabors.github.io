@@ -113,8 +113,8 @@ There were many women of all types and colors, attendees and speakers (6 out of 
 It was the <em>crémé de la crémé</em> of CSS geeks, and I'm honored to have been among those speaking. Most front-end development conferences revolve around JavaScript. It was a relief to attend a conference where my favorite thing--CSS--took center stage. I can't wait for the next one!
 <h3>Quick Links</h3>
 <ul>
-  <li><a href="http://www.rachelnabors.com/cssdevconf2012">My Slides</a></li>
-  <li><a href="http://www.rachelnabors.com/animation/candyHalo1/final/">My Animation</a></li>
+  <li><a href="/css-amv-talk/">My Slides</a></li>
+  <li><a href="/css-amv-talk/animation">My Animation</a></li>
   <li><a href="http://www.flickr.com/photos/crowchick/sets/72157632219392614/">Photos</a></li>
   <li>
 <p style="display: inline !important;"><a href="https://twitter.com/rachelnabors/css-dev-conf-2012/members">Twitter list of the speakers</a></p>

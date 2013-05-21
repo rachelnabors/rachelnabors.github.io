@@ -14,9 +14,9 @@ Lately I've been on a CSS3 Animations/HTML5 audio jag. It's <strong>just so much
 </ul>
 Additionally, you can check out some of the live demos I've done directly:
 <ul>
-  <li><a href="/animation/nyantuna/">NyanTuna</a></li>
-  <li><a href="/animation/candyHalo1/final/">Final "Candy Candy" animation</a></li>
-  <li><a href="/animation/candyHalo1/toys/cssdevconf/">"Coming Soon" animation</a></li>
+  <li><a href="http://rachelnabors.com/nyantuna/">NyanTuna</a></li>
+  <li><a href="/css-amv-talk/animation">Final "Candy Candy" animation</a></li>
+  <li><a href="/css-amv-talk/toys/curtains.html">"Coming Soon" animation</a></li>
   <li><a href="http://codepen.io/CrowChick/full/rCost">"Cat in Byakkoya" parallax animation</a></li>
 </ul>
 Hope you get inspired. Please, show me what you come up with!
