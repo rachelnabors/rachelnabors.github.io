@@ -70,7 +70,7 @@
 .home-module-title {
 	color: #fff;
 	font-family: $league;
-	@include adjust-font-size-to(32px);
+	@include adjust-font-size-to(24px, 7, 16px);
 	text-transform: uppercase;
 	[data-icon]:before {
 		font-size: .8em;
