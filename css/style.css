@@ -562,7 +562,7 @@ headphones: "\e008" &#57352
   }
   #dribbblins img {
     height: auto;
-    max-width: 100%;
+    width: 100%;
     -webkit-transition: background, ease-in, 0.25s;
     -moz-transition: background, ease-in, 0.25s;
     -o-transition: background, ease-in, 0.25s;
@@ -596,7 +596,7 @@ headphones: "\e008" &#57352
   }
   .module-animation img {
     height: auto;
-    max-width: 100%;
+    width: 100%;
     -webkit-transition: opacity, ease-in, 0.25s;
     -moz-transition: opacity, ease-in, 0.25s;
     -o-transition: opacity, ease-in, 0.25s;

@@ -170,7 +170,7 @@
 	}
 	img {
 		height: auto; 
-		max-width: 100%; 
+		width: 100%; 
 		@include transition(background, ease-in, .25s);
 	}
 	a { display: block; height: 100%;}
@@ -199,7 +199,7 @@
 	li:nth-child(odd) {	clear: both;	}
 	img { 
 		height: auto; 
-		max-width: 100%;
+		width: 100%;
 		@include transition(opacity, ease-in, .25s);
 	}
 	a:link, a:visited, a:hover, a:active{
