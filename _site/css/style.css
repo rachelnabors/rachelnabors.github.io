@@ -402,12 +402,13 @@ headphones: "\e008" &#57352
   .home-module {
     margin-bottom: 2.25em;
   }
-  .home-module time {
+  .home-module time, .home-module .source {
     color: #333b47;
     font-family: "Georgia", serif;
     font-style: italic;
     font-size: 0.75em;
     line-height: 1.5em;
+    white-space: nowrap;
   }
   .home-module header {
     position: absolute;

@@ -43,11 +43,12 @@
 .home-module {
 	@include margin-trailer(6);
 	@extend %default-links;
-	time {
+	time, .source {
 		color: $dark_grey;
 		font-family: $georgia;
 		font-style: italic;
 		@include adjust-font-size-to(12px);
+		white-space: nowrap;
 	}
 	header {
 		position: absolute;
