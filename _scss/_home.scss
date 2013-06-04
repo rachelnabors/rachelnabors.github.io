@@ -1,6 +1,8 @@
 #body-home {
 	background: $black;
-	.container {float: right;}
+	.container {
+		max-width:100%;//because floating it makes it look weird. And in general this thing looks good no matter how wide
+	}
 	strong { font-weight: normal;}
 	em {font-style: normal;}
 }
@@ -70,7 +72,7 @@
 .home-module-title {
 	color: #fff;
 	font-family: $league;
-	@include adjust-font-size-to(24px, 7, 16px);
+	@include adjust-font-size-to(32px);
 	text-transform: uppercase;
 	[data-icon]:before {
 		font-size: .8em;
