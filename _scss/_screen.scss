@@ -8,6 +8,7 @@ body {
 	@include container();
 	margin: 0;
 	// @include susy-grid-background;
+	width: (1130px/$base-font-size)*1em;
 }
 
 //anything iconic
