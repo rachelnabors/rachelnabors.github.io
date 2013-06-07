@@ -341,6 +341,7 @@ headphones: "\e008" &#57352
   }
   #body-home .container {
     width: 100%;
+    max-width: 100%;
   }
   #body-home strong {
     font-weight: normal;
