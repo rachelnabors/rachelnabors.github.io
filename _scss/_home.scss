@@ -1,7 +1,7 @@
 #body-home {
 	background: $black;
 	.container {
-		max-width:100%;//because floating it makes it look weird. And in general this thing looks good no matter how wide
+		width:100%;//because floating it makes it look weird. And in general this thing looks good no matter how wide
 	}
 	strong { font-weight: normal;}
 	em {font-style: normal;}
