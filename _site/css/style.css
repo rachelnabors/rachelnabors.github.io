@@ -340,7 +340,7 @@ headphones: "\e008" &#57352
     background: #141f31;
   }
   #body-home .container {
-    max-width: 100%;
+    float: right;
   }
   #body-home strong {
     font-weight: normal;

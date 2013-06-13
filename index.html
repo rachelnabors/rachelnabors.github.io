@@ -95,6 +95,7 @@ layout: home
 			</a></li>
 		</ul>
 	</div>
+
 	<div class="home-module">
 		<header>
 			<h1 class="home-module-title"><span aria-hidden="true" data-icon="&#10025;"></span>Articles</h1>
@@ -107,16 +108,15 @@ layout: home
 			<li><a href="http://www.uxbooth.com/blog/better-user-orientation-through-navigation/">Better User Orientation through Navigation</a> <span class="source">UX Booth</span></li>
         </ul>
 	</div>
-	<div class="home-module">	
+	<div class="home-module">
 		<header>
-			<h1 class="home-module-title"><span aria-hidden="true" data-icon="&#10025;"></span>Blog</h1>
-			<a href="/archive">archive</a>
+			<h1 class="home-module-title"><span aria-hidden="true" data-icon="&#10025;"></span>Slides</h1>
 		</header>
 		<ul>
-		  {% for post in site.posts limit: 5 %}
-		    <li><a href="{{ post.url }}">{{ post.title }}</a></li>
-		  {% endfor %}
-		</ul>
+			<li><a href="http://rachelnabors.com/css-amv-talk/">Animated Music Videos Talk</a></li>
+			<li><a href="http://rachelnabors.com/animation-workshop/">Animated Music Videos Workshop</a></li>
+			<li><a href="http://rachelnabors.com/javascript-for-designers/">JavaScript for Designers</a></li>
+ 		</ul>
 	</div>
 	<div class="home-module">
 		<header>
@@ -129,6 +129,18 @@ layout: home
 			<li><a href="http://onefoursev.com/rachel-nabors">147</a></li>
 		</ul>
 	</div>
+	<div class="home-module">	
+		<header>
+			<h1 class="home-module-title"><span aria-hidden="true" data-icon="&#10025;"></span>Blog</h1>
+			<a href="/archive">archive</a>
+		</header>
+		<ul>
+		  {% for post in site.posts limit: 5 %}
+		    <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+		  {% endfor %}
+		</ul>
+	</div>
+
 
 	<footer class="home-footer">
 		<a href="mailto:aloha@rachelnabors.com" class="contact">Got a project? Let's talk <span aria-hidden="true" data-icon="&#10230;" class="icon"></span></a>
