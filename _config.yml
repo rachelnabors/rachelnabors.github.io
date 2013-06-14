@@ -9,6 +9,8 @@ pygments: true
 
 lsi: false
 
+google_analytics_tracking_id: UA-3631048-6
+
 # Default date format is "ordinal" (resulting in "July 22nd 2007")
 # You can customize the format as defined in
 # http://www.ruby-doc.org/core-1.9.2/Time.html#method-i-strftime
