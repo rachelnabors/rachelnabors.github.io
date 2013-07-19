@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Interaction design: Craft vs. UI
+title: "Interaction design: Craft vs. UI"
 excerpt: "I've been to many conferences this summer, and I've gotten a lot of feedback from both designers and developers about some of the harsh realities of implementing the exciting new animations and interactions I talk about. I have some ideas for what needs to be done. What do you think?"
 featured-image: ""
 ---
