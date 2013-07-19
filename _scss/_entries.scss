@@ -114,10 +114,17 @@ header .meta {
 		margin: 0 auto;
 		@include padding-trailer(4, 32px);
 	  	@include adjust-leading-to(8, 32px);
+	  	position: relative;
 		width: space(3, 5);
 		text-align: center;
-		&:before { content: "\201C"; }
-		&:after { content: "\201D"; }
+		&:before { 
+			content: "\201C"; 
+			position: absolute;
+			left: -.35em;
+			font-size: 3em;
+			@include opacity(.4);
+			top: .15em;
+		}
 		+ p cite {
 			color: lighten($grey, 10%);
 			margin: 0 auto;
