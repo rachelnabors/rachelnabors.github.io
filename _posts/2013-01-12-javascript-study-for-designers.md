@@ -88,7 +88,7 @@ For those who learn by doing, check out the <a href="http://www.codecademy.com/t
 Don’t try to plow your way through all these resources. Take everything in doses you can swallow. Ruminate on what you just learned. Go to <a href="http://codepen.io/">codepen</a> or <a href="http://jsfiddle.net/">JSFiddle</a> and play with implementing the principles you’ve discovered. If something is exciting you, that’s when you want to run forward with it. If you’re uninspired, try something else, a different learning style or a different topic.
 
 Do not make the mistake of beating your head against a wall until you “get it!” <a href="https://coderwall.com/p/jglggq?i=4&amp;p=1&amp;q=author%3Arachelnabors&amp;t%5B%5D=rachelnabors">I've made that mistake before.</a> It doesn’t work. Switch gears, take a different route.
-<figure><img class="aligncenter size-full wp-image-797" alt="Learning comic" src="http://www.rachelnabors.com/wp-content/uploads/2013/01/comic_learning.jpg" /><figcaption>Don't fall into bad learning habits like this!</figcaption>
+<figure><img class="aligncenter size-full wp-image-797" alt="Learning comic" src="http://media.rachelnabors.com/wp-content/uploads/2013/01/comic_learning.jpg" /><figcaption>Don't fall into bad learning habits like this!</figcaption>
 </figure>	
 <h2>Share what works for you</h2>
 Have you successfully learned JavaScript from a non-programming background? What worked for you? What didn’t? Sharing is a great way to make headway in your own studies, and I'd love to hear how you're doing!

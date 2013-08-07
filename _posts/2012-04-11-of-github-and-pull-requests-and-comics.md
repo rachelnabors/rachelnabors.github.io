@@ -11,7 +11,7 @@ A few months ago I decided I wanted to contribute to projects on GitHub. I admit
 
 I asked my coworkers of the time how I should start. I was admonished, "When you see something broken, fork it, fix it, and submit a pull request." Simple enough! Err, not so...
 
-<img title="GitHub Comic" alt="A comic in which the heroine, Rachel the Great, wants to submit pull requests to GitHub, but is thwarted by style guides and her own bumbling." src="http://www.rachelnabors.com/wp-content/uploads/2012/04/github_web1.png" />
+<img title="GitHub Comic" alt="A comic in which the heroine, Rachel the Great, wants to submit pull requests to GitHub, but is thwarted by style guides and her own bumbling." src="http://media.rachelnabors.com/wp-content/uploads/2012/04/github_web1.png" />
 
 Not a single one of my pull requests made it in! So where did I go wrong?
 

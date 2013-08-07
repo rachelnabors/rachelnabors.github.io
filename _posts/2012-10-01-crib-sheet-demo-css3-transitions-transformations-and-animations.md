@@ -91,7 +91,7 @@ Animations are actually quite straightforward and <abbr title="Don't Repeat Your
 <h2>In demonstration</h2>
 I used all of the above to make <a href="http://www.rachelnabors.com/animations/curtains.html">a lovely interactive animation</a> (psst, give the tassel a tug). Please enjoy the surprise, and have a poke at the code! I made all these notes while working on this piece. While these may be covered in the opening of my talk, I'll actually be going into more detail about the HTML5 audio API than the minutiae of CSS3 easing options. There's just so much to cover on timing and events!
 
-<figure><img title="Tuna Waiting" src="http://www.rachelnabors.com/wp-content/uploads/2012/09/tuna-waits_dribbble.jpg" alt="Tuna the cat sitting next to a piece of luggage marked with a tag to Hawaii." width="400" height="300" />
+<figure><img title="Tuna Waiting" src="http://media.rachelnabors.com/wp-content/uploads/2012/09/tuna-waits_dribbble.jpg" alt="Tuna the cat sitting next to a piece of luggage marked with a tag to Hawaii." width="400" height="300" />
   <figcaption>Check out this demo! 100% gif-free.</figcaption>
 </figure>
 
