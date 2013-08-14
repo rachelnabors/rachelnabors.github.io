@@ -19,7 +19,7 @@ This is a reasonable complaint, a problem I have encountered on my own. While we
 
 * A way to convert onion-skinned PSDs to sprite sheets
 * A way to scrub through animations to check timing on longer sequences
-* A plugin for Sass to handle animation timing (I'm working on this)
+* A plugin for Sass to handle animation timing ([I'm working on this](https://github.com/Team-Sass/animation-studio))
 * Polyfills for browsers that don't support animations
 
 (There _are_ more, and please feel free to respond with what would help you out!)
@@ -35,13 +35,14 @@ At first I thought, "Interaction should be like a craft, not something a [WYSIWY
 
 And this brings me to one final thought. At [Gotham JS's](http://www.gothamjs.com/) afterparty, I had a conversation with a young man which left me thinking. Right now, we don't have many of these Tools. Those that we have leave us "working blind." That is, we make a change, refresh the browser, wait to see the change, repeat. We have to do a lot of math and calculations by hand to get it right. Math and calculations are what computers are best at. And humans, especially the artists who have those Big Interaction Dreams, are great at visual and audio analysis. Wouldn't it be best if we could see _and_ hear those interactions while we build them? And that's where the Tool Belt approach fails. 
 
-[Brett Victor gave a beautiful talk about working with code visually and seeing the result of that work immediately.](https://vimeo.com/36579366) It's hard for me to explain, so be sure to watch the talk. I feel like we need something like this in the Tool Belt to get those Big Dreamers in the field.
+
+[Brett Victor gave a beautiful talk about working with code visually and seeing the result of that work immediately.](https://vimeo.com/36579366) It's hard for me to explain, so be sure to watch the talk. It's not impossible to build visual tools that overlay complex processes without divorcing the developer from their craft. For instance, [Stylie](http://jeremyckahn.github.io/stylie/) is a beautiful example of a tool with a visual interface that is built upon the more complex "blind" JavaScript infrastructure [rekapi](http://rekapi.com/). I feel like we need visual tools like this in the Tool Belt to get those Big Dreamers in the field.
 
 ## Crafters of experiences
 I do feel there is a place for a special breed of experience designer/developer in the web development ecosphere. I also strongly feel these people will come from unexpected places, places that have a pedigree for delighting people, like animation, cinema, comics. But in order to get their ideas, we have to make some accomodations:
 
 1. **Solid onboarding to help people learn CSS and JavaScript quickly.** You shouldn't have to get a computer science degree to understand enough JS to build an interaction. It's not like this person is building the next jQuery. That designers are still struggling to learn JavaScript after so many years is a testament to our failure as teachers of absolute newbs with no programming background, not a testament to designers' learning abilities.
 2. **Better tools for excited creators.** It behooves us as a development community to build the tools these creators need to work quickly and efficiently and better understand their code. The alternative is that we let privately owned companies with their own code standards empower these people to create according to a narrow definition of interactions.
-3. **More collaboration.** I'd like to see more non-developers being dragged to hackathons. You _can_ get starving artists to come to an event with free beer an pizza. But you have to reach out to them, and you have to know how to talk to them (which is the topic of another post, but the gist is: ask to work on their ideas instead of your own&mdash;it'll be good for both of you).
+3. **More collaboration.** I'd like to see more non-developers being dragged to hackathons. You _can_ get starving artists to come to an event with free beer and pizza. But you have to reach out to them, and you have to know how to talk to them (which is the topic of another post, but the gist is: ask to work on their ideas instead of your own&mdash;it'll be good for both of you).
 
 These are just some ideas I had and some things I've observed. I want to know: what do other designers and developers think? Can we come together to build exciting things, or will we always need to look to so-called unicorns? Can and should we train people to work on these things by hand, or is it better to just let the programs do the work for us? Is it better to craft blindly or design visually?
