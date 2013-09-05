@@ -1,9 +1,5 @@
-* html {
-  font-size: 100%;
-}
-
 html {
-  font-size: 16px;
+  font-size: 100%;
   line-height: 0.375em;
 }
 
@@ -444,6 +440,11 @@ headphones: "\e008" &#57352
     margin-right: .15em;
   }
 
+  .ad-module {
+    margin-left: -5.71429%;
+    padding-bottom: 1.5em;
+  }
+
   .hotspots {
     background: #333b47;
     color: #fff;
@@ -453,6 +454,7 @@ headphones: "\e008" &#57352
     padding-right: 11.42857%;
     padding-bottom: 1.5em;
     padding-top: 1.5em;
+    margin-bottom: 0;
     text-transform: uppercase;
     width: 100%;
   }
@@ -460,8 +462,6 @@ headphones: "\e008" &#57352
     background: #333b47;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
     border-radius: 50%;
     padding-top: 1.5em;
     padding-bottom: 0.75em;
@@ -676,8 +676,6 @@ headphones: "\e008" &#57352
     font-size: rythm(6);
     -webkit-border-radius: 0.25em;
     -moz-border-radius: 0.25em;
-    -ms-border-radius: 0.25em;
-    -o-border-radius: 0.25em;
     border-radius: 0.25em;
     color: #e3edf2 !important;
     padding: .25em .25em 0;
@@ -1328,11 +1326,11 @@ headphones: "\e008" &#57352
   }
 
   .post-nav {
-    border-top-style: solid;
     border-top-width: 0.0625em;
+    border-top-style: solid;
     padding-top: 0.3125em;
-    border-bottom-style: solid;
     border-bottom-width: 0.0625em;
+    border-bottom-style: solid;
     padding-bottom: 0.3125em;
     margin-bottom: 1.5em;
     border-color: #001f27;

@@ -10,4 +10,5 @@ gem 'RedCloth',   '=4.2.9'
 
 gem 'sass'
 gem 'compass'
+gem 'animation'
 gem 'susy'
