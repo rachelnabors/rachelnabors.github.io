@@ -83,7 +83,7 @@ As a fun bonus, try out <a href="http://www.amazon.com/gp/product/1593271905/ref
 <h2>Supplementary Education Options</h2>
 If you prefer teacher-student modeling, I recommend <a href="http://bocoup.com/">Bocoup Training in Boston</a>. They often send their trainers to events and conferences outside of Boston, so keep an eye out. It costs money, but the value is excellent. (They also provide <a href="http://training.bocoup.com/screencasts/">some screencasts for free</a>!)
 
-For those who learn by doing, check out the <a href="http://www.codecademy.com/tracks/javascript-combined">JavaScript sessions offered by Code Academy</a>.
+For those who learn by doing, check out the <a href="http://www.codecademy.com/tracks/javascript-combined">JavaScript sessions offered by Code Academy</a> or the <a href="http://javascript-roadtrip.codeschool.com/">JavaScript Road Trip course offered (at this time freely) by Code School</a>.
 <h2>Go at your own pace</h2>
 Don’t try to plow your way through all these resources. Take everything in doses you can swallow. Ruminate on what you just learned. Go to <a href="http://codepen.io/">codepen</a> or <a href="http://jsfiddle.net/">JSFiddle</a> and play with implementing the principles you’ve discovered. If something is exciting you, that’s when you want to run forward with it. If you’re uninspired, try something else, a different learning style or a different topic.
 
