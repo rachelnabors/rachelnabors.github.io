@@ -12,7 +12,7 @@ body_id: post
 				<p class="meta">
 					<time>{{ page.date | date_to_long_string }}</time> 
 					{% if site.disqus_short_name and page.comments != false and post.comments != false and site.disqus_show_comment_count == true %}
-						| <a href="{{ root_url }}{{ post.url }}/index.html#disqus_thread">Comments</a>
+						| <a href="{{ site.root_url }}{{ page.url }}/index.html#disqus_thread">Comments</a>
 					{% endif %}
 				</p>
 			</header>
