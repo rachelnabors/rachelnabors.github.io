@@ -440,11 +440,6 @@ headphones: "\e008" &#57352
     margin-right: .15em;
   }
 
-  .ad-module {
-    margin-left: -5.71429%;
-    padding-bottom: 1.5em;
-  }
-
   .hotspots {
     background: #333b47;
     color: #fff;
@@ -454,7 +449,6 @@ headphones: "\e008" &#57352
     padding-right: 11.42857%;
     padding-bottom: 1.5em;
     padding-top: 1.5em;
-    margin-bottom: 0;
     text-transform: uppercase;
     width: 100%;
   }

@@ -80,12 +80,6 @@
 	}
 }
 
-.ad-module {
-	// when you remove, see the check below.
-	margin-left: gutter(3)/2 * -1;
-	@include padding-trailer(4);
-}
-
 .hotspots {
 	background: $dark-grey;
 	color: #fff;
@@ -95,8 +89,6 @@
 	padding-right: gutter(3);
 	@include padding-trailer(4);
 	@include padding-leader(4);
-	// remove after ad
-	margin-bottom: 0;
 	@extend %clearfix;
 	text-transform: uppercase;
 	width: 100%;
