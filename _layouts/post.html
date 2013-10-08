@@ -29,7 +29,7 @@ body_id: post
 			</nav>
 		</article>
 		{% if site.disqus_short_name and page.comments != false %}
-		<section id="comments">
+		<section id="comments"></section>
 		<script type="text/javascript">
 		        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
 				var disqus_shortname = '{{ site.disqus_short_name}}';
@@ -50,7 +50,6 @@ body_id: post
 		    </script>
 		    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 		    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-		</section>
 		{% endif %}
 	</div>
 {% include footer.html %}
