@@ -6,4 +6,5 @@
 */*/.sass-cache
 .pygments-cache
 _plugins
+_drafts
 vendor
