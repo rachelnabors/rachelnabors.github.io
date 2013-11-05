@@ -7,9 +7,36 @@
     <atom:link href="http://rachelnabors.com/rss.xml" rel="self" type="application/rss+xml" />
     <description>Where I post musings about web development, comics, and the future of online interaction.</description>
     <language>en-us</language>
-    <pubDate>Thu, 05 Sep 2013 00:09:29 EDT</pubDate>
-    <lastBuildDate>Thu, 05 Sep 2013 00:09:29 EDT</lastBuildDate>
+    <pubDate>Mon, 04 Nov 2013 21:21:01 EST</pubDate>
+    <lastBuildDate>Mon, 04 Nov 2013 21:21:01 EST</lastBuildDate>
 
+    
+      <item>
+        <title>Best of 2013 Conferences</title>
+        <link>http://rachelnabors.com/2013/11/04/2013-conference-roundup/</link>
+        <pubDate>Mon, 04 Nov 2013 00:00:00 EST</pubDate>
+        <author>Rachel Nabors</author>
+        <guid>http://rachelnabors.com/2013/11/04/2013-conference-roundup/</guid>
+        <description>Ever since I had to quit my own comics publisching startup over jaw surgery, I've been shy about entrepreneurship.</description>
+      </item>
+    
+      <item>
+        <title>Best of 2013 Conferences</title>
+        <link>http://rachelnabors.com/2013/10/24/2013-conference-roundup/</link>
+        <pubDate>Thu, 24 Oct 2013 00:00:00 EDT</pubDate>
+        <author>Rachel Nabors</author>
+        <guid>http://rachelnabors.com/2013/10/24/2013-conference-roundup/</guid>
+        <description>2013 was a whirlwind conference tour for me. I had a blast! And here are conferences I feel deserve special love for delivering a fantastic experience.</description>
+      </item>
+    
+      <item>
+        <title>Why I'm still gun shy of entrepreneurship</title>
+        <link>http://rachelnabors.com/2013/10/08/entrepreneurship/</link>
+        <pubDate>Tue, 08 Oct 2013 00:00:00 EDT</pubDate>
+        <author>Rachel Nabors</author>
+        <guid>http://rachelnabors.com/2013/10/08/entrepreneurship/</guid>
+        <description>Ever since I had to quit my own comics publisching startup over jaw surgery, I've been shy about entrepreneurship.</description>
+      </item>
     
       <item>
         <title>Interaction design: Craft vs. UI</title>
