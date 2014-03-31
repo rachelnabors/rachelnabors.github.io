@@ -37,6 +37,7 @@ permalink: animation-ux
 
 ## Software
 A number of UIs have been created to help people create animations easier. I prefer to hand code everything and build my own tools, but others who do not have that luxury will be interested in these:
+
 * [Hype](http://tumult.com/hype/)
 * [Adobe Edge Animate](http://html.adobe.com/edge/animate/)
 * [Google's Web Designer](https://www.google.com/webdesigner/)
