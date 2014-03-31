@@ -1025,11 +1025,11 @@ headphones: "\e008" &#57352
     height: 332px;
   }
   .featurette .message p:nth-child(1) {
-    -webkit-animation: show 0.5s 1 forwards, hide 0.5s 1 3s forwards;
-    -moz-animation: show 0.5s 1 forwards, hide 0.5s 1 3s forwards;
-    -ms-animation: show 0.5s 1 forwards, hide 0.5s 1 3s forwards;
-    -o-animation: show 0.5s 1 forwards, hide 0.5s 1 3s forwards;
-    animation: show 0.5s 1 forwards, hide 0.5s 1 3s forwards;
+    -webkit-animation: show 0.5s 1 1ms forwards, hide 0.5s 1 3s forwards;
+    -moz-animation: show 0.5s 1 1ms forwards, hide 0.5s 1 3s forwards;
+    -ms-animation: show 0.5s 1 1ms forwards, hide 0.5s 1 3s forwards;
+    -o-animation: show 0.5s 1 1ms forwards, hide 0.5s 1 3s forwards;
+    animation: show 0.5s 1 1ms forwards, hide 0.5s 1 3s forwards;
   }
   .featurette .message p:nth-child(2) {
     -webkit-animation: show 0.5s 1 4s forwards, hide 0.5s 1 7s forwards;
