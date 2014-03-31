@@ -28,6 +28,7 @@ permalink: animation-ux
 
 ## Examples of animation in action
 * [Use Your Interface](http://useyourinterface.com/)&mdash;a tumblr of animated gifs of tiny user interface animations.
+* [Captivate Co](http://capptivate.co/)&mdash;A curated collection of iOS UI animation patterns.
 
 ## People on Twitter
 * [Me!](https://twitter.com/rachelnabors)
