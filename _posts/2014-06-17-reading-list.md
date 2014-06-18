@@ -2,7 +2,7 @@
 layout: post
 title: "Keeping Current: Web Animations Reading List"
 excerpt: "A few articles not to miss about web animation."
-featured-image: "/img/2014/hot-cuppa.jpg"
+featured-image: "http://rachelnabors.com/img/2014/hot-cuppa.jpg"
 featured: true
 ---
 I've been nailing [one](http://2014.la-conf.org/) [conference](http://rustbeltrefresh.com/) after [the other](http://giantconf.com/) and falling a little out of the loop on the state of web animations. So today I sat myself down and started reading the following articles to get up to speed. Please enjoy with a nice hot cup of whatever you please!
