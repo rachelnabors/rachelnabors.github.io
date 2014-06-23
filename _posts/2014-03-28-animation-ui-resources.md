@@ -6,9 +6,12 @@ featured-image: ""
 permalink: animation-ux
 ---
 
+[Slides from my talk about animation and the future of UX](http://www.slideshare.net/CrowChick/animation-and-the-future-of-ux-33573726) are on SlideShare. They don't have the videos because Keynote. Darn!
+
 ## Articles
 * [Web Animation at Work](http://alistapart.com/article/web-animation-at-work)&mdash;an article I wrote for A List Apart about why animation is important to companies and where to start honing one's skills.
 * [Animation Support in a User Interface Toolkit: Flexible, Robust, and Reusable Abstractions](https://smartech.gatech.edu/bitstream/handle/1853/3627/93-17.pdf)&mdash;an article from 1993 underscoring the improvements animations can have on a user's mastery of an operating system.
+* [Everything You Need to Know About the CSS will-change Property](http://dev.opera.com/articles/css-will-change-property/)&mdash;an article by Sara Soueidan that breaks down how animations tax the CPU and how the <code>will-change</code> property can and cannot help you optimize them.
 * [UI Animation and UX: A Not-So-Secret Friendship](http://alistapart.com/article/ui-animation-and-ux-a-not-so-secret-friendship)&mdash;a sister A List Apart article by Val Head focusing more on the nuts and bolts of animating user interfaces.
 
 ## Books
