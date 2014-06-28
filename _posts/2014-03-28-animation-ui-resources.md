@@ -27,7 +27,7 @@ permalink: animation-ux
 * [Animated Music Videos with HTML5 and CSS3](https://vimeo.com/89400965)&mdash;A fun introduction to CSS animations with the help of a rocking cat.
 
 ## Courses
-* [Animation and Storytelling with HTML5 and CSS3](http://frontendmasters.com/courses/animation-storytelling-html5-css3?partners=1679091c5a880faf6fb5e6087eb1b2dc)&mdash;My Frontend Masters Course showing how to use and combine CSS animations, JavaScript and HTML5 audio.
+* [Animation and Storytelling with HTML5 and CSS3](http://frontendmasters.com/courses/animation-storytelling-html5-css3/cutout-animations-css/?partner=1)&mdash;My Frontend Masters Course showing how to use and combine CSS animations, JavaScript and HTML5 audio.
 
 ## Examples of animation in action
 * [Use Your Interface](http://useyourinterface.com/)&mdash;a tumblr of animated gifs of tiny user interface animations.
