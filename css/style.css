@@ -10,7 +10,6 @@ html {
   font-weight: normal;
   font-style: normal;
 }
-
 @font-face {
   font-family: 'OstrichSansMedium';
   src: url("/fonts/ostrich-regular-webfont.eot");
@@ -18,7 +17,6 @@ html {
   font-weight: normal;
   font-style: normal;
 }
-
 @font-face {
   font-family: 'RNicons';
   src: url("/fonts/rn-icons.eot");
@@ -26,7 +24,6 @@ html {
   font-weight: normal;
   font-style: normal;
 }
-
 /*
 deviantart: "\e000" &#57344
 
@@ -370,10 +367,10 @@ headphones: "\e008" &#57352
     font-size: 2.25em;
     line-height: 1em;
     text-align: center;
-    -webkit-transform: rotate(-10deg);
     -moz-transform: rotate(-10deg);
     -ms-transform: rotate(-10deg);
     -o-transform: rotate(-10deg);
+    -webkit-transform: rotate(-10deg);
     transform: rotate(-10deg);
   }
   .main-tagline strong {
@@ -454,8 +451,8 @@ headphones: "\e008" &#57352
   }
   .hotspots .mixes {
     background: #333b47;
-    -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
     border-radius: 50%;
     padding-top: 1.5em;
     padding-bottom: 0.75em;
@@ -479,9 +476,9 @@ headphones: "\e008" &#57352
   .hotspots .mixes a:link, .hotspots .mixes a:visited, .hotspots .mixes a:hover, .hotspots .mixes a:active {
     color: #0097c0;
     text-decoration: none;
-    -webkit-transition: color, ease-in, 0.25s;
     -moz-transition: color, ease-in, 0.25s;
     -o-transition: color, ease-in, 0.25s;
+    -webkit-transition: color, ease-in, 0.25s;
     transition: color, ease-in, 0.25s;
   }
   .hotspots .mixes a:hover, .hotspots .mixes a:active, .hotspots .mixes a:focus {
@@ -499,15 +496,15 @@ headphones: "\e008" &#57352
     position: absolute;
     top: 1.5em;
     right: 1em;
-    -webkit-transform: rotate(90deg);
     -moz-transform: rotate(90deg);
     -ms-transform: rotate(90deg);
     -o-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
     transform: rotate(90deg);
-    -webkit-transform-origin: 100% 100%;
     -moz-transform-origin: 100% 100%;
     -ms-transform-origin: 100% 100%;
     -o-transform-origin: 100% 100%;
+    -webkit-transform-origin: 100% 100%;
     transform-origin: 100% 100%;
     font-size: 0.5em;
     line-height: 1.5em;
@@ -529,9 +526,9 @@ headphones: "\e008" &#57352
   .hotspots a:link, .hotspots a:visited, .hotspots a:hover, .hotspots a:active {
     color: #0097c0;
     text-decoration: none;
-    -webkit-transition: color, ease-in, 0.25s;
     -moz-transition: color, ease-in, 0.25s;
     -o-transition: color, ease-in, 0.25s;
+    -webkit-transition: color, ease-in, 0.25s;
     transition: color, ease-in, 0.25s;
   }
   .hotspots a:hover, .hotspots a:active, .hotspots a:focus {
@@ -558,9 +555,9 @@ headphones: "\e008" &#57352
   #dribbblins img {
     height: auto;
     width: 100%;
-    -webkit-transition: background, ease-in, 0.25s;
     -moz-transition: background, ease-in, 0.25s;
     -o-transition: background, ease-in, 0.25s;
+    -webkit-transition: background, ease-in, 0.25s;
     transition: background, ease-in, 0.25s;
   }
   #dribbblins a {
@@ -592,9 +589,9 @@ headphones: "\e008" &#57352
   .module-animation img {
     height: auto;
     width: 100%;
-    -webkit-transition: opacity, ease-in, 0.25s;
     -moz-transition: opacity, ease-in, 0.25s;
     -o-transition: opacity, ease-in, 0.25s;
+    -webkit-transition: opacity, ease-in, 0.25s;
     transition: opacity, ease-in, 0.25s;
   }
   .module-animation a:link, .module-animation a:visited, .module-animation a:hover, .module-animation a:active {
@@ -615,14 +612,14 @@ headphones: "\e008" &#57352
     -ms-text-overflow: ellipsis;
     -o-text-overflow: ellipsis;
     text-overflow: ellipsis;
-    -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     padding: 0 5.71429%;
     width: 100%;
-    -webkit-transition: background, ease-in, 0.25s;
     -moz-transition: background, ease-in, 0.25s;
     -o-transition: background, ease-in, 0.25s;
+    -webkit-transition: background, ease-in, 0.25s;
     transition: background, ease-in, 0.25s;
   }
   .module-animation a:hover .anim-title, .module-animation a:active .anim-title, .module-animation a:focus .anim-title {
@@ -643,24 +640,25 @@ headphones: "\e008" &#57352
     margin-right: .25em;
     margin-bottom: 0.5em;
   }
-  .home-footer .contact {
+
+  .big-cta {
     font-size: 2.25em;
     line-height: 1em;
     font-family: "LeagueGothicRegular", sans-serif;
     text-transform: uppercase;
     text-decoration: none;
-    -webkit-transition: color, ease-in, 0.25s;
     -moz-transition: color, ease-in, 0.25s;
     -o-transition: color, ease-in, 0.25s;
+    -webkit-transition: color, ease-in, 0.25s;
     transition: color, ease-in, 0.25s;
   }
-  .home-footer .contact:link, .home-footer .contact:visited {
+  .big-cta:link, .big-cta:visited {
     color: #0097c0;
   }
-  .home-footer .contact:hover, .home-footer .contact:active, .home-footer .contact:focus {
+  .big-cta:hover, .big-cta:active, .big-cta:focus {
     color: #e64988;
   }
-  .home-footer .icon {
+  .big-cta .icon {
     font-size: .8em;
   }
 
@@ -668,15 +666,15 @@ headphones: "\e008" &#57352
     background: #0097c0;
     display: block;
     font-size: rythm(6);
-    -webkit-border-radius: 0.25em;
     -moz-border-radius: 0.25em;
+    -webkit-border-radius: 0.25em;
     border-radius: 0.25em;
     color: #e3edf2 !important;
     padding: .25em .25em 0;
     text-decoration: none;
-    -webkit-transition: background, ease-in, 0.25s;
     -moz-transition: background, ease-in, 0.25s;
     -o-transition: background, ease-in, 0.25s;
+    -webkit-transition: background, ease-in, 0.25s;
     transition: background, ease-in, 0.25s;
   }
   .social-footer a:hover, .social-footer a:active, .social-footer a:focus {
@@ -687,62 +685,52 @@ headphones: "\e008" &#57352
     100% {
       opacity: 1;
     }
-}
-
+  }
   @-webkit-keyframes show {
     100% {
       opacity: 1;
     }
-}
-
+  }
   @-o-keyframes show {
     100% {
       opacity: 1;
     }
-}
-
+  }
   @-ms-keyframes show {
     100% {
       opacity: 1;
     }
-}
-
+  }
   @keyframes show {
     100% {
       opacity: 1;
     }
-}
-
+  }
   @-moz-keyframes hide {
     100% {
       opacity: 0;
     }
-}
-
+  }
   @-webkit-keyframes hide {
     100% {
       opacity: 0;
     }
-}
-
+  }
   @-o-keyframes hide {
     100% {
       opacity: 0;
     }
-}
-
+  }
   @-ms-keyframes hide {
     100% {
       opacity: 0;
     }
-}
-
+  }
   @keyframes hide {
     100% {
       opacity: 0;
     }
-}
-
+  }
   @-moz-keyframes pfft {
     0% {
       background-position: 0 0;
@@ -751,8 +739,7 @@ headphones: "\e008" &#57352
     100% {
       background-position: 0 -121px;
     }
-}
-
+  }
   @-webkit-keyframes pfft {
     0% {
       background-position: 0 0;
@@ -761,8 +748,7 @@ headphones: "\e008" &#57352
     100% {
       background-position: 0 -121px;
     }
-}
-
+  }
   @-o-keyframes pfft {
     0% {
       background-position: 0 0;
@@ -771,8 +757,7 @@ headphones: "\e008" &#57352
     100% {
       background-position: 0 -121px;
     }
-}
-
+  }
   @-ms-keyframes pfft {
     0% {
       background-position: 0 0;
@@ -781,8 +766,7 @@ headphones: "\e008" &#57352
     100% {
       background-position: 0 -121px;
     }
-}
-
+  }
   @keyframes pfft {
     0% {
       background-position: 0 0;
@@ -791,8 +775,7 @@ headphones: "\e008" &#57352
     100% {
       background-position: 0 -121px;
     }
-}
-
+  }
   @-moz-keyframes haha {
     0% {
       background-position: 0 -243px;
@@ -801,8 +784,7 @@ headphones: "\e008" &#57352
     100% {
       background-position: 0 -486px;
     }
-}
-
+  }
   @-webkit-keyframes haha {
     0% {
       background-position: 0 -243px;
@@ -811,8 +793,7 @@ headphones: "\e008" &#57352
     100% {
       background-position: 0 -486px;
     }
-}
-
+  }
   @-o-keyframes haha {
     0% {
       background-position: 0 -243px;
@@ -821,8 +802,7 @@ headphones: "\e008" &#57352
     100% {
       background-position: 0 -486px;
     }
-}
-
+  }
   @-ms-keyframes haha {
     0% {
       background-position: 0 -243px;
@@ -831,8 +811,7 @@ headphones: "\e008" &#57352
     100% {
       background-position: 0 -486px;
     }
-}
-
+  }
   @keyframes haha {
     0% {
       background-position: 0 -243px;
@@ -841,8 +820,7 @@ headphones: "\e008" &#57352
     100% {
       background-position: 0 -486px;
     }
-}
-
+  }
   @-moz-keyframes oops {
     0% {
       background-position: 0 -486px;
@@ -851,8 +829,7 @@ headphones: "\e008" &#57352
     100% {
       background-position: 0 -607px;
     }
-}
-
+  }
   @-webkit-keyframes oops {
     0% {
       background-position: 0 -486px;
@@ -861,8 +838,7 @@ headphones: "\e008" &#57352
     100% {
       background-position: 0 -607px;
     }
-}
-
+  }
   @-o-keyframes oops {
     0% {
       background-position: 0 -486px;
@@ -871,8 +847,7 @@ headphones: "\e008" &#57352
     100% {
       background-position: 0 -607px;
     }
-}
-
+  }
   @-ms-keyframes oops {
     0% {
       background-position: 0 -486px;
@@ -881,8 +856,7 @@ headphones: "\e008" &#57352
     100% {
       background-position: 0 -607px;
     }
-}
-
+  }
   @keyframes oops {
     0% {
       background-position: 0 -486px;
@@ -891,8 +865,7 @@ headphones: "\e008" &#57352
     100% {
       background-position: 0 -607px;
     }
-}
-
+  }
   @-moz-keyframes uh-oh {
     0%, 100% {
       margin-left: 0;
@@ -905,8 +878,7 @@ headphones: "\e008" &#57352
     75% {
       margin-left: -7px;
     }
-}
-
+  }
   @-webkit-keyframes uh-oh {
     0%, 100% {
       margin-left: 0;
@@ -919,8 +891,7 @@ headphones: "\e008" &#57352
     75% {
       margin-left: -7px;
     }
-}
-
+  }
   @-o-keyframes uh-oh {
     0%, 100% {
       margin-left: 0;
@@ -933,8 +904,7 @@ headphones: "\e008" &#57352
     75% {
       margin-left: -7px;
     }
-}
-
+  }
   @-ms-keyframes uh-oh {
     0%, 100% {
       margin-left: 0;
@@ -947,8 +917,7 @@ headphones: "\e008" &#57352
     75% {
       margin-left: -7px;
     }
-}
-
+  }
   @keyframes uh-oh {
     0%, 100% {
       margin-left: 0;
@@ -961,8 +930,7 @@ headphones: "\e008" &#57352
     75% {
       margin-left: -7px;
     }
-}
-
+  }
   @-moz-keyframes spin {
     0% {
       background-position: 0 0;
@@ -971,8 +939,7 @@ headphones: "\e008" &#57352
     100% {
       background-position: 0 -1015px;
     }
-}
-
+  }
   @-webkit-keyframes spin {
     0% {
       background-position: 0 0;
@@ -981,8 +948,7 @@ headphones: "\e008" &#57352
     100% {
       background-position: 0 -1015px;
     }
-}
-
+  }
   @-o-keyframes spin {
     0% {
       background-position: 0 0;
@@ -991,8 +957,7 @@ headphones: "\e008" &#57352
     100% {
       background-position: 0 -1015px;
     }
-}
-
+  }
   @-ms-keyframes spin {
     0% {
       background-position: 0 0;
@@ -1001,8 +966,7 @@ headphones: "\e008" &#57352
     100% {
       background-position: 0 -1015px;
     }
-}
-
+  }
   @keyframes spin {
     0% {
       background-position: 0 0;
@@ -1011,8 +975,7 @@ headphones: "\e008" &#57352
     100% {
       background-position: 0 -1015px;
     }
-}
-
+  }
   .featurette {
     padding-top: 3.75em;
     padding-bottom: 3.75em;
@@ -1025,11 +988,11 @@ headphones: "\e008" &#57352
     height: 332px;
   }
   .featurette .message p:nth-child(1) {
-    -webkit-animation: show 0.5s 1 1ms forwards, hide 0.5s 1 3s forwards;
-    -moz-animation: show 0.5s 1 1ms forwards, hide 0.5s 1 3s forwards;
-    -ms-animation: show 0.5s 1 1ms forwards, hide 0.5s 1 3s forwards;
-    -o-animation: show 0.5s 1 1ms forwards, hide 0.5s 1 3s forwards;
-    animation: show 0.5s 1 1ms forwards, hide 0.5s 1 3s forwards;
+    -webkit-animation: show 0.5s 1 forwards, hide 0.5s 1 3s forwards;
+    -moz-animation: show 0.5s 1 forwards, hide 0.5s 1 3s forwards;
+    -ms-animation: show 0.5s 1 forwards, hide 0.5s 1 3s forwards;
+    -o-animation: show 0.5s 1 forwards, hide 0.5s 1 3s forwards;
+    animation: show 0.5s 1 forwards, hide 0.5s 1 3s forwards;
   }
   .featurette .message p:nth-child(2) {
     -webkit-animation: show 0.5s 1 4s forwards, hide 0.5s 1 7s forwards;
@@ -1269,8 +1232,8 @@ headphones: "\e008" &#57352
     font-size: 0.875em;
     line-height: 1.28571em;
     margin-left: -3.27869%;
-    -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     overflow: auto;
     padding: 0 3.27869%;
