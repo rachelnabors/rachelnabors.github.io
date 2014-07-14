@@ -54,7 +54,7 @@ It had definitely been over a year since the Summit, and I’d done nothing with
 
 Hey, I thought, maybe I could try again. With a business plan that isn’t doomed.
 
-I called a designer friend of mine and, although I knew his skills were worth much more, asked him if he'd help me make a logo for $100. He was quick to accept my offer and soon [Tin Magpie](http://tinmagpie.xom) was hatched.
+I called a designer friend of mine and, although I knew his skills were worth much more, asked him if he'd help me make a logo for $100. He was quick to accept my offer and soon [Tin Magpie](http://tinmagpie.com) was hatched.
 
 ## A small thing, full of wonder
 
