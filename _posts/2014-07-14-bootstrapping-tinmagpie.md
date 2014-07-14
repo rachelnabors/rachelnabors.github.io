@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "What I'm Reading List"
-excerpt: "A few articles not to miss about web animation."
+title: "Bootstrapping Tin Magpie"
+excerpt: "I recently started my own company, Tin Magpie. We make interactive stories with HTML5 and CSS. But how did I get here and where am I going?"
 featured-image: "http://rachelnabors.com/img/2014/wold-domination-summit.jpg"
-featured: false
+featured: true
 ---
 In 2012 I attended Wold Domination Summit, an inspiring conference of bootstrappers and "solopreneurers.” But instead of filling me with can-do positivity, listening to the other attendees and speakers only reminded me that I worked for someone else, that I wasn't building something of my own. You see, I used to have my own company.
 
