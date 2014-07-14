@@ -24,6 +24,7 @@ My dream was to grow to publish and distribute other comics for teenage girls, t
 ## Spoiler: It didn’t work out.
 
 _Manga Punk_ faced several major stumbling blocks:
+
 1. teenage girls don't have credit cards
 2. there's only one comics distributor in North America
 3. print publishing was facing down a digital tsunami
