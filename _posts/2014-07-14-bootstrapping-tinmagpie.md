@@ -10,14 +10,14 @@ In 2012 I attended Wold Domination Summit, an inspiring conference of bootstrapp
 At the tender age of 19 I began publishing my comics under my _Manga Punk_ imprint.
 
 <figure>
-    <img src="/img/2014/comics.jpg" alt="18 Revolutions and Crow Princess graphic novels" />
+    <img src="/img/2014/comics.jpg" alt="18 Revolutions and Crow Princess graphic novels" style="width: 610px" />
     <figcaption>My two graphic novels from _Manga Punk._ Notice the tiny, hot pink _sakura_ logo on the spines?</figcaption>
 </figure>
 
 My dream was to grow to publish and distribute other comics for teenage girls, too. At first things went very well: I was successful enough to move out on my own, exhibited profitably at comic conventions, even won a few awards for my work.
 
 <figure>
-    <img src="/img/2014/trunk.jpg" alt="A pink footlocker covered in comic convention and web conference badges and stickers." />
+    <img src="/img/2014/trunk.jpg" alt="A pink footlocker covered in comic convention and web conference badges and stickers." style="width: 610px" />
     <figcaption>The trunk I used to take merchandise to comic conventions. I used to tape my convention badges on it. I still add badges&hellip; from web development conferences.</figcaption>
 </figure>
 
