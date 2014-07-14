@@ -21,8 +21,6 @@ My dream was to grow to publish and distribute other comics for teenage girls, t
     <figcaption>The trunk I used to take merchandise to comic conventions. I used to tape my convention badges on it. I still add badges&hellip; from web development conferences.</figcaption>
 </figure>
 
-However&hellip;
-
 ## Spoiler: It didn’t work out.
 
 _Manga Punk_ faced several major stumbling blocks:
