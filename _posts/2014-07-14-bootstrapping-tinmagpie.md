@@ -7,7 +7,21 @@ featured: true
 ---
 In 2012 I attended Wold Domination Summit, an inspiring conference of bootstrappers and "solopreneurers.” But instead of filling me with can-do positivity, listening to the other attendees and speakers only reminded me that I worked for someone else, that I wasn't building something of my own. You see, I used to have my own company.
 
-At the tender age of 19 I began publishing my comics under my _Manga Punk_ imprint. My dream was to grow to publish and distribute other comics for teenage girls, too. At first things went very well: I was successful enough to move out on my own, exhibited profitably at comic conventions, even won a few awards for my work. However&hellip;
+At the tender age of 19 I began publishing my comics under my _Manga Punk_ imprint.
+
+<figure>
+    <img src="/img/2014/comics.jpg" alt="18 Revolutions and Crow Princess graphic novels" />
+    <figcaption>My two graphic novels from _Manga Punk._ Notice the tiny, hot pink _sakura_ logo on the spines?</figcaption>
+</figure>
+
+My dream was to grow to publish and distribute other comics for teenage girls, too. At first things went very well: I was successful enough to move out on my own, exhibited profitably at comic conventions, even won a few awards for my work.
+
+<figure>
+    <img src="/img/2014/trunk.jpg" alt="A pink footlocker covered in comic convention and web conference badges and stickers." />
+    <figcaption>The trunk I used to take merchandise to comic conventions. I used to tape my convention badges on it. I still add badges&hellip; from web development conferences.</figcaption>
+</figure>
+
+However&hellip;
 
 ## Spoiler: It didn’t work out.
 
