@@ -24,9 +24,9 @@ My dream was to grow to publish and distribute other comics for teenage girls, t
 ## Spoiler: It didn’t work out.
 
 _Manga Punk_ faced several major stumbling blocks:
-*teenage girls don't have credit cards
-*there's only one comics distributor in North America
-*print publishing was facing down a digital tsunami
+1. teenage girls don't have credit cards
+2. there's only one comics distributor in North America
+3. print publishing was facing down a digital tsunami
 
 Even with my comic as a weekly syndicate on an [iVillage site for teenage girls](http://gurl.com), I had trouble making ends meet. I was doing great for a cartoonist, but I was failing as an entrepreneur. The company wasn’t growing. It was treading water. When I ran into medical problems, it was time to shut The Dream down. (Dreams, no matter how promising, are sadly prone to Demolition by Crisis. Exponentially so for minorities and people with less of a safety net, like single twenty-somethings with no family.)
 
