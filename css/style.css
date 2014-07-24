@@ -1192,7 +1192,7 @@ headphones: "\e008" &#57352
     padding-bottom: 0;
   }
 
-  .entry-content p, .entry-content ul, .entry-content ol {
+  .entry-content p, .entry-content ul, .entry-content ol, .entry-content .video {
     padding-bottom: 1.5em;
   }
   .entry-content ul, .entry-content ol {
@@ -1244,7 +1244,7 @@ headphones: "\e008" &#57352
     color: #fff;
     text-decoration: none;
   }
-  .entry-content img {
+  .entry-content img, .entry-content .video {
     max-width: 100%;
     height: auto;
   }

@@ -22,7 +22,7 @@ header .meta {
 }
 
 .entry-content {
-	p, ul, ol {
+	p, ul, ol, .video {
 		@include padding-trailer(4);
 	}
 	ul, ol {
@@ -63,10 +63,11 @@ header .meta {
 		color: #fff;
 		text-decoration: none;
 	}
-	img {
+	img, .video {
 		max-width: 100%;
 		height: auto;
 	}
+
 	figure {
 		line-height:0;
 		margin-left: -(columns(1,5) + (gutter(5)*.85));
