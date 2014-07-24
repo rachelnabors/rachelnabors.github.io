@@ -2,7 +2,7 @@
 layout: post
 title: "Storytelling on the Shoulders of Giants: an OSCON Keynote"
 excerpt: "In 2014 I was invited to give a short keynote on storytelling and Opensource at O'Reilly's OSCON. I proceeded to draw every slide as a comic book panel. You're welcome."
-featured-image: "http://rachelnabors.com/img/2014/giants-scott-mccloud.jpg"
+featured-image: http://rachelnabors.com/img/2014/giants-scott-mccloud.jpg
 featured: true
 
 ---
@@ -41,7 +41,7 @@ I talk about this project quite a bit. At jQuery Europe, someone in the audience
 
 The feedback I hear most often after I give a talk is, "I wish I could draw like you!"
 
-<img src="/img/2014/giants-developerss-and-artists.png" alt="A developer and an artist both look dejectedly at their desks and sigh whil separated by a gulf." />
+<img src="/img/2014/giants-developers-and-artists.png" alt="A developer and an artist both look dejectedly at their desks and sigh whil separated by a gulf." />
 
 Well, just as developers often wish they could "draw like me," those artists often wish they could "code like you." (I should know. I've got the emails to prove it.) But neither of you have five to seven years to sink into learning the other's craft when there are stories to be told today.
 
@@ -53,6 +53,6 @@ When you look at the things I make, you're not looking at my stories, my art. Yo
 
 I can tell stories because you help me tell stories. You are creators, too.
 
-<img src="/img/2014/giants-more-collaboration.png" alt="Those who come before us lift us up." />
+<img src="/img/2014/giants-more-collaboration.jpg" alt="Those who come before us lift us up." />
 
 Let's tell stories forever together.

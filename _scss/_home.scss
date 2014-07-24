@@ -248,10 +248,10 @@
 	text-decoration: none;
 	@include transition(color, ease-in, .25s);
 	&:link, &:visited {
-		color: $cyan;
+		color: $cyan !important;
 	}
 	&:hover, &:active, &:focus {
-		color: $magenta;
+		color: $magenta !important;
 	}
 	.icon {
 		font-size: .8em;

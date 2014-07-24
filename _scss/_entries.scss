@@ -16,7 +16,7 @@ header .meta {
 	}
 }
 
-.entry-title {	
+.entry-title {
 	@extend .page-title;
 	padding-bottom: 0;
 }
@@ -44,7 +44,7 @@ header .meta {
 		margin-left: -1em;
 	}
 	li {
-		@include padding-trailer(2);		
+		@include padding-trailer(2);
 	}
 	h2, h3 {
 		@include adjust-font-size-to(32px);
@@ -117,8 +117,8 @@ header .meta {
 	  	position: relative;
 		width: space(3, 5);
 		text-align: center;
-		&:before { 
-			content: "\201C"; 
+		&:before {
+			content: "\201C";
 			position: absolute;
 			left: -.35em;
 			font-size: 3em;
@@ -153,7 +153,7 @@ header .meta {
 }
 
 .prev-post {
-	@include span-columns(2, 5);	
+	@include span-columns(2, 5);
 	@include ellipsis();
 }
 
@@ -170,4 +170,55 @@ header .meta {
   	@include adjust-leading-to(6, 32px);
   	text-transform: uppercase;
   	font-family: $league;
+}
+
+.note { font-style: italic;}
+
+/* Promos */
+
+.shameless {
+	background: darken($bg_blue, 10%);
+	@extend %clearfix;
+	@include padding-leader(4);
+	@include margin-trailer(4);
+	text-align: center;
+	h2 {
+		@include padding-trailer();
+		@include adjust-font-size-to(36px, 6, 16px);
+		font-family: $league;
+		text-transform: uppercase;
+	}
+	.mail {
+		.big-cta {
+			display: block;
+			@include transition(background ease-in .25s, color ease-in .25s);
+			&:link, &:visited {
+				background: $cyan !important;
+				color: $bg_blue !important;
+			}
+			&:hover, &:active, &:focus {
+				background: $magenta !important;
+				color: lighten($magenta,30%) !important;
+			}
+			padding-left: gutter(5);
+			padding-right: gutter(5);
+			@include padding-leader();
+			@include padding-trailer();
+		}
+	}
+	.workshops {
+		padding-left: gutter(5);
+		padding-right: gutter(5);
+		@include padding-trailer(4);
+		ul {
+			@include adjust-font-size-to(22px, 6, 16px);
+		}
+		time {
+			color: $dark_grey;
+			font-family: $georgia;
+			font-style: italic;
+			@include adjust-font-size-to(16px, 6, 22px);
+			white-space: nowrap;
+		}
+	}
 }

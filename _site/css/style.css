@@ -1,5 +1,9 @@
-html {
+* html {
   font-size: 100%;
+}
+
+html {
+  font-size: 16px;
   line-height: 0.375em;
 }
 
@@ -181,10 +185,11 @@ headphones: "\e008" &#57352
    * 2. The use of `table` rather than `block` is only necessary if using
    *    `:before` to contain the top-margins of child elements.
    */
-  .hotspots:before, .module-animation ul:before, .post-nav:before, #archive-featured:before,
+  .hotspots:before, .module-animation ul:before, .post-nav:before, .shameless:before, #archive-featured:before,
   .hotspots:after,
   .module-animation ul:after,
   .post-nav:after,
+  .shameless:after,
   #archive-featured:after {
     content: " ";
     /* 1 */
@@ -192,7 +197,7 @@ headphones: "\e008" &#57352
     /* 2 */
   }
 
-  .hotspots:after, .module-animation ul:after, .post-nav:after, #archive-featured:after {
+  .hotspots:after, .module-animation ul:after, .post-nav:after, .shameless:after, #archive-featured:after {
     clear: both;
   }
 
@@ -456,6 +461,8 @@ headphones: "\e008" &#57352
     background: #333b47;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
     border-radius: 50%;
     padding-top: 1.5em;
     padding-bottom: 0.75em;
@@ -643,7 +650,8 @@ headphones: "\e008" &#57352
     margin-right: .25em;
     margin-bottom: 0.5em;
   }
-  .home-footer .contact {
+
+  .big-cta {
     font-size: 2.25em;
     line-height: 1em;
     font-family: "LeagueGothicRegular", sans-serif;
@@ -654,13 +662,13 @@ headphones: "\e008" &#57352
     -o-transition: color, ease-in, 0.25s;
     transition: color, ease-in, 0.25s;
   }
-  .home-footer .contact:link, .home-footer .contact:visited {
-    color: #0097c0;
+  .big-cta:link, .big-cta:visited {
+    color: #0097c0 !important;
   }
-  .home-footer .contact:hover, .home-footer .contact:active, .home-footer .contact:focus {
-    color: #e64988;
+  .big-cta:hover, .big-cta:active, .big-cta:focus {
+    color: #e64988 !important;
   }
-  .home-footer .icon {
+  .big-cta .icon {
     font-size: .8em;
   }
 
@@ -670,6 +678,8 @@ headphones: "\e008" &#57352
     font-size: rythm(6);
     -webkit-border-radius: 0.25em;
     -moz-border-radius: 0.25em;
+    -ms-border-radius: 0.25em;
+    -o-border-radius: 0.25em;
     border-radius: 0.25em;
     color: #e3edf2 !important;
     padding: .25em .25em 0;
@@ -1320,11 +1330,11 @@ headphones: "\e008" &#57352
   }
 
   .post-nav {
-    border-top-width: 0.0625em;
     border-top-style: solid;
+    border-top-width: 0.0625em;
     padding-top: 0.3125em;
-    border-bottom-width: 0.0625em;
     border-bottom-style: solid;
+    border-bottom-width: 0.0625em;
     padding-bottom: 0.3125em;
     margin-bottom: 1.5em;
     border-color: #001f27;
@@ -1367,6 +1377,62 @@ headphones: "\e008" &#57352
     line-height: 1.125em;
     text-transform: uppercase;
     font-family: "LeagueGothicRegular", sans-serif;
+  }
+
+  .note {
+    font-style: italic;
+  }
+
+  /* Promos */
+  .shameless {
+    background: #c0d7e2;
+    padding-top: 1.5em;
+    margin-bottom: 1.5em;
+    text-align: center;
+  }
+  .shameless h2 {
+    padding-bottom: 0.375em;
+    font-size: 2.25em;
+    line-height: 1em;
+    font-family: "LeagueGothicRegular", sans-serif;
+    text-transform: uppercase;
+  }
+  .shameless .mail .big-cta {
+    display: block;
+    -webkit-transition: background ease-in, color ease-in;
+    -webkit-transition-delay: 0.25s, 0.25s;
+    -moz-transition: background ease-in 0.25s, color ease-in 0.25s;
+    -o-transition: background ease-in 0.25s, color ease-in 0.25s;
+    transition: background ease-in 0.25s, color ease-in 0.25s;
+    padding-left: 6.55738%;
+    padding-right: 6.55738%;
+    padding-top: 0.375em;
+    padding-bottom: 0.375em;
+  }
+  .shameless .mail .big-cta:link, .shameless .mail .big-cta:visited {
+    background: #0097c0 !important;
+    color: #e3edf2 !important;
+  }
+  .shameless .mail .big-cta:hover, .shameless .mail .big-cta:active, .shameless .mail .big-cta:focus {
+    background: #e64988 !important;
+    color: #f8d0e0 !important;
+  }
+  .shameless .workshops {
+    padding-left: 6.55738%;
+    padding-right: 6.55738%;
+    padding-bottom: 1.5em;
+  }
+  .shameless .workshops ul {
+    font-size: 1.375em;
+    line-height: 1.63636em;
+  }
+  .shameless .workshops time {
+    color: #333b47;
+    font-family: "Georgia", serif;
+    font-style: italic;
+    font-size: 0.72727em;
+    line-height: 2.25em;
+    white-space: nowrap;
   }
 
   #archive-featured li {
