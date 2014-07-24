@@ -63,11 +63,14 @@ header .meta {
 		color: #fff;
 		text-decoration: none;
 	}
-	img, .video {
+	img {
 		max-width: 100%;
 		height: auto;
 	}
-
+	.video {
+		max-width: 100%;
+		margin: 0 auto;
+	}
 	figure {
 		line-height:0;
 		margin-left: -(columns(1,5) + (gutter(5)*.85));

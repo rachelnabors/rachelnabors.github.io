@@ -1244,9 +1244,13 @@ headphones: "\e008" &#57352
     color: #fff;
     text-decoration: none;
   }
-  .entry-content img, .entry-content .video {
+  .entry-content img {
     max-width: 100%;
     height: auto;
+  }
+  .entry-content .video {
+    max-width: 100%;
+    margin: 0 auto;
   }
   .entry-content figure {
     line-height: 0;
