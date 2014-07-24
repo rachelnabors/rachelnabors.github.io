@@ -2,7 +2,7 @@
 layout: post
 title: "Storytelling on the Shoulders of Giants: an OSCON Keynote"
 excerpt: "In 2014 I was invited to give a short keynote on storytelling and Opensource at O'Reilly's OSCON. I proceeded to draw every slide as a comic book panel. You're welcome."
-featured-image: http://rachelnabors.com/img/2014/giants-scott-mccloud.jpg
+featured-image: http://rachelnabors.com/img/2014/giants-scott-mccloud.png
 featured: true
 
 ---
