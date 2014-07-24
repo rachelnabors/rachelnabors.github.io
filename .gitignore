@@ -7,4 +7,5 @@
 .pygments-cache
 _plugins
 _drafts
+_site
 vendor
