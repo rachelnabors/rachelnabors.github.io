@@ -7,7 +7,9 @@ featured: true
 
 ---
 
-<p class="note">I originally gave this keynote at OSCON 2014 in Portland, Oregon to something like five thousand opensource enthusiasts. It was my first keynote, and I drew each slide as a comic panel. I wanted to share it in writing. Video link soon!</p>
+<p class="note">I originally gave this keynote at OSCON 2014 in Portland, Oregon to something like five thousand opensource enthusiasts. It was my first keynote, and I wrote a comic script for it, drawing each slide as a comic panel. Here's the video followed by the original script and artwork!</p>
+
+<iframe width="560" height="315" src="//www.youtube.com/embed/Q9CB7EiU9xg?rel=0" frameborder="0" allowfullscreen></iframe>
 
 <img src="/img/2014/giants-title.png" alt="Storytelling on the Shoulders of Giants: A young woman stands on the shoulder of a massive giant." />
 
