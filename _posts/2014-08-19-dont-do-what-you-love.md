@@ -41,7 +41,7 @@ I love what I do. And it loves me back.</p>
 
 <blockquote>
     Once involved in the business of creating animation, the truth of the matter is that you wind up working on project after project and rarely have time to read, study, or to come up with great ideas. And then the question invariably arises: “Why am I creating animation? What am I doing this for? Is it just to make a living?”
-    <cite>Hayao Miyazaki, <a href="http://www.amazon.com/gp/product/1421505940?ie=UTF8&amp;camp=213733&amp;creative=393177&amp;creativeASIN=1421505940&amp;linkCode=shr&amp;tag=mangapunk-20&amp;linkId=NJL5X5TFMZNZTVUJ&amp;creativeASIN=1421505940&amp;SubscriptionId=1MGPYB6YW3HWK55XCGG2">, page 24</cite>
+    <cite>Hayao Miyazaki, <a href="http://www.amazon.com/gp/product/1421505940?ie=UTF8&amp;camp=213733&amp;creative=393177&amp;creativeASIN=1421505940&amp;linkCode=shr&amp;tag=mangapunk-20&amp;linkId=NJL5X5TFMZNZTVUJ&amp;creativeASIN=1421505940&amp;SubscriptionId=1MGPYB6YW3HWK55XCGG2">Starting Point: 1979~1996</a>, page 24</cite>
 </blockquote>
 
 <p>(I wish someone had told me that when I decided to make comics instead of going to college. It’s a lot more nuanced than “just do what you love and money will follow!”)</p>
