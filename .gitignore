@@ -1,11 +1,5 @@
-.bundle
 .DS_Store
 .sass-cache
-.rvmc
-*/.sass-cache
-*/*/.sass-cache
-.pygments-cache
-_plugins
-_drafts
 _site
-vendor
+_drafts
+serve

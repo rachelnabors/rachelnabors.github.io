@@ -1,6 +1,5 @@
 @import "compass";
 @import "susy";
-@import "animation";
 
 @import "config";
 @import "functions";
@@ -10,13 +9,13 @@
   @import "reset";
   @import "helper-classes";
   @import "extends";
-  
+
   // All sprites should extend this class
   // The sprites-sprite mixin will do so for you.
   // @if $sprites-inline {
   //   #{$sprites-sprite-base-class} {
   //     background-image: inline-sprite($sprites-sprites);
-  //   } 
+  //   }
   // } @else {
   //   #{$sprites-sprite-base-class} {
   //     background: $sprites-sprites no-repeat;
@@ -31,11 +30,12 @@
   @import "feature";
   @import "entries";
   @import "archive";
+  @import "training";
 }
 /* =============================================================================
    Print Styles
    ========================================================================== */
- 
+
 @media print {
   @import "print";
 }

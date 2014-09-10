@@ -7,9 +7,18 @@
     <atom:link href="http://rachelnabors.com/rss.xml" rel="self" type="application/rss+xml" />
     <description>Where I post musings about web development, comics, and the future of online interaction.</description>
     <language>en-us</language>
-    <pubDate>Wed, 23 Jul 2014 18:50:39 PDT</pubDate>
-    <lastBuildDate>Wed, 23 Jul 2014 18:50:39 PDT</lastBuildDate>
+    <pubDate>Wed, 10 Sep 2014 16:22:31 PDT</pubDate>
+    <lastBuildDate>Wed, 10 Sep 2014 16:22:31 PDT</lastBuildDate>
 
+    
+      <item>
+        <title>DON'T do what you love.</title>
+        <link>http://rachelnabors.com/2014/08/19/dont-do-what-you-love/</link>
+        <pubDate>Tue, 19 Aug 2014 00:00:00 PDT</pubDate>
+        <author>Rachel Nabors</author>
+        <guid>http://rachelnabors.com/2014/08/19/dont-do-what-you-love/</guid>
+        <description>Do what you love and the money will follow,” is terrible advice given by lucky people.</description>
+      </item>
     
       <item>
         <title>Storytelling on the Shoulders of Giants: an OSCON Keynote</title>
@@ -49,10 +58,10 @@
     
       <item>
         <title>Animation and UX Resources</title>
-        <link>http://rachelnabors.comanimation-ux</link>
+        <link>http://rachelnabors.com/animation-ux</link>
         <pubDate>Fri, 28 Mar 2014 00:00:00 PDT</pubDate>
         <author>Rachel Nabors</author>
-        <guid>http://rachelnabors.comanimation-ux</guid>
+        <guid>http://rachelnabors.com/animation-ux</guid>
         <description>Resources to go with my talk on animation and the future of UX.</description>
       </item>
     

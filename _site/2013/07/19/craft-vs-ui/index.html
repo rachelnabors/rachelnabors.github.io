@@ -59,6 +59,7 @@
 		<a href="/" class="site-logo"><span aria-hidden="true" data-icon="&#10025;" class="icon"></span>Rachel Nabors</a>
 	<!-- Speaking -->
 		<a href="/archive" class="nav-archives">Blog</a>
+        <a href="/training" class="nav-training">Training</a>
 		<a href="/about" class="nav-about">About</a>
 		<a href="mailto:aloha@rachelnabors.com">Contact</a>
 	</nav>
@@ -76,54 +77,54 @@
 				</p>
 			</header>
 			<div class="entry-content">
-				<p>I've been traveling the conference circuit this summer, talking about New Wave interactions like <a href="http://24ways.org/2012/flashless-animation/">CSS3 animations</a> and the <a href="http://www.html5rocks.com/en/tutorials/webaudio/intro/">Web Audio API</a>. One of my favorite things about this experience (aside from finally getting to travel to <a href="http://2013.frontendconf.ch/speakers/#speaker-34">different</a> <a href="http://2013.fromthefront.it/">countries</a>) is meeting people who have been trying to do the same things and seeing the different ways <a href="http://www.greensock.com/">they're solving some</a> of the same problems. But some problems keep coming up during the <abbr title="Questions and Answers">Q and A</abbr> segment at the end of my talks:</p>
+				<p>I’ve been traveling the conference circuit this summer, talking about New Wave interactions like <a href="http://24ways.org/2012/flashless-animation/">CSS3 animations</a> and the <a href="http://www.html5rocks.com/en/tutorials/webaudio/intro/">Web Audio API</a>. One of my favorite things about this experience (aside from finally getting to travel to <a href="http://2013.frontendconf.ch/speakers/#speaker-34">different</a> <a href="http://2013.fromthefront.it/">countries</a>) is meeting people who have been trying to do the same things and seeing the different ways <a href="http://www.greensock.com/">they’re solving some</a> of the same problems. But some problems keep coming up during the <a href="abbr:Questions and Answers">Q and A</a> segment at the end of my talks:</p>
 
-<blockquote><p>That looks complicated. Are there any tools that can help me, as someone who hasn't mastered CSS and JavaScript yet?</p></blockquote>
+<blockquote>
+  <p>That looks complicated. Are there any tools that can help me, as someone who hasn’t mastered CSS and JavaScript yet?</p>
+</blockquote>
 
-<p>Yes, there are tools like <a href="http://www.adobe.com/EdgeAnimate">Adobe's Edge Animate</a> and <a href="http://www.sencha.com/products/animator">Sencha's Animator</a>. And they are certainly useful. But the problem with using a proprietary visual interface while building these interactions if that you will always be limited to the state of the art its developers and maintainers choose to implement. For instance, I'm working on a project where I want to put a little <a href="http://www.chromeexperiments.com/webgl/">WebGL</a> in, just for funnzies. If I used an animation program that didn't support webGL features, I would be less likely to imagine working outside its constraints, and even if I <em>did</em> think outside my <abbr title="User Interface">UI</abbr>, I would probably be unable to implement something so <em>avant garde</em> and foreign <em>inside</em> that user interface.</p>
+<p>Yes, there are tools like <a href="http://www.adobe.com/EdgeAnimate">Adobe’s Edge Animate</a> and <a href="http://www.sencha.com/products/animator">Sencha’s Animator</a>. And they are certainly useful. But the problem with using a proprietary visual interface while building these interactions if that you will always be limited to the state of the art its developers and maintainers choose to implement. For instance, I’m working on a project where I want to put a little <a href="http://www.chromeexperiments.com/webgl/">WebGL</a> in, just for funnzies. If I used an animation program that didn’t support webGL features, I would be less likely to imagine working outside its constraints, and even if I <em>did</em> think outside my <a href="abbr:User Interface">UI</a>, I would probably be unable to implement something so <em>avant garde</em> and foreign <em>inside</em> that user interface.</p>
 
-<p>User interfaces, while they can free you up to do many things visually, also tie you down to their creators' methodologies, abilities, and ways of thinking. Right now we have so many exciting ways we can tell stories in the browser. It seems premature to adopt a program that takes away all that magic.</p>
+<p>User interfaces, while they can free you up to do many things visually, also tie you down to their creators’ methodologies, abilities, and ways of thinking. Right now we have so many exciting ways we can tell stories in the browser. It seems premature to adopt a program that takes away all that magic.</p>
 
-<blockquote><p>I have a huge interaction I want to build, and I know how to sling code. But managing all these assets gets complicated very quickly. Isn't there a tool to keep them under control at least?</p></blockquote>
+<blockquote>
+  <p>I have a huge interaction I want to build, and I know how to sling code. But managing all these assets gets complicated very quickly. Isn’t there a tool to keep them under control at least?</p>
+</blockquote>
 
-<p>This is a reasonable complaint, a problem I have encountered on my own. While we do have tools like <a href="http://sass-lang.com/">Sass</a> to help with managing lots of CSS, there are some tools that we don't have but desparately need:</p>
+<p>This is a reasonable complaint, a problem I have encountered on my own. While we do have tools like <a href="http://sass-lang.com/">Sass</a> to help with managing lots of CSS, there are some tools that we don’t have but desparately need: </p>
 
 <ul>
-<li>A way to convert onion-skinned PSDs to sprite sheets</li>
-<li>A way to scrub through animations to check timing on longer sequences</li>
-<li>A plugin for Sass to handle animation timing (<a href="https://github.com/Team-Sass/animation-studio">I'm working on this</a>)</li>
-<li>Polyfills for browsers that don't support animations</li>
+  <li>A way to convert onion-skinned PSDs to sprite sheets</li>
+  <li>A way to scrub through animations to check timing on longer sequences</li>
+  <li>A plugin for Sass to handle animation timing (<a href="https://github.com/Team-Sass/animation-studio">I’m working on this</a>)</li>
+  <li>Polyfills for browsers that don’t support animations</li>
 </ul>
-
 
 <p>(There <em>are</em> more, and please feel free to respond with what would help you out!)</p>
 
-<p>All of these tools could stand alone, working directly in your browser or from the command line. We wouldn't need to build the entire interaction in one program. Rather, we could build it in the browser with several tools running alongside, depending on what we need for the situation.</p>
+<p>All of these tools could stand alone, working directly in your browser or from the command line. We wouldn’t need to build the entire interaction in one program. Rather, we could build it in the browser with several tools running alongside, depending on what we need for the situation.</p>
 
-<p>I approve of this Tool Belt approach: It's lightweight, modular, and encourages people to learn more code than they would if it was all being written for them behind the scenes. It might even scale better for production environments with multiple teams! But it's not an out-of-the-box solution/empowerment for those with no code background.</p>
+<p>I approve of this Tool Belt approach: It’s lightweight, modular, and encourages people to learn more code than they would if it was all being written for them behind the scenes. It might even scale better for production environments with multiple teams! But it’s not an out-of-the-box solution/empowerment for those with no code background.</p>
 
-<h2>Working "blind"</h2>
+<h2 id="working-blind">Working “blind”</h2>
+<p>Something I realized while speaking with designers after my talks: Every designer expects work they cannot do through a visual interface to be beyond their reach. And yet, learning those same interfaces takes as much effort and intellect as learning JavaScript or CSS. I know because I’ve learned <em>all of these things.</em> It’s great that designers can layout a magazine on a screen today, but it wasn’t always like this. In the days of the printing press, designers were more like mathematicians, laying out metal fonts along grids, mirror images of what was to be printed. It wasn’t until they pressed ink to paper that they could see what they made. They were “designing blind” as we do today.</p>
 
-<p>Something I realized while speaking with designers after my talks: Every designer expects work they cannot do through a visual interface to be beyond their reach. And yet, learning those same interfaces takes as much effort and intellect as learning JavaScript or CSS. I know because I've learned <em>all of these things.</em> It's great that designers can layout a magazine on a screen today, but it wasn't always like this. In the days of the printing press, designers were more like mathematicians, laying out metal fonts along grids, mirror images of what was to be printed. It wasn't until they pressed ink to paper that they could see what they made. They were "designing blind" as we do today.</p>
+<p>At first I thought, “Interaction should be like a craft, not something a <a href="abbr:What you see is what you get">WYSIWYG</a> program delivers into your lap.” Aren’t we all crazy about “craftsmanship” these days? Craft beer, craft nights, <a href="https://squareup.com/market">handcrafted goods</a>. Why should code be any different? Get a text editor and put your fingers to work!</p>
 
-<p>At first I thought, "Interaction should be like a craft, not something a <abbr title="What you see is what you get">WYSIWYG</abbr> program delivers into your lap." Aren't we all crazy about "craftsmanship" these days? Craft beer, craft nights, <a href="https://squareup.com/market">handcrafted goods</a>. Why should code be any different? Get a text editor and put your fingers to work!</p>
+<p>And this brings me to one final thought. At <a href="http://www.gothamjs.com/">Gotham JS’s</a> afterparty, I had a conversation with a young man which left me thinking. Right now, we don’t have many of these Tools. Those that we have leave us “working blind.” That is, we make a change, refresh the browser, wait to see the change, repeat. We have to do a lot of math and calculations by hand to get it right. Math and calculations are what computers are best at. And humans, especially the artists who have those Big Interaction Dreams, are great at visual and audio analysis. Wouldn’t it be best if we could see <em>and</em> hear those interactions while we build them? And that’s where the Tool Belt approach fails. </p>
 
-<p>And this brings me to one final thought. At <a href="http://www.gothamjs.com/">Gotham JS's</a> afterparty, I had a conversation with a young man which left me thinking. Right now, we don't have many of these Tools. Those that we have leave us "working blind." That is, we make a change, refresh the browser, wait to see the change, repeat. We have to do a lot of math and calculations by hand to get it right. Math and calculations are what computers are best at. And humans, especially the artists who have those Big Interaction Dreams, are great at visual and audio analysis. Wouldn't it be best if we could see <em>and</em> hear those interactions while we build them? And that's where the Tool Belt approach fails.</p>
+<p><a href="https://vimeo.com/36579366">Brett Victor gave a beautiful talk about working with code visually and seeing the result of that work immediately.</a> It’s hard for me to explain, so be sure to watch the talk. It’s not impossible to build visual tools that overlay complex processes without divorcing the developer from their craft. For instance, <a href="http://jeremyckahn.github.io/stylie/">Stylie</a> is a beautiful example of a tool with a visual interface that is built upon the more complex “blind” JavaScript infrastructure <a href="http://rekapi.com/">rekapi</a>. I feel like we need visual tools like this in the Tool Belt to get those Big Dreamers in the field.</p>
 
-<p><a href="https://vimeo.com/36579366">Brett Victor gave a beautiful talk about working with code visually and seeing the result of that work immediately.</a> It's hard for me to explain, so be sure to watch the talk. It's not impossible to build visual tools that overlay complex processes without divorcing the developer from their craft. For instance, <a href="http://jeremyckahn.github.io/stylie/">Stylie</a> is a beautiful example of a tool with a visual interface that is built upon the more complex "blind" JavaScript infrastructure <a href="http://rekapi.com/">rekapi</a>. I feel like we need visual tools like this in the Tool Belt to get those Big Dreamers in the field.</p>
-
-<h2>Crafters of experiences</h2>
-
+<h2 id="crafters-of-experiences">Crafters of experiences</h2>
 <p>I do feel there is a place for a special breed of experience designer/developer in the web development ecosphere. I also strongly feel these people will come from unexpected places, places that have a pedigree for delighting people, like animation, cinema, comics. But in order to get their ideas, we have to make some accomodations:</p>
 
 <ol>
-<li><strong>Solid onboarding to help people learn CSS and JavaScript quickly.</strong> You shouldn't have to get a computer science degree to understand enough JS to build an interaction. It's not like this person is building the next jQuery. That designers are still struggling to learn JavaScript after so many years is a testament to our failure as teachers of absolute newbs with no programming background, not a testament to designers' learning abilities.</li>
-<li><strong>Better tools for excited creators.</strong> It behooves us as a development community to build the tools these creators need to work quickly and efficiently and better understand their code. The alternative is that we let privately owned companies with their own code standards empower these people to create according to a narrow definition of interactions.</li>
-<li><strong>More collaboration.</strong> I'd like to see more non-developers being dragged to hackathons. You <em>can</em> get starving artists to come to an event with free beer and pizza. But you have to reach out to them, and you have to know how to talk to them (which is the topic of another post, but the gist is: ask to work on their ideas instead of your own&mdash;it'll be good for both of you).</li>
+  <li><strong>Solid onboarding to help people learn CSS and JavaScript quickly.</strong> You shouldn’t have to get a computer science degree to understand enough JS to build an interaction. It’s not like this person is building the next jQuery. That designers are still struggling to learn JavaScript after so many years is a testament to our failure as teachers of absolute newbs with no programming background, not a testament to designers’ learning abilities.</li>
+  <li><strong>Better tools for excited creators.</strong> It behooves us as a development community to build the tools these creators need to work quickly and efficiently and better understand their code. The alternative is that we let privately owned companies with their own code standards empower these people to create according to a narrow definition of interactions.</li>
+  <li><strong>More collaboration.</strong> I’d like to see more non-developers being dragged to hackathons. You <em>can</em> get starving artists to come to an event with free beer and pizza. But you have to reach out to them, and you have to know how to talk to them (which is the topic of another post, but the gist is: ask to work on their ideas instead of your own—it’ll be good for both of you).</li>
 </ol>
 
-
-<p>These are just some ideas I had and some things I've observed. I want to know: what do other designers and developers think? Can we come together to build exciting things, or will we always need to look to so-called unicorns? Can and should we train people to work on these things by hand, or is it better to just let the programs do the work for us? Is it better to craft blindly or design visually?</p>
+<p>These are just some ideas I had and some things I’ve observed. I want to know: what do other designers and developers think? Can we come together to build exciting things, or will we always need to look to so-called unicorns? Can and should we train people to work on these things by hand, or is it better to just let the programs do the work for us? Is it better to craft blindly or design visually?</p>
 
 			</div>
 

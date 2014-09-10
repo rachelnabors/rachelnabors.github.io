@@ -19,7 +19,7 @@ body {
 }
 
 // Current Page indicator--should prolly have a star or sumfin, too.
-#body-archives .nav-archives, #body-post .nav-archives, #body-about .nav-about {
+#body-archives .nav-archives, #body-post .nav-archives, #body-about .nav-about, #body-training .nav-training {
 	color: $mauve !important;
 }
 
@@ -33,7 +33,7 @@ body {
 		@include adjust-font-size-to(36px, 4, 24px);
 		@include margin-trailer(4, 36px);
 		@include margin-leader(2, 36px);
-		.icon { 
+		.icon {
 			font-size: .6em;
 			margin-right: .25em;
 			position: relative; top: -.25em;
@@ -45,14 +45,14 @@ body {
 			color: $magenta;
 		}
 	}
-	nav { 
+	nav {
 		font-family: $league;
 		text-transform: uppercase;
 		@include padding-leader(1, 24px);
 		@include padding-trailer(1, 24px);
 		@include adjust-font-size-to(24px, 4, 16px);
 	}
-	a { display: block;}	
+	a { display: block;}
 	a:link, a:visited, a:hover, a:active {
 		color: $lavender;
 		text-decoration: none;
@@ -64,7 +64,7 @@ body {
 
 .main {
 	// @include opacity(.75);
-	background: $bg_blue;	
+	background: $bg_blue;
 	color: $black;
 	@include span-columns(6 omega, 9);
 	padding-left: gutter(9)*1.5 + columns(1, 9);

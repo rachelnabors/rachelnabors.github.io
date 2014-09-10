@@ -3,7 +3,7 @@ description: "Where I post musings about web development, comics, and the future
 
 url: "http://rachelnabors.com"
 
-markdown: rdiscount
+markdown: kramdown
 permalink: pretty
 highlighter: pygments
 

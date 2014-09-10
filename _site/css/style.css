@@ -1,9 +1,5 @@
-* html {
-  font-size: 100%;
-}
-
 html {
-  font-size: 16px;
+  font-size: 100%;
   line-height: 0.375em;
 }
 
@@ -14,7 +10,6 @@ html {
   font-weight: normal;
   font-style: normal;
 }
-
 @font-face {
   font-family: 'OstrichSansMedium';
   src: url("/fonts/ostrich-regular-webfont.eot");
@@ -22,7 +17,6 @@ html {
   font-weight: normal;
   font-style: normal;
 }
-
 @font-face {
   font-family: 'RNicons';
   src: url("/fonts/rn-icons.eot");
@@ -30,7 +24,6 @@ html {
   font-weight: normal;
   font-style: normal;
 }
-
 /*
 deviantart: "\e000" &#57344
 
@@ -143,6 +136,11 @@ headphones: "\e008" &#57352
   /*
    * Hide from both screenreaders and browsers: h5bp.com/u
    */
+  #tito-footer {
+    display: none !important;
+    visibility: hidden;
+  }
+
   /*
    * Hide only visually, but have it available for screenreaders: h5bp.com/v
    */
@@ -185,19 +183,20 @@ headphones: "\e008" &#57352
    * 2. The use of `table` rather than `block` is only necessary if using
    *    `:before` to contain the top-margins of child elements.
    */
-  .hotspots:before, .module-animation ul:before, .post-nav:before, .shameless:before, #archive-featured:before,
+  .hotspots:before, .module-animation ul:before, .post-nav:before, .shameless:before, #archive-featured:before, .tito-ticket-list:before,
   .hotspots:after,
   .module-animation ul:after,
   .post-nav:after,
   .shameless:after,
-  #archive-featured:after {
+  #archive-featured:after,
+  .tito-ticket-list:after {
     content: " ";
     /* 1 */
     display: table;
     /* 2 */
   }
 
-  .hotspots:after, .module-animation ul:after, .post-nav:after, .shameless:after, #archive-featured:after {
+  .hotspots:after, .module-animation ul:after, .post-nav:after, .shameless:after, #archive-featured:after, .tito-ticket-list:after {
     clear: both;
   }
 
@@ -227,10 +226,10 @@ headphones: "\e008" &#57352
     *zoom: 1;
     max-width: 1130px;
     _width: 1130px;
-    padding-left: 0;
-    padding-right: 0;
     margin-left: auto;
     margin-right: auto;
+    padding-left: 0;
+    padding-right: 0;
     margin: 0;
     width: 70.625em;
   }
@@ -248,7 +247,7 @@ headphones: "\e008" &#57352
     /* Not to be trusted, but hey. */
   }
 
-  #body-archives .nav-archives, #body-post .nav-archives, #body-about .nav-about {
+  #body-archives .nav-archives, #body-post .nav-archives, #body-about .nav-about, #body-training .nav-training {
     color: #c774b3 !important;
   }
 
@@ -305,7 +304,7 @@ headphones: "\e008" &#57352
     width: 65.48673%;
     float: right;
     margin-right: 0;
-    *margin-left: -40px;
+    #margin-left: -40px;
     display: inline;
     padding-left: 13.27434%;
     position: relative;
@@ -362,7 +361,7 @@ headphones: "\e008" &#57352
     width: 30.97345%;
     float: right;
     margin-right: 0;
-    *margin-left: -40px;
+    #margin-left: -40px;
     display: inline;
     padding-left: 1.76991%;
     padding-right: 3.53982%;
@@ -375,10 +374,9 @@ headphones: "\e008" &#57352
     font-size: 2.25em;
     line-height: 1em;
     text-align: center;
-    -webkit-transform: rotate(-10deg);
     -moz-transform: rotate(-10deg);
     -ms-transform: rotate(-10deg);
-    -o-transform: rotate(-10deg);
+    -webkit-transform: rotate(-10deg);
     transform: rotate(-10deg);
   }
   .main-tagline strong {
@@ -459,10 +457,8 @@ headphones: "\e008" &#57352
   }
   .hotspots .mixes {
     background: #333b47;
-    -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
+    -webkit-border-radius: 50%;
     border-radius: 50%;
     padding-top: 1.5em;
     padding-bottom: 0.75em;
@@ -486,9 +482,9 @@ headphones: "\e008" &#57352
   .hotspots .mixes a:link, .hotspots .mixes a:visited, .hotspots .mixes a:hover, .hotspots .mixes a:active {
     color: #0097c0;
     text-decoration: none;
-    -webkit-transition: color, ease-in, 0.25s;
     -moz-transition: color, ease-in, 0.25s;
     -o-transition: color, ease-in, 0.25s;
+    -webkit-transition: color, ease-in, 0.25s;
     transition: color, ease-in, 0.25s;
   }
   .hotspots .mixes a:hover, .hotspots .mixes a:active, .hotspots .mixes a:focus {
@@ -506,15 +502,13 @@ headphones: "\e008" &#57352
     position: absolute;
     top: 1.5em;
     right: 1em;
-    -webkit-transform: rotate(90deg);
     -moz-transform: rotate(90deg);
     -ms-transform: rotate(90deg);
-    -o-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
     transform: rotate(90deg);
-    -webkit-transform-origin: 100% 100%;
     -moz-transform-origin: 100% 100%;
     -ms-transform-origin: 100% 100%;
-    -o-transform-origin: 100% 100%;
+    -webkit-transform-origin: 100% 100%;
     transform-origin: 100% 100%;
     font-size: 0.5em;
     line-height: 1.5em;
@@ -536,9 +530,9 @@ headphones: "\e008" &#57352
   .hotspots a:link, .hotspots a:visited, .hotspots a:hover, .hotspots a:active {
     color: #0097c0;
     text-decoration: none;
-    -webkit-transition: color, ease-in, 0.25s;
     -moz-transition: color, ease-in, 0.25s;
     -o-transition: color, ease-in, 0.25s;
+    -webkit-transition: color, ease-in, 0.25s;
     transition: color, ease-in, 0.25s;
   }
   .hotspots a:hover, .hotspots a:active, .hotspots a:focus {
@@ -565,9 +559,9 @@ headphones: "\e008" &#57352
   #dribbblins img {
     height: auto;
     width: 100%;
-    -webkit-transition: background, ease-in, 0.25s;
     -moz-transition: background, ease-in, 0.25s;
     -o-transition: background, ease-in, 0.25s;
+    -webkit-transition: background, ease-in, 0.25s;
     transition: background, ease-in, 0.25s;
   }
   #dribbblins a {
@@ -599,9 +593,9 @@ headphones: "\e008" &#57352
   .module-animation img {
     height: auto;
     width: 100%;
-    -webkit-transition: opacity, ease-in, 0.25s;
     -moz-transition: opacity, ease-in, 0.25s;
     -o-transition: opacity, ease-in, 0.25s;
+    -webkit-transition: opacity, ease-in, 0.25s;
     transition: opacity, ease-in, 0.25s;
   }
   .module-animation a:link, .module-animation a:visited, .module-animation a:hover, .module-animation a:active {
@@ -622,14 +616,14 @@ headphones: "\e008" &#57352
     -ms-text-overflow: ellipsis;
     -o-text-overflow: ellipsis;
     text-overflow: ellipsis;
-    -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     padding: 0 5.71429%;
     width: 100%;
-    -webkit-transition: background, ease-in, 0.25s;
     -moz-transition: background, ease-in, 0.25s;
     -o-transition: background, ease-in, 0.25s;
+    -webkit-transition: background, ease-in, 0.25s;
     transition: background, ease-in, 0.25s;
   }
   .module-animation a:hover .anim-title, .module-animation a:active .anim-title, .module-animation a:focus .anim-title {
@@ -651,24 +645,24 @@ headphones: "\e008" &#57352
     margin-bottom: 0.5em;
   }
 
-  .big-cta {
+  .big-cta, .tito-submit {
     font-size: 2.25em;
     line-height: 1em;
     font-family: "LeagueGothicRegular", sans-serif;
     text-transform: uppercase;
     text-decoration: none;
-    -webkit-transition: color, ease-in, 0.25s;
     -moz-transition: color, ease-in, 0.25s;
     -o-transition: color, ease-in, 0.25s;
+    -webkit-transition: color, ease-in, 0.25s;
     transition: color, ease-in, 0.25s;
   }
-  .big-cta:link, .big-cta:visited {
+  .big-cta:link, .tito-submit:link, .big-cta:visited, .tito-submit:visited {
     color: #0097c0 !important;
   }
-  .big-cta:hover, .big-cta:active, .big-cta:focus {
+  .big-cta:hover, .tito-submit:hover, .big-cta:active, .tito-submit:active, .big-cta:focus, .tito-submit:focus {
     color: #e64988 !important;
   }
-  .big-cta .icon {
+  .big-cta .icon, .tito-submit .icon {
     font-size: .8em;
   }
 
@@ -676,17 +670,15 @@ headphones: "\e008" &#57352
     background: #0097c0;
     display: block;
     font-size: rythm(6);
-    -webkit-border-radius: 0.25em;
     -moz-border-radius: 0.25em;
-    -ms-border-radius: 0.25em;
-    -o-border-radius: 0.25em;
+    -webkit-border-radius: 0.25em;
     border-radius: 0.25em;
     color: #e3edf2 !important;
     padding: .25em .25em 0;
     text-decoration: none;
-    -webkit-transition: background, ease-in, 0.25s;
     -moz-transition: background, ease-in, 0.25s;
     -o-transition: background, ease-in, 0.25s;
+    -webkit-transition: background, ease-in, 0.25s;
     transition: background, ease-in, 0.25s;
   }
   .social-footer a:hover, .social-footer a:active, .social-footer a:focus {
@@ -697,332 +689,161 @@ headphones: "\e008" &#57352
     100% {
       opacity: 1;
     }
-}
-
+  }
   @-webkit-keyframes show {
     100% {
       opacity: 1;
     }
-}
-
-  @-o-keyframes show {
-    100% {
-      opacity: 1;
-    }
-}
-
-  @-ms-keyframes show {
-    100% {
-      opacity: 1;
-    }
-}
-
+  }
   @keyframes show {
     100% {
       opacity: 1;
     }
-}
-
+  }
   @-moz-keyframes hide {
     100% {
       opacity: 0;
     }
-}
-
+  }
   @-webkit-keyframes hide {
     100% {
       opacity: 0;
     }
-}
-
-  @-o-keyframes hide {
-    100% {
-      opacity: 0;
-    }
-}
-
-  @-ms-keyframes hide {
-    100% {
-      opacity: 0;
-    }
-}
-
+  }
   @keyframes hide {
     100% {
       opacity: 0;
     }
-}
-
+  }
   @-moz-keyframes pfft {
     0% {
       background-position: 0 0;
     }
-
     100% {
       background-position: 0 -121px;
     }
-}
-
+  }
   @-webkit-keyframes pfft {
     0% {
       background-position: 0 0;
     }
-
     100% {
       background-position: 0 -121px;
     }
-}
-
-  @-o-keyframes pfft {
-    0% {
-      background-position: 0 0;
-    }
-
-    100% {
-      background-position: 0 -121px;
-    }
-}
-
-  @-ms-keyframes pfft {
-    0% {
-      background-position: 0 0;
-    }
-
-    100% {
-      background-position: 0 -121px;
-    }
-}
-
+  }
   @keyframes pfft {
     0% {
       background-position: 0 0;
     }
-
     100% {
       background-position: 0 -121px;
     }
-}
-
+  }
   @-moz-keyframes haha {
     0% {
       background-position: 0 -243px;
     }
-
     100% {
       background-position: 0 -486px;
     }
-}
-
+  }
   @-webkit-keyframes haha {
     0% {
       background-position: 0 -243px;
     }
-
     100% {
       background-position: 0 -486px;
     }
-}
-
-  @-o-keyframes haha {
-    0% {
-      background-position: 0 -243px;
-    }
-
-    100% {
-      background-position: 0 -486px;
-    }
-}
-
-  @-ms-keyframes haha {
-    0% {
-      background-position: 0 -243px;
-    }
-
-    100% {
-      background-position: 0 -486px;
-    }
-}
-
+  }
   @keyframes haha {
     0% {
       background-position: 0 -243px;
     }
-
     100% {
       background-position: 0 -486px;
     }
-}
-
+  }
   @-moz-keyframes oops {
     0% {
       background-position: 0 -486px;
     }
-
     100% {
       background-position: 0 -607px;
     }
-}
-
+  }
   @-webkit-keyframes oops {
     0% {
       background-position: 0 -486px;
     }
-
     100% {
       background-position: 0 -607px;
     }
-}
-
-  @-o-keyframes oops {
-    0% {
-      background-position: 0 -486px;
-    }
-
-    100% {
-      background-position: 0 -607px;
-    }
-}
-
-  @-ms-keyframes oops {
-    0% {
-      background-position: 0 -486px;
-    }
-
-    100% {
-      background-position: 0 -607px;
-    }
-}
-
+  }
   @keyframes oops {
     0% {
       background-position: 0 -486px;
     }
-
     100% {
       background-position: 0 -607px;
     }
-}
-
+  }
   @-moz-keyframes uh-oh {
     0%, 100% {
       margin-left: 0;
     }
-
     25% {
       margin-left: 7px;
     }
-
     75% {
       margin-left: -7px;
     }
-}
-
+  }
   @-webkit-keyframes uh-oh {
     0%, 100% {
       margin-left: 0;
     }
-
     25% {
       margin-left: 7px;
     }
-
     75% {
       margin-left: -7px;
     }
-}
-
-  @-o-keyframes uh-oh {
-    0%, 100% {
-      margin-left: 0;
-    }
-
-    25% {
-      margin-left: 7px;
-    }
-
-    75% {
-      margin-left: -7px;
-    }
-}
-
-  @-ms-keyframes uh-oh {
-    0%, 100% {
-      margin-left: 0;
-    }
-
-    25% {
-      margin-left: 7px;
-    }
-
-    75% {
-      margin-left: -7px;
-    }
-}
-
+  }
   @keyframes uh-oh {
     0%, 100% {
       margin-left: 0;
     }
-
     25% {
       margin-left: 7px;
     }
-
     75% {
       margin-left: -7px;
     }
-}
-
+  }
   @-moz-keyframes spin {
     0% {
       background-position: 0 0;
     }
-
     100% {
       background-position: 0 -1015px;
     }
-}
-
+  }
   @-webkit-keyframes spin {
     0% {
       background-position: 0 0;
     }
-
     100% {
       background-position: 0 -1015px;
     }
-}
-
-  @-o-keyframes spin {
-    0% {
-      background-position: 0 0;
-    }
-
-    100% {
-      background-position: 0 -1015px;
-    }
-}
-
-  @-ms-keyframes spin {
-    0% {
-      background-position: 0 0;
-    }
-
-    100% {
-      background-position: 0 -1015px;
-    }
-}
-
+  }
   @keyframes spin {
     0% {
       background-position: 0 0;
     }
-
     100% {
       background-position: 0 -1015px;
     }
-}
-
+  }
   .featurette {
     padding-top: 3.75em;
     padding-bottom: 3.75em;
@@ -1035,64 +856,46 @@ headphones: "\e008" &#57352
     height: 332px;
   }
   .featurette .message p:nth-child(1) {
-    -webkit-animation: show 0.5s 1 forwards, hide 0.5s 1 3s forwards;
     -moz-animation: show 0.5s 1 forwards, hide 0.5s 1 3s forwards;
-    -ms-animation: show 0.5s 1 forwards, hide 0.5s 1 3s forwards;
-    -o-animation: show 0.5s 1 forwards, hide 0.5s 1 3s forwards;
+    -webkit-animation: show 0.5s 1 forwards, hide 0.5s 1 3s forwards;
     animation: show 0.5s 1 forwards, hide 0.5s 1 3s forwards;
   }
   .featurette .message p:nth-child(2) {
-    -webkit-animation: show 0.5s 1 4s forwards, hide 0.5s 1 7s forwards;
     -moz-animation: show 0.5s 1 4s forwards, hide 0.5s 1 7s forwards;
-    -ms-animation: show 0.5s 1 4s forwards, hide 0.5s 1 7s forwards;
-    -o-animation: show 0.5s 1 4s forwards, hide 0.5s 1 7s forwards;
+    -webkit-animation: show 0.5s 1 4s forwards, hide 0.5s 1 7s forwards;
     animation: show 0.5s 1 4s forwards, hide 0.5s 1 7s forwards;
   }
   .featurette .message p:nth-child(3) {
-    -webkit-animation: show 0.5s 1 9s forwards, hide 0.5s 1 10s forwards;
     -moz-animation: show 0.5s 1 9s forwards, hide 0.5s 1 10s forwards;
-    -ms-animation: show 0.5s 1 9s forwards, hide 0.5s 1 10s forwards;
-    -o-animation: show 0.5s 1 9s forwards, hide 0.5s 1 10s forwards;
+    -webkit-animation: show 0.5s 1 9s forwards, hide 0.5s 1 10s forwards;
     animation: show 0.5s 1 9s forwards, hide 0.5s 1 10s forwards;
   }
   .featurette .message p:nth-child(4) {
-    -webkit-animation: show 0.5s 1 11s forwards, hide 0.5s 1 12s forwards;
     -moz-animation: show 0.5s 1 11s forwards, hide 0.5s 1 12s forwards;
-    -ms-animation: show 0.5s 1 11s forwards, hide 0.5s 1 12s forwards;
-    -o-animation: show 0.5s 1 11s forwards, hide 0.5s 1 12s forwards;
+    -webkit-animation: show 0.5s 1 11s forwards, hide 0.5s 1 12s forwards;
     animation: show 0.5s 1 11s forwards, hide 0.5s 1 12s forwards;
   }
   .featurette .message p:nth-child(5) {
-    -webkit-animation: show 0.5s 1 12s forwards, hide 0.5s 1 16s forwards;
     -moz-animation: show 0.5s 1 12s forwards, hide 0.5s 1 16s forwards;
-    -ms-animation: show 0.5s 1 12s forwards, hide 0.5s 1 16s forwards;
-    -o-animation: show 0.5s 1 12s forwards, hide 0.5s 1 16s forwards;
+    -webkit-animation: show 0.5s 1 12s forwards, hide 0.5s 1 16s forwards;
     animation: show 0.5s 1 12s forwards, hide 0.5s 1 16s forwards;
   }
   .featurette .message p:nth-child(6) {
-    -webkit-animation: show 0.5s 1 17s forwards, hide 0.5s 1 21s forwards;
     -moz-animation: show 0.5s 1 17s forwards, hide 0.5s 1 21s forwards;
-    -ms-animation: show 0.5s 1 17s forwards, hide 0.5s 1 21s forwards;
-    -o-animation: show 0.5s 1 17s forwards, hide 0.5s 1 21s forwards;
+    -webkit-animation: show 0.5s 1 17s forwards, hide 0.5s 1 21s forwards;
     animation: show 0.5s 1 17s forwards, hide 0.5s 1 21s forwards;
   }
   .featurette .message p:nth-child(7) {
-    -webkit-animation: show 0.5s 1 26s forwards;
     -moz-animation: show 0.5s 1 26s forwards;
-    -ms-animation: show 0.5s 1 26s forwards;
-    -o-animation: show 0.5s 1 26s forwards;
+    -webkit-animation: show 0.5s 1 26s forwards;
     animation: show 0.5s 1 26s forwards;
   }
   .featurette .face {
-    -webkit-animation: pfft 1s steps(1) 1 8s, haha 0.5s steps(2, end) 11s 10, oops 10s steps(1) 16s 1;
     -moz-animation: pfft 1s steps(1) 1 8s, haha 0.5s steps(2, end) 11s 10, oops 10s steps(1) 16s 1;
-    -ms-animation: pfft 1s steps(1) 1 8s, haha 0.5s steps(2, end) 11s 10, oops 10s steps(1) 16s 1;
-    -o-animation: pfft 1s steps(1) 1 8s, haha 0.5s steps(2, end) 11s 10, oops 10s steps(1) 16s 1;
+    -webkit-animation: pfft 1s steps(1) 1 8s, haha 0.5s steps(2, end) 11s 10, oops 10s steps(1) 16s 1;
     animation: pfft 1s steps(1) 1 8s, haha 0.5s steps(2, end) 11s 10, oops 10s steps(1) 16s 1;
-    -webkit-animation-fill-mode: forwards;
     -moz-animation-fill-mode: forwards;
-    -ms-animation-fill-mode: forwards;
-    -o-animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
     animation-fill-mode: forwards;
     background: url(http://stash.rachelnabors.com/codepen/spinner/sprite_spinner-expressions.png);
     top: 73px;
@@ -1107,17 +910,13 @@ headphones: "\e008" &#57352
     left: 27px;
     width: 72px;
     height: 12px;
-    -webkit-animation: show 0.01s linear 1 16s forwards, uh-oh 5s 1 18s, hide 0.01s linear 1 26s forwards;
     -moz-animation: show 0.01s linear 1 16s forwards, uh-oh 5s 1 18s, hide 0.01s linear 1 26s forwards;
-    -ms-animation: show 0.01s linear 1 16s forwards, uh-oh 5s 1 18s, hide 0.01s linear 1 26s forwards;
-    -o-animation: show 0.01s linear 1 16s forwards, uh-oh 5s 1 18s, hide 0.01s linear 1 26s forwards;
+    -webkit-animation: show 0.01s linear 1 16s forwards, uh-oh 5s 1 18s, hide 0.01s linear 1 26s forwards;
     animation: show 0.01s linear 1 16s forwards, uh-oh 5s 1 18s, hide 0.01s linear 1 26s forwards;
   }
   .featurette .hands {
-    -webkit-animation: spin 0.5s steps(5) infinite;
     -moz-animation: spin 0.5s steps(5) infinite;
-    -ms-animation: spin 0.5s steps(5) infinite;
-    -o-animation: spin 0.5s steps(5) infinite;
+    -webkit-animation: spin 0.5s steps(5) infinite;
     animation: spin 0.5s steps(5) infinite;
     background: url(http://stash.rachelnabors.com/codepen/spinner/sprite_spinner-hands.png);
     width: 307px;
@@ -1152,10 +951,8 @@ headphones: "\e008" &#57352
     height: 1.5em;
   }
   .featurette .message p {
-    -webkit-animation-fill-mode: forwards;
     -moz-animation-fill-mode: forwards;
-    -ms-animation-fill-mode: forwards;
-    -o-animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
     animation-fill-mode: forwards;
     padding-top: 0.75em;
     opacity: 0;
@@ -1192,7 +989,7 @@ headphones: "\e008" &#57352
     padding-bottom: 0;
   }
 
-  .entry-content p, .entry-content ul, .entry-content ol {
+  .entry-content p, .entry-content ul, .entry-content ol, .entry-content .video {
     padding-bottom: 1.5em;
   }
   .entry-content ul, .entry-content ol {
@@ -1248,6 +1045,10 @@ headphones: "\e008" &#57352
     max-width: 100%;
     height: auto;
   }
+  .entry-content .video {
+    max-width: 100%;
+    margin: 0 auto;
+  }
   .entry-content figure {
     line-height: 0;
     margin-left: -20.32787%;
@@ -1279,8 +1080,8 @@ headphones: "\e008" &#57352
     font-size: 0.875em;
     line-height: 1.28571em;
     margin-left: -3.27869%;
-    -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     overflow: auto;
     padding: 0 3.27869%;
@@ -1330,11 +1131,11 @@ headphones: "\e008" &#57352
   }
 
   .post-nav {
-    border-top-style: solid;
     border-top-width: 0.0625em;
+    border-top-style: solid;
     padding-top: 0.3125em;
-    border-bottom-style: solid;
     border-bottom-width: 0.0625em;
+    border-bottom-style: solid;
     padding-bottom: 0.3125em;
     margin-bottom: 1.5em;
     border-color: #001f27;
@@ -1359,7 +1160,7 @@ headphones: "\e008" &#57352
     width: 36.06557%;
     float: right;
     margin-right: 0;
-    *margin-left: -40px;
+    #margin-left: -40px;
     display: inline;
     white-space: nowrap;
     overflow: hidden;
@@ -1397,23 +1198,22 @@ headphones: "\e008" &#57352
     font-family: "LeagueGothicRegular", sans-serif;
     text-transform: uppercase;
   }
-  .shameless .mail .big-cta {
+  .shameless .mail .big-cta, .shameless .mail .tito-submit {
     display: block;
-    -webkit-transition: background ease-in, color ease-in;
-    -webkit-transition-delay: 0.25s, 0.25s;
-    -moz-transition: background ease-in 0.25s, color ease-in 0.25s;
-    -o-transition: background ease-in 0.25s, color ease-in 0.25s;
-    transition: background ease-in 0.25s, color ease-in 0.25s;
+    -moz-transition: background 0.25s ease-in, color 0.25s ease-in;
+    -o-transition: background 0.25s ease-in, color 0.25s ease-in;
+    -webkit-transition: background 0.25s ease-in, color 0.25s ease-in;
+    transition: background 0.25s ease-in, color 0.25s ease-in;
     padding-left: 6.55738%;
     padding-right: 6.55738%;
     padding-top: 0.375em;
     padding-bottom: 0.375em;
   }
-  .shameless .mail .big-cta:link, .shameless .mail .big-cta:visited {
+  .shameless .mail .big-cta:link, .shameless .mail .tito-submit:link, .shameless .mail .big-cta:visited, .shameless .mail .tito-submit:visited {
     background: #0097c0 !important;
     color: #e3edf2 !important;
   }
-  .shameless .mail .big-cta:hover, .shameless .mail .big-cta:active, .shameless .mail .big-cta:focus {
+  .shameless .mail .big-cta:hover, .shameless .mail .tito-submit:hover, .shameless .mail .big-cta:active, .shameless .mail .tito-submit:active, .shameless .mail .big-cta:focus, .shameless .mail .tito-submit:focus {
     background: #e64988 !important;
     color: #f8d0e0 !important;
   }
@@ -1447,7 +1247,7 @@ headphones: "\e008" &#57352
   #archive-featured li:nth-child(3) {
     float: right;
     margin-right: 0;
-    *margin-left: -40px;
+    #margin-left: -40px;
     display: inline;
   }
   #archive-featured img {
@@ -1499,7 +1299,7 @@ headphones: "\e008" &#57352
   #archive-list > li:nth-child(even) {
     float: right;
     margin-right: 0;
-    *margin-left: -40px;
+    #margin-left: -40px;
     display: inline;
     float: left;
   }
@@ -1510,6 +1310,108 @@ headphones: "\e008" &#57352
     margin-bottom: 0.5em;
     font-size: 1.5em;
     line-height: 1.25em;
+  }
+
+  .training {
+    background: #333b47;
+    color: #e3edf2;
+  }
+  .training h2, .training h3, .training p {
+    text-align: center;
+    padding: .5em;
+  }
+  .training h2, .training h3 {
+    font-family: "LeagueGothicRegular", sans-serif;
+    font-weight: normal;
+    text-transform: uppercase;
+    font-size: 2em;
+  }
+  .training img {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .tito-ticket {
+    background: #e3edf2;
+    color: #141f31;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 1.5%;
+  }
+  .tito-ticket label:after {
+    content: "";
+    display: block;
+    font-family: franklin-gothic-urw, sans-serif;
+    font-weight: 400;
+    font-size: 0.5em;
+    line-height: 1.28571em;
+    padding-top: 0.375em;
+  }
+  .tito-ticket label {
+    font-family: "OstrichSansMedium", sans-serif;
+    font-size: 1.75em;
+    line-height: 0.85714em;
+  }
+
+  .tito-ticket-price-quantity {
+    font-family: "LeagueGothicRegular", sans-serif;
+    padding-top: 0.375em;
+    font-size: 2.25em;
+    line-height: 1em;
+    text-align: center;
+  }
+
+  .tito-ticket:nth-child(1) {
+    margin-left: 2.5%;
+    width: 25%;
+    float: left;
+    margin-right: 2.5%;
+  }
+  .tito-ticket:nth-child(1) label:after {
+    content: "online 4 week course with feedback from Rachel!";
+  }
+
+  .tito-ticket:nth-child(2) {
+    width: 30%;
+    float: left;
+  }
+  .tito-ticket:nth-child(2) label:after {
+    content: "the course PLUS 1 hour of pair cartooning with Rachel PLUS art supply kit";
+    padding-bottom: 0.75em;
+  }
+
+  .tito-ticket:nth-child(3) {
+    margin-right: 2.5%;
+    width: 35%;
+    float: right;
+  }
+  .tito-ticket:nth-child(3) label:after {
+    content: 'all of the above PLUS "hour of need" ticket for when you need expert advice in a pinch PLUS beret';
+    padding-bottom: 0.75em;
+  }
+
+  .tito-ticket-price, .tito-ticket-quantity {
+    display: inline;
+  }
+
+  .tito-ticket-quantity input {
+    display: inline;
+    width: 2em;
+  }
+
+  .tito-submit {
+    font-size: 2.25em;
+    border: 0;
+    border-radius: .25em;
+    background: #ced92e;
+    display: block;
+    padding: 0 2em;
+    margin: 0 auto;
+    padding-top: 0.375em;
+    padding-bottom: 0.375em;
+    margin-top: 0.75em;
+    margin-bottom: 0.75em;
   }
 }
 /* =============================================================================
