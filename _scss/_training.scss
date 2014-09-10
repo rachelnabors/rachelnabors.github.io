@@ -1,0 +1,102 @@
+.training {
+	background: $dark_grey;
+	color:$bg_blue;
+	h2, h3, p {
+		text-align: center;
+		padding: .5em;
+	}
+	h2, h3 {
+		font-family: $league;
+		font-weight: normal;
+		text-transform: uppercase;
+		font-size: 2em;
+	}
+	img {
+		display: block;
+		margin: 0 auto;
+	}
+}
+
+// For the cartooning classes.
+.tito-ticket {
+	background: $bg_blue;
+	color: $black;
+	@include box-sizing(border-box);
+	padding: 1.5%;
+	label:after {
+		content: "";
+		display: block;
+		font-family: $franklin;
+		font-weight: $normal;
+		@include adjust-font-size-to(14px, 3, 28px);
+		@include padding-leader();
+	}
+	label {
+		font-family: $ostrich;
+		@include adjust-font-size-to(28px, 4, 16px);
+	}
+}
+
+.tito-ticket-price-quantity {
+	font-family: $league;
+	@include padding-leader();
+	@include adjust-font-size-to(36px, 6, 16px);
+	text-align: center;
+}
+
+.tito-ticket:nth-child(1) {
+	margin-left: 2.5%;
+	width: 25%;
+	float: left;
+	margin-right: 2.5%;
+	label:after {
+		content: "online 4 week course with feedback from Rachel!";
+	}
+}
+.tito-ticket:nth-child(2) {
+	width: 30%;
+	float: left;
+	label:after {
+		content: "the course PLUS 1 hour of pair cartooning with Rachel PLUS art supply kit";
+		@include padding-trailer(2);
+	}
+}
+.tito-ticket:nth-child(3) {
+	margin-right: 2.5%;
+	width: 35%;
+	float: right;
+	label:after {
+		content: 'all of the above PLUS "hour of need" ticket for when you need expert advice in a pinch PLUS beret';
+		@include padding-trailer(2);
+	}
+}
+.tito-ticket-list {
+	@extend %clearfix;
+}
+
+.tito-ticket-price, .tito-ticket-quantity  {
+	display: inline;
+}
+
+.tito-ticket-quantity input {
+	display: inline; width: 2em;
+}
+
+.tito-submit {
+	font-size: 2.25em;
+	border: 0;
+	border-radius: .25em;
+	background: $lime;
+	display: block;
+	padding: 0 2em;
+	margin: 0 auto;
+	@include padding-leader;
+	@include padding-trailer;
+	@include margin-leader(2);
+	@include margin-trailer(2);
+	@extend .big-cta;
+}
+
+#tito-footer {
+	@extend %hidden;
+}
