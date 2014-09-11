@@ -22,7 +22,7 @@
 	background: $bg_blue;
 	color: $black;
 	@include box-sizing(border-box);
-	padding: 1.5%;
+	padding: 1.5% 1.5% 150px 1.5%;
 	label:after {
 		content: "";
 		display: block;
@@ -45,6 +45,8 @@
 }
 
 .tito-ticket:nth-child(1) {
+	@include background($bg_blue image-url("training/heart.png") no-repeat 50% 87%);
+	@include background-size(60% auto);
 	margin-left: 2.5%;
 	width: 25%;
 	float: left;
@@ -54,6 +56,8 @@
 	}
 }
 .tito-ticket:nth-child(2) {
+	@include background($bg_blue image-url("training/pouch.png") no-repeat 50% 90%);
+	@include background-size(80% auto);
 	width: 30%;
 	float: left;
 	label:after {
@@ -62,6 +66,8 @@
 	}
 }
 .tito-ticket:nth-child(3) {
+	@include background($bg_blue image-url("training/beret.png") no-repeat 50% 84%);
+	@include background-size(80% auto);
 	margin-right: 2.5%;
 	width: 35%;
 	float: right;
@@ -75,11 +81,23 @@
 }
 
 .tito-ticket-price, .tito-ticket-quantity  {
-	display: inline;
+	display: inline-block;
+}
+
+.tito-ticket-quantity {
+	position: relative;
+	height: 1em;
 }
 
 .tito-ticket-quantity input {
-	display: inline; width: 2em;
+	@include box-sizing(border-box);
+	display: inline-block;
+	position: absolute;
+	top: .25em;
+	width: 1.5em;
+	height: 2em;
+	text-align: center;
+	font-size: .5em;
 }
 
 .tito-submit {
@@ -95,6 +113,13 @@
 	@include margin-leader(2);
 	@include margin-trailer(2);
 	@extend .big-cta;
+	position: relative;
+	top:0; left:0;
+	&:hover, &:focus {
+		color: $dark_grey !important;
+		cursor: pointer;
+		top: 1px; left: 1px;
+	}
 }
 
 #tito-footer {
