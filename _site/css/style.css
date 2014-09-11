@@ -1315,20 +1315,33 @@ headphones: "\e008" &#57352
   .training {
     background: #333b47;
     color: #e3edf2;
-  }
-  .training h2, .training h3, .training p {
     text-align: center;
-    padding: .5em;
+    padding-bottom: 0.75em;
+  }
+  .training p, .training h2, .training h3 {
+    padding-right: 1em;
+    padding-left: 1em;
+  }
+  .training p {
+    padding-bottom: 0.75em;
   }
   .training h2, .training h3 {
     font-family: "LeagueGothicRegular", sans-serif;
     font-weight: normal;
     text-transform: uppercase;
     font-size: 2em;
+    padding-top: 0.75em;
+    padding-bottom: 0.375em;
   }
   .training img {
     display: block;
     margin: 0 auto;
+  }
+  .training a:link, .training a:visited {
+    color: #0097c0;
+  }
+  .training a:hover, .training a:active, .training a:focus {
+    color: #ced92e;
   }
 
   .tito-ticket {
@@ -1338,6 +1351,7 @@ headphones: "\e008" &#57352
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     padding: 1.5% 1.5% 150px 1.5%;
+    text-align: left;
   }
   .tito-ticket label:after {
     content: "";
@@ -1439,7 +1453,7 @@ headphones: "\e008" &#57352
     padding-top: 0.375em;
     padding-bottom: 0.375em;
     margin-top: 0.75em;
-    margin-bottom: 0.75em;
+    margin-bottom: 0.375em;
     position: relative;
     top: 0;
     left: 0;
