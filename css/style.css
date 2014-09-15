@@ -1416,7 +1416,7 @@ headphones: "\e008" &#57352
     float: right;
   }
   .tito-ticket:nth-child(3) label:after {
-    content: 'all of the above PLUS "hour of need" ticket for when you need expert advice in a pinch PLUS beret';
+    content: 'the course, art supplies, pair cartooning hour PLUS a bonus session on storyboarding PLUS beret';
     padding-bottom: 0.75em;
   }
 
