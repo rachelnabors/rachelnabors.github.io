@@ -33,8 +33,9 @@ permalink: animation-ux
 * [Animation and Storytelling with HTML5 and CSS3](http://frontendmasters.com/courses/animation-storytelling-html5-css3/cutout-animations-css/?partner=1)&mdash;My Frontend Masters Course showing how to use and combine CSS animations, JavaScript and HTML5 audio.
 
 ## Examples of animation in action
-* [Use Your Interface](http://useyourinterface.com/)&mdash;a tumblr of animated gifs of tiny user interface animations.
+* [Use Your Interface](http://useyourinterface.com/)&mdash;A tumblr of animated gifs of tiny user interface animations.
 * [Captivate Co](http://capptivate.co/)&mdash;A curated collection of iOS UI animation patterns.
+* [Dribbble](https://dribbble.com/search?q=ui+animation)&mdash;If you know how to search ;)
 
 ## People on Twitter
 * [Me!](https://twitter.com/rachelnabors)
