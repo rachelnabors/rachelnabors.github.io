@@ -14,7 +14,7 @@ This post supplements a talk I'm giving/gave about the Web Animation API.
 If you don't have time to read through the spec, have a read through the [polyfill readme](https://github.com/web-animations/web-animations-js#readme) to get an idea for the goodies in store.
 
 ## How to give feedback
-You can email <public-fx@w3.or> with subject beginning &ldquot;[web-animations] &hellip; &rdquot;
+You can email <public-fx@w3.or> with subject beginning &ldquo;[web-animations] &hellip; &rdquo;
 
 On IRC:
 irc.w3.org#webanimations
