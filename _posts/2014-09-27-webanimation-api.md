@@ -19,7 +19,7 @@ You can email <public-fx@w3.or> with subject beginning &ldquo;[web-animations] &
 On IRC:
 irc.w3.org#webanimations
 
-Unofficially, I will be keeping tabs on the [#waapi hashtag on Twitter](https://twitter.com/search?q=%23waapi&src=typd). Not that I'm officially involved in the spec, but it's my hope that the spec authors and implementors will engage under that hashtag as well, thus allowing people who don't use IRC (like designers) and don't want to be a part of a long-ass email chain to keep up to date with the discussion surrounding this API.
+Unofficially, I will be keeping tabs on the [#waapi hashtag on Twitter](https://twitter.com/search?q=%23waapi&src=typd). Not that I'm officially involved in the spec, but it's my hope that the spec authors and implementors will engage under that hashtag as well, thus allowing people who don't use IRC (like designers) and don't want to be a part of a long email chain to keep up to date with the discussion surrounding this API.
 
 ## How to make a difference
 People who have some familiarity with C++ coding, [you can help implement the API in Firefox](https://developer.mozilla.org/en-US/docs/Introduction). [Brian Birtles](bbirtles@mozilla.com) might even mentor you! And Mozilla's always looking for people to help write docs on [MDN](https://developer.mozilla.org).
