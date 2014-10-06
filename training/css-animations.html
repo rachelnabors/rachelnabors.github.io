@@ -1,0 +1,97 @@
+---
+title: "CSS Animation MasterClass Resources and Links"
+layout: default
+body_id: training
+permalink: animation-workbook
+---
+
+<div class="entry-content">
+
+<h2>Exercises</h2>
+<ul>
+  <li>Rolling a Ball <a href="http://codepen.io/rachelnabors-teaching/pen/fGFDj">exercise</a> and <a href="http://codepen.io/rachelnabors-teaching/pen/zsGrI">solution</a></li>
+  <li>Sensing Visual Play Readiness <a href="http://codepen.io/rachelnabors-teaching/pen/AfDBF">exercise</a> and <a href="http://codepen.io/rachelnabors/pen/igmex">solution</a></li>
+  <li>Showing &amp; Hiding <a href="http://codepen.io/rachelnabors-teaching/pen/JDcwI">exercise</a> and <a href="http://codepen.io/rachelnabors/pen/LgiHA">solution</a></li>
+  <li>Wag the Cat <a href="http://codepen.io/rachelnabors-teaching/pen/AfDBF">exercise</a> and <a href="http://codepen.io/rachelnabors/pen/cnhHq">solution</a></li>
+  <li>Making a Walk-Cycle <a href="http://codepen.io/rachelnabors-teaching/pen/cdqga">exercise</a> and <a href="http://codepen.io/rachelnabors/pen/bpAJH">solution</a></li>
+  <li>Sitting Tuna Down <a href="http://codepen.io/rachelnabors-teaching/pen/cdqga">exercise</a> and <a href="http://codepen.io/rachelnabors/pen/bpAJH">solution</a></li>
+  <li>Sitting Tuna Down with JS <a href="http://codepen.io/rachelnabors-teaching/pen/pIiqj">exercise</a> and <a href="http://codepen.io/rachelnabors-teaching/pen/Htsej">solution</a></li>
+  <li>“Pure CSS” Spinner <a href="http://codepen.io/rachelnabors/full/ucBAz">exercise</a></li>
+  <li>Parallax Backgrounds <a href="http://codepen.io/rachelnabors-teaching/pen/qkeou">exercise</a> and <a href="http://codepen.io/rachelnabors/pen/AvGhp">solution</a></li>
+  <li>Dolly Zoom <a href="http://codepen.io/rachelnabors-teaching/pen/axKEq">exercise</a> and <a href="http://codepen.io/rachelnabors/pen/Lybvn">solution</a></li>
+  <li>Fall down the hole <a href="http://codepen.io/rachelnabors/pen/lqhyE">exercise</a> and</li>
+  <li>Making an Audio Element <a href="http://codepen.io/rachelnabors-teaching/pen/ctrBw">exercise</a> and <a href="http://codepen.io/rachelnabors/pen/gcump">solution</a></li>
+  <li>Return of the Loading Screen <a href="http://codepen.io/rachelnabors-teaching/pres/xGoAH?editors=001">exercise</a> and <a href="http://codepen.io/rachelnabors/pen/rCost">solution</a></li>
+</ul>
+
+<h2>Reference Materials</h2>
+<ul>
+  <li><a href="http://css-tricks.com/almanac/properties/t/transition/">CSS <code>transition</code> syntax reference</a></li>
+  <li><a href="http://css-tricks.com/almanac/properties/a/animation/">CSS <code>animation</code> syntax reference</a></li>
+  <li><a href="http://css-tricks.com/snippets/css/keyframe-animation-syntax/">CSS <code>animation keyframe</code> syntax reference</a></li>
+  <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/timing-function"><code>steps()</code> timing function documentation</a> &amp; <a href="cdpn.io/zeFqy">sand box</a></li>
+  <li><a href="http://rachelnabors.com/alice-in-videoland/book/">Alice in Videoland</a> an interactive storybook project of mine</li>
+  <li><a href="https://github.com/Prinzhorn/skrollr">skrollr</a> a JS library for parallax</li>
+</ul>
+
+<h2>Formula for animating background sprites with <code>steps()</code></h2>
+<p>Using <code>background-position: 0 x</code>&hellip;
+
+<p><strong>s</strong> = height of the sprite image in px<br />
+<strong>i</strong> = #of images in sprite to cycle through<br />
+<strong>x</strong> = s / ( s -  (s / i ))</p>
+
+<h2>JavaScript Event Listeners for CSS Animations and Transitions</h2>
+<ul>
+  <li><a href="https://developer.mozilla.org/en-US/docs/Web/Events/animationstart">animationstart</a></li>
+  <li><a href="https://developer.mozilla.org/en-US/docs/Web/Events/animationend">animationend</a></li>
+  <li><a href="https://developer.mozilla.org/en-US/docs/Web/Events/animationiteration">animationiteration</a></li>
+  <li><a href="https://developer.mozilla.org/en-US/docs/Web/Events/transitionend">transitionend</a></li>
+</ul>
+
+<h3>Caveats</h3>
+<ul>
+  <li>Use <code>webkitAnimationIteration</code> and so on for Webkit</li>
+  <li>Use <code>MSAnimationIteration</code> and so on for IE 10</li>
+</ul>
+
+<h2>Motion Blurs</h2>
+<ul>
+  <li><a href="http://paulbakaus.com/tutorials/performance/the-illusion-of-motion/">Paul Bakaus on the Illusion of Motion</a></li>
+  <li><a href="http://animationsmears.tumblr.com/">Motion blurs and smears</a></li>
+</ul>
+
+<h2>Further Reading</h2>
+<ul>
+  <li><a href="http://pupunzi.open-lab.com/2013/03/13/making-html5-audio-actually-work-on-mobile/">Further reading on HTML5 Audio on mobile</a></li>
+  <li><a href="http://updates.html5rocks.com/2013/02/Profiling-Long-Paint-Times-with-DevTools-Continuous-Painting-Mode">Profiling Long Paint Times with DevTools' Continuous Painting Mode</a></li>
+  <li><a href="http://www.html5rocks.com/en/tutorials/speed/layers/">Accelerated Rendering in Chrome: the Layer Model</a></li>
+</ul>
+
+
+
+
+   * Profiling Long Paint Times with DevTools' Continuous Painting Mode
+   * Accelerated Rendering in Chrome: the Layer Model
+
+The magic sprite formula:
+x = sprite-height / (sprite-height -  (sprite-height / #of images to cycle through))
+
+
+animationstart
+animationend
+animationiteration
+transitionend
+webkitAnimationIteration for Webkit
+MSAnimationIteration for IE 10
+
+
+Link to skrollr + Alice
+
+Links to finished versions of every demo.
+
+For break: https://vimeo.com/93206523
+
+https://github.com/GianlucaGuarini/jquery.html5loader
+
+</div>

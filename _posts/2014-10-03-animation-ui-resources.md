@@ -3,6 +3,7 @@ layout: post
 title: "Animation and UX Resources"
 excerpt: "Resources to go with my talk on animation and the future of UX."
 featured-image: ""
+permalink: animation-ux
 ---
 
 [Slides from my talk about animation and the future of UX](http://www.slideshare.net/CrowChick/animation-and-the-future-of-ux-33573726) are on SlideShare. They don't have the videos because Keynote. Darn!
@@ -28,6 +29,9 @@ featured-image: ""
 * [Animation Studio Power Techniques with CSS3](http://www.youtube.com/watch?v=iFUGSiz0Muc)&mdash;Secrets from the animation industry.
 * [Animated Music Videos with HTML5 and CSS3](https://vimeo.com/89400965)&mdash;A fun introduction to CSS animations with the help of a rocking cat.
 
+## Slides
+* [Interface Animations](http://markgeyer.com/pres/interface-animations)
+
 ## Courses
 * [Animation and Storytelling with HTML5 and CSS3](http://frontendmasters.com/courses/animation-storytelling-html5-css3/cutout-animations-css/?partner=1)&mdash;My Frontend Masters Course showing how to use and combine CSS animations, JavaScript and HTML5 audio.
 
@@ -52,6 +56,7 @@ featured-image: ""
 ## Prototyping Tools
 * [Flinto](https://www.flinto.com/)
 * [Invision App](http://www.invisionapp.com/)
+
 
 ## Software
 A number of UIs have been created to help people create animations easier. I prefer to hand code everything and build my own tools, but others who do not have that luxury will be interested in these:
