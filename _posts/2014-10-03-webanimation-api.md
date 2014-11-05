@@ -33,4 +33,6 @@ Minor fixes to the spec (grammar/spelling/inconsistencies etc.) can be submitted
 * [Me](https://twitter.com/rachelnabors)&mdash;I can't shut up about this stuff
 
 ## Bonus Round
+* [GSAP](http://www.greensock.com/)&mdash;reigning heavyweight for complex, dynamic animations.
+* [Velocity](http://julian.com/research/velocity/)&mdash;replacement for jQuery's laggy `.animate()`
 * [CSS's `will-change` property](https://dev.opera.com/articles/css-will-change-property/)
