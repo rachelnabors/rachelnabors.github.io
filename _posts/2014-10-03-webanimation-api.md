@@ -30,6 +30,7 @@ Minor fixes to the spec (grammar/spelling/inconsistencies etc.) can be submitted
 * [Brian Birtles](https://twitter.com/brianskold)&mdash;major author of spec, Mozilla Japan
 * [Alex Danilo](https://twitter.com/alexanderdanilo)&mdash;Google Platform Team, coauthor
 * [Tab Atkins](https://twitter.com/tabatkins)&mdash;Googler, coauthor, works on (CSS) specs
+* [Me](https://twitter.com/rachelnabors)&mdash;I can't shut up about this stuff
 
 ## Bonus Round
 * [CSS's `will-change` property](https://dev.opera.com/articles/css-will-change-property/)
