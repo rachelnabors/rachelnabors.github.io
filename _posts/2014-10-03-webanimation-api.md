@@ -6,7 +6,7 @@ featured-image: ""
 permalink: waapi
 ---
 
-This post supplements a talk I'm giving/gave about the Web Animation API.
+This post supplements my talk about the state of animation in 2014 and the Web Animation API ([slides](http://www.slideshare.net/CrowChick/state-of-the-animation-2014)).
 
 * The [Web Animation API spec](http://w3c.github.io/web-animations/)
 * Its [polyfill](https://github.com/web-animations/web-animations-js) and the next incarnation of the polyfill, [Web Animation Next](https://github.com/web-animations/web-animations-next)
