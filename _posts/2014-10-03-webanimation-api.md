@@ -8,6 +8,10 @@ permalink: waapi
 
 This post supplements my talk about the state of animation in 2014 and the Web Animation API ([slides](http://www.slideshare.net/CrowChick/state-of-the-animation-2014)).
 
+Additionally, I am available to train teams on how, why, when and where to use animation in your development life cycle. [Get on my training mailing list for 2015](http://eepurl.com/7AgAL) or [shoot me an email](mailto:rachelnabors@gmail.com).
+
+That's me. Let's talk animation!
+
 * The [Web Animation API spec](http://w3c.github.io/web-animations/)
 * Its [polyfill](https://github.com/web-animations/web-animations-js) and the next incarnation of the polyfill, [Web Animation Next](https://github.com/web-animations/web-animations-next)
 
