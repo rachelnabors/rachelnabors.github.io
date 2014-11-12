@@ -5,7 +5,6 @@ excerpt: I always thought I was bad at JavaScript. It turned out I was just tryi
 permalink: /2013/01/javascript-study-for-designers/
 featured-image: http://media.rachelnabors.com/wp-content/uploads/2013/01/comic_learning.jpg
 categories: javascript
-featured: true
 ---
 <strong>Update July, 2013:</strong> I just gave a talk on JavaScript for Designers at jQuery Portland. Eager learners can <a href="http://www.youtube.com/watch?v=rkR0RCfI0XM">watch me giving the presentation</a> and <a href="http://rachelnabors.com/javascript-for-designers/">find the slides online</a>. Many thanks to the organizers of jQuery Portland for the excellent recording and the opportunity to give this talk!
 
@@ -89,6 +88,6 @@ Don’t try to plow your way through all these resources. Take everything in dos
 
 Do not make the mistake of beating your head against a wall until you “get it!” <a href="https://coderwall.com/p/jglggq?i=4&amp;p=1&amp;q=author%3Arachelnabors&amp;t%5B%5D=rachelnabors">I've made that mistake before.</a> It doesn’t work. Switch gears, take a different route.
 <figure><img class="aligncenter size-full wp-image-797" alt="Learning comic" src="http://media.rachelnabors.com/wp-content/uploads/2013/01/comic_learning.jpg" /><figcaption>Don't fall into bad learning habits like this!</figcaption>
-</figure>	
+</figure>
 <h2>Share what works for you</h2>
 Have you successfully learned JavaScript from a non-programming background? What worked for you? What didn’t? Sharing is a great way to make headway in your own studies, and I'd love to hear how you're doing!
