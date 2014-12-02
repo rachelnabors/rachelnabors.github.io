@@ -18,8 +18,8 @@ permalink: animation-ux
 * [Provide meaning with motion](http://paulstamatiou.com/design-provide-meaning-with-motion/)&mdash;Why motion design is now a required skill for designers.
 
 ## Books
-* [Books I recommend to web developers and designers](http://astore.amazon.com/animationwow-20)
-* [Animation Books I've read on Goodreads](https://www.goodreads.com/review/list/155831-rachel-nabors)
+* [Animation books](http://astore.amazon.com/animationwow-20?_encoding=UTF8&amp;node=3) [I recommend to web developers and designers](http://astore.amazon.com/animationwow-20)
+* [Animation Books I've read on Goodreads](https://www.goodreads.com/review/list/155831-rachel-nabors?shelf=animation)
 
 ## Screencasts
 * [The Infinite Canvas Screencast](theinfinitecanvas.com)&mdash;My screencast that brings together code, storytelling, animation and design in one place. Interviews with people from many fields, sure to entertain and inspire!

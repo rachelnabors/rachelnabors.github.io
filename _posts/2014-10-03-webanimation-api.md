@@ -14,6 +14,7 @@ That's me. Let's talk animation!
 
 * The [Web Animation API spec](http://w3c.github.io/web-animations/)
 * Its [polyfill](https://github.com/web-animations/web-animations-js) and the next incarnation of the polyfill, [Web Animation Next](https://github.com/web-animations/web-animations-next)
+* [A video of Alex Danilo explaining how the Web Animation API works and why it is the biggest deal since Flash](https://www.youtube.com/watch?v=ep0_0W0qWsc) in 4.5 minutes.
 
 If you don't have time to read through the spec, have a read through the [polyfill readme](https://github.com/web-animations/web-animations-js#readme) to get an idea for the goodies in store.
 
