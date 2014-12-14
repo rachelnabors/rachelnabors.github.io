@@ -10,6 +10,7 @@ permalink: animation-ux
 
 ## Articles
 * [Web Animation at Work](http://alistapart.com/article/web-animation-at-work)&mdash;an article I wrote for A List Apart about why animation is important to companies and where to start honing one's skills.
+* [Five Ways to Animate Responsibly](http://24ways.org/2014/five-ways-to-animate-responsibly/)&mdash;some best practices you can and should follow before animating all the things :)
 * [State of the Animation 2014](http://www.smashingmagazine.com/2014/11/18/the-state-of-animation-2014/)&mdash;my run-down on _Smashing Mag_ of where web animation's been and where it's going.
 * [Animation Support in a User Interface Toolkit: Flexible, Robust, and Reusable Abstractions](https://smartech.gatech.edu/bitstream/handle/1853/3627/93-17.pdf)&mdash;an article from 1993 underscoring the improvements animations can have on a user's mastery of an operating system.
 * [A New Mobile UX Design Material](http://www.smashingmagazine.com/2012/10/30/motion-and-animation-a-new-mobile-ux-design-material/)&mdash;goes into depth with examples of the 12 Principles of Studio Animation as they apply to mobile design.
