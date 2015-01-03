@@ -2,12 +2,14 @@
 layout: post
 title: "Giving Back on a Dime: A 2014 Retrospective"
 excerpt: "In 2014 I did a lot of traveling and teaching, but my income was spotty. While I'm privileged to do as I please, I had to think creatively to find ways to share my rather intangible bounty with others."
+categories:
+  - personal
 ---
 I come from humble beginnings. The Internet saved my life. It lead me to a better, happier place. It let me connect to people outside my rural, poor community, and helped me join the human race.
 
-My journey to this better place started because of the Bill and Melinda Gates Foundation. The foundation sent computers and Internet access to my local libraries. I remember spending an hour or at the library, learning how to use a search engine or write HTML while my mother bought groceries. Remembering this, I always keep an eye out for ways to lift other people up as we climb toward common goals.
+My journey to this better place started because of the Bill and Melinda Gates Foundation. The foundation sent computers and Internet access to my local libraries. I remember spending an hour or so at the library, learning how to use a search engine or write HTML while my mother bought groceries. Remembering this, I always keep an eye out for ways to lift other people up as we climb toward common goals.
 
-But I am no Bill or Melinda Gates. This year has been up and down in terms of business plans and cash flow, and I spend so much time working and traveling that there's none left to volunteer. Even so, I still enjoy a lot of privilege. Being able to do what I want at all is a form of privilege. Turning that intangible bounty into something that can help others without sacrficing working hours requires creative thinking.
+But I am no Bill or Melinda Gates. This year has been up and down in terms of business plans and cash flow, and I spend so much time working and traveling that there's none left to volunteer. Even so, I still enjoy a lot of privilege. Being able to do what I want at all is a form of privilege. Turning that intangible bounty into something that can help others without sacrificing working hours requires creative thinking.
 
 My initial attempt, the [Infinite Canvas Screencast](http://theinfinitecanvas.com), required too much production time for too small an audience. But it got me thinking of ways to share and give back that cost me virtually nothing in terms of time or money.
 
