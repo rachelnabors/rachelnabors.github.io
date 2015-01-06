@@ -2,7 +2,6 @@
 layout: post
 title: "Giving Back on a Dime: A 2014 Retrospective"
 excerpt: "In 2014 I did a lot of traveling and teaching, but my income was spotty. While I'm privileged to do as I please, I had to think creatively to find ways to share my rather intangible bounty with others."
-permalink: /2015/01/02/giving-back/
 categories:
   - personal
 ---
