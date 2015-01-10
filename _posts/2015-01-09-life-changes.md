@@ -14,7 +14,7 @@ This year I moved away from some very good friends on the east coast. With all t
 ## Tin Magpie
 This was the year I started my own company, [Tin Magpie](http://tinmagpie.com/). What started as an interactive agency quickly evolved into something different. While I loved taking on projects from clients, I found that I still preferred following my nose to work on creative, cutting edge projects, often at odds with client expectations.
 
-With that in mind, I scaled back to working with just those clients whose projects aligned with my own interests. I also spun up internal projects like building experimental web animation interfaces and [bringing the interactive graphic novel Black Brick Road to the Kindle Fire](tinmagpie.com/blackbrickroad).
+With that in mind, I scaled back to working with just those clients whose projects aligned with my own interests. I also spun up internal projects like building experimental web animation interfaces and [bringing the interactive graphic novel Black Brick Road to the Kindle Fire](tinmagpie.com/blackbrickroad). I even started offering some [online training unofficially under the Tin Magpie banner](http://rachelnabors.com/training).
 
 Starting the company was bumpy, not just because of our move to Portland disrupting project work, but also because of traveling so darn much. This gets back to my yearning to Make Things in 2015. Traveling is wonderful and makes memories and friends and connections, but I still need blocks of time to Make Things which I can in turn either sell or teach about.
 
