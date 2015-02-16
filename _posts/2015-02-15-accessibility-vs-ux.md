@@ -11,17 +11,19 @@ __TLDR__ Has the pursuit of jank elimination has come at the cost of accessibili
 
 For the past week I’ve been hearing concerns from many places on Twitter. I also happened to have interviewed _a lot_ of interaction developers for writing [State of the Animation](http://www.smashingmagazine.com/2014/11/18/the-state-of-animation-2014/). So I have a pretty good perspective on both sides of the equation.
 
-Before I address some of these concerns, keep in mind that animation, when responsibly incorporated into a user interface, provides a substantially better user experience over its immobile, jump-cut happy counterpart. But in order to get that usability boost, those animations have got to be smooth as butter. One day I will write a post about it.
+Before I address some of these concerns, I want to make two things abundantly clear:
 
-Now to address some of the concerns I've seen over the past few days.
+1. Animation, when responsibly incorporated into a user interface, provides a substantially better user experience over its immobile, jump-cut happy counterpart. But in order to get that usability boost, those animations have got to be smooth as butter. One day I will write a post about it.
+
+2. Flipboard runs on React, and it _is_ accessible to Voice Over. React renders the content into the canvas (the block of pixels with no accessibility value) while also putting together a sort of mirror of the content into an invisible DOM that follows along with user’s scrolling and interaction so it’s still in synch for Voice Over. It’s a very complex system designed to deliver the same content to both users. Is it a perfect system that will work everywhere for everyone? No. Some users will fall through the cracks.
 
 ### Sacrificing accessibility for getting rid of jank? What were they thinking?
 
 They were thinking about the users. Jank is a really nasty UX problem. It can cause headaches, disorientation, and lamentations of, “Mom, I think it’s broken.” So the Flipboard team had these three choices:
 
-* Build an accessible and performant mobile site that looks much like other sites. Deliver a ho-hum but serviceable experience for everyone that doesn’t push the envelope but suffices.
-* Build a site that pushes the boundaries of what is possible but performs so badly that people have terrible user experiences. (But it’s still accessible, so at least one group of people is having a good experience ;) )
-* Build a site that pushes the boundaries of what is possible to deliver a unique, useful, and delightful user experience to a large group of people while another group of people gets nothing.
+1. Build an accessible and performant mobile site that looks much like other sites. Deliver a ho-hum but serviceable experience for everyone that doesn’t push the envelope but suffices.
+2. Build a site that pushes the boundaries of what is possible but performs so badly that people have terrible user experiences. (But it’s still accessible, so at least one group of people is having a good experience ;) )
+3. Build a site that pushes the boundaries of what is possible to deliver a unique, useful, and delightful user experience to a large group of people while a smaller group of people have a less than stellar experience.
 
 Maybe most of us would have gone with the first option. Some people may even think that the Flipboard team was being a show off by going with number three. But I’m sure system fonts and tables would still be the norm if it weren’t for people in their niches determined to do right by those niches. (Isn’t good typography just designers showing off, after all? _No it isn’t._) These people wanted to do right by motion design and give the best visual experience they could. They just couldn’t “have it all” as it were, not just yet. (Feel free to skip to the end for the big reveal.)
 
@@ -33,7 +35,7 @@ While seeing is part of many kinds of game play, not all games and certainly not
 
 ### What if this starts to be a thing? What if interaction developers start reconstructing the DOM in Canvas to take advantage of hardware acceleration?
 
-You’re not going to like this, but Flipboard isn't doing anything new. In many browsers, Canvas is the high road to the GPU. A good deal of the AWWWards winners and interaction agencies out there do this. Flipboard's devs are just the first to detail _why_ and _how_ publicly. And it’s a good thing, too. It got everyone buzzing about some very real performance vs accessibility issues which would never be championed at interaction agencies where these things are committed.
+You’re not going to like this, but Flipboard isn't doing anything new. In many browsers, Canvas is the high road to the GPU. A good deal of the AWWWards winners and interaction agencies out there do this. Flipboard’s devs are just the first to detail _why_ and _how_ publicly. And it’s a good thing, too. It got everyone buzzing about some very real performance and accessibility issues which would never be championed at interaction agencies where these things are being built all the time (_without_ the benefit of React’s mirror DOM).
 
 ### The DOM is slow. We should throw it away and start over.
 
