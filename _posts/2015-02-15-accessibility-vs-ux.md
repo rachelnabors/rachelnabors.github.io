@@ -9,9 +9,9 @@ __TLDR__ Has the pursuit of jank elimination has come at the cost of accessibili
 
 ## User Experience over Accessibility?
 
-For the past week I’ve been hearing concerns from many places on Twitter. I also happened to have interview _a lot_ of interaction developers for writing [State of the Animation](http://www.smashingmagazine.com/2014/11/18/the-state-of-animation-2014/). So I have a pretty good perspective on both side of the equation.
+For the past week I’ve been hearing concerns from many places on Twitter. I also happened to have interviewed _a lot_ of interaction developers for writing [State of the Animation](http://www.smashingmagazine.com/2014/11/18/the-state-of-animation-2014/). So I have a pretty good perspective on both side of the equation.
 
-Before I address some of these concerns, keep in mind that animation, when responsibly incorporated into a user interface, provides a substantially better user experience over its immobile, jump cut-happy counterpart. But in order to get that usability boost, those animations have got to be smooth a butter. One day I will write a post about it.
+Before I address some of these concerns, keep in mind that animation, when responsibly incorporated into a user interface, provides a substantially better user experience over its immobile, jump-cut happy counterpart. But in order to get that usability boost, those animations have got to be smooth as butter. One day I will write a post about it.
 
 Now to address some of the concerns I've seen over the past few days.
 
