@@ -30,10 +30,10 @@
             .on("click", function() {
                 if ( $html.attr('data-sidebar') === "open" ) {
                   $html.attr('data-sidebar', "closed");
-                  store.set("sidebarOpen", false);
+                  store.set("sidebarStatus", "closed");
                 } else {
                   $html.attr('data-sidebar', 'open');
-                  store.set("sidebarOpen", true);
+                  store.set("sidebarStatus", "open");
                 }
             }).appendTo('#additional');
 
