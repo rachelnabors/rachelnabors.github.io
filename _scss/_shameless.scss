@@ -23,3 +23,99 @@
         text-transform: uppercase;
     }
 }
+
+.shameless {
+    @extend %clearfix;
+    @extend %color-block;
+
+    color: $grey_light;
+    background: $grey_dark;
+    @include padding-leader(2/3);
+
+    .schedule-workshops, .schedule-speaking {
+        h2 {
+          @extend %rotated-title;
+        }
+    }
+    time {color: adjust-lightness($grey, 10%);}
+
+    .cta {
+        clear: both;
+        color: $grey_light;
+    }
+    .big-cta {
+        @include buttonator($magenta, $mauve, .15em);
+    }
+    a:link, a:visited, a:hover, a:active, a:focus {
+      color: $magenta;
+      text-decoration: none;
+    }
+    a:visited { color: $mauve;}
+    a:hover, a:active, a:focus {
+      background-color: $magenta;
+      color: adjust-saturation(adjust-lightness($magenta, -50%), -40%);
+    }
+    //@extend %undo-ul-bs;
+
+    @include breakpoint($with-foldout){
+        .schedule-speaking {
+            @include span(4 of 9);
+            @include pre(1 of 9 narrow);
+            h2 {
+                top: rhythm(29/3);
+            }
+        }
+        .schedule-workshops {
+            @include span(4 of 9 last);
+            h2 {
+                transform: rotate(90deg);
+                transform-origin: center right;
+                position: absolute;
+                left: auto;
+                right: span(1 of 12);
+                top: rhythm(29/3);
+            }
+        }
+        .cta {
+            @include squish(1 of 9 narrow);
+        }
+    }
+    @include breakpoint($with-sidebar calc-em(638px)){
+        .schedule-speaking {
+            @include span(2 of 6);
+            @include pre(1 of 6 narrow);
+            h2 {
+                top: rhythm(29/3);
+            }
+        }
+        .schedule-workshops {
+            @include span(2 of 6 last);
+            @include post(1 of 6 narrow);
+            h2 {
+                transform: rotate(90deg);
+                transform-origin: center right;
+                position: absolute;
+                left: auto;
+                right: span(1 of 6 narrow);
+                top: rhythm(29/3);
+            }
+        }
+        .cta {
+            @include squish(1 of 9 narrow);
+        }
+    }
+    ul {
+        @include margin-leader(1);
+        position:relative;
+        li {
+            @include adjust-leading-to(3/3);
+            padding-top: 0;
+            padding-right: gutter(4);
+            @include padding-trailer(1);
+            margin: 0;
+            &:first-child {
+                padding-top: 0 !important;
+            }
+        }
+    }
+}

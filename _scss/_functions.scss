@@ -2,7 +2,6 @@
 
 @mixin discography($title-tag, $link-color, $visited-color, $background, $text) {
   @extend %clearfix;
-  @extend %bleed-entry;
   @extend .columnsx2;
   @extend %color-block;
 
