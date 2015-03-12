@@ -204,6 +204,7 @@ header .meta {
 }
 
 .post-nav-link {
+    display: block;
     @include ellipsis();
     &:hover, &:active, &:focus {
         background: $grey;
