@@ -20,7 +20,7 @@ disqus_show_comment_count: true
 destination: _site
 
 # Don't flip out whenever I compile my sass
-exclude: [_scss,css/*]
+exclude: [_scss]
 
 # collections:
 #   comics:

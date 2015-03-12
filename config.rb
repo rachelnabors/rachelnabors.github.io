@@ -20,8 +20,8 @@ http_images_path = "/img"
 http_css_path = "/css"
 
 # Local development paths
-css_dir = "/_site/css"
-images_dir = "/_site/img"
+css_dir = "/css"
+images_dir = "/img"
 # You can select your preferred output style here (can be overridden via the command line):
 # output_style = :expanded or :nested or :compact or :compressed
 output_style = :compressed
