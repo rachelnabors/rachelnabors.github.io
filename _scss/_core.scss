@@ -32,10 +32,7 @@ time {
     font-style: italic;
     text-align: right;
     body[data-location=home] & {
-        bottom: 0;
-        box-sizing: border-box;
-        position: absolute;
-        width: span(9 of 9) + gutter(9);
+        display: none; // because transform is shite on my margins!
     }
     body[data-location=archive] &, body[data-location=speaking] & {
         margin-top: 0
