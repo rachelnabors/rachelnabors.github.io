@@ -161,13 +161,24 @@ body[data-location=training] .nav-training {
 .site-logo, .masthead .rachel {
     @include margin-leader(2/3);
     position: relative;
-    img { max-width: 100%; }
+    img {
+        display: block;
+        max-width: 100%;
+    }
     a {
         display: block;
         line-height: 0;
         transition: background-color $easeOutQuint .25s;
+        body[data-location=home] & {
+            background: $grey;
+            cursor: default;
+        }
         &:hover, &:active, &:focus {
             background-color: $mauve;
+            body[data-location=home] & {
+                background: $grey;
+                cursor: default;
+            }
         }
     }
 }
