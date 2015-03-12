@@ -1,105 +1,114 @@
-@include keyframes(show) {
+// Feature has dark bg. Transition that thing.
+.container { transition: background-color .1s $easeOutQuint;}
+
+body[data-location=home] .container {
+    background: $grey_dark;
+}
+
+@keyframes show {
   100% {opacity:1;}
 }
 
-@include keyframes(hide) {
+@keyframes hide {
   100% {opacity:0;}
 }
 
-@include keyframes(pfft) {
+@keyframes pfft {
   0% { background-position: 0 0;}
   100% {background-position: 0 -121px;}
 }
 
-@include keyframes(haha) {
+@keyframes haha {
   0% { background-position: 0 -243px;}
   100% {background-position: 0 -486px;}
 }
 
-@include keyframes(oops) {
+@keyframes oops {
   0% { background-position: 0 -486px;}
   100% {background-position: 0 -607px;}
 }
 
-@include keyframes(uh-oh) {
+@keyframes uh-oh {
   0%, 100% {margin-left: 0;}
   25% {margin-left:7px;}
   75% {margin-left:-7px;}
 }
-@include keyframes(spin) {
+
+@keyframes spin {
   0% {background-position: 0 0;}
   100% {background-position: 0 -1015px;}
 }
-.featurette {
-	@include padding-leader(10);
-	@include padding-trailer(10);
 
+.featurette {
+    @include padding-leader(3);
+    @extend %bleed-entry;
 	.body {
 	  background: url(http://stash.rachelnabors.com/codepen/spinner/bg_spinner-body.png);
 	  left: 50%; margin-left: -62px;
-	  width: 224px; height: 332px;  
+	  width: 224px; height: 332px;
 	}
 
-	.message p:nth-child(1) { 
-	  @include animation( 
+	.message p:nth-child(1) {
+	  animation:
 	    show .5s 1 forwards,
-	    hide .5s 1 3s forwards
-	)};
+	    hide .5s 1 3s forwards;
+	}
 
-	.message p:nth-child(2) { 
-	  @include animation( 
+	.message p:nth-child(2) {
+	   animation:
 	  	    show .5s 1 4s forwards,
-	  	    hide .5s 1 7s forwards
-	)}
+	  	    hide .5s 1 7s forwards;
+	}
 
-	.message p:nth-child(3) { 
-	  @include animation(
-	    show .5s 1 9s forwards,
-	    hide .5s 1 10s forwards
-	)}
+	.message p:nth-child(3) {
+	    animation:
+            show .5s 1 9s forwards,
+            hide .5s 1 10s forwards;
+	}
 
-	.message p:nth-child(4) { 
-	  @include animation( 
+	.message p:nth-child(4) {
+	  animation:
 	    show .5s 1 11s forwards,
-	    hide .5s 1 12s forwards
-	)}
+	    hide .5s 1 12s forwards;
+	}
 
-	.message p:nth-child(5) { 
-	  @include animation( 
-	    show .5s 1 12s forwards,
-	    hide .5s 1 16s forwards
-	)}
+	.message p:nth-child(5) {
+    	animation:
+    	    show .5s 1 12s forwards,
+    	    hide .5s 1 16s forwards;
+    	}
 
-	.message p:nth-child(6) { 
-	  @include animation( 
-	    show .5s 1 17s forwards,
-	    hide .5s 1 21s forwards
-	)}
+	.message p:nth-child(6) {
+        animation:
+            show .5s 1 17s forwards,
+            hide .5s 1 21s forwards;
+    }
 
-	.message p:nth-child(7) { 
-	  @include animation( show .5s 1 26s forwards)}
+	.message p:nth-child(7) {
+        animation: show .5s 1 26s forwards;
+    }
 
 	.face {
-	  @include animation(
-	    pfft 1s steps(1) 1 8s,
-	    haha .5s steps(2, end) 11s 10,
-	    oops 10s steps(1) 16s 1);
-	  @include animation-fill-mode(forwards);
+        animation:
+            pfft 1s steps(1) 1 8s,
+            haha .5s steps(2, end) 11s 10,
+            oops 10s steps(1) 16s 1;
+	  animation-fill-mode: forwards;
 	  background: url(http://stash.rachelnabors.com/codepen/spinner/sprite_spinner-expressions.png);
 	  top: 73px; left: 120px;
 	  width: 133px; height: 121px;
 	}
 
-	.pupils { 
-	  background: url(http://stash.rachelnabors.com/codepen/spinner/bg_spinner-pupils.png);
-	  opacity: 0;
-	  top: 47px; left: 27px;
-	  width: 72px; height: 12px;
-	  @include animation( 
-	    show .01s linear 1 16s forwards,
-	    uh-oh 5s 1 18s,
-	    hide .01s linear 1 26s forwards
-	)}
+	.pupils {
+        background: url(http://stash.rachelnabors.com/codepen/spinner/bg_spinner-pupils.png);
+        opacity: 0;
+        top: 47px; left: 27px;
+        width: 72px; height: 12px;
+        animation:
+    	    show .01s linear 1 16s forwards,
+    	    uh-oh 5s 1 18s,
+    	    hide .01s linear 1 26s forwards;
+	}
 
 	.hands {
 	  @include animation( spin .5s steps(5) infinite);
@@ -107,13 +116,13 @@
 	  width: 307px; height: 202px;
 	}
 
-	.rachel {  
+	.rachel {
 	  width: 307px; height: 332px;
 	  position: absolute;
 	  top: 50%; left: 50%;
 	  margin-left: -152px;
 	  margin-top: -166px;
-		.ir { 
+		.ir {
 		  position: absolute;
 		  bottom: 0;
 		}
@@ -124,7 +133,7 @@
 	  overflow: hidden;
 	  margin: 0 auto;
 	  position: relative;
-	  width: space(3, 6); height: rhythm(40);
+	  width: 300px; height: 300px;
 	}
 
 	.message {
@@ -135,9 +144,10 @@
 		height: rhythm(4);
 	}
 	.message p {
-	  @include animation-fill-mode(forwards);
+	  animation-fill-mode: forwards;
 		@include padding-leader(2);
 	  opacity: 0;
+      @include padding-leader();
 	  text-align: center;
 	  position: absolute;
 	  top: 0; left: 0;

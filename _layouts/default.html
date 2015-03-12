@@ -1,7 +1,12 @@
 {% include header.html %}
-{% include navigation.html %}
-	<div class="main">
-        <h1 class="page-title">{{ page.title }}</h1>
+
+<div class="container">
+    <div class="main" id="content" role="main">
         {{ content }}
+        <small class="copyright">Copyright &copy; 2008 &ndash; {{ site.time | date: "%Y" }} Rachel Nabors</small>
     </div>
+
+    {% include sidebar.html %}
+    {% include masthead.html %}
+</div>
 {% include footer.html %}

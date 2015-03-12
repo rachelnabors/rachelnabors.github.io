@@ -1,143 +1,40 @@
-.training {
-	background: $dark_grey;
-	color:$bg_blue;
-	text-align: center;
-	@include padding-trailer(2);
-	p, h2, h3 {
-		padding-right: 1em;
-		padding-left: 1em;
-	}
-	p {
-		@include padding-trailer(2);
-	}
-	h2, h3 {
-		font-family: $league;
-		font-weight: normal;
-		text-transform: uppercase;
-		font-size: 2em;
-		@include padding-leader(2);
-		@include padding-trailer(1);
-	}
-	img {
-		display: block;
-		margin: 0 auto;
-	}
-	a {
-		&:link, &:visited {
-			color: $cyan;
-		}
-		&:hover, &:active, &:focus {
-			color: $lime;
-		}
-	}
+.available-to-train {
+	@include margin-leader();
 }
 
-// For the cartooning classes.
-.tito-ticket {
-	background: $bg_blue;
-	color: $black;
-	@include box-sizing(border-box);
-	padding: 1.5% 1.5% 150px 1.5%;
-	text-align: left;
-	label:after {
-		content: "";
-		display: block;
-		font-family: $franklin;
-		font-weight: $normal;
-		@include adjust-font-size-to(14px, 3, 28px);
-		@include padding-leader();
-	}
-	label {
-		font-family: $ostrich;
-		@include adjust-font-size-to(28px, 4, 16px);
-	}
+.takeaways {
+	@include margin-leader();
+	@include margin-trailer();
+    @include discography(h4, $cyan, $blade, $grey_light, $grey_dark);
+    min-height: 32ex;
+    h4 {
+    	color: $bg_blue;
+    	@extend %fontLeague;
+    	@extend %t-base;
+    	text-transform: uppercase;
+        top: rhythm(25/3);
+    }
+    ul > li:before {
+        @extend %icon;
+        color: $grey;
+        content: "\27f6" !important;
+        padding-right: .25em;
+        position: relative;
+		top: 0; left: 0;
+		font-size: 1em;
+    }
+    ul ul { margin-top: 0;}
+    li li {
+        @include adjust-leading-to(2/3);
+        padding-top: 0;
+        @include padding-trailer(1);
+    }
 }
 
-.tito-ticket-price-quantity {
-	font-family: $league;
-	@include padding-leader();
-	@include adjust-font-size-to(36px, 6, 16px);
-	text-align: center;
+body[data-location=training] .copyright {
+	@include margin-leader(-1);
 }
 
-.tito-ticket:nth-child(1) {
-	@include background($bg_blue image-url("training/heart.png") no-repeat 50% 87%);
-	@include background-size(60% auto);
-	margin-left: 2.5%;
-	width: 25%;
-	float: left;
-	margin-right: 2.5%;
-	label:after {
-		content: "online 4 week course with feedback from Rachel!";
-	}
-}
-.tito-ticket:nth-child(2) {
-	@include background($bg_blue image-url("training/pouch.png") no-repeat 50% 90%);
-	@include background-size(80% auto);
-	width: 30%;
-	float: left;
-	label:after {
-		content: "the course PLUS 1 hour of pair cartooning with Rachel PLUS art supply kit";
-		@include padding-trailer(2);
-	}
-}
-.tito-ticket:nth-child(3) {
-	@include background($bg_blue image-url("training/beret.png") no-repeat 50% 84%);
-	@include background-size(80% auto);
-	margin-right: 2.5%;
-	width: 35%;
-	float: right;
-	label:after {
-		content: 'the course, art supplies, pair cartooning hour PLUS a bonus session on storyboarding PLUS beret';
-		@include padding-trailer(2);
-	}
-}
-.tito-ticket-list {
-	@extend %clearfix;
-}
-
-.tito-ticket-price, .tito-ticket-quantity  {
-	display: inline-block;
-}
-
-.tito-ticket-quantity {
-	position: relative;
-	height: 1em;
-}
-
-.tito-ticket-quantity input {
-	@include box-sizing(border-box);
-	display: inline-block;
-	position: absolute;
-	top: .25em;
-	width: 1.5em;
-	height: 2em;
-	text-align: center;
-	font-size: .5em;
-}
-
-.tito-submit {
-	font-size: 2.25em;
-	border: 0;
-	border-radius: .25em;
-	background: $lime;
-	display: block;
-	padding: 0 2em;
-	margin: 0 auto;
-	@include padding-leader;
-	@include padding-trailer;
-	@include margin-leader(2);
-	@include margin-trailer(1);
-	@extend .big-cta;
-	position: relative;
-	top:0; left:0;
-	&:hover, &:focus {
-		color: $dark_grey !important;
-		cursor: pointer;
-		top: 1px; left: 1px;
-	}
-}
-
-#tito-footer {
-	@extend %hidden;
+.workshop-content > ul:first-child {
+    @include padding-leader();
 }

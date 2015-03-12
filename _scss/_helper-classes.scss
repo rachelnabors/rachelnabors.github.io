@@ -1,3 +1,20 @@
+//anything iconic
+[data-icon]:before {
+  font-family: 'RNicons'; /* BYO icon font, mapped smartly */
+  content: attr(data-icon);
+  speak: none; /* Not to be trusted, but hey. */
+}
+
+%icon {
+  font-family: 'RNicons'; /* BYO icon font, mapped smartly */
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  -webkit-font-smoothing: antialiased;
+}
+
 /* For image replacement */
 .ir {
   text-indent: 100%;

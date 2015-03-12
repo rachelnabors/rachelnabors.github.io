@@ -1,0 +1,105 @@
+.slides {
+    h2 {
+        top: rhythm(32/3);
+    }
+    @include discography(h2, $magenta, $mauve, adjust-lightness($mauve, -40%), adjust-lightness($mauve, 10%));
+}
+
+#talks-from-2015-ref {
+    h3 {color: $bg_blue;}
+    background: $bg_blue;
+}
+#talks-from-2014-ref {
+    background: #c9d2d9;
+    color: $grey_dark;
+    @extend %alt-links;
+    h3 { color: #c9d2d9 }
+}
+#talks-from-2013-ref{
+    background: #afb9c0;
+    color: adjust-lightness($grey_dark, -10%);
+    @extend %alt-links;
+    h3 { color: #afb9c0; }
+}
+#talks-from-2012-ref{
+    background: #96a0a8;
+    color: adjust-lightness($grey_dark, -20%);
+    h3 {color: #96a0a8;}
+}
+.speaking-history_light {
+    background: #7c838d;
+    @extend %contrast-links;
+}
+#talks-from-2011-ref{
+    color: adjust-lightness($grey_dark, -30%);
+    h3 { color: #7c838d;}
+}
+.speaking-history {
+    // @include margin-leader(-2);
+    @extend %alt-links;
+    position: relative;
+    @extend %bleed-entry;
+    background: adjust-lightness($mauve, -40%);
+    h2 {
+        color: $bg_blue;
+        text-align: right;
+        padding-left: 2em;
+        padding-top: 0;
+        @include margin-trailer(-1/3);
+        @extend %fontLeague;
+        @extend %t-xxxlarge;
+    }
+}
+.speaking-history_col, .speaking-history_bulk, .speaking-history_current {
+    @include padding-trailer(3);
+    @include padding-leader(2/3);
+    h3 {
+        @extend %color-block-title;
+    }
+}
+
+.speaking-history_era:not(.speaking-history_light) {
+    @extend .columnsx2;
+}
+.speaking-history_era {
+    @extend %clearfix;
+    position: relative;
+    @extend %bleed-entry;
+    @extend %undo-ul-bs;
+    @extend %time-li;
+    > ul {
+        position:relative;
+        z-index: 2;
+    }
+}
+.speaking-history_col {
+    position: relative;
+}
+.speaking-history_col1 {
+    box-sizing: content-box;
+}
+
+.main .schedule-speaking {
+    @extend .columnsx2;
+    @extend %time-li;
+    h2 {
+        padding-top: 0;
+        @include padding-trailer();
+    }
+    li { padding-left: 4em;}
+}
+
+.current-talks {//
+    @extend %bleed-entry;
+    position: relative;
+    @include margin-trailer(2);
+    h2 {
+        @extend %rotated-title;
+        color: $grey;
+        top: rhythm(32/3);
+    }
+}
+
+.available-to-speak {//
+    @include margin-trailer();
+}

@@ -1,45 +1,147 @@
 //Functions and Mixins go here! Keep them 100% out of all other partials.
 
-@mixin buttonator($button-color: $blue, $text-color: #fff, $border-radius: .5em) {
-  background: $button-color;
-  @include border-radius($border-radius);
-  color: $text-color !important;
-  border: 1px adjust-lightness($button-color, -10%) solid;
-  @include text-shadow((adjust-lightness($button-color, -10%)) 0 1px 0);
+@mixin discography($title-tag, $link-color, $visited-color, $background, $text) {
+  @extend %clearfix;
+  @extend %bleed-entry;
+  @extend .columnsx2;
+  @extend %color-block;
+
+  @extend %discography;
+
+  #{$title-tag} {
+      @extend %rotated-title;
+  }
+
+  background: $background;
+  color: $text;
+  a:link, a:visited, a:hover, a:active, a:focus {
+      color: $link-color;
+      text-decoration: none;
+  }
+  a:visited { color: $visited-color;}
+  a:hover, a:active, a:focus {
+      background-color: $link-color;
+      color: adjust-saturation(adjust-lightness($link-color, -50%), -40%);
+  }
 }
 
-//bleed mixin http://stackoverflow.com/questions/11223927/susy-how-to-extend-content-box-to-cover-grid-padding-as-well
-@mixin bleed($padding: $grid-padding, $sides: left right) {
-  @if $sides == 'all' {
-    margin: - $padding;
-    padding: $padding;
-  } @else {
-    @each $side in $sides {
-      margin-#{$side}: - $padding;
-      padding-#{$side}: $padding;
+@mixin buttonator($button-color: $cyan, $alt-color: $mauve, $border-radius: .5em) {
+  background: $button-color;
+  @include border-radius($border-radius);
+  color: adjust-lightness($button-color, 50%) !important;
+  border: 1px adjust-lightness($button-color, -10%) solid;
+  @include text-shadow((adjust-lightness($button-color, -10%)) 0 1px 0);
+  text-decoration: none;
+  padding: $border-radius $border-radius*4;
+  transition:
+    transform .25s,
+    background .25s,
+    color .25s,
+    text-shadow .25s,
+    border-color .25s;
+  display: inline-block;
+  &:hover, &:active, &:focus {
+    transform: translate(2px, 2px);
+    background: $alt-color;
+    color: adjust-lightness($alt-color, 50%) !important;
+    @include text-shadow((adjust-lightness($alt-color, -10%)) 0 1px 0);
+    border-color: adjust-lightness($alt-color, -10%);
+  }
+}
+
+// Retina media queries
+@mixin retina {
+  @media
+    only screen and (-webkit-min-device-pixel-ratio: 2),
+    only screen and (min--moz-device-pixel-ratio: 2),
+    only screen and (-o-min-device-pixel-ratio: 2/1),
+    only screen and (min-device-pixel-ratio: 2),
+    only screen and (min-resolution: 192dpi),
+    only screen and (min-resolution: 2dppx) {
+    @content;
+  }
+}
+
+// Handle background images for retina and not
+// First define the folders where the sprites are and their layouts
+$doodles-use-percentages: true;
+$doodles-spacing: 2px;
+@import "doodles/*.png";
+$doodles-2x-use-percentages: true;
+$doodles-2x-spacing: 2px;
+@import "doodles-2x/*.png";
+$doodles-sprite-width: sprite-width($doodles-sprites);
+$doodles-2x-sprite-width: sprite-width($doodles-2x-sprites);
+
+// Sprite mixin
+@mixin use-sprite($single-sprite) {
+  @include set-bg-width($doodles-sprite-width, $doodles-sprites, $single-sprite);
+  @include doodles-sprite($single-sprite);
+    @include retina {
+      @include set-bg-width($doodles-2x-sprite-width, $doodles-2x-sprites, $single-sprite);
+      background-image: sprite-url($doodles-2x-sprites);
+      background-position: sprite-position($doodles-2x-sprites, $single-sprite, 0, 0, true);
+    }
+}
+
+@mixin reposition-sprite($single-sprite) {
+  background-position: sprite-position($doodles-sprites, $single-sprite, 0, 0, true);
+  @include retina {
+    background-position: sprite-position($doodles-2x-sprites, $single-sprite, 0, 0, true);
+  }
+}
+
+// Set height and width
+@mixin set-dimensions($width, $height, $parent-width, $assigned-width, $max-dimensions: true) {
+  width: percentage($assigned-width/$parent-width);
+  &:before{
+    content: "";
+    display: block;
+    padding-top: ($height/$width)*($parent-width);
+  }
+  @if $max-dimensions {
+    max-width: $width;
+  }
+}
+
+// Handle background sizing
+@mixin set-bg-width($sprites-width, $sprite, $sprite-image) {
+  $spriteX: percentage($sprites-width / image-width(sprite-file($sprite, $sprite-image)));
+  background-size: $spriteX auto;
+}
+
+@mixin keyfriends($name, $spriteStart, $spriteEnd, $steps, $loop: false) {
+  // $s2 : percentage(image-height(sprite-file($doodles-sprites, #{$spriteEnd}))/image-height(sprite-path($doodles-sprites)));
+  // $sy: percentage(nth(sprite-position($doodles-sprites, $spriteStart),2)/image-height(sprite-path($doodles-sprites)));
+  @keyframes #{$name} {
+    0% {
+      background-position: sprite-position($doodles-sprites, $spriteStart, 0, 0, true);
+    }
+    100% {
+      @if $loop {
+        //height of the sprite image in px
+        $s: image-height(sprite-file($doodles-sprites, #{$spriteEnd}));
+        $i: $steps;
+        $x: $s / ( $s -  ($s / $i ));
+        background-position: 0 percentage($x);
+      } @else {
+        background-position: 0 sprite-position($doodles-sprites, $spriteEnd, 0, 0, true);
+      }
     }
   }
 }
 
-// SVG w/ PNG fallback for IE8 cuz all browsers that support multiple bgs support SVG. 
-// via http://germanforblack.com/post/43975575422/protip-all-browsers-that-support-svg-background-images
-// $public_path: ./;
- 
-// @mixin vector-bg-with-fallback($name) {
-//   background-image: url('#{$public_path}images/#{$name}.png');
-//   background-image: none, url('#{$public_path}images/#{$name}.svg');
-// }
-
-// converts px to em values via http://thesassway.com/intermediate/responsive-web-design-part-1
-@function calc-em($target-px, $context) {
-  @return ($target-px / $context) * 1em;
-}
-
-// CSS Filters mixins via Eppstein https://gist.github.com/chriseppstein/2884618
-@mixin filter( $var ) {
-  -webkit-filter: $var;
-  -moz-filter: $var;
-  -ms-filter: $var;
-  -o-filter: $var;
-  filter: $var;
+// combine them all to create a doodle
+@mixin create-doodle($doodle, $parent-width, $assigned-width, $max-dimensions: true) {
+  $iWidth: image-width(sprite-file($doodles-sprites, #{$doodle}));
+  $iHeight: image-height(sprite-file($doodles-sprites, #{$doodle}));
+  @include set-dimensions($iWidth, $iHeight, $parent-width, $assigned-width, $max-dimensions);
+  @include retina {
+    $rWidth: image-width(sprite-file($doodles-2x-sprites, #{$doodle}));
+    $rHeight: image-height(sprite-file($doodles-2x-sprites, #{$doodle}));
+    @include set-dimensions($rWidth , $rHeight, $parent-width, $assigned-width, false);
+  }
+  &:before {
+    @include use-sprite($doodle);
+  }
 }

@@ -12,7 +12,7 @@ $sprites-clean-up: true !default;
 $sprites-layout:vertical !default;
 $sprites-inline: false !default;
 
- 
+
   $sprites-sprites: sprite-map("sprites/*.png", $layout: $sprites-layout, $cleanup: $sprites-clean-up);
 
 //sass functions to return the dimensions of a sprite image as units

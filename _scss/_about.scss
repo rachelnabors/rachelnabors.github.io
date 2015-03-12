@@ -1,0 +1,45 @@
+.glam-img-wrapper {
+    @include margin-leader(-2);
+}
+
+@include breakpoint(max-width 667px){
+    .glam-img-wrapper {
+        @include span(6 of 6 wider);
+        margin-right: -(gutter(6));
+        margin-left: -(gutter(6));
+        position: relative;
+        float: none;
+        overflow: hidden;
+        padding-top: 100%;
+        img {
+            position: absolute;
+            top: 0; left: 0;
+        }
+    }
+}
+
+@include breakpoint(668px){
+    .glam-img-wrapper {
+        float:right;
+        width: span(4 of 8 wider);
+        margin-right: -(gutter(8));
+        margin-left: gutter(8);
+    }
+}
+
+@include breakpoint($with-foldout){
+    .glam-img-wrapper {
+        width: span(4 of 9 wider);
+        margin-right: -(span(1 of 9 wider) + gutter(9));
+        margin-left: gutter(9);
+    }
+}
+
+.interviews {
+    @include margin-leader();
+    h2 {
+        top: rhythm(19/3);
+    }
+    clear: both;
+    @include discography(h2, $cyan, $blade, $black, $blue_active);
+}

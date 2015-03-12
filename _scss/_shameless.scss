@@ -1,0 +1,25 @@
+.cta {
+    background: $grey-dark;
+    border-radius: .25em;
+    color: $blue_active;
+    padding: rhythm(1) gutter(9);
+    text-align: center;
+    @extend %clearfix;
+    .cta-content {
+        margin: 0 span(1 of 9);
+    }
+    .cta-title {
+        @extend %t-xlarge;
+        @extend %fontOstrich;
+        text-transform: uppercase;
+        padding-top: 0;
+        @include margin-trailer(2/3);
+    }
+    .big-cta {
+        @include buttonator($cyan, $mauve, .15em);
+        @extend %t-large;
+        @extend %fontLeague;
+        @include margin-leader(1/3);
+        text-transform: uppercase;
+    }
+}

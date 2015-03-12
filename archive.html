@@ -1,11 +1,10 @@
 ---
-title: "Blog Archives"
-layout: default
-body_id: archives
-excerpt: Blog archives from Rachel Nabors. They go back pretty far. It is not always pretty.
+title: "Writings on Web Animation, UX, and HTML5 Game Development"
+body_id: archive
+excerpt: Rachel Nabors's log posts and articles on web animation, UX, comics, and HTML5.
 ---
 
-<section id="archive-featured" class="page-section">
+<!-- <section id="archive-featured" class="page-section">
   <ul>
 {% for post in site.posts %}
   {% if post.featured %}
@@ -19,42 +18,122 @@ excerpt: Blog archives from Rachel Nabors. They go back pretty far. It is not al
 {% endfor %}
   </ul>
 </section>
+ -->
 
-<div class="archive-search page-section">
-  <script>
-    (function() {
-      var cx = '002428664232771263876:m1vbqio4y8u';
-      var gcse = document.createElement('script');
-      gcse.type = 'text/javascript';
-      gcse.async = true;
-      gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
-          '//www.google.com/cse/cse.js?cx=' + cx;
-      var s = document.getElementsByTagName('script')[0];
-      s.parentNode.insertBefore(gcse, s);
-    })();
-  </script>
-  <gcse:search></gcse:search>
-</div>
+<h1>Writings on Web Animation, UX, Comics and More</h1>
+<p class="tagline">(But mostly web animation. Mostly.)</p>
 
-<ul id="archive-list" class="page-section">
-  {% for post in site.posts %}
+<section class="archive-articles block">
+  <h2>Articles</h2>
+  <ul>
+    <li><a href="http://24ways.org/2014/five-ways-to-animate-responsibly/">Five Ways to Animate Responsibly</a> <a href="http://la-cascade.ghost.io/5-facons-danimer-de-maniere-responsable/">Français</a> <span class="source">24 Ways</span></li>
+    <li><a href="http://www.smashingmagazine.com/2014/11/18/the-state-of-animation-2014/">The State of the Animation 2014</a> <span class="source">Smashing Mag</span></li>
+    <li><a href="https://the-pastry-box-project.net/rachel-nabors/2014-june-30">Giving Them the Crank</a> <span class="source">The Pastry Box Project</span></li>
+    <li><a href="http://alistapart.com/article/web-animation-at-work">Web Animation at Work</a> <span class="source">A List Apart</span></li>
+    <li><a href="http://www.adobe.com/inspire/2013/12/interactive-html5-storybook.html?trackingid=KJGDU&amp;PID=7114730">Alice in Videoland: Designing an interactive HTML5 storybook</a> <span class="source">Adobe Inspire</span></li>
+    <li><a href="http://webdesign.tutsplus.com/articles/case-studies-articles/how-they-did-it-alice-in-videoland/">How They Did It: Alice in Videoland</a> <span class="source">Web Design Tuts</span></li>
+    <li><a href="http://the-pastry-box-project.net/rachel-nabors/2013-october-28/">New Pastures for Old Developers</a> <span class="source">The Pastry Box Project</span></li>
+    <li><a href="http://ladiesintech.com/finding-your-killer-talk-idea/">Finding Your Killer Talk Idea</a> <span class="source">Ladies in Tech</span></li>
+    <li><a href="http://24ways.org/2012/flashless-animation/">Flashless Animation</a> <span class="source">24 Ways</span></li>
+    <li><a href="http://www.uxbooth.com/blog/comics-and-ux-part-2-flow-and-content/">Comics and UX, Part 2: Flow and Content</a> <span class="source">UX Booth</span></li>
+    <li><a href="http://www.uxbooth.com/blog/comics-and-ux-part-1-cross-disciplinary-techniques/">Comics and UX, Part 1: Cross-disciplinary Techniques</a> <span class="source">UX Booth</span></li>
+    <li><a href="http://www.uxbooth.com/blog/better-user-orientation-through-navigation/">Better User Orientation through Navigation</a> <span class="source">UX Booth</span></li>
+  </ul>
+</section>
 
-    {% unless post.next %}
-      <li>
-        <h2>{{ post.date | date: '%Y' }}</h2>
-        <ul>
+<section class="archive-bloggage">
+<header class="title-bloggage">
+  <h2>Bloggage</h2>
+    <script>
+      (function() {
+        var cx = '002428664232771263876:m1vbqio4y8u';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+            '//www.google.com/cse/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
+    <gcse:search></gcse:search>
+  </header>
+{% for post in site.posts  %}
+    {% capture this_year %}{{ post.date | date: "%Y" }}{% endcapture %}
+    {% capture next_year %}{{ post.previous.date | date: "%Y" }}{% endcapture %}
+
+    {% if forloop.first %}
+    <section id="blogs-from-{{ next_year }}-ref" class="archive-blog">
+    <h3 id="blogs-from-{{ this_year }}-ref">{{this_year}}</h3>
+    <figure>
+      <figcaption>
+        Rather than pruning the old posts that don't fit where I am today, for my 30th birthday I decide to convert my blog archive into an illustrated history of my journey through web development. Please enjoy.
+      </figcaption>
+    </figure>
+    <ul>
+    {% endif %}
+
+      <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+
+    {% if forloop.last %}
+    </ul></section>
     {% else %}
-      {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
-      {% capture nyear %}{{ post.next.date | date: '%Y' }}{% endcapture %}
-      {% if year != nyear %}
-          </ul>
-        </li>
-        <li>
-          <h2>{{ post.date | date: '%Y' }}</h2>
-          <ul>
-      {% endif %}
-    {% endunless %}
-
-    <li><!-- {{ post.date | date:"%b" }}  --><a href="{{ post.url }}">{{ post.title }}</a></li>
-  {% endfor %}
-</ul>
+        {% if this_year != next_year %}
+        </ul>
+      </section>
+      <section class="archive-blog block" id="blogs-from-{{ next_year }}-ref">
+        <h3>{{next_year}}</h3>
+            {% case next_year %}
+              {% when "2008" %}
+              <figure>
+                <img src="/img/graphics/il_2008.png" alt="An illustration of Rachel sitting,disheartened, under a tattered 'Welcome to Web Development!' banner as a cloud of Recession rains down from overhead, ruining her laptop and cartooning supplies." />
+                <figcaption>
+                  After many years of building and maintaining sites for my comics and fanbase, <a href="https://medium.com/@rachelnabors/dont-do-what-you-love-41312c943e2">I leave all that behind and enter the world of professional web development</a>. The Recession hits in time for me to lose my first job as a web designer. I try my hand at freelancing as &ldquo;The Pink Crow&rdquo; because I love crows. Many of these entries are ported from that site.
+                </figcaption>
+              </figure>
+              {% when "2009" %}
+              <figure>
+                <img src="/img/graphics/il_2009.png" alt="An illustration of Rachel zipping about in a smart car, exclaiming that meetups are so much easier to get to now." />
+                <figcaption>
+                  Freelancing in a recession is tough, so I head in-house at an adult advertising company as sole on-site web designer. (As the saying goes, any port in a storm.) While gatekeeper to mounds of CSS, I dig deep into front-end development and make fast friends with the developers. Fall in love with WordPress and my new smart car.
+                </figcaption>
+              </figure>
+              {% when "2010" %}
+              <figure>
+                <img class="fig1" src="/img/graphics/il_2010.1.png" alt="An illustration of Rachel looking longingly into her betta fish's eyes, lamenting that she has so many ideas to share." />
+                <img class="fig2" src="/img/graphics/il_2010.2.png" alt="An illustration of Rachel looking longingly into her betta fish's eyes, lamenting that she has so many ideas to share." />
+                <figcaption>
+                  <p>While archiving <a href="http://www.rachelthegreat.com/">my old comics</a>, I sieze the chance to perform the user surveys and studies I can't do at my day job due to the major privacy and content concerns that come with the adult industry online. In the process, I learn much about how people have begun reading comics on screens.</p>
+                  <p>To spend more time with my local web dev community, I start the Web Professional's Book Club. I give some lightning talks at a few local marketing events. Longer talks are hard to find venues for. My employer's industry unnerves organizers. I don't blame them.</p>
+                  <p>I have major jaw surgery. While recovering, I have a long think.</p>
+                </figcaption>
+              </figure>
+              {% when "2011" %}
+              <figure>
+                <figcaption>
+                  I leave my job for one at an agency that will let me use Sass and learn Ruby. No longer in the adult advertising industry, I'm able to start giving talks longer than 5 minutes. I'm determined to work with code for a living because it's fun and the earnings potentials are higher than they are for designers. My book club takes over the local Refresh when its organizers retire. We give the meetup a fantastic run that's still spoken of in hushed awe in dark corners of North Carolina.
+                </figcaption>
+              </figure>
+              {% when "2012" %}
+              <figure>
+                <figcaption>
+                  だめだった。I start working at a startup founded by people I admire. All is well until I give my first Big Talk at the first CSS Dev Conf (in Hawaii). Afterward, my insatiable curiosity about web animation consumes me. I learn a valuable lesson: perfect coworkers are no replacement for engaging work. I am deeply sad to go but know I must. I'm on a mission. I've found my purpose. I've fallen in love with web animation. We elope.
+                </figcaption>
+              </figure>
+              {% when "2013" %}
+              <figure>
+                <figcaption>
+                  The year of interviews: I travel the country looking for The Perfect Job (where I can work with web animation extensively). Most companies would rather I focused Angular. Finding my JavaScript chops need improving, I redouble my efforts to learn it inside and out. In the end, I don't accept any job offers and have a long think.
+                </figcaption>
+              </figure>
+              {% when "2014" %}
+              <figure>
+                <figcaption>
+                  I decide <a href="/2014/07/14/bootstrapping-tinmagpie/">I'll start my own company</a>. We move to Portland, Oregon, and I travel the world to speak. I make friends, have adventures, give <a href="https://www.youtube.com/watch?v=Q9CB7EiU9xg">my first keynote at OSCON</a>. I give web animation workshops to help cover the expenses of all this traveling and making talks. It's hard work, but I feel truly alive and happy. It reminds me of hustling at comic conventions.
+                </figcaption>
+              </figure>
+            {% endcase %}
+        <ul>
+        {% endif %}
+    {% endif %}
+{% endfor %}

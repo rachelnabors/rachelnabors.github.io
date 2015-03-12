@@ -1,14 +1,100 @@
-.page-title {
-	@include adjust-font-size-to(40px);
-	font-family: $ostrich;
-	text-transform: uppercase;
-	@include padding-leader(9, 40px);
-	@include padding-trailer(2, 40px);
-}
-
 %default-links {
-  	a:link, a:visited, a:hover, a:active {
+  	a:link, a:visited, a:hover, a:active, a:focus {
 		color: $link;
 	}
 	a:visited { color: $link-visited;}
+}
+
+%bleed-entry {
+    margin-left: -(span(3 of 9 wider));
+    padding-left: span(3 of 9 wider);
+    margin-right: -(span(1 of 9 wider));
+    padding-right: span(1 of 9 wider);
+}
+
+%undo-ul-bs {
+    ul li {
+        margin-left: 0;
+    }
+    ul li:before {
+        content:"" !important;
+    }
+}
+
+%rotated-title {
+    @extend %fontOstrich;
+    @extend %t-xxlarge;
+    padding: 0 !important;
+    @include breakpoint($double-columns){
+        transform: rotate(-90deg);
+        transform-origin: center left;
+        position: absolute;
+        left: span(3 of 12) + (2*gutter(12));
+    }
+}
+
+%color-block {
+    position: relative;
+    @extend %bleed-entry;
+}
+
+%color-block-title {
+    @extend %fontLeague;
+    @extend %t-xxxlarge;
+    @include padding-trailer(2);
+    @include margin-leader(-12/3);
+    position:relative;
+    z-index: 1;
+}
+
+.columnsx2 {
+    @extend %undo-ul-bs;
+    @include breakpoint($double-columns){
+        & > ul {
+            column-width: span(4 of 9);
+            column-count: 2;
+            & > li {
+                break-inside: avoid;
+            }
+        }
+    }
+    & > ul {
+        & > li {
+            @include adjust-leading-to(3/3);
+            padding-top: 0;
+            margin: 0;
+            @include padding-trailer(1);
+            &:first-child {
+                padding-top: 0 !important;
+            }
+        }
+    }
+}
+
+%discography {
+    @include padding-leader(2/3);
+    ul {
+        @include margin-leader(1);
+        position:relative;
+        z-index: 2;
+        @include breakpoint($double-columns){
+            margin-left: span(1 of 9) -  gutter(9);
+        }
+    }
+    li {
+        padding-right: gutter(4);
+    }
+}
+
+%time-li {
+    li {
+        position: relative;
+        padding-left: 2.5em;
+        time {
+            @include adjust-leading-to(3/3);
+            position: absolute;
+            left: 0;
+            display: block;
+        }
+    }
 }

@@ -9,10 +9,7 @@ highlighter: pygments
 
 lsi: false
 
-# Default date format is "ordinal" (resulting in "July 22nd 2007")
-# You can customize the format as defined in
-# http://www.ruby-doc.org/core-1.9.2/Time.html#method-i-strftime
-# Additionally, %o will give you the ordinal representation of the day
+# Default date format is "ordinal" (resulting in "July
 date_format: "ordinal"
 
 # Disqus Comments
@@ -21,3 +18,34 @@ disqus_show_comment_count: true
 
 # Locations
 destination: _site
+
+# Don't flip out whenever I compile my sass
+exclude: [_scss,css/*]
+
+# collections:
+#   comics:
+#     output: true
+#   animations:
+#     output: true
+#     permalink: /animations/:path/
+
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: "page"
+      sidebar_open: true
+  -
+    scope:
+      path: "" # all files have the `default` layout
+      type: "posts"
+    values:
+      layout: "post"
+  # -
+  #   scope:
+  #     path: "comics"
+  #   values:
+  #     layout: "comic"
+  #     interactive: false
+  #     animated: false

@@ -1,0 +1,294 @@
+// Current Page indicator
+body[data-location=animations] .nav-animations,
+body[data-location=speaking] .nav-speaking,
+body[data-location=training] .nav-training,
+body[data-location=archive] .nav-archives,
+body[data-location=post] .nav-archives,
+body[data-location=about] .nav-about,
+body[data-location=training] .nav-training {
+    color: $mauve !important;
+}
+
+.masthead, .fold-out {
+    ul {
+        list-style: none;
+        margin: 0; padding: 0;
+        text-indent: 0;
+    }
+}
+
+.masthead {
+    background-color: $black;
+    color: $blue_light;
+    text-align: center;
+    @include padding-trailer();
+    .rachel {
+        position: relative;
+        a {
+            background-color: $grey_light;
+            border-radius: 50%;
+            &:hover, &:active, &:focus {
+                background-color: $mauve;
+            }
+        }
+    }
+    nav {
+        @extend %fontLeague;
+        text-transform: uppercase;
+        @extend %t-large;
+        a { padding: 0 .15em;}
+    }
+    .in-touch, .toc {
+        border-color: $grey;
+        @extend %t-large;
+        @extend %fontOstrich;
+        // @include adjust-leading-to(2/3);
+        @include margin-leader(2/3);
+        @include margin-trailer(2/3);
+        @include trailing-border(1px, 1/3);
+        @include leading-border(1px, 1/3);
+        border-color: $grey_dark;
+    }
+    a:link, a:visited, a:hover, a:active {
+        color: $lavender;
+        text-decoration: none;
+    }
+    a:hover, a:active, a:focus {
+        color: $magenta
+    }
+}
+
+.fold-out {
+    background: adjust-saturation(adjust-lightness($lavender, -40%), -40%);
+    color: adjust-saturation(adjust-lightness($lavender, 10%), -20%);
+    .toggle {
+        display: none;
+        cursor: pointer;
+        padding: 0;
+        @include create-doodle(sidebar-toggle_5, span(3 of 3), span(.5 of 3));
+        background-color: transparent;
+        border: 0;
+        @extend %t-xlarge;
+        top: rhythm(8);
+        left: 0;
+        overflow: hidden;
+        position: absolute;
+    }
+}
+
+.fold-out-wrapper {
+    time {
+        color: adjust-saturation(adjust-lightness($lavender, 10%), -20%);
+        display: block;
+    }
+    a:link, a:visited, a:hover, a:active, a:focus {
+      color: $lavender;
+      text-decoration: none;
+    }
+    a:visited { color: $mauve;}
+    a:hover, a:active, a:focus {
+      background-color: $lavender;
+      color: adjust-saturation(adjust-lightness($lavender, -50%), -40%);
+    }
+    h1, h2 {
+        @extend %fontLeague;
+        @extend %t-large;
+        text-transform: uppercase;
+    }
+    .module-writings {
+        small {
+            font-family: $georgia;
+            font-style: italic;
+            @extend %t-tiny;
+            @include margin-trailer(1/3);
+        }
+    }
+    .module-animation {
+        ul {text-align: center;}
+        li {
+            background: $magenta;
+            line-height: 0;
+            overflow: hidden; //hides creepy 1px bottom line
+            position: relative;
+            text-align: left;
+            a:link, a:visited, a:hover, a:active{
+                color: #fff;
+                text-decoration: none;
+                display: block;
+                height: 100%;
+            }
+        }
+        img {
+            transition: opacity $easeOutQuint .25s;
+            max-width: 100%;
+        }
+        .anim-title {
+            background: rgba(desaturate($cyan, 30%), .9);
+            display: block;
+            position: absolute;
+            bottom: 0; left: 0;
+            @include ellipsis();
+            @include box-sizing(border-box);
+            padding: 0 gutter(3)/2;
+            width: 100%;
+            transition: background ease-in .25s;
+            @include adjust-leading-to($medium-font-leading);
+       }
+        a:hover, a:active, a:focus{
+            .anim-title {
+                background: rgba(desaturate($magenta, 10%), .8);
+            }
+            img {
+                @include opacity(.5);
+            }
+        }
+        .moar {
+            font-family: $georgia;
+            font-style: italic;
+        }
+    }
+    .schedule, .module {
+        @include padding-leader(1/3);
+        @include padding-trailer(1/3);
+    }
+    .schedule, .module-writings {
+        li {
+            @include padding-trailer(1/3);
+        }
+    }
+}
+
+.site-logo, .masthead .rachel {
+    @include margin-leader(2/3);
+    position: relative;
+    img { max-width: 100%; }
+    a {
+        display: block;
+        line-height: 0;
+        transition: background-color $easeOutQuint .25s;
+        &:hover, &:active, &:focus {
+            background-color: $mauve;
+        }
+    }
+}
+
+.site-logo {
+    a {
+        background-color: $lavender;
+        &:hover, &:active, &:focus {
+            background-color: $mauve;
+        }
+    }
+
+    // @extend %fontLeague;
+    // text-transform: uppercase;
+    // @include adjust-font-size-to($xlarge-font-size, $medium-font-leading);
+    // @include margin-leader(2/3);
+    // .icon {
+    //     font-size: .6em;
+    //     margin-right: .25em;
+    //     position: relative; top: -.25em;
+    // }
+}
+
+.balloon {
+    display: none;
+}
+
+.social-footer {
+    li {
+        display: inline-block;
+        margin: .15em;
+    }
+    a {
+        background: $cyan;
+        display: block;
+        @extend %t-medium;
+        @include border-radius(100%);
+        line-height: 2;
+        color: $bg_blue !important;
+        width: 2em;
+        text-decoration: none;
+        text-align: center;
+        @include transition(background, ease-in, .25s);
+    }
+    a:hover, a:active, a:focus{
+        background: $magenta;
+    }
+}
+
+@include breakpoint($tri-col-footer) {
+    time, .source {
+        @include typeSize(small);
+    }
+}
+
+@include breakpoint($with-sidebar){
+    .masthead {
+        height: 100%;
+        overflow-y: auto;
+        nav {
+            @include typeSize(medium);
+            a { display: block;}
+        }
+    }
+    .site-logo {
+        width: span(2 of 2);
+        @include squish(gutters(2), gutters(2));
+        @include margin-leader(2/3);
+    }
+    .social-footer a {
+        @include typeSize(small);
+        line-height: rhythm(3/3);
+        width: rhythm(3/3);
+    }
+}
+
+@include breakpoint($up-to-with-foldout){
+    .mashted nav {
+        @include padding-trailer();
+    }
+    .fold-out .module-animation li {
+        @include margin-trailer(1/3);
+    }
+}
+
+@include breakpoint($with-foldout){
+    .masthead {
+        .toc {
+            @include typeSize(medium);
+        }
+    }
+    .fold-out {
+        background: transparent;
+        height: 100%;
+        @include typeSize(small);
+        h1, h2 {
+            @include typeSize(medium);
+        }
+        time {
+            color: $grey;
+        }
+    }
+    .masthead, .fold-out-wrapper {
+        box-shadow: .25em 0 5px rgba($black, .25);
+    }
+    .fold-out-wrapper {
+        background: $grey_light;
+        color: $grey_dark;
+        height: 100%;
+        overflow-y: auto;
+        overflow-x: hidden;
+        a:link, a:visited, a:hover, a:active {
+            color: $rust;
+            text-decoration: none;
+        }
+        a:hover, a:active, a:focus {
+            color: $black;
+        }
+
+    }
+    .fold-out .toggle {
+        display: block;
+    }
+}

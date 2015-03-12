@@ -1,0 +1,40 @@
+#content {
+    transition:
+        transform $easeBounce .5s,
+        opacity $easeOutQuint .5s;
+    ;
+}
+
+// when a page is loaded with PJAX
+body[data-page-status='loaded'] #content {
+    // opacity: 1;
+}
+
+body[data-page-status='loading'] #content {
+    opacity: 0;
+    transform: translateY(-(rhythm(1)));
+    // visibility: hidden;
+}
+
+// Sidebar opening and closing
+.js .fold-out {
+    transition: transform .35s $easeBounce;
+}
+
+
+@include keyfriends(toggleSidebar, sidebar-toggle_1, sidebar-toggle_5, 5);
+
+@include breakpoint($with-foldout) {
+    .js[data-sidebar='closed'] .fold-out {
+        transform: translateX(-75.3%);
+    }
+}
+
+.fold-out {
+    .toggle:before{
+        transition: background-position steps(4) .4s;
+        html[data-sidebar=closed] & {
+            @include reposition-sprite(sidebar-toggle_1);
+        }
+    }
+}

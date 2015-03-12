@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Accessibility vs User Experience: 60 FPS, Flipboard, and the High Road to the GPU"
 excerpt: "Ever since that post detailing how Flipboard creates an imaginary DOM in Canvas, people have been voicing concerns over whether or not the pursuit of jank elimination has come at the cost of accessibility."
 ---

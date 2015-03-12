@@ -1,0 +1,233 @@
+// Using Susy Grids!
+
+$maxWidthUnit: 48/9;
+
+@function calc-em($num) {
+    @return $num/16px * 1em;
+}
+
+$tri-col-footer: calc-em(666px);
+$up-to-tri-col-footer: max-width calc-em(665px);
+
+$with-sidebar: calc-em(724px);
+$up-to-with-sidebar: max-width calc-em(723px);
+
+$with-foldout: calc-em(936px);
+$up-to-with-foldout: max-width calc-em(935px);
+
+$double-columns: screen $with-sidebar calc-em(638px), screen $with-foldout;
+
+$narrow-cols: 6;
+$med-cols: 10;
+$beefy-cols: 12;
+
+$content-max-cols: 9;
+
+.masthead, .main, .fold-out {
+    @include container(6);
+    @include gutters(6);
+}
+
+@include breakpoint($up-to-tri-col-footer) {
+    @include nested($narrow-cols) {
+        .module-animation li {
+            display: inline-block;
+            max-width: span(3 wide) - gutter()/2;
+            &:nth-child(odd) {
+                margin-right: gutter();
+            }
+        }
+    }
+}
+
+@include breakpoint((min-width $tri-col-footer) (max-width $with-sidebar)) {
+    @include nested($med-cols) {
+        .fold-out {
+            .schedule {
+                @include span(3);
+            }
+            .module-writings {
+                @include span(5);
+            }
+            .module-animation {
+                @include span(2 last);
+                li {
+                    @include margin-trailer(1/3);
+                }
+                img {
+                    width: 100%
+                }
+            }
+        }
+    }
+}
+
+@include breakpoint((min-width $with-sidebar) (max-width $with-foldout)) {
+    @include nested(8) {
+        .fold-out {
+            .schedule {
+                @include span(3);
+            }
+            .module-writings {
+                @include span(3);
+            }
+            .module-animation {
+                @include span(2 last);
+            }
+        }
+    }
+}
+
+@include breakpoint($up-to-with-sidebar){
+    @include nested($narrow-cols) {
+        .masthead .rachel {
+            float: left;
+            width: span(3 narrow);
+            @include padding-trailer();
+        }
+        .site-logo {
+            float: right;
+            width: span(3 narrow);
+            @include padding-trailer();
+        }
+        .toc {
+            clear: both;
+        }
+    }
+}
+
+@include breakpoint($with-sidebar){
+    .container {
+        @include container(12);
+    }
+
+    @include nested($beefy-cols) {
+        .masthead {
+            @include span(2 rtl);
+            max-width: $maxWidthUnit * 2em;
+            position: fixed;
+            .rachel, .site-logo { width: span(2 of 2 narrow); }
+        }
+        .fold-out {
+            @include span(12);
+            padding-left: span(2);
+            clear: both;
+        }
+        .main {
+            @include span(isolate 10 at 3 ltr);
+        }
+    }
+}
+
+@include breakpoint($double-columns){
+    .current-talks {//
+        .talk {
+            margin-left: span(1 of 9);
+        }
+    }
+}
+
+@include breakpoint($with-foldout){
+    .container {
+        @include container();
+        max-width: $maxWidthUnit * 15em;
+    }
+    @include nested(15){
+        .main {
+            @include span(isolate 9 at 6 ltr);
+            max-width: $maxWidthUnit * 9em;
+        }
+        .masthead {
+            @include span(2 rtl);
+            max-width: $maxWidthUnit * 2em;
+        }
+        .fold-out {
+            padding-left: 0;//overwrite above
+            clear: none;//overwrite above
+            @include span(3 rtl nest);
+            left: span(2) - gutter();
+            max-width: $maxWidthUnit * 4em;
+            min-height: 100%;
+            position: fixed;
+            .fold-out-wrapper {
+                @include span(2.5 of 3);
+                // margin-left: -(gutter(4)*2);
+                padding-left: gutter(3)*2;
+            }
+            .toggle {
+                margin-left: span(2.5 of 3) - gutter(4);
+            }
+            img {
+                width: 100%;
+            }
+            .module-animation li {
+                margin-left: -(gutter(2.5));
+                width: span(2.6 of 2.5 wider);
+            }
+        }
+    }
+    @include nested($content-max-cols){
+        .content-text{
+            blockquote {
+                width: span(5);
+                cite, + p cite {
+                    width: span(5);
+                }
+            }
+            li {
+                margin-left: (span(1));
+            }
+        }
+        .post-nav-link {
+            @include span(4);
+            padding: rhythm(1/3) gutter();
+        }
+        .next-post {
+            margin-left: span(1);
+        }
+
+        #blogs-from-2010-ref {
+            figure .fig1 {
+                @include span(3);
+            }
+            figure .fig2 {
+                @include span(3 rtl);
+                margin-right: -(span(1.5));
+            }
+            figcaption {
+                @include span(4.5 rtl);
+            }
+        }
+        .archive-articles, .archive-bloggage, .archive-blog {
+            ul {
+                margin-left: span(1) -  gutter(9);
+            }
+        }
+
+        .speaking-history_era {
+            > ul {
+                li {
+                    margin-right: span(1);
+                }
+            }
+        }
+
+        .speaking-history_col1 {
+            @include span(4 isolate);
+            margin-left: -(span(3 wider));
+            padding-left: span(3 wider);
+            padding-right: span(1 narrow);
+        }
+
+        .speaking-history_col2 {//
+            @include span(4 last);
+        }
+    }
+
+}
+
+@include breakpoint($maxWidthUnit * 16em) {
+    .fold-out {
+        left:  ($maxWidthUnit * 2em) + (6 * .3107em);
+    }
+}

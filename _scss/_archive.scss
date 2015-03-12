@@ -1,58 +1,172 @@
-#archive-featured {
-	@extend %clearfix;
-	li {
-		@include span-columns(2, 6);
-		height: rhythm(32);
-		overflow: hidden;
-		position: relative;
-	}
-	li:nth-child(3){
-		@include omega();
-	}
-	img {
-		display: block;
-		position: absolute;
-		top: 0; left: 0;
-		width: 100%; height: auto;
-	}
-	h3 {
-		@include ellipsis();
-		@include adjust-font-size-to(24px);
-		background: $bg_blue;
-		font-family: $league;
-		position: absolute;
-		bottom: 0;
-		width: 100%;
-		text-decoration:none;
-	}
+%blog-links {
+    a:link, a:visited, a:hover, a:active, a:focus {
+        color: $mauve;
+        text-decoration: none;
+    }
+    a:visited { color: $lavender;}
+    a:hover, a:active, a:focus {
+        background-color: $lavender;
+        color: adjust-saturation(adjust-lightness($lavender, -50%), -40%);
+    }
 }
 
-.gsc-control-cse { 
-	background: none !important;
-	border: none !important;
-	@include margin-trailer(8);
-	padding: 0 !important;
+%alt-links {
+    a:link, a:visited, a:hover, a:active, a:focus {
+        color: adjust-saturation(adjust-lightness($mauve, -15%), -20%);
+        text-decoration: underline;
+    }
+    a:visited {
+        color: adjust-saturation(adjust-lightness($lavender, -15%), -20%);
+    }
+    a:hover, a:active, a:focus {
+        background-color: $lavender;
+        color: adjust-saturation(adjust-lightness($lavender, -40%), -20%);
+        text-decoration: none;
+    }
 }
 
-#archive-list {
-	font-family: $league;
-	h2 {
-		color: $grey;
-		@include adjust-font-size-to(32px);
-	}
-	> li { 
-		@include margin-trailer(4);
-		@include span-columns(3,6);
-		&:nth-child(even){
-			@include omega;
-			float: left;
-		}
-		&:nth-child(odd){
-			clear: left;
-		}
-	}
-	li li {
-		@include margin-trailer(2, 24px);
-		@include adjust-font-size-to(24px);
-	}
+%contrast-links {
+    a:link, a:visited, a:hover, a:active, a:focus {
+        color: adjust-saturation(adjust-lightness($mauve, -40%), -10%);
+        text-decoration: underline;
+    }
+    a:visited {
+        color: adjust-saturation(adjust-lightness($lavender, -40%), -10%);
+    }
+    a:hover, a:active, a:focus {
+        background-color: $lavender;
+        color: adjust-saturation(adjust-lightness($lavender, -60%), -20%);
+        text-decoration: none;
+    }
+}
+
+.gsc-control-cse {
+    background: none !important;
+    border: 0 !important;
+    padding: 0 !important;
+}
+
+.gsc-input {
+    background: none !important;
+}
+
+.gsc-input-box {
+    background: $bg_blue !important;
+    border: none !important;
+}
+input.gsc-search-button {
+    border-color: adjust-lightness($lime, -20%) !important;
+    background-color: $lime !important;
+    position: relative;
+    top: 3px;
+}
+
+#blogs-from-2015-ref {
+    h3 { color: $bg_blue }
+}
+#blogs-from-2014-ref {
+    background: #c9d2d9;
+    color: $grey_dark;
+    @extend %alt-links;
+    h3 { color: #c9d2d9 }
+}
+#blogs-from-2013-ref{
+    background: #afb9c0;
+    color: adjust-lightness($grey_dark, -10%);
+    @extend %alt-links;
+    h3 { color: #afb9c0; }
+}
+#blogs-from-2012-ref{
+    background: #96a0a8;
+    color: adjust-lightness($grey_dark, -20%);
+    @extend %contrast-links;
+    h3 {color: #96a0a8;}
+}
+#blogs-from-2011-ref{
+    background: #7c838d;
+    color: adjust-lightness($grey_dark, -30%);
+    @extend %contrast-links;
+    h3 { color: #7c838d;}
+}
+#blogs-from-2010-ref{
+    background: #646d77;
+    color: adjust-lightness($grey_light, 20%);
+    @extend %blog-links;
+    a:link, a:visited, a:hover, a:active, a:focus {
+        color: adjust-lightness($mauve, 10%);
+        text-decoration: none;
+    }
+    a:visited { color: adjust-lightness($lavender, 10%);}
+    a:hover, a:active, a:focus {
+        background-color: adjust-lightness($lavender, 10%);
+        color: adjust-saturation(adjust-lightness($lavender, -50%), -40%);
+    }
+    h3 { color: #646d77;}
+    figure {
+        a:link, a:visited { text-decoration: underline;}
+        padding-bottom: 0;
+        @include padding-leader(2);
+        @extend %clearfix;
+    }
+}
+#blogs-from-2009-ref{
+    background: #4a535f;
+    color: adjust-lightness($grey_light, 10%);
+    @extend %blog-links;
+    h3 { color: #4a535f; }
+}
+#blogs-from-2008-ref{
+    background: $grey_dark;
+    color: $grey_light;
+    @extend %blog-links;
+    h3 { color: $grey_dark; }
+}
+.archive-articles {
+    @include margin-leader(-2);
+    @include discography(h2, $lavender, $mauve, adjust-saturation(adjust-lightness($lavender, -40%), -40%), adjust-saturation(adjust-lightness($lavender, 10%), -20%));
+    & + .archive-bloggage { //
+        @include margin-leader(-2/3);
+        @extend %alt-links;
+    }
+    h2 { //
+        top: rhythm(14/3);
+    }
+}
+.title-bloggage {
+    background-color: adjust-lightness($bg_blue, -30%);
+    @extend %bleed-entry;
+    @include padding-trailer(2);
+    @include padding-leader();
+    h2 {
+        @extend %t-xxxlarge;
+        @extend %fontOstrich;
+        @include margin-trailer(2/3);
+        text-transform: uppercase;
+        color: $bg_blue;
+    }
+}
+.archive-blog {
+    @include padding-trailer(2);
+    h3 {
+        @extend %color-block-title;
+    }
+    figcaption {
+        @include padding-leader();
+    }
+    figure { margin: 0;}
+}
+.archive-articles, .archive-bloggage, .archive-blog {
+    @extend %clearfix;
+    @extend %bleed-entry;
+    @include padding-leader(2/3);
+    @extend .columnsx2;
+    @extend %color-block;
+    ul {
+        @include margin-leader(1);
+        position:relative;
+        z-index: 2;
+    }
+    li {
+        padding-right: gutter(4);
+    }
 }

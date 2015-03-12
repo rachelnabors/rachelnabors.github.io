@@ -1,36 +1,49 @@
 @import "compass";
 @import "susy";
+@import "breakpoint";
 
 @import "config";
+@import "normalize";
 @import "functions";
-// @import "sprites";
+@import "helper-classes";
+
+@import "grid";
+@import "typography";
+
+@import "core";
+@import "entries";
+@import "extends";
+
+@import "archive";
+@import "speaking";
+@import "training";
+@import "about";
+@import "sidebar";
+@import "shameless";
+@import "feature";
+
+
+// // @import "sprites";
 
 @media screen {
-  @import "reset";
-  @import "helper-classes";
-  @import "extends";
 
-  // All sprites should extend this class
-  // The sprites-sprite mixin will do so for you.
-  // @if $sprites-inline {
-  //   #{$sprites-sprite-base-class} {
-  //     background-image: inline-sprite($sprites-sprites);
-  //   }
-  // } @else {
-  //   #{$sprites-sprite-base-class} {
-  //     background: $sprites-sprites no-repeat;
-  //   }
-  // }
+
+//   // All sprites should extend this class
+//   // The sprites-sprite mixin will do so for you.
+//   // @if $sprites-inline {
+//   //   #{$sprites-sprite-base-class} {
+//   //     background-image: inline-sprite($sprites-sprites);
+//   //   }
+//   // } @else {
+//   //   #{$sprites-sprite-base-class} {
+//   //     background: $sprites-sprites no-repeat;
+//   //   }
+//   // }
 
   // defaults
   @import "screen";
+  @import "animations";
 
-  //modules here
-  @import "home";
-  @import "feature";
-  @import "entries";
-  @import "archive";
-  @import "training";
 }
 /* =============================================================================
    Print Styles

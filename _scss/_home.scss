@@ -21,12 +21,12 @@
 
 .main-tagline {
 	color: $magenta;
-	font-family: $league;
+	@extend %fontLeague;
 	@include adjust-font-size-to(36px, 6);
 	text-align: center;
 	@include rotate(-10deg);
 	strong {
-		font-family: $ostrich;
+		@extend %fontOstrich;
 		@include adjust-font-size-to(84px, 6, 36px);
 	}
 	em {
@@ -71,7 +71,7 @@
 
 .home-module-title {
 	color: #fff;
-	font-family: $league;
+	@extend %fontLeague;
 	@include adjust-font-size-to(32px);
 	text-transform: uppercase;
 	[data-icon]:before {
@@ -83,7 +83,7 @@
 .hotspots {
 	background: $dark-grey;
 	color: #fff;
-	font-family: $ostrich;
+	@extend %fontOstrich;
 	margin-left: gutter(3)/2 * -1;
 	padding-left: gutter(3)/2;
 	padding-right: gutter(3);
@@ -127,7 +127,7 @@
 		float: left;
 		width: 3.25em;
 		strong {
-			font-family: $league;
+			@extend %fontLeague;
 			position:absolute;
 			top: 1.5em;right: 1em;
 			@include rotate(90deg);
@@ -243,7 +243,7 @@
 
 .big-cta {
 	@include adjust-font-size-to(36px, 6, 16px);
-	font-family: $league;
+	@extend %fontLeague;
 	text-transform: uppercase;
 	text-decoration: none;
 	@include transition(color, ease-in, .25s);
@@ -255,22 +255,5 @@
 	}
 	.icon {
 		font-size: .8em;
-	}
-}
-
-
-.social-footer {
-	a {
-		background: $cyan;
-		display: block;
-		font-size: rythm(6);
-		@include border-radius(.25em);
-		color: $bg_blue !important;
-		padding: .25em .25em 0;
-		text-decoration: none;
-		@include transition(background, ease-in, .25s);
-	}
-	a:hover, a:active, a:focus{
-		background: $magenta;
 	}
 }
