@@ -134,6 +134,23 @@ $content-max-cols: 9;
     }
 }
 
+@include breakpoint($up-to-with-foldout){
+    #blogs-from-2010-ref {
+        img {
+            @include margin-leader(-2);
+            @include margin-trailer();
+        }
+        figure .fig1 {
+            @include span(3 of 10);
+            @include squish(1 of 10);
+        }
+        figure .fig2 {
+            @include span(3 of 10);
+            @include squish(1 of 10);
+        }
+    }
+}
+
 @include breakpoint($with-foldout){
     .container {
         @include container();
