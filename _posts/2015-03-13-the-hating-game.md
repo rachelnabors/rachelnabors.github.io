@@ -37,6 +37,6 @@ We need to remember: just because we have opinions doesn't mean they're worth sh
 
 I was never too happy working in house, under and alongside people whose validation comes from belittling others. And I hated myself when I start mirroring that behavior, like that crowd was at that event. It's human nature to do so. The only way to stop it is to neither initiate it nor engage in it.
 
-I'd rather stand at the front of the class, set a good example, lead from the front by speaking at conferences and preaching love of knowledge and the pursuit not of tool or process perfection but of the best possible end product. If you ever see me behaving like this, speaking in opinion and smack rather than in fact and appeal, please, call me out on it.
+I'd rather stand at the front of the class, set a good example, lead from the front by speaking at conferences and preaching love of knowledge, that we are not our tools or our processes: we are what we make. If you ever see me behaving like this, speaking in opinion and smack rather than in fact and appeal, please, call me out on it.
 
 It's lonely not being on a permanent team, but one day I will have one again. And we __won't__ be a team of haters.
