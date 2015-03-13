@@ -31,6 +31,7 @@
     color: $grey_light;
     background: $grey_dark;
     @include padding-leader(2/3);
+    @include margin-leader();
 
     .schedule-workshops, .schedule-speaking {
         h2 {
