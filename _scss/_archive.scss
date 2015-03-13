@@ -154,6 +154,9 @@ input.gsc-search-button {
         @include padding-leader();
     }
     figure { margin: 0;}
+    img {
+        max-width: 500px;
+    }
 }
 .archive-articles, .archive-bloggage, .archive-blog {
     @extend %clearfix;
