@@ -79,7 +79,6 @@ body[data-location=training] .nav-training {
 .fold-out-wrapper {
     time {
         color: adjust-saturation(adjust-lightness($lavender, 10%), -20%);
-        display: block;
     }
     a:link, a:visited, a:hover, a:active, a:focus {
       color: $lavender;
@@ -145,6 +144,18 @@ body[data-location=training] .nav-training {
         .moar {
             font-family: $georgia;
             font-style: italic;
+        }
+    }
+    .schedule {
+        .event {
+            display: block;
+        }
+        .source, time {
+            display: inline;
+        }
+        .source:before {
+            opacity: .5;
+            content: "\2014\00a0";
         }
     }
     .schedule, .module {
