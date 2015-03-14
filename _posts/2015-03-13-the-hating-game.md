@@ -35,6 +35,12 @@ This costs us good things. Good community members. Good people.
 
 We need to remember: just because we have opinions doesn't mean they're worth shoving in other people's faces. Because when we start getting Us vs. Them, we can't be friends with Them. And sometimes, Them are people we can learn from.
 
+<figure>
+    <img src="/img/2015/opinions-posterboy.png" alt="This guy: 'Imma have opinions, too! They weren't mine to begin with, and I didn't bother to do any research, but this is how you make friends, right?' Don't be him." style="width: 100%;max-width: 500px" />
+    <figcaption>
+        When we monger hate, we inspire these guys. These guys are all kinds of trouble, even if they aren't outright malicious. We can spread spread harm through them.
+    </figcaption>
+</figure>
 I was never too happy working in house, under and alongside people whose validation comes from belittling others. And I hated myself when I start mirroring that behavior, like that crowd was at that event. It's human nature to do so. The only way to stop it is to neither initiate it nor engage in it.
 
 I'd rather stand at the front of the class, set a good example, lead from the front by speaking at conferences and preaching love of knowledge, that we are not our tools or our processes: we are what we make. If you ever see me behaving like this, speaking in opinion and smack rather than in fact and appeal, please, call me out on it.
