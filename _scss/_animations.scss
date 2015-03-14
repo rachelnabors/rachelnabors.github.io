@@ -1,3 +1,12 @@
+.js .container {
+    opacity: 0;
+    transition: opacity .35s $easeOutQuint;
+}
+
+body[data-page-status='loaded'] .container {
+    opacity: 1;
+}
+
 #content {
     transition:
         transform $easeBounce .5s,
