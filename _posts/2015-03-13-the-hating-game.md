@@ -31,7 +31,7 @@ I wrote to the author. &ldquo;This is bad. You're going to tear the house in two
 
 The next day I returned to my drafts with all its frustrating, voice-muffling notes from my editor.
 
-It was like walking into a store and seeing a woman in clothes that didn't quite suit her and lipstick that really did not go and then realizing I was looking at myself in a mirror.
+It was like walking into a store and seeing a woman in clothes that didn't quite suit her and lipstick that really did not go&mdash;then realizing I was looking at myself in a mirror.
 
 Everything I had said to the other author was flung back in my face. My editor's comments made so much more sense. I could practically hear myself in those words. This wasn't a post that would bring the community together. This was me prancing around on my high horse.
 
