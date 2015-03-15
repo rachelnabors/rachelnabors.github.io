@@ -23,7 +23,8 @@
     var customPjaxTimeout = 2500;
 
     $( document ).ready(function() {
-        $("body").attr('data-page-status', 'loaded');
+        $body.attr('data-page-status', 'loaded')
+        .addClass('landed');
         // Find all internal links
         $('<button>').attr("aria-hidden", "true")
             .addClass('toggle')

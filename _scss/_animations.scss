@@ -3,7 +3,7 @@
     transition: opacity .35s $easeOutQuint;
 }
 
-body[data-page-status='loaded'] .container {
+.landed .container {
     opacity: 1;
 }
 
