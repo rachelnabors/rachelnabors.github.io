@@ -248,6 +248,14 @@ body[data-location=training] .nav-training {
     }
 }
 
+@include breakpoint($single-col-all-the-things){
+    .site-logo {
+        width: span(.5 of 2);
+        margin: 0 auto;
+        @include margin-leader(2/3);
+    }
+}
+
 @include breakpoint($with-sidebar){
     .masthead {
         height: 100%;

@@ -6,6 +6,8 @@ $maxWidthUnit: 48/9;
     @return $num/16px * 1em;
 }
 
+$single-col-all-the-things: calc-em(400px);
+
 $tri-col-footer: calc-em(666px);
 $up-to-tri-col-footer: max-width calc-em(665px);
 
