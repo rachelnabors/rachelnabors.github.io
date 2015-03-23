@@ -22,11 +22,12 @@ body[data-location=training] .nav-training {
     color: $blue_light;
     text-align: center;
     @include padding-trailer();
+    z-index: 3;
     .rachel {
-        position: relative;
         a {
             background-color: $grey_light;
             border-radius: 50%;
+            overflow: hidden;
             &:hover, &:active, &:focus {
                 background-color: $mauve;
             }
@@ -180,15 +181,17 @@ body[data-location=training] .nav-training {
         display: block;
         line-height: 0;
         transition: background-color $easeOutQuint .25s;
-        body[data-location=home] & {
-            background: $grey;
-            cursor: default;
-        }
-        &:hover, &:active, &:focus {
-            background-color: $mauve;
+        @include breakpoint($with-sidebar){
             body[data-location=home] & {
                 background: $grey;
                 cursor: default;
+            }
+            &:hover, &:active, &:focus {
+                background-color: $mauve;
+                body[data-location=home] & {
+                    background: $grey;
+                    cursor: default;
+                }
             }
         }
     }

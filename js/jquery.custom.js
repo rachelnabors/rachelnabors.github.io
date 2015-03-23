@@ -21,6 +21,7 @@
     var $content = $("#content");
     var siteURL = "http://" + top.location.host.toString();
     var customPjaxTimeout = 2500;
+    var mediaUpToSidebar = "(max-width: 45.1875em)";
 
     $( document ).ready(function() {
         $body.attr('data-page-status', 'loaded')
@@ -37,6 +38,18 @@
                   store.set("sidebarStatus", "open");
                 }
             }).appendTo('#additional');
+
+        //needs to be a media query...
+        $('#magic-face').on("click", function(e) {
+            if (window.matchMedia(mediaUpToSidebar).matches) {
+                if ( $html.attr('data-masthead') === "open" ) {
+                  $html.attr('data-masthead', "closed");
+                } else {
+                  $html.attr('data-masthead', 'open');
+                }
+                e.preventDefault();
+            }
+        });
 
         // Training page's workshop toggle
         // function toggleWorkshop(target) {
@@ -97,6 +110,13 @@
         });
         $(document).on('pjax:end', function(event) {
             $body.attr('data-page-status', 'loaded');
+            // On smaller screens, close the nav bar
+            if (window.matchMedia(mediaUpToSidebar).matches) {
+                if ( $html.attr('data-masthead') === "open" ) {
+                  $html.attr('data-masthead', "closed");
+                }
+            }
+            // Give body class based on location to highlight nav
             var loc = window.location.pathname.split('/');
             var dir = loc[1];
             // Posts have numeric root folders.

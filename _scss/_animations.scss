@@ -30,6 +30,11 @@ body[data-page-status='loading'] #content {
     transition: transform .35s $easeBounce;
 }
 
+@include breakpoint($up-to-with-sidebar){
+    .js .masthead {
+        transition: transform .35s $easeBounce;
+    }
+}
 
 @include keyfriends(toggleSidebar, sidebar-toggle_1, sidebar-toggle_5, 5);
 

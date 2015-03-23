@@ -80,18 +80,37 @@ $content-max-cols: 9;
 
 @include breakpoint($up-to-with-sidebar){
     @include nested($narrow-cols) {
-        .masthead .rachel {
-            float: left;
-            width: span(3 narrow);
-            @include padding-trailer();
+        div.masthead {
+            .js & {
+                position: absolute;
+                top: 0; left: 0;
+                box-sizing: border-box;
+                width: 100%;
+            }
+            @include padding-leader(3);
+            @include margin-leader(-2);
+            @include padding-trailer(4);
+            html[data-masthead=closed] & {
+                position: fixed;
+                top:rhythm(3);
+                transform: translateY(-100%);
+            }
+            div.rachel {
+                width: rhythm(6);
+                position: absolute;
+                bottom: 0;
+                transform: translateY(rhythm(3));
+                a {
+                    border: $black .25em solid;
+                }
+            }
         }
         .site-logo {
-            float: right;
             width: span(3 narrow);
-            @include padding-trailer();
+            margin: 0 auto;
         }
-        .toc {
-            clear: both;
+        #content h1:first-child {
+            @include padding-leader(5/3);
         }
     }
 }
