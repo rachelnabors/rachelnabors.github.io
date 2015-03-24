@@ -82,26 +82,38 @@ $content-max-cols: 9;
 
 @include breakpoint($up-to-with-sidebar){
     @include nested($narrow-cols) {
-        div.masthead {
-            .js & {
-                position: absolute;
-                top: 0; left: 0;
-                box-sizing: border-box;
-                width: 100%;
-            }
-            @include padding-leader(3);
+        .js .masthead-wrapper {
+            position: fixed;
+            top: 0; left: 0;
+            box-sizing: border-box;
+            overflow-y: auto;
+            width: 100%; height: calc(100% + 3em);
+            z-index: 3;
             @include margin-leader(-2);
+        }
+        html[data-masthead=open] body {
+            overflow: hidden;
+        }
+        html[data-masthead=closed] .masthead-wrapper {
+            transform: translateY(calc(-100% - -9.5em));
+            overflow: hidden;
+        }
+        .masthead-content {
+            position: relative;
+        }
+        div.masthead {
+            @include padding-leader(3);
+            @include margin-trailer(3);
             @include padding-trailer(4);
             html[data-masthead=closed] & {
-                position: fixed;
-                top:rhythm(3);
-                transform: translateY(-100%);
+                bottom: 0;
+                position: absolute;
             }
             div.rachel {
                 width: rhythm(6);
                 position: absolute;
                 bottom: 0;
-                transform: translateY(rhythm(3));
+                transform: translateY(rhythm(7));
                 a {
                     border: $black .25em solid;
                 }

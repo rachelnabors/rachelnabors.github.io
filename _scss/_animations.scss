@@ -31,7 +31,7 @@ body[data-page-status='loading'] #content {
 }
 
 @include breakpoint($up-to-with-sidebar){
-    .js .masthead {
+    .js .masthead-wrapper {
         transition: transform .35s $easeBounce;
     }
 }
