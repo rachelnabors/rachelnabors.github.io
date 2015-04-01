@@ -26,10 +26,14 @@ irc.w3.org#webanimations
 
 Unofficially, I will be keeping tabs on the [#waapi hashtag on Twitter](https://twitter.com/search?q=%23waapi&src=typd). Not that I'm officially involved in the spec, but it's my hope that the spec authors and implementors will engage under that hashtag as well, thus allowing people who don't use IRC (like designers) and don't want to be a part of a long email chain to keep up to date with the discussion surrounding this API.
 
-## How to make a difference
-People who have some familiarity with C++ coding, [you can help implement the API in Firefox](https://developer.mozilla.org/en-US/docs/Introduction). [Brian Birtles](bbirtles@mozilla.com) might even mentor you! And Mozilla's always looking for people to help write docs on [MDN](https://developer.mozilla.org).
-
+## Getting it supported
 Minor fixes to the spec (grammar/spelling/inconsistencies etc.) can be submitted as pull requests to <https://github.com/w3c/web-animations>.
+
+### Internet Exlporer
+You can [vote for IE to support the Web Animation API here](https://wpdev.uservoice.com/forums/257854-internet-explorer-platform/suggestions/6263650-web-animations-javascript-api). You can cast up to 3 votes at a time&mdash;make them count!
+
+## FireFox
+People who have some familiarity with C++ coding, [you can help implement the API in Firefox](https://developer.mozilla.org/en-US/docs/Introduction). [Brian Birtles](bbirtles@mozilla.com) might even mentor you! And Mozilla's always looking for people to help write docs on [MDN](https://developer.mozilla.org).
 
 ## People to follow/pester
 * [Brian Birtles](https://twitter.com/brianskold)&mdash;major author of spec, Mozilla Japan
