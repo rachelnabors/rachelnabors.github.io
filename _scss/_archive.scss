@@ -40,25 +40,24 @@
     }
 }
 
-.gsc-control-cse {
-    background: none !important;
-    border: 0 !important;
-    padding: 0 !important;
-}
-
-.gsc-input {
-    background: none !important;
-}
-
-.gsc-input-box {
-    background: $bg_blue !important;
-    border: none !important;
-}
-input.gsc-search-button {
-    border-color: adjust-lightness($lime, -20%) !important;
-    background-color: $lime !important;
+.google-rachel {
     position: relative;
-    top: 3px;
+    z-index: 2;
+    @extend %clearfix;
+    @include margin-trailer(1/3);
+    input {
+        box-sizing: border-box;
+        display: block;
+        @include margin-trailer(1/3);
+        width: 100%;
+    }
+    input[type=search] {
+        background: rgba(#fff, .5);
+        border: 0; padding: .5em;
+    }
+    input[type=submit] {
+        @include buttonator(adjust-lightness($cyan, -10%), adjust-lightness($lime, -10%), .5em);
+    }
 }
 
 #blogs-from-2015-ref {

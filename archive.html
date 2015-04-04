@@ -28,7 +28,7 @@ excerpt: Rachel Nabors's log posts and articles on web animation, UX, comics, an
 <section class="archive-bloggage">
 <header class="title-bloggage">
   <h2>Bloggage</h2>
-    <script>
+<!--    <script>
       (function() {
         var cx = '002428664232771263876:m1vbqio4y8u';
         var gcse = document.createElement('script');
@@ -40,7 +40,12 @@ excerpt: Rachel Nabors's log posts and articles on web animation, UX, comics, an
         s.parentNode.insertBefore(gcse, s);
       })();
     </script>
-    <gcse:search></gcse:search>
+    <gcse:search></gcse:search>-->
+    <form class="google-rachel" action="https://www.google.com/search">
+      <input type="hidden" name="as_sitesearch" value="rachelnabors.com" />
+      <input type="search" name="q" />
+      <input type="submit" value="Search" />
+    </form>
   </header>
 {% for post in site.posts  %}
     {% capture this_year %}{{ post.date | date: "%Y" }}{% endcapture %}

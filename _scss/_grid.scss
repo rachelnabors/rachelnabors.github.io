@@ -30,6 +30,19 @@ $content-max-cols: 9;
     @include gutters(6);
 }
 
+@include breakpoint(calc-em(450px)) {
+    @include nested($narrow-cols) {
+        .google-rachel {
+            input[type=search] {
+                @include span(4);
+            }
+            input[type=submit] {
+                @include span(2 narrow last);
+            }
+        }
+    }
+}
+
 @include breakpoint($up-to-tri-col-footer) {
     @include nested($narrow-cols) {
         .module-animation li {
@@ -233,6 +246,14 @@ $content-max-cols: 9;
             }
             li {
                 margin-left: (span(1));
+            }
+        }
+        .google-rachel {
+            input[type=search] {
+                @include span(6);
+            }
+            input[type=submit] {
+                @include span(3 narrow last);
             }
         }
 
