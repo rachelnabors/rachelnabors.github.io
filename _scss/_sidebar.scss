@@ -256,6 +256,11 @@ body[data-location=training] .nav-training {
         @include margin-leader(2/3);
     }
 }
+@include breakpoint($up-to-with-sidebar){
+    .masthead {
+        width: 100%;
+    }
+}
 
 @include breakpoint($with-sidebar){
     .masthead {
