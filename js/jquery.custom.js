@@ -39,28 +39,30 @@
                 }
             }).appendTo('#additional');
 
-        //needs to be a media query...
-        $('#magic-face').on("click", function(e) {
-            if (window.matchMedia(mediaUpToSidebar).matches) {
-                if ( $html.attr('data-masthead') === "open" ) {
-                  $html.attr('data-masthead', "closed");
+        // Handles page load state
+        function pageLoadAnim(){
+
+            var url = $(this).attr("href");
+
+            if ($(this).is("#self-port")){
+                if (window.matchMedia(mediaUpToSidebar).matches) {
+                    if ( $html.attr('data-masthead') === "open" ) {
+                        $html.attr('data-masthead', "closed");
+                    } else {
+                        $html.attr('data-masthead', 'open');
+                    }
+                    event.preventDefault();
                 } else {
-                  $html.attr('data-masthead', 'open');
+                    pageLoadAnim(this);
                 }
-                e.preventDefault();
-            }
-        });
-
-        /* PJAXIN'! */
-        if ($.support.pjax) {
-            $(document).on("click", "a[href^='"+siteURL+"'], a[href^='/'], a[href^='./'], a[href^='../'], a[href^='#'], a:not(a[target='_blank'])", function(e){
-
-                e.preventDefault();
-
+            } else if ($(this).attr("target")){
+                return;
+            } else {
+                // stop that click
+                event.preventDefault();
+                // invoke loading status
                 $body.attr('data-page-status', 'loading');
-                // Vars
-                var url = $(this).attr("href");
-
+                // PJAX
                 $content.one(window.transitionEnd, function(){
                     $.pjax({
                         url: url,
@@ -68,7 +70,13 @@
                         fragment: "#content"
                     });
                 });
-            });
+            }
+        }
+
+        /* PJAXIN'! */
+        if ($.support.pjax) {
+            // needs to be match a media query...
+            $(document).on("click","a[href^='"+siteURL+"'], a[href^='/'], a[href^='./'], a[href^='../'], a[href^='#']", pageLoadAnim);
 
             $(document).on('pjax:end', function(event) {
                 $body.attr('data-page-status', 'loaded');
