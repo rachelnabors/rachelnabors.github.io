@@ -88,13 +88,9 @@
 
 %time-li {
     li {
-        position: relative;
-        padding-left: 2.5em;
         time {
             @include adjust-leading-to(3/3);
-            position: absolute;
-            left: 0;
-            display: block;
+            display: inline-block;
         }
     }
 }

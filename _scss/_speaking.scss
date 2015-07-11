@@ -82,12 +82,10 @@
 .content-text .schedule-speaking {
     @extend .columnsx2;
     @extend %time-li;
-    time { top: 0;}
     h2 {
         padding-top: 0;
         @include padding-trailer();
     }
-    li { padding-left: 4em;}
 }
 
 .current-talks {//

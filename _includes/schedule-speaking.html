@@ -1,6 +1,19 @@
+{% for event in site.events %}
+    {% if forloop.first %}
 <div class="schedule-speaking">
-    <h2>Speaking <span>Schedule</span></h2>
+    <h2>Conference <span>Schedule</span></h2>
     <ul>
-        <li><time>Oct 28&ndash;30</time> <span class="event"><a href="https://futureofwebdesign.com/san-francisco-2015">FOWD, San Francisco</a> &amp; <a href="https://futureofwebdesign.com/san-francisco-2015/schedule/workshops/2068">Motion Design with CSS workshop</a></span></li>
+    {% endif %}
+        {% capture nowunix %}{{'site.time' | date: '%s'}}{% endcapture %}
+        {% capture posttime %}{{event.date | date: '%s'}}{% endcapture %}
+        {% if posttime < nowunix %}
+        <li><time>{{ event.date | date: "%b %d" }}{% if event.endDate %}
+        &ndash;{{ event.endDate | date: "%d" }}{% endif %}</time> <span class="event">{% if event.talkUrl %}<a href="{{ event.talkUrl }}">{% elsif event.eventUrl %}<a href="{{ event.eventUrl }}">{% endif %}{{ event.name }}, {{ event.location }}{% if event.url or event.talkUrl %}</a>{% endif %}{% if event.workshopUrl %}, {% if event.workshopUrl %}<a href="{{ event.workshopUrl }}">{% endif %}{% if event.workshop %}{{ event.workshop }}{% else %}workshop{% endif %}{% if event.workshopUrl %}</a>{% endif %}
+        {% endif %}
+        </span></li>
+        {% endif %}
+    {% if forloop.last %}
     </ul>
 </div>
+    {% endif %}
+{% endfor %}

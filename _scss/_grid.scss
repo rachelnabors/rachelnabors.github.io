@@ -139,6 +139,13 @@ $content-max-cols: 9;
         #content h1:first-child {
             @include padding-leader(5/3);
         }
+        %time-li {
+            li {
+                time {
+                    opacity: .8;
+                }
+            }
+        }
     }
 }
 
@@ -162,6 +169,21 @@ $content-max-cols: 9;
         .main {
             @include span(isolate 10 at 3 ltr);
         }
+    }
+    %time-li {
+        li {
+            position: relative;
+            padding-left: 2.5em;
+            time {
+                position: absolute;
+                left: 0;
+                display: block;
+            }
+        }
+    }
+    .content-text .schedule-speaking {
+        time { top: 0;}
+        li { padding-left: 4em;}
     }
 }
 
