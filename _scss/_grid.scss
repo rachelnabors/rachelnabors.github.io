@@ -307,9 +307,6 @@ $content-max-cols: 9;
 
         .speaking-history_col1 {
             @include span(4 isolate);
-            margin-left: -(span(3 wider));
-            padding-left: span(3 wider);
-            padding-right: span(1 narrow);
         }
 
         .speaking-history_col2 {//

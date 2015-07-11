@@ -77,6 +77,9 @@
 }
 .speaking-history_col1 {
     box-sizing: content-box;
+    margin-left: -(span(3 wider));
+    padding-left: span(3 wider);
+    padding-right: span(1 narrow);
 }
 
 .content-text .schedule-speaking {
