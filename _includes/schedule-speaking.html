@@ -4,7 +4,7 @@
     <h2>Conference <span>Schedule</span></h2>
     <ul>
     {% endif %}
-        {% capture nowunix %}{{'site.time' | date: '%s'}}{% endcapture %}
+        {% capture nowunix %}{{'now' | date: '%s'}}{% endcapture %}
         {% capture posttime %}{{event.date | date: '%s'}}{% endcapture %}
         {% if posttime < nowunix %}
         <li><time>{{ event.date | date: "%b %d" }}{% if event.endDate %}
