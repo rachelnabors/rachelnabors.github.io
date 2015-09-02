@@ -22,10 +22,22 @@
     var siteURL = "http://" + top.location.host.toString();
     var customPjaxTimeout = 2500;
     var mediaUpToSidebar = "(max-width: 45.1875em)";
+    var addAnchors = function(){
+      anchors.options = {
+        visible: 'always',
+        placement: 'right',
+        icon: ''
+      };
+      anchors.add('#content .hentry h2, #content .hentry h3');
+    }
 
     $( document ).ready(function() {
         $body.attr('data-page-status', 'loaded')
         .addClass('landed');
+
+        // add Anchors to article posts
+        addAnchors();
+
         // Find all internal links
         $('<button>').attr("aria-hidden", "true")
             .addClass('toggle')
@@ -79,6 +91,8 @@
             $(document).on("click","a[href^='"+siteURL+"'], a[href^='/'], a[href^='./'], a[href^='../'], a[href^='#']", pageLoadAnim);
 
             $(document).on('pjax:end', function(event) {
+                // add Anchors to article posts
+                addAnchors();
                 $body.attr('data-page-status', 'loaded');
                 // On smaller screens, close the nav bar
                 if (window.matchMedia(mediaUpToSidebar).matches) {
