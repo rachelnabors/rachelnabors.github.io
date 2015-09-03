@@ -56,6 +56,7 @@
 
             var url = $(this).attr("href");
 
+            // If you just clicked on the self portrait, toggle it.
             if ($(this).is("#self-port")){
                 if (window.matchMedia(mediaUpToSidebar).matches) {
                     if ( $html.attr('data-masthead') === "open" ) {
@@ -96,9 +97,7 @@
                 $body.attr('data-page-status', 'loaded');
                 // On smaller screens, close the nav bar
                 if (window.matchMedia(mediaUpToSidebar).matches) {
-                    if ( $html.attr('data-masthead') === "open" ) {
-                      $html.attr('data-masthead', "closed");
-                    }
+                  $html.attr('data-masthead', "closed");
                 }
                 // Give body class based on location to highlight nav
                 var loc = window.location.pathname.split('/');
