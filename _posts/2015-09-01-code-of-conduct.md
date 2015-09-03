@@ -55,7 +55,7 @@ Wanting to do this business deal (I’m passionate about animation in design, an
 ##This happened to me.
 When I went to my first Small Press Expo (SPX), a comic convention for independent publishers, I was going to table with a colleague who was supposed to come with a person I thought was my friend. My colleague couldn’t make the trip at the last minute, so our mutual friend was traveling alone.
 
-What I didn’t know was that this so-called friend wasn’t on his medication.
+We wouldn’t remain friends for long.
 
 While I was working at my table selling comics, this man came and asked me to dinner. I declined: I was working. The next day, he came to my table and threw a tantrum in front of all the other attendees: he thought I’d somehow promised him an intimate experience. No, I assured him, I came here to work. Was there going to be a problem?
 
