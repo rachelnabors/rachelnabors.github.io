@@ -4,10 +4,7 @@ date: 2015-11-02
 endDate: 2015-11-04
 location: Portland
 eventUrl: https://viewsourceconf.org/
-workshop:
-workshopUrl:
-talk:
+talk: State of the Animation
 talkUrl:
-canceled:
-cancellationReason:
+feedback: https://storify.com/rachelnabors/view-source-conf-2015
 ---
