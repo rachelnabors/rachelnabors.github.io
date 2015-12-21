@@ -1,5 +1,5 @@
 ---
-name: Web Directions: Code
+name: "CascadiaCSS"
 date: 2015-07-08
 endDate:
 location: Semiahmoo Resort, Washington
@@ -8,7 +8,7 @@ workshop:
 workshopUrl:
 talk:
 talkUrl:
-slidesUrl:
+talkSlides:
 feedback:
 canceled: true
 cancellationReason: Scheduling conflict.

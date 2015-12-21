@@ -6,5 +6,10 @@ location: Portland
 eventUrl: https://viewsourceconf.org/
 talk: State of the Animation
 talkUrl:
+talkRecording:
+talkSlides: http://www.slideshare.net/CrowChick/state-of-the-animation-2014
+lightningTalk:
+lightningTalkSlides:
+lightningTalkRecording:
 feedback: https://storify.com/rachelnabors/view-source-conf-2015
 ---

@@ -4,7 +4,7 @@ date: 2014-04-25
 endDate: 2014-04-26
 location: Seattle
 eventUrl: http://www.360intersect.com/
-slidesUrl:
+talkSlides:
 talk:
 talkUrl:
 workshop:

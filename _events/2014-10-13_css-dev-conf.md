@@ -6,7 +6,7 @@ location: New Orleans
 eventUrl: http://2014.cssdevconf.com/
 talk: "Animation Storytelling with HTML5 and CSS3"
 talkUrl:
-slidesUrl: http://rachelnabors.com/alice-in-videoland/talk/
+talkSlides: http://rachelnabors.com/alice-in-videoland/talk/
 workshop: CSS Animations and Transitions Masterclass
 workshopUrl:
 canceled:

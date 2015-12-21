@@ -5,34 +5,42 @@
     @include discography(h2, $magenta, $mauve, adjust-lightness($mauve, -40%), adjust-lightness($mauve, 10%));
 }
 
-#talks-from-2015-ref {
+.speaking-history_current {
     h3 {color: $bg_blue;}
     background: $bg_blue;
 }
-#talks-from-2014-ref {
+#talks-from-2015-ref {
     background: #c9d2d9;
     color: $grey_dark;
     @extend %alt-links;
     h3 { color: #c9d2d9 }
 }
-#talks-from-2013-ref{
+#talks-from-2014-ref{
     background: #afb9c0;
     color: adjust-lightness($grey_dark, -10%);
     @extend %alt-links;
     h3 { color: #afb9c0; }
 }
-#talks-from-2012-ref{
+#talks-from-2013-ref{
     background: #96a0a8;
     color: adjust-lightness($grey_dark, -20%);
     h3 {color: #96a0a8;}
+    @extend %contrast-links;
 }
 .speaking-history_light {
     background: #7c838d;
     @extend %contrast-links;
 }
-#talks-from-2011-ref{
+#talks-from-2012-ref, #talks-from-2011-ref{
     color: adjust-lightness($grey_dark, -30%);
-    h3 { color: #7c838d;}
+}
+
+#talks-from-2012-ref h3 { color: #7c838d;}
+
+#talks-from-2011-ref h3 { color: #c9d2d9;}
+
+@include breakpoint($double-columns){
+    #talks-from-2011-ref h3 { color: #7c838d;}
 }
 .speaking-history {
     // @include margin-leader(-2);
@@ -48,6 +56,11 @@
         @include margin-trailer(-1/3);
         @extend %fontLeague;
         @extend %t-xxxlarge;
+    }
+    figure {
+        margin-top: 0;
+        @include margin-trailer();
+        padding-bottom: 0;
     }
 }
 .speaking-history_col, .speaking-history_bulk, .speaking-history_current {
@@ -102,6 +115,27 @@
     }
 }
 
+ul.materials {
+    @extend %undo-ul-bs;
+    @include typeSize(small);
+    padding-top: 0;
+    @include margin-trailer(1/3);
+    li {
+        display: inline;
+        margin: 0; padding: 0;
+    }
+}
 .available-to-speak {//
     @include margin-trailer();
+}
+
+.type {
+    color: $grey_dark;
+    font-family: $georgia;
+    font-style: italic;
+    @include typeSize(small);
+}
+
+.talk, .lightning-talk, .keynote, .workshop {
+    @include margin-trailer(1/3);
 }
