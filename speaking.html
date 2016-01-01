@@ -106,7 +106,10 @@ excerpt: Rachel Nabors travels the world speaking about web animation, UX, and e
         <time>{{ event.date | date: "%b" }}</time>
         <span class="event">
           <div class="event-deets">
-          {% if event.talkUrl %}<a href="{{ event.talkUrl }}">{% elsif event.eventUrl %}<a href="{{ event.eventUrl }}">{% endif %}{{ event.name }}{% if event.url or event.talkUrl %}</a>{% endif %}, {{ event.location }}
+          {% if event.talkUrl %}<a href="{{ event.talkUrl }}">{% elsif event.eventUrl %}<a href="{{ event.eventUrl }}">{% endif %}{{ event.name }}{% if event.url or event.talkUrl %}</a>{% endif %}{% if event.location %}, {{ event.location }}{% endif %} {% if event.keynote %}
+            <span class="type">Keynote</span>
+          {% endif %}
+
           </div>
           {% if event.talkSlides or event.talkRecording or event.feedback %}
           <ul class="materials">
@@ -116,30 +119,18 @@ excerpt: Rachel Nabors travels the world speaking about web animation, UX, and e
             {% if event.talkRecording %}
             <li><a href="{{event.talkRecording}}">Recording</a></li>
             {% endif %}
+            {% if event.lightningTalkRecording or event.lightningTalkSlides %}
+            <li><a href="{% if event.lightningTalkRecording %}{{event.lightningTalkRecording}}{% elsif event.lightningTalkSlides %}{{event.lightningTalkSlides}}{% endif %}">Lightning Talk</a></li>
+            <li><a href="{{event.talkfeedback}}">Feedback</a></li>
+            {% endif %}
             {% if event.feedback %}
             <li><a href="{{event.talkfeedback}}">Feedback</a></li>
             {% endif %}
+            {% if event.workshop %}
+            <li>&amp; Workshop</li>
+            {% endif %}
           </ul>
           {% endif %}
-          {% if event.keynote %}
-            <div class="keynote"><span class="type">Keynote</span> {{ event.keynote }}</div>
-          {% endif %}
-
-          {% if event.talk %}
-          <div class="talk">
-            <span class="type">Talk</span> {{ event.talk }}
-          </div>{% endif %}
-
-          {% if event.workshop %}
-          <div class="workshop">
-            <span class="type">Workshop</span> {% if event.workshopUrl %}<a href="{{ event.workshopUrl }}">{% endif %}{% if event.workshop %}{{ event.workshop }}{% else %}workshop{% endif %}{% if event.workshopUrl %}</a>{% endif %}
-          </div>
-          {% endif %}
-
-          {% if event.lightningTalkRecording or event.lightningTalkSlides %}
-            <div class="lightning-talk"><span class="type">Lightning Talk</span> <a href="{% if event.lightningTalkRecording %}{{event.lightningTalkRecording}}{% elsif event.lightningTalkSlides %}{{event.lightningTalkSlides}}{% endif %}">{{event.lightningTalk}}</a></div>
-          {% endif %}
-        </span></li>
 
         {% endunless %}
     {% if forloop.last %}
