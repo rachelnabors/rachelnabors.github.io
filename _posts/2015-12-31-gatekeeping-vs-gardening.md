@@ -1,6 +1,6 @@
 ---
 title: "Gardening over Gatekeeping"
-excerpt: "Can."
+excerpt: "Gatekeeping a community can have unintended harmful side effects. This year, I want to focus more on gardening."
 ---
 Early in 2015 I wrote about <a href="http://rachelnabors.com/2015/03/13/the-hating-game/">elitism</a>, something I have been thinking about along with gatekeeping all the way through till the end of the year. I started 2015 launching <a href="http://webanimationweekly.com">Web Animation Weekly</a>, a weekly newsletter to help promote work and resources within the web animation community as well as foster cross pollination from other communities with things like coverage from <a href="http://blendfest.ca/">motion design conferences</a> and <a href="https://vimeo.com/channels/everyframeapainting">screencasts dissecting cinematic techniques</a>.
 

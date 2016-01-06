@@ -121,10 +121,9 @@ excerpt: Rachel Nabors travels the world speaking about web animation, UX, and e
             {% endif %}
             {% if event.lightningTalkRecording or event.lightningTalkSlides %}
             <li><a href="{% if event.lightningTalkRecording %}{{event.lightningTalkRecording}}{% elsif event.lightningTalkSlides %}{{event.lightningTalkSlides}}{% endif %}">Lightning Talk</a></li>
-            <li><a href="{{event.talkfeedback}}">Feedback</a></li>
             {% endif %}
             {% if event.feedback %}
-            <li><a href="{{event.talkfeedback}}">Feedback</a></li>
+            <li><a href="{{event.feedback}}">Feedback</a></li>
             {% endif %}
             {% if event.workshop %}
             <li>&amp; Workshop</li>
