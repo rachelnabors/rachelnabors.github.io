@@ -29,19 +29,6 @@ excerpt: Rachel Nabors's blog posts and articles on web animation, UX, comics, a
 <section class="archive-bloggage">
 <header class="title-bloggage">
   <h2>Bloggage</h2>
-<!--    <script>
-      (function() {
-        var cx = '002428664232771263876:m1vbqio4y8u';
-        var gcse = document.createElement('script');
-        gcse.type = 'text/javascript';
-        gcse.async = true;
-        gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
-            '//www.google.com/cse/cse.js?cx=' + cx;
-        var s = document.getElementsByTagName('script')[0];
-        s.parentNode.insertBefore(gcse, s);
-      })();
-    </script>
-    <gcse:search></gcse:search>-->
     <form class="google-rachel" action="https://www.google.com/search">
       <input type="hidden" name="as_sitesearch" value="rachelnabors.com" />
       <input type="search" name="q" />
@@ -53,13 +40,8 @@ excerpt: Rachel Nabors's blog posts and articles on web animation, UX, comics, a
     {% capture next_year %}{{ post.previous.date | date: "%Y" }}{% endcapture %}
 
     {% if forloop.first %}
-    <section id="blogs-from-{{ next_year }}-ref" class="archive-blog">
+    <section id="blogs-from-{{ this_year }}-ref" class="archive-blog">
     <h3 id="blogs-from-{{ this_year }}-ref">{{this_year}}</h3>
-      <p><strong>If who we are is a story we tell ourselves, technically we can <a href="http://en.wikipedia.org/wiki/Retroactive_continuity">retcon</a> our own history.</strong></p>
-      <p>For my 30th birthday, I considered pruning my old blog posts that don't fit where I am today. I could cut them out and make it look as though I was born this way.</p>
-      <p>But as I skimmed through my posts about <abbr title="Search Engine Optimization">SEO</abbr> and WordPress, I saw that if I erased this part of me, no one else would be able to see how I got here and learn from the path I took.</p>
-      <p>So I decided to convert my blog archive into an illustrated history of my journey through web development. Most of the posts are me puffing myself up to look good for possible employers. I added descriptions for each year to describe what was <em>really</em> going on. You can read backwards in time, or <a href="#blogs-from-2008-ref">start at year one, way back in 2008</a>. Please enjoy.</p>
-      <img src="/img/graphics/il_2015.png" alt="Rachel enjoying her 30th birthday cake until Tuna, her cat, pops out of the top." />
     <ul>
     {% endif %}
 
@@ -132,6 +114,12 @@ excerpt: Rachel Nabors's blog posts and articles on web animation, UX, comics, a
                   <p>It's hard work, but I feel truly alive and happy. It reminds me of hustling at comic conventions.</p>
                 </figcaption>
               </figure>
+              {% when "2015" %}
+              <p><strong>If who we are is a story we tell ourselves, technically we can <a href="http://en.wikipedia.org/wiki/Retroactive_continuity">retcon</a> our own history.</strong></p>
+              <p>For my 30th birthday, I considered pruning my old blog posts that don't fit where I am today. I could cut them out and make it look as though I was born this way.</p>
+              <p>But as I skimmed through my posts about <abbr title="Search Engine Optimization">SEO</abbr> and WordPress, I saw that if I erased this part of me, no one else would be able to see how I got here and learn from the path I took.</p>
+              <p>So I decided to convert my blog archive into an illustrated history of my journey through web development. Most of the posts are me puffing myself up to look good for possible employers. I added descriptions for each year to describe what was <em>really</em> going on. You can read backwards in time, or <a href="#blogs-from-2008-ref">start at year one, way back in 2008</a>. Please enjoy.</p>
+              <img src="/img/graphics/il_2015.png" alt="Rachel enjoying her 30th birthday cake until Tuna, her cat, pops out of the top." />
             {% endcase %}
         <ul>
         {% endif %}

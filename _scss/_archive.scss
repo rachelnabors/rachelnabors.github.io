@@ -1,3 +1,6 @@
+$startYear: 2008;
+$currentYear: 2016;
+$years: $currentYear - $startYear; //8
 %blog-links {
     a:link, a:visited, a:hover, a:active, a:focus {
         color: $mauve;
@@ -60,35 +63,23 @@
     }
 }
 
-#blogs-from-2015-ref {
-    h3 { color: $bg_blue }
-}
-#blogs-from-2014-ref {
-    background: #c9d2d9;
+#blogs-from-2014-ref, #blogs-from-2015-ref {
     color: $grey_dark;
     @extend %alt-links;
-    h3 { color: #c9d2d9 }
 }
 #blogs-from-2013-ref{
-    background: #afb9c0;
     color: adjust-lightness($grey_dark, -10%);
     @extend %alt-links;
-    h3 { color: #afb9c0; }
 }
 #blogs-from-2012-ref{
-    background: #96a0a8;
     color: adjust-lightness($grey_dark, -20%);
     @extend %contrast-links;
-    h3 {color: #96a0a8;}
 }
 #blogs-from-2011-ref{
-    background: #7c838d;
     color: adjust-lightness($grey_dark, -30%);
     @extend %contrast-links;
-    h3 { color: #7c838d;}
 }
 #blogs-from-2010-ref{
-    background: #646d77;
     color: adjust-lightness($grey_light, 20%);
     @extend %blog-links;
     a:link, a:visited, a:hover, a:active, a:focus {
@@ -100,7 +91,7 @@
         background-color: adjust-lightness($lavender, 10%);
         color: adjust-saturation(adjust-lightness($lavender, -50%), -40%);
     }
-    h3 { color: #646d77;}
+    // h3 { color: #646d77;}
     figure {
         a:link, a:visited { text-decoration: underline;}
         padding-bottom: 0;
@@ -109,16 +100,41 @@
     }
 }
 #blogs-from-2009-ref{
-    background: #4a535f;
     color: adjust-lightness($grey_light, 10%);
     @extend %blog-links;
-    h3 { color: #4a535f; }
 }
 #blogs-from-2008-ref{
     background: $grey_dark;
     color: $grey_light;
     @extend %blog-links;
     h3 { color: $grey_dark; }
+}
+
+$startColor: $grey_dark;
+$endColor: $bg_blue;
+$divider: 255;
+$steps: $years;
+$scaler: $divider / $steps;
+@for $i from 1 through $steps {
+    $scaledStep: $i * $scaler;
+    $redStart: red($startColor);
+    $greenStart: green($startColor);
+    $blueStart: blue($startColor);
+    $redEnd: red($endColor);
+    $greenEnd: green($endColor);
+    $blueEnd: blue($endColor);
+    $R: ($redStart * (($divider - $scaledStep) / $divider)) + ($redEnd * ($scaledStep / $divider));
+    $G: ($greenStart * (($divider - $scaledStep) / $divider)) + ($greenEnd * ($scaledStep / $divider));
+    $B: ($blueStart * (($divider - $scaledStep) / $divider)) + ($blueEnd * ($scaledStep / $divider));
+
+    #blogs-from-#{$i + $startYear}-ref {
+        background: rgb($R, $G, $B);
+        h3 { color: rgb($R, $G, $B); }
+    }
+}
+
+#blogs-from-2016-ref {
+    background: none;
 }
 .archive-articles {
     @include margin-leader(-2);
