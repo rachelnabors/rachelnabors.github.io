@@ -117,12 +117,28 @@ header .meta {
         max-width: 100%;
         margin: 0 auto;
     }
+    .twitter-tweet {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    hr {
+        @include margin-leader();
+        border: 0;
+        border-top: 1px currentColor solid;
+        opacity: .2;
+    }
     figure {
         line-height:0;
         // margin-left: -(span(.5) + gutter(11));
         text-align: center;
         // width: span(10.5 of 9) + gutter(11);
         @include padding-trailer();
+        + p {
+            @include margin-leader(-1);
+        }
+    }
+    p + figure {
+        @include margin-leader(1);
     }
     figcaption {
         @extend %t-base;

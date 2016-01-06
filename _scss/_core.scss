@@ -39,6 +39,10 @@ time {
     }
 }
 
+.shameless + .copyright {
+    margin-top: 0;
+}
+
 :focus{
     outline:0; /*removes the dotted border*/
 }

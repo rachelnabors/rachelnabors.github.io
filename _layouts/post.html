@@ -17,8 +17,6 @@ layout: default
 		{{ content | expand_urls: root_url }}
 	</div>
 
-	{% include shameless-self-promotion.html %}
-
 	<nav class="post-nav">
 	  {% if page.previous.url %}
 		<a class="prev-post post-nav-link" href="{{page.previous.url}}" title="Previous Post: {{page.previous.title}}"><span aria-hidden="true" data-icon="&#10229;" class="icon"></span> {{page.previous.title}}</a>
@@ -51,3 +49,5 @@ layout: default
 	<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
 </section>
 {% endif %}
+
+{% include shameless-self-promotion.html %}
