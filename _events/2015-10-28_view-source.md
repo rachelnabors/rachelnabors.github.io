@@ -8,7 +8,7 @@ talk: State of the Animation
 talkUrl:
 talkRecording:
 talkSlides: http://www.slideshare.net/CrowChick/state-of-the-animation-2014
-lightningTalk:
+lightningTalk: https://air.mozilla.org/ignite-view-source/
 lightningTalkSlides:
 lightningTalkRecording:
 feedback: https://storify.com/rachelnabors/view-source-conf-2015
