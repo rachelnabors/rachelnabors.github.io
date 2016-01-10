@@ -45,3 +45,6 @@ I’ve already turned off favorites notifications on Twitter and begun drawing a
 All this can be summed up in my motto for 2016 (which sounds silly if you didn’t read the above):
 
 <blockquote>You don’t have to be a hero to everybody. But you should always be a hero to yourself.</blockquote>
+
+<blockquote class="twitter-tweet" data-partner="tweetdeck"><p lang="en" dir="ltr">“You don’t have to be a hero to everybody…” and other 2015 musings. <a href="https://t.co/M3ufUu4trV">https://t.co/M3ufUu4trV</a> <a href="https://twitter.com/hashtag/rln365?src=hash">#rln365</a> <a href="https://t.co/iU92lEwei8">pic.twitter.com/iU92lEwei8</a></p>&mdash; Rachel Nabors (@rachelnabors) <a href="https://twitter.com/rachelnabors/status/686323656700473344">January 10, 2016</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
