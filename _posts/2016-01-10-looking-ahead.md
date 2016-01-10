@@ -13,12 +13,12 @@ For those of us paralyzed by indecision when faced with perfectly reasonable opt
 <iframe width="560" height="315" src="https://www.youtube.com/embed/la95ATaDMKo" frameborder="0" allowfullscreen></iframe>
 
 <h3>Honor your younger self.</h3>
-“Honor your younger self” is a simple phrase loaded with meaning. For me it means anything from “treat others as I wish they had treated me when I needed them most” to “remember to enjoy the life your younger self went through so much to get to.” This principle revealed itself in a number of ways, but it wasn’t until I turned down a substantial sum of money to present at a conference whose organizer refused to adopt a Code of Conduct TODO http://rachelnabors.com/2015/09/01/code-of-conduct/ did this principle fully reveal itself to me.
+“Honor your younger self” is a simple phrase loaded with meaning. For me it means anything from “treat others as I wish they had treated me when I needed them most” to “remember to enjoy the life your younger self went through so much to get to.” This principle revealed itself in a number of ways, but it wasn’t until <a href="http://rachelnabors.com/2015/09/01/code-of-conduct/">I turned down a substantial sum of money to present at a conference whose organizer refused to adopt a Code of Conduct</a> did this principle fully reveal itself to me.
 
 It was a powerful, scary, defining moment of adulthood where I set a boundary and learned something new about myself.
 
 <h3>Be a gardener, not a gatekeeper.</h3>
-This principle revealed itself to me slowly over many conversations with Meri Williams TODO https://twitter.com/geek_manager and Patrick Neeman http://www.usabilitycounts.com/ TODO. It was the previous event, where an industry leader was making choices that were changing the people presenting to his audience, that helped me understand what these people had been trying to tell me.
+This principle revealed itself to me slowly over many conversations with <a href="https://twitter.com/geek_manager">Meri Williams</a> and <a href="http://www.usabilitycounts.com/">Patrick Neeman</a>. It was the previous event, where an industry leader was making choices that were changing the people presenting to his audience, that helped me understand what these people had been trying to tell me.
 
 Even the people we respect the most are flawed and can perpetuate flawed thinking, from data to ethics. When I reflected on my own life choices, what I want to be and do in the web community, I realized that I was setting myself up to be a gatekeeper, a person others go through to get to something, and that I, too, am flawed.
 
