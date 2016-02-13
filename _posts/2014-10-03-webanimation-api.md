@@ -29,7 +29,7 @@ Unofficially, I will be keeping tabs on the [#waapi hashtag on Twitter](https://
 ## Getting it supported
 Minor fixes to the spec (grammar/spelling/inconsistencies etc.) can be submitted as pull requests to <https://github.com/w3c/web-animations>.
 
-### Internet Exlporer
+### Internet Explorer
 You can [vote for IE to support the Web Animation API here](https://wpdev.uservoice.com/forums/257854-internet-explorer-platform/suggestions/6263650-web-animations-javascript-api). You can cast up to 3 votes at a time&mdash;make them count!
 
 ## FireFox
