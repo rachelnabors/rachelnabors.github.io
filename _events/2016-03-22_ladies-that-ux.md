@@ -12,6 +12,6 @@ talkRecording:
 lightningTalk:
 lightningTalkUrl:
 feedback:
-canceled:
-cancellationReason:
+canceled: true
+cancellationReason: "Declined entry at UK border"
 ---
