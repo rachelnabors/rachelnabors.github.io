@@ -7,11 +7,11 @@ eventUrl: http://smashingconf.com/
 workshop:
 workshopUrl:
 talk: Alice in Web Animations API Land
-talkUrl:
+talkUrl: http://www.slideshare.net/CrowChick/alice-in-web-animations-api-land
 talkRecording:
 lightningTalk:
 lightningTalkUrl:
-feedback:
+feedback: https://storify.com/rachelnabors/smashing-conf-san-francisco
 canceled:
 cancellationReason:
 ---
