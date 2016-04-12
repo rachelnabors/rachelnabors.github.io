@@ -7,7 +7,7 @@ eventUrl: http://clarityconf.com/
 workshop:
 workshopUrl:
 talk: Communicating Animation
-talkUrl: http://www.slideshare.net/CrowChick/communicating-animation-slides
+talkSlides: http://www.slideshare.net/CrowChick/communicating-animation-slides
 talkRecording:
 lightningTalk:
 lightningTalkUrl:

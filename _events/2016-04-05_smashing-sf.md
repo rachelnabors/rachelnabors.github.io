@@ -7,7 +7,7 @@ eventUrl: http://smashingconf.com/
 workshop:
 workshopUrl:
 talk: Alice in Web Animations API Land
-talkUrl: http://www.slideshare.net/CrowChick/alice-in-web-animations-api-land
+talkSlides: http://www.slideshare.net/CrowChick/alice-in-web-animations-api-land
 talkRecording:
 lightningTalk:
 lightningTalkUrl:
