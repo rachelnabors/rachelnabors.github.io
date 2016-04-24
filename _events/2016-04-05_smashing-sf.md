@@ -8,7 +8,7 @@ workshop:
 workshopUrl:
 talk: Alice in Web Animations API Land
 talkSlides: http://www.slideshare.net/CrowChick/alice-in-web-animations-api-land
-talkRecording:
+talkRecording: https://vimeo.com/163510676
 lightningTalk:
 lightningTalkUrl:
 feedback: https://storify.com/rachelnabors/smashing-conf-san-francisco
