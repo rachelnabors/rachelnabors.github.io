@@ -11,7 +11,7 @@ talkUrl:
 talkRecording:
 lightningTalk:
 lightningTalkUrl:
-feedback:
+feedback: https://storify.com/rachelnabors/front-trends
 canceled:
 cancellationReason:
 ---
