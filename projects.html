@@ -1,0 +1,35 @@
+---
+title: "Projects"
+body_id: projects
+excerpt: "Web animation, UI animation, and CSS animation projects and other creative coding endeavors."
+---
+
+<h1>Web Animation &amp; Interaction Development Projects</h1>
+<p class="tagline">Things I do for fun and profit.</p>
+
+{% for project in site.projects reversed %}
+<section class="project-gallery" id="project_{{ forloop.index }}">
+
+  <h2>{{ project.name }}</h2>
+  {% if project.tagline %}<p class="project_tagline">{{ project.tagline }}</p>{% endif %}
+  {% if project.roles %}
+  <ul class="project_roles">
+    {% for role in project.roles %}
+    <li>{{ role }}</li>
+    {% endfor %}
+  </ul>
+  {% endif %}
+
+  <div class="project_description">
+    {{ project.content }}
+
+    {% if project.liveSite %}<p class="visit-site big-cta"><a href="{{project.liveSite}}" target="_blank">Check it out</a></p>{% endif %}
+  </div>
+</section>
+{% endfor %}
+
+<div class="collaborate-with-me-dammit">
+  	<p class="cta-content">
+      I love taking on challenges with others. Got something wonderful to work on? <a class="big-cta" href="mailto:aloha@rachelnabors.com">Drop me a line.</a>
+    </p>
+</div>

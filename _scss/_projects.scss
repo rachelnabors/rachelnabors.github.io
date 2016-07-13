@@ -1,0 +1,101 @@
+$startColor: $grey_dark;
+$endColor: $bg_blue;
+$divider: 255;
+$steps: $years;
+$scaler: $divider / $steps;
+
+.project-gallery {
+    @extend %clearfix;
+    @extend %color-block;
+    @extend %undo-ul-bs;
+    padding-top: 0;
+    @include padding-trailer(3);
+    .project_title {
+        @extend %color-block-title;
+        line-height: .65;
+        padding-top: 0;
+    }
+    .project_roles {
+        padding: 0 0 rhythm(2/3);
+        li {
+            display: inline-block;
+            font-family: $georgia;
+            font-style: italic;
+            padding: 0 rhythm(1/3) 0 0;
+            @extend %t-small;
+        }
+    }
+    .project_tagline {
+        @extend %t-xxlarge;
+        @extend %fontOstrich;
+        @include padding-trailer(1/3);
+    }
+
+    .project_description {
+        @include breakpoint($double-columns){
+            column-width: span(4 of 9);
+            column-count: 2;
+        }
+    }
+}
+
+.collaborate-with-me-dammit {
+    @extend %fontLeague;
+    @extend %t-large;
+    @extend %color-block;
+    @extend %alt-links;
+    background: $black;
+    color: $grey_light;
+    @include padding-leader();
+    @include padding-trailer();
+}
+
+$projectsNumber: 4;
+$divider: 255;
+$steps: $projectsNumber;
+$scaler: $divider / $steps;
+@for $i from 1 through $steps {
+    $scaledStep: $i * $scaler;
+    $redStart: red($startColor);
+    $greenStart: green($startColor);
+    $blueStart: blue($startColor);
+    $redEnd: red($endColor);
+    $greenEnd: green($endColor);
+    $blueEnd: blue($endColor);
+    $R: ($redStart * (($divider - $scaledStep) / $divider)) + ($redEnd * ($scaledStep / $divider));
+    $G: ($greenStart * (($divider - $scaledStep) / $divider)) + ($greenEnd * ($scaledStep / $divider));
+    $B: ($blueStart * (($divider - $scaledStep) / $divider)) + ($blueEnd * ($scaledStep / $divider));
+
+    #project_#{$projectsNumber + 1 - $i} {
+        background: rgb($R, $G, $B);
+        .project_title { color: rgb($R, $G, $B); }
+    }
+    #project_#{$projectsNumber + 2 - $i} {
+        .project_title { background: rgb($R, $G, $B); }
+    }
+}
+
+// body[data-location=projects] .tagline {
+//     margin-bottom: 0 !important;
+//     padding-bottom: rhythm(3) !important;
+// }
+
+body[data-location=projects] .copyright { margin-top: 0; }
+
+#project_1 .project_title {
+    background: adjust-lightness($mauve, -20%);
+}
+
+#project_2{
+    color: $grey_dark;
+    @extend %alt-links;
+}
+#project_3{
+    color: adjust-lightness($grey_dark, -20%);
+    @extend %contrast-links;
+}
+
+#project_4{
+    color: adjust-lightness($grey_light, 20%);
+    @extend %blog-links;
+}

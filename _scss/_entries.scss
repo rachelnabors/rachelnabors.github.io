@@ -72,6 +72,9 @@ header .meta {
             top: 0;
         }
     }
+    li {
+        margin-left: 2em;
+    }
     #{headings(6)} {
         + p, + ul, + ol, + .video {
             padding: 0;
@@ -187,6 +190,7 @@ header .meta {
         @include padding-trailer();
         position: relative;
         text-align: center;
+        width: 80%;
         &:before {
             content: "\201C";
             font-family: $georgia;

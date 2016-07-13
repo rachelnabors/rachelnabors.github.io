@@ -36,15 +36,13 @@
 %color-block {
     position: relative;
     @extend %bleed-entry;
+    @include padding-leader(2);
 }
 
 %color-block-title {
+    @extend %bleed-entry;
     @extend %fontLeague;
     @extend %t-xxxlarge;
-    @include padding-trailer(2);
-    @include margin-leader(-12/3);
-    position:relative;
-    z-index: 1;
 }
 
 .columnsx2 {
@@ -55,6 +53,12 @@
             column-count: 2;
             & > li {
                 break-inside: avoid;
+            }
+            & p {
+                padding-top: 0;
+            }
+            & p:not(:last-child) {
+                @include padding-trailer();
             }
         }
     }

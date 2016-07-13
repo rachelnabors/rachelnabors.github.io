@@ -6,7 +6,8 @@ body[data-location=archive] .nav-archives,
 body[data-location=post] .nav-archives,
 body[data-location=about] .nav-about,
 body[data-location=consulting] .nav-consulting,
-body[data-location=training] .nav-training {
+body[data-location=training] .nav-training,
+body[data-location=projects] .nav-projects {
     color: $mauve !important;
 }
 

@@ -63,6 +63,11 @@ $years: $currentYear - $startYear; //8
     }
 }
 
+#blogs-from-2016-ref h3 {
+    background-color: adjust-lightness($bg_blue, -30%);
+}
+
+
 #blogs-from-2014-ref, #blogs-from-2015-ref {
     color: $grey_dark;
     @extend %alt-links;
@@ -131,6 +136,9 @@ $scaler: $divider / $steps;
         background: rgb($R, $G, $B);
         h3 { color: rgb($R, $G, $B); }
     }
+    #blogs-from-#{$i - 1 + $startYear}-ref {
+        h3 { background: rgb($R, $G, $B); }
+    }
 }
 
 #blogs-from-2016-ref {
@@ -150,7 +158,7 @@ $scaler: $divider / $steps;
 .title-bloggage {
     background-color: adjust-lightness($bg_blue, -30%);
     @extend %bleed-entry;
-    @include padding-trailer(2);
+    @include padding-trailer(2/3);
     @include padding-leader();
     h2 {
         @extend %t-xxxlarge;
@@ -161,11 +169,11 @@ $scaler: $divider / $steps;
     }
 }
 .archive-blog {
-    @include padding-trailer(2);
+    @include padding-leader(2);
     h3 {
         @extend %color-block-title;
     }
-    figcaption {
+    h3 + *, figcaption {
         @include padding-leader();
     }
     figure { margin: 0;}
@@ -177,9 +185,14 @@ $scaler: $divider / $steps;
 .archive-articles, .archive-bloggage, .archive-blog {
     @extend %clearfix;
     @extend %bleed-entry;
-    @include padding-leader(2/3);
     @extend .columnsx2;
     @extend %color-block;
+    padding-top: 0; margin-top: 0;
+    @include padding-trailer(2);
+    h3 {
+        @include padding-leader(2/3);
+        line-height: .65;
+    }
     ul {
         @include margin-leader(1);
         position:relative;
@@ -189,3 +202,9 @@ $scaler: $divider / $steps;
         padding-right: gutter(4);
     }
 }
+
+body[data-location=archive] .tagline {
+    margin-bottom: 0 !important;
+}
+
+body[data-location=archive] .copyright { margin-top: 0; }
