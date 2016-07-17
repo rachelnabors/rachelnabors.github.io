@@ -15,7 +15,7 @@ excerpt: Rachel Nabors travels the world speaking about web animation, UX, and e
     <a href="mailto:aloha@rachelnabors.com" class="big-cta">Let's talk!</a>
 </section>
 
-<section class="current-talks">
+<!-- <section class="current-talks">
   <h2>Talks I'm giving now</h2>
   <div class="talk">
     <h3>State of the Animation</h3>
@@ -38,7 +38,7 @@ excerpt: Rachel Nabors travels the world speaking about web animation, UX, and e
     </div>
     <p>Since the widespread adoption of CSS animations and transitions, animation has started creeping back into web design. Loading screens and “flashy” intros are back, as well as subtle UI interactions that invisibly plus the user’s experience. Learn the six applications of motion in interface designs, how you can apply them in your own projects, and when to start planning for motion in your process.</p>
   </div>
-</section>
+</section> -->
 
 <section class="slides">
   <h2>Slides &amp; Recordings</h2>
@@ -67,6 +67,10 @@ excerpt: Rachel Nabors travels the world speaking about web animation, UX, and e
     {% if forloop.first %}
     <section class="speaking-history_current speaking-history_era" id="talks-from-{{ this_year }}-ref">
       <h3>{{ this_year }}</h3>
+      <figure>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/q_V-gYoiz3E?list=PLRyLn6THA5wPlq5gphSOAdRZASuFRrfW7" frameborder="0" allowfullscreen></iframe>
+        <figcaption>My winding career path and what is success even, illustrated, in 12 minutes.</figcaption>
+      </figure>
       <ul>
     {% elsif this_year != next_year %}
       </ul>
@@ -82,11 +86,6 @@ excerpt: Rachel Nabors travels the world speaking about web animation, UX, and e
     {% endcase %}
         <h3>{{this_year}}</h3>
             {% case this_year %}
-              {% when "2016" %}
-                <figure>
-                  <iframe width="560" height="315" src="https://www.youtube.com/embed/q_V-gYoiz3E?list=PLRyLn6THA5wPlq5gphSOAdRZASuFRrfW7" frameborder="0" allowfullscreen></iframe>
-                  <figcaption>My winding career path and what is success even, illustrated, in 12 minutes.</figcaption>
-                </figure>
               {% when "2015" %}
                 <figure>
                   <iframe width="560" height="315" src="https://www.youtube.com/embed/GxOq1bnlZXk" frameborder="0" allowfullscreen></iframe>
