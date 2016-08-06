@@ -3,8 +3,9 @@ layout: post
 title: "Web Animations API Resources"
 excerpt: "Supplements for my talk about the future of web animation."
 featured-image: ""
-permalink: waapi
 ---
+
+_The updated post can be found [here](/waapi). This one is out of date!_
 
 This post supplements my various [talks](http://www.slideshare.net/CrowChick/state-of-the-animation-2014) about the the Web Animations API. Want to talk animation? [Shoot me an email!](mailto:rachelnabors@gmail.com)
 
