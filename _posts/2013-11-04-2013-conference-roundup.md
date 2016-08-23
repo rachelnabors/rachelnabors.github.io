@@ -6,7 +6,8 @@ featured-image: ""
 ---
 All the conferences I attended this year were wonderful, and it was an honor to speak at each and every one of them. In no particular order, here are a few of my favorites that I felt deserved special accolades for delivering a superior experience or for being a great place to start talking:
 
-##Best Conference(s) for New Speakers: WebVisions NYC/Portland/Barcelona
+## Best Conference(s) for New Speakers: WebVisions NYC/Portland/Barcelona
+
 If you’re new to speaking and starting to see some success, [WebVisions](http://www.webvisionsevent.com/) is a set of conferences you want to break into. The Portland-based event organizers Brad Smith and Jennifer Jones prioritize new and fresh talent and intersecting different fields to ignite genius. You’ll actually have an edge over established speakers in the submissions process. And because there are so many locations, getting accepted for one event can easily turn into getting accepted to all of them.
 
 <figure>
@@ -16,7 +17,8 @@ If you’re new to speaking and starting to see some success, [WebVisions](http:
 
 The USA locations are fantastic, but WebVisions Barcelona is not to be missed. This was my first trip outside the US ever, and it was a fantastic experience. I didn't think I'd make it to Europe until 2014, but this conference opened the windows to other European conferences because of the people I met. The web developers and design community in Barcelona were so different from the ones I’m used to. You should try to get in on this conference set to broaden your horizons.
 
-##Best Small Conference: Gotham JS
+## Best Small Conference: Gotham JS
+
 [Gotham JS](http://www.gothamjs.com/) is a small conference in the big city, and it has a lot of heart! With uner 300 attendees and lots of afterparties, you can get to know everyone in attendance. I was the only woman speaker and also the only person speaking more about CSS than JavaScript! I was worried, but the organizer, Gray Herter, assured me that everything would be wonderful. He had good judgement! The crowd went wild when [Tuna walked across the screen](http://rachelnabors.com/css-amv-talk/animation/index.html), and everyone was so enthusiastic afterwards. It was a lineup carefully selected to excite its attendees.
 
 <figure>
@@ -24,7 +26,8 @@ The USA locations are fantastic, but WebVisions Barcelona is not to be missed. T
 <figcaption>Jesse Freeman talking about developing games with HTML5 Canvas at Gotham JS. SO COOL.</figcaption>
 </figure>
 
-##Best New Conference: Blend Conf
+## Best New Conference: Blend Conf
+
 I consider Bermon Painter a friend, and that’s why, even though I was overbooked, I agreed to speak at his first conference, [Blend Conf](http://www.blendconf.com/). Many speakers made time for Bermon, and he did great things with the lineup. There was a real focus on diversity an equality both in the speaker lineup and in the conferences policies. Ashe Dryden gave an excellent keynote on why diversity matters. You know Bermon really cares about his community.
 
 __Interesting notes:__ The final day of the conference was the “blend day” where developers had to attend a design or UX track and vice versa. I gave a talk about JavaScript for Designers, for instance. There was also a “no electronic devices allowed in the sessions” policy, which meant I had to spend a bit of the conference in my room, as I had slides to prepare for CSS Conf EU. But many people seemed to get into this rule, and I’ve met people still practicing it months later at other conferences.
@@ -36,7 +39,8 @@ __Interesting notes:__ The final day of the conference was the “blend day” w
 
 In possibly the best afterparty of the season, no less than five speakers performing Gangam Style at karaoke (and I'm pretty sure [Jina Bolton](http://sushiandrobots.com/) was among them!), and I performed [My Donna](http://www.youtube.com/watch?v=EoEDQr7tKKk) from _Hair._
 
-##Best European Conference: CSS Conf EU
+## Best European Conference: CSS Conf EU
+
 [CSS Conf EU](http://www.cssconf.eu) was probably the best conference I went to in 2013, period. They had [an anonymized, meritocratic talk selection process](http://berlingeekettes.com/blog/2013/9/8/working-towards-more-diversity-in-tech-conferences) that resulted in a naturally 50/50 ratio of women speakers to men. They took a chance on spectacular new speakers like [Ana Tudor](http://about.me/thebabydino). The after parties of CSS Conf EU, JS Conf EU, Reject JS, and a NodeCopter conference were all linked, so you could come meet with different groups every night, whether or not you were attending their conference. The final party was _on a boat._ (Also, there was a tiny wittle prosecco in my speaker bag and an umbrella. So. Perfect.) I loved how this conference interconnected with other conferences, selected a stellar lineup of top talent and new ideas, and ran a tight ship. Not a single ball was dropped. I don’t know how they did it.
 
 <figure>
@@ -44,7 +48,8 @@ In possibly the best afterparty of the season, no less than five speakers perfor
 <figcaption>Because I'm scared to post pictures of people not me, here I am in front of the CSS Conf EU banner!</figcaption>
 </figure>
 
-##Most Enjoyable Conference: CSS Dev Conf
+## Most Enjoyable Conference: CSS Dev Conf
+
 When the first CSS Dev Conf put out a call for papers in 2012, I swore I’d do anything to get invited to join my CSS heroes in Hawaii. Not having much luck with my responsive web design talk proposals, I decided to embrace the things I knew I could do but hadn’t attempted yet: animate things in the browser with just CSS and HTML5 audio and make a coherent music video. I forgot about my submission until a month before the conference when they cheerfully emailed me that, aloha, I’d been accepted! I had one month to spin straw into gold.
 
 [That was my first Big Conference.](http://rachelnabors.com/2012/12/css-dev-conf-recap/) It was the first conference where I sat riveted, eagerly taking notes while my idols gave talks in front of cozy rooms filled with people just like me but from completely different places. It was the first conference where I partied hardy and partied long. The first conference where I learned to surf to keep up with my newfound CSS friends (and the ocean tried to kill me for it--lesson learned!) The first conference where I got a speaker’s goodie bag. I almost didn’t believe it was in my room. It had a box of macadamia shortbread cookies in it, and to this day, when I eat macadamia nuts (which I fell in love with at this conference), I am flooded with all the warm feelings I got, meeting Pam Selle, Kyle Weems, Chris Coyier, Paul Irish, Estelle Weyl, Jina and others for the first time in my life.
@@ -54,12 +59,13 @@ Yes, I have some good memories of this conference. And the second time around di
 This conference is much like From the Front in its coziness: You really get to know everyone here, and there’s no feeling of separation between speakers and attendees, which is how I like it. Hot tip: book a few days before and after for socializing and relaxing, and make this conference the endcap in a long season. Many people come early and stay late, and if you’re socially inclined, you can make lots of longterm friendships here.
 
 <figure>
-<img src="/img/2013/confs_cssdevconf_snuggy.jpg" alt="Sam Richards giving Eric Meyer bunny ears in the Stanley Hote's Lodge at CSS Dev Conf." />
-<figcaption>Sam Richards and Eric Meyer: what better companions could you ask for?</figcaption>
+<img src="/img/2013/confs_cssdevconf_snuggy.jpg" alt="Sam Richards giving Miriam Meyer bunny ears in the Stanley Hote's Lodge at CSS Dev Conf." />
+<figcaption>Sam Richards and Miriam Meyer: what better companions could you ask for?</figcaption>
 </figure>
 
-##Would Ride Again: Frontend Conference Zurich and From the Front
-These two European conferences deserve special mentions for very different reasons. 
+## Would Ride Again: Frontend Conference Zurich and From the Front
+
+These two European conferences deserve special mentions for very different reasons.
 
 [Frontend Conference Zurich](http://frontendconf.ch) was a wonderful event. As a speaker, this conference was the closest I have ever come to the red carpet treatment (and it’s standard for all their speakers!) They really went above and beyond, meeting speakers at the airports, handing them wifi hotspots and Uber credits. The hotel experience was very posh and I felt quite spoiled. Between the complimentary breakfast buffet, conference lunches, afterparties, and speaker dinners, I paid for very little of my own food (which is good because Zurich is more expensive than Manhattan!). This was the closest I got to “all expenses paid” this year. The speakers and sessions were excellent. The venue was excellent. There were many more women in the audience than I’d experienced at any other conference. But there were far fewer women to men speaking than were in the audience. The ratio in the audience was great--so why was it off with the speakers? I figure if CSS Conf EU can do it, Zurich can, too. I have high hopes for this conference.
 
@@ -75,11 +81,12 @@ These two European conferences deserve special mentions for very different reaso
 <figcaption>Aaron Gustafson, Nishant Kothary, organizer Marco, Bruce Lawson (lovely), Seb Lee and his wife. (I hope I got all those names right.)</figcaption>
 </figure>
 
-##More to come!
-I have a few more posts on the way: a list of rising star speakers from under-represented groups, a post about how I’m changing my conference attendance in 2014 and why, and (if I have energy enough to draw a comic) another post about visible and invisible quotas and how they shape discussions at conferences. 
+## More to come!
+
+I have a few more posts on the way: a list of rising star speakers from under-represented groups, a post about how I’m changing my conference attendance in 2014 and why, and (if I have energy enough to draw a comic) another post about visible and invisible quotas and how they shape discussions at conferences.
 
 It was a great year. It took a lot of energy and time and money, but I would do the whole thing over again. I feel that it would be great if each of us could take a year to travel the world and exchange ideas with other developers and make new friends. I didn't expect 2013 to turn out this way, but I'm glad it did! It's been the experience of a lifetime.
 
-##Lastly&hellip;
+## Lastly&hellip;
 
 Thank you to everyone who took a chance on me and made this conference season happen.
