@@ -35,7 +35,7 @@ Additionally, VR has some compelling medical implications. [Voxel Bay](https://a
 
 I was personally surprised by how much VR currently relies on goggles that blot out the rest of user’s visual input. This can cause motion sickness issues the industry still struggles to address. But not all VR requires complete visual submission. You can provide VR without goggles, as with this [fieldtrip to Mars](http://motionographer.com/2016/07/12/vr-without-goggles-field-trip-to-mars-sends-a-souped-up-school-bus-to-space/).
 
-##VR on the Web
+## VR on the Web
 
 On the Web, we have the WebVR API, “&hellip;a set of DOM interfaces that enable WebGL rendering into Virtual Reality headsets and access to the various sensors for orientation, positioning, and input controls.” (From [Mozilla’s Hacks blog](https://hacks.mozilla.org/2016/03/introducing-the-webvr-1-0-api-proposal/).) While WebVR was not represented at SIGGRAPH, it is seeing strong support with browsers.
 
