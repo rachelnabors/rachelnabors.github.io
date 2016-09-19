@@ -21,7 +21,7 @@ Jared, on the other hand, has made no secret that he doesn’t believe his event
 
 Jared’s stance was firmly, “If you want a Code of Conduct, I will find another speaker.”
 
-##I don’t care what you call it, but it must do these things.
+## I don’t care what you call it, but it must do these things.
 
 Wanting to do this business deal (I’m passionate about animation in design, and I’d like to make a living at it), I reflected upon what it was about Codes of Conduct that I needed, and asked Jared if he could provide them:
 
@@ -52,7 +52,7 @@ Wanting to do this business deal (I’m passionate about animation in design, an
     </li>
 </ol>
 
-##This happened to me.
+## This happened to me.
 When I went to my first Small Press Expo (SPX), a comic convention for independent publishers, I was going to table with a colleague who was supposed to come with a person I thought was my friend. My colleague couldn’t make the trip at the last minute, so our mutual friend was traveling alone.
 
 We wouldn’t remain friends for long.
@@ -76,7 +76,7 @@ Eventually he did.
 
 We didn’t think to speak of it to the organizers. That was not even a thing back in 2005.
 
-##Principles drive good decision-making.
+## Principles drive good decision-making.
 
 I have a principle that drives my every decision in life: do unto others as I wish people had done for me when I was young and needed help. Life was hard for me growing up. As an adult, I want to make sure I always have other young women’s backs because no one had mine. (Except for Molly on that night.)
 
@@ -87,15 +87,15 @@ When I promised not to go to conferences without Codes of Conduct, I wasn’t pa
     <figcaption>How could I ever forgive myself?</figcaption>
 </figure>
 
-##Code of Conduct Myths: Debunked!
+## Code of Conduct Myths: Debunked!
 
 After emailing Jared that I’d be happy to attend if he could provide these four things, he asked if I’d join a Skype call to discuss with him. Jared made the same arguments he did in his post:
 
-###The conference cultivates a professional atmosphere, so people will “be professional.”
+### The conference cultivates a professional atmosphere, so people will “be professional.”
 
 So do the countless boardrooms in DC that misconduct happens in. So did <attr title="Small Pres Expo">SPX</attr>. Tuxedos and spats will not stop misconduct from happening. Never has. Never will.
 
-###Limiting alcohol consumption will limit misconduct.
+### Limiting alcohol consumption will limit misconduct.
 
 A lot of men I talk to seem to think this makes sense by default, so <a href="https://twitter.com/rachelnabors/status/635733986409476096">I feel beholden to spell this out</a>: we have no evidence that limiting alcohol consumption decreases misconduct.
 
@@ -105,11 +105,11 @@ Plus, giving attendees only a few drink tickets doesn’t quash the numerous roo
 
 So, no, limiting alcohol consumption will not magically put a stop to misconduct.
 
-###Attendees will reach out to the organizers personally if there’s a problem.
+### Attendees will reach out to the organizers personally if there’s a problem.
 
 Even as a conference speaker, I rarely know the names, roles, and contact information of all the people involved in putting on the events I go to, let alone which of them I should contact at 1am. Attendees are even less likely to feel like they can reach out to organizers, especially if the perpetrator is a speaker in the high esteem of the organizers. Remember, at SPX, neither Molly nor I thought to call an organizer.
 
-###A Code of Conduct is a legal liability.
+### A Code of Conduct is a legal liability.
 
 Then how is it that <a href="http://philadelphia.phillies.mlb.com/phi/ballpark/information/index.jsp?content=code_of_conduct">Major League Baseball has one on the back of every ticket they sell</a>? I imagine they had lawyers examine this policy very closely before engaging in it. Perhaps organizers should ask their lawyers to do the same. Or get MLB’s lawyers.
 
@@ -118,21 +118,21 @@ Then how is it that <a href="http://philadelphia.phillies.mlb.com/phi/ballpark/i
     <figcaption>Even the music venues in my home city of Portland put safety and conduct front and center&mdash;in their window space!</figcaption>
 </figure>
 
-###We’ve only ever had five incidents.
+### We’ve only ever had five incidents.
 
 That’s actually quite worrying. That’s like when a client tells us they don’t need a feedback form because only five people have ever emailed them with complaints. Imagine how pissed a user has to be to hunt down an email address to complain. Now what happens to all the slightly less pissed users? Where are they heard?
 
 This gets even harder when attendees feel like the person they’re having problems with is a friend of the organizer or holds a high standing in the community. This is why I need conferences to do numero uno above: Declare the event’s dedication to creating a safe space. This sends a clear signal to attendees of all walks that they matter, regardless of who’s causing problems.
 
-###A Code of Conduct makes it look like there’s a problem when there isn’t one.
+### A Code of Conduct makes it look like there’s a problem when there isn’t one.
 
 But there is a problem. Maybe not at this conference specifically, but eventually a few rotten apples are bound to attend or speak. Organizers need to prepare for that eventuality. Think of this as the emergency fire exit plan on the back of the hotel door (yes, I read those): The sign is not an admission that the hotel has or will catch on fire. It exists to protect the people staying inside if that happens.
 
-###But you can trust us.
+### But you can trust us.
 
 The first line uttered by every con artist. But no, really, this isn’t about how trustworthy the conference organizers are: it’s about having a system in place in case all hell breaks loose.
 
-##A Code of Conduct is only as good as the people behind it.
+## A Code of Conduct is only as good as the people behind it.
 
 One thing Jared did get me thinking about is how some less scrupulous conferences might be copy-pasting Codes of Conduct to appease speakers like me. Then when shit goes down, their follow-through is poor, and their process stops being transparent. This steeled my resolve to look more closely at Codes of Conduct in the future.
 
@@ -140,7 +140,7 @@ However, I wasn’t sure why this was a reason for his events not to have one. H
 
 I like the idea of designing conferences to be more inclusive, to feel safer. To be sure, there’s a lot conferences can do to this end. But we can’t “design” misconduct out of conference anymore than Boeing can design a plane that will never crash. Codes of Conduct are like life vests and inflatable slides: they let customers know that we are putting their safety before our own pride and profit margins.
 
-##Trust is earned through actions, not just words.
+## Trust is earned through actions, not just words.
 Jared and I went over and over these points for two hours. Exhausted, I left the session feeling like I must be the only woman ever to have asked for a Code of Conduct at one of his events. Inside I was a roiling emotional mess as my business head clashed with the principles in my heart.
 
 He had said he was interested in creating a non-code of conduct that would meet my needs, and that, in fact, he was working with another prominent woman on such a thing. When asked if I’d participate, I suggested a consultant or two who specializes in such policies, as I am hardly a legal or safety advisor and would rather spend my time finessing animation workshops.
@@ -153,7 +153,7 @@ I told Jared I wouldn’t come to the conference until such a policy was on the 
 
 He said he’d find another speaker.
 
-##Disappointing yourself/others.
+## Disappointing yourself/others.
 After explaining these emails, conversations, and internal conflicts to my husband, he asked me, “If this were a woman organizer, would she be arguing with you like this?”
 
 No. She would not. Because most women have experienced harassment in broad daylight by sober men. Most women have had something untoward happen to them and not known who to turn to. Many women never say anything because they feel like “the deck is stacked against them” in their circles, at work, at school. If you don’t know this, you don’t listen to enough women on Twitter.
@@ -162,7 +162,7 @@ Then I asked myself, “If this organizer were anyone but Jared, would you give 
 
 I felt shame as I realized I was treating Jared differently from other people just because we had an established business relationship.
 
-##Keep your head up. Set boundaries.
+## Keep your head up. Set boundaries.
 I’d never been challenged on principle like this before. And I’m glad I was. Because I learned something new about myself. I really wanted to do this deal, but as I wrote to Jared:
 
 <blockquote>…(W)hat does it say about my own personal integrity to make an exemption for you? If am asked on a podcast for young women in the space, “Rachel, why did you speak at this conference that very publicly has no code of conduct?” What do I say? “Although I had my reservations about his stance on the matter, I think Jared’s heart is in the right place, and I really, really wanted to do business with him?”</blockquote>
