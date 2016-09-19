@@ -28,6 +28,8 @@ WebVR 1.0 is on [Firefox Nightly](https://blog.mozvr.com/webvr-1-0-available-in-
 
 But we are already solving for these unknowns, and now you can get started, too. [Moz VR](https://mozvr.com) is a great place to dive in to the world of WebVR. Also from the MozVR team, [A-Frame](https://aframe.io/) wraps three.js and WebGL in HTML custom elements, enabling folks to create 3D/VR scenes without having to master the intricacies of WebGL. It is declarative and tree-like, using CSS-style attributes with custom elements.
 
+Will VR on the Web be _a thing_ going forward? I look forward to finding out!
+
 <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Web Animation Weekly <a href="https://twitter.com/hashtag/SIGGRAPH2016?src=hash">#SIGGRAPH2016</a> editorial team met up last night. <a href="https://twitter.com/IvanaMcConnell">@IvanaMcConnell</a> <a href="https://twitter.com/KennaWars">@KennaWars</a> <a href="https://t.co/TJYizgkqdi">pic.twitter.com/TJYizgkqdi</a></p>&mdash; Rachel Nabors (@rachelnabors) <a href="https://twitter.com/rachelnabors/status/769268906422702080">August 26, 2016</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
