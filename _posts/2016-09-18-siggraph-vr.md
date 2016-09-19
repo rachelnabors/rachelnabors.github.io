@@ -2,13 +2,13 @@
 layout: post
 title: "SIGGRAPH 2016 Deluxe Report Pt I: Virtual Reality"
 excerpt: "SIGGRAPH 2016 was all about virtual reality, but is the Web ready for VR? Maybe with WebVR..."
-featured-image: "img/siggraph_welcome.jpg"
+featured-image: "/img/siggraph_welcome.jpg"
 ---
 
 This year a [Web Animation Weekly](http://webanimationweekly.com/) subscriber generously sent me to [SIGGRAPH](http://s2016.siggraph.org/) to report on the conference and what its news means for the Web animation community. SIGGRAPH is a huge, international conference devoted to computer graphics and interactive techniques. All kinds of people show up here, from researchers in Japan to venture capitalists from India to engineers from down the street at Disney and Pixar.
 
 <figure>
-    <img src="img/siggraph_welcome.jpg" srcset="img/siggraph_welcome-2x.jpg 2x" height="450" width="600" alt="Rachel Nabors striking a victory pose in front of the Anaheim Convention Center.">
+    <img src="/img/siggraph_welcome.jpg" srcset="/img/siggraph_welcome-2x.jpg 2x" height="450" width="600" alt="Rachel Nabors striking a victory pose in front of the Anaheim Convention Center.">
     <figcaption>
         Web Animation Weekly goes to SIGGRAPH!
     </figcaption>
@@ -21,7 +21,7 @@ Google was showing off their handheld 3D mapping device, [Tango](https://www.you
 _Pearl_ was something to behold, even on [Google Cardboard](https://vr.google.com/cardboard/) at a demo party, but as I whipped my head around to fully absorb what was happening around me virtually, I knocked into other people crowding around the table back in the real world. Watching [Giant](http://giantofficial.com/) required huddling in a room that fit a maximum of two people, wearing expensive headgear. The experience was something else, but will it scale for mass consumption?
 
 <figure>
-    <img src="img/siggraph_crowd.jpg" srcset="img/siggraph_crowd-2x.jpg 2x" height="450" width="600" alt="People crowded around a table wearing VR goggles.">
+    <img src="/img/siggraph_crowd.jpg" srcset="/img/siggraph_crowd-2x.jpg 2x" height="450" width="600" alt="People crowded around a table wearing VR goggles.">
     <figcaption>
         VR in a crowd is rather horrible.
     </figcaption>
@@ -53,7 +53,7 @@ Will VR on the Web be _a thing_ going forward? I look forward to finding out!
 <aside class="note">This is part of a series of <a href="http://webanimationweekly.com/">Web Animation Weekly newsletters</a>. I want to thank feature editor <a href="https://twitter.com/IvanaMcConnell">Ivana McConnell</a> for reviewing my SIGGRAPH notes and fetching many tasty links to round out this report. Thanks also to the subscriber who sent me to the conference, and to the SIGGRAPH organizers who let me hold a Web animation session at the last minute. And a thanks to <a href="https://twitter.com/kennawars">Kenna Warsinke</a> for coming with me and helping cover events and arrange the Web animation session. All of these people are good and wonderful.</aside>
 
 <figure>
-    <img src="img/siggraph_alice.jpg" alt="Alice (in Wonderland) at SIGGRAPH.">
+    <img src="/img/siggraph_alice.jpg" alt="Alice (in Wonderland) at SIGGRAPH.">
     <figcaption>
         Event Invites to the Web Animation meetups included <a href="https://developer.mozilla.org/en-US/docs/Web/API/Web_Animations_API/Using_the_Web_Animations_API">Alice from Web Animations API Land</a>.
     </figcaption>
