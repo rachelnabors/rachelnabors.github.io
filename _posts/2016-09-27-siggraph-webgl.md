@@ -62,30 +62,17 @@ Made something cool with 3D or VR? [Sketchfab](https://sketchfab.com/) lets you 
 </figure>
 
 <figure>
-    <img src="/img/2016/siggraph_kubo.jpg" srcset="/img/2016/siggraph_kubo-2x.jpg 2x" height="450" width="600" alt="Three puppets from Kubo and the Two Strings on display at a SIGGRAPH panel.">
-    <figcaption>
-        If you haven’t gone to see <em><a href="https://www.youtube.com/watch?v=p4-6qJzeb3A">Kubo and the Two Strings</a></em> yet, you should get on that. While the entire film is stop-motion, it uses advanced compositing techniques to achieve a rich complexity impossible in an analog production environment. The effect is otherworldly, truly the height of its craft.
-    </figcaption>
-</figure>
-
-<figure>
-    <img src="/img/2016/siggraph_disney.jpg" srcset="/img/2016/siggraph_disney-2x.jpg 2x" height="450" width="600" alt="At Disneyland: Rachel Nabors stands and points in front of a statue of Walt Disney, also pointing, with Mickey Mouse at his side.">
-    <figcaption>
-        No better way to end a series of posts about animation than with a picture of Walt Disney, taken at our mini post-SIGGRAPH adventure at Disneyland.
-    </figcaption>
-</figure>
-
-<figure>
     <iframe width="560" height="315" src="https://www.youtube.com/embed/aE37l6RvF-c" frameborder="0" allowfullscreen></iframe>
     <figcaption>
         <em>Bound,</em> a PS4 game by Plastic, used motion-capture on ballet and contemporary dancer Maria Udod to bring its playable character to life. You can read more about how they approached it (and why they chose to use motion-capture rather than animate from scratch) in <a href="https://the-optional.com/how-dance-gave-new-life-to-ps4-platformer-bound-aade798a9b5e?gi=44d4ce5a3d87#.5np96cear">this behind-the-scenes post</a>.
     </figcaption>
 </figure>
 
+
 <figure>
     <img src="/img/2016/siggraph_kubo.jpg" srcset="/img/2016/siggraph_kubo-2x.jpg 2x" height="450" width="600" alt="Three puppets from Kubo and the Two Strings on display at a SIGGRAPH panel.">
     <figcaption>
-        If you haven’t gone to see Kubo and the Two Strings, you probably should. While the entire film is stop-motion, it uses advanced compositing techniques to achieve a rich complexity impossible in an analog production environment.
+        If you haven’t gone to see <em><a href="https://www.youtube.com/watch?v=p4-6qJzeb3A">Kubo and the Two Strings</a></em> yet, you should get on that. While the entire film is stop-motion, it uses advanced compositing techniques to achieve a rich complexity impossible in an analog production environment. The effect is otherworldly, truly the height of its craft.
     </figcaption>
 </figure>
 
