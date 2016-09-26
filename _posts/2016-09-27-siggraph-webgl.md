@@ -22,7 +22,7 @@ The [Fraunhofer Institute for Computer Graphics Research](https://www.igd.fraunh
 <figure>
     <img src="/img/2016/siggraph_art.jpg" srcset="/img/2016/siggraph_art-2x.jpg 2x" height="450" width="600" alt="A wall covered in attendees' drawings.">
     <figcaption>
-        There was art all over these panels at the conference. Can you spot [Alice in Web Animations API Land](https://developer.mozilla.org/en-US/docs/Web/API/Web_Animations_API/Using_the_Web_Animations_API)?
+        There was art all over these panels at the conference. Can you spot <a href="https://developer.mozilla.org/en-US/docs/Web/API/Web_Animations_API/Using_the_Web_Animations_API">Alice in Web Animations API Land</a>?
     </figcaption>
 </figure>
 
@@ -64,7 +64,7 @@ Made something cool with 3D or VR? [Sketchfab](https://sketchfab.com/) lets you 
 <figure>
     <img src="/img/2016/siggraph_kubo.jpg" srcset="/img/2016/siggraph_kubo-2x.jpg 2x" height="450" width="600" alt="Three puppets from Kubo and the Two Strings on display at a SIGGRAPH panel.">
     <figcaption>
-        If you haven’t gone to see _[Kubo and the Two Strings](https://www.youtube.com/watch?v=p4-6qJzeb3A)_ yet, you should get on that. While the entire film is stop-motion, it uses advanced compositing techniques to achieve a rich complexity impossible in an analog production environment. The effect is otherworldly, truly the height of its craft.
+        If you haven’t gone to see <em><a href="https://www.youtube.com/watch?v=p4-6qJzeb3A">Kubo and the Two Strings</a></em> yet, you should get on that. While the entire film is stop-motion, it uses advanced compositing techniques to achieve a rich complexity impossible in an analog production environment. The effect is otherworldly, truly the height of its craft.
     </figcaption>
 </figure>
 
@@ -78,7 +78,7 @@ Made something cool with 3D or VR? [Sketchfab](https://sketchfab.com/) lets you 
 <figure>
     <iframe width="560" height="315" src="https://www.youtube.com/embed/aE37l6RvF-c" frameborder="0" allowfullscreen></iframe>
     <figcaption>
-        _Bound,_ a PS4 game by Plastic, used motion-capture on ballet and contemporary dancer Maria Udod to bring its playable character to life. You can read more about how they approached it (and why they chose to use motion-capture rather than animate from scratch) in [this behind-the-scenes post](https://the-optional.com/how-dance-gave-new-life-to-ps4-platformer-bound-aade798a9b5e?gi=44d4ce5a3d87#.5np96cear).
+        <em>Bound,</em> a PS4 game by Plastic, used motion-capture on ballet and contemporary dancer Maria Udod to bring its playable character to life. You can read more about how they approached it (and why they chose to use motion-capture rather than animate from scratch) in <a href="https://the-optional.com/how-dance-gave-new-life-to-ps4-platformer-bound-aade798a9b5e?gi=44d4ce5a3d87#.5np96cear">this behind-the-scenes post</a>.
     </figcaption>
 </figure>
 
