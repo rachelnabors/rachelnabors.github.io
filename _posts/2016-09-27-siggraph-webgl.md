@@ -78,7 +78,7 @@ Made something cool with 3D or VR? [Sketchfab](https://sketchfab.com/) lets you 
 
 <hr />
 
-This brings us to the end of the SIGGRAPH Special! If you enjoyed this, [consider donating a little to keep Web Animation Weekly going](https://www.patreon.com/rachelnabors?ty=h) or sharing this post someone. Either way, spread the Web Animation Love!
+This brings us to the end of the SIGGRAPH Special! If you enjoyed this, [consider donating a little to keep Web Animation Weekly going](https://www.patreon.com/rachelnabors?ty=h) or sharing this post with someone. Either way, spread the Web Animation Love!
 
 <aside class="note">This is part of a series of <a href="http://webanimationweekly.com/">Web Animation Weekly newsletters</a> (<a href="http://rachelnabors.com/2016/09/18/siggraph-vr/">the previous installment on VR was last week</a>). I want to thank feature editor <a href="https://twitter.com/IvanaMcConnell">Ivana McConnell</a> for reviewing my SIGGRAPH notes and <a href="https://twitter.com/kennawars">Kenna Warsinke</a> for coming with me and helping cover events and arrange the Web animation session. Thanks also to the subscriber who sent me to the conference, which was way out of my price range! All of these people are good and wonderful.</aside>
 
