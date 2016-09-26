@@ -28,7 +28,7 @@ The [Fraunhofer Institute for Computer Graphics Research](https://www.igd.fraunh
 
 ## WebGL 2 and WebGL Next
 
-There was much talk about WebGL Next, the proposed successor to WebGL 2, which [http://floooh.github.io/2016/08/13/webgl-next.html](some people have some Big Opinions about). WebGL features heavily in bringing VR to the Web, as you can see in [this W3C post on the matter](https://www.w3.org/blog/2016/09/bringing-virtual-reality-to-the-web-platform/). Remember, even X3DOM runs on top of WebGL!
+There was much talk about WebGL Next, the proposed successor to WebGL 2, which [some people have some Big Opinions about](http://floooh.github.io/2016/08/13/webgl-next.html). WebGL features heavily in bringing VR to the Web, as you can see in [this W3C post on the matter](https://www.w3.org/blog/2016/09/bringing-virtual-reality-to-the-web-platform/). Remember, even X3DOM runs on top of WebGL!
 
 ## Learning with WebGL
 
@@ -40,7 +40,7 @@ Patrick Cozzi, author of _OpenGL Insights,_ said, “It is a great time to get i
 
 ### Extra WebGL Learning Materials
 
-* Know the basics and ready to make something with WebGL? [Find the best tool for the job.](https://medium.com/@evejweinberg/all-the-webgl-tools-and-frameworks-i-have-looked-at-a1c22154591b#.5ffje2c4m)
+* Know the basics and ready to make something with WebGL? [Find the best tool for the job.](https://medium.com/@evejweinberg/all-the-webgl-tools-and-frameworks-i-have-looked-at-a1c22154591b)
 * A little overwhelmed by all this? Rachel Smith has some [advice on where to start with Canvas or WebGL.](https://github.com/rachsmithcodes/ama/issues/2)
 * If you want to get started with WebGL 2, [here’s a primer](http://webgl2fundamentals.org/).
 
@@ -48,7 +48,7 @@ Patrick Cozzi, author of _OpenGL Insights,_ said, “It is a great time to get i
 
 I was impressed with many of the uses for WebGL I saw at SIGGRAPH. Bentley’s [ContextCapture](https://www.acute3d.com/contextcapture/) takes arial photos and turns them into interactive 3D models. It was used to create a model of Philadelphia to prepare security measures for the Pope’s visit. [Propeller](https://www.propelleraero.com/) uses photos taken by drones to create 3D models you can take measurments from. The implications for mining, fishing, any industry where large amounts of stuff must be measured accurately at a glance is impressive. [Cesium](https://cesiumjs.org/) is involved with a lot of these types of projects. It is an open source JavaScript library for 3D globes and maps and visualising dynamic data.
 
-All of these uses for WebGL realize the Open Web’s promise of low cost solutions for real world problems. It was reaffirming to see what could be done with a consumer grade drone and a browser. That’s not to say that [WebGL experiments like Neve](https://medium.com/@activetheory/neve-webgl-and-vr-d42a25856d67#.58b51be5x) aren’t equally important to our ecosystem. But in the web design and development world, it’s more common to see 3D in storytelling use cases rather than industrial ones. This was a refreshing alternative.
+All of these uses for WebGL realize the Open Web’s promise of low cost solutions for real world problems. It was reaffirming to see what could be done with a consumer grade drone and a browser. That’s not to say that [WebGL experiments like Neve](https://medium.com/@activetheory/neve-webgl-and-vr-d42a25856d67) aren’t equally important to our ecosystem. But in the web design and development world, it’s more common to see 3D in storytelling use cases rather than industrial ones. This was a refreshing alternative.
 
 ## Bonus: the following has less to do with the Web, but is awesome.
 
@@ -64,7 +64,7 @@ Made something cool with 3D or VR? [Sketchfab](https://sketchfab.com/) lets you 
 <figure>
     <iframe width="560" height="315" src="https://www.youtube.com/embed/aE37l6RvF-c" frameborder="0" allowfullscreen></iframe>
     <figcaption>
-        <em>Bound,</em> a PS4 game by Plastic, used motion-capture on ballet and contemporary dancer Maria Udod to bring its playable character to life. You can read more about how they approached it (and why they chose to use motion-capture rather than animate from scratch) in <a href="https://the-optional.com/how-dance-gave-new-life-to-ps4-platformer-bound-aade798a9b5e?gi=44d4ce5a3d87#.5np96cear">this behind-the-scenes post</a>.
+        <em>Bound,</em> a PS4 game by Plastic, used motion-capture on ballet and contemporary dancer Maria Udod to bring its playable character to life. You can read more about how they approached it (and why they chose to use motion-capture rather than animate from scratch) in <a href="https://the-optional.com/how-dance-gave-new-life-to-ps4-platformer-bound-aade798a9b5e?gi=44d4ce5a3d87">this behind-the-scenes post</a>.
     </figcaption>
 </figure>
 
