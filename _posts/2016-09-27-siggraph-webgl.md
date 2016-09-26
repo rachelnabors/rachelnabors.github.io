@@ -2,7 +2,7 @@
 layout: post
 title: "SIGGRAPH 2016 Deluxe Report Pt II: the 3D Web"
 excerpt: "At this year’s SIGGRAPH, WebGL was everywhere, as was something called X3DOM. I met the Web3D Consortium and saw first-hand how 3D can be put to work inside browsers and educational systems to build a better world for us to live in."
-featured-image: "/img/2016/siggraph_welcome.jpg"
+featured-image: "/img/2016/siggraph_selfie.jpg"
 ---
 
 At this year’s [SIGGRAPH](http://s2016.siggraph.org/), _the_ computer arts conference, WebGL was everywhere, as was something called X3DOM. I met the Web3D Consortium and saw first-hand how 3D can be put to work inside browsers and educational institutions to build a better world for us to live in.
