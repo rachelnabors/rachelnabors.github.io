@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "SIGGRAPH 2016 Deluxe Report Pt II: the 3D Web"
-excerpt: "At this year’s SIGGRAPH, WebGL was everywhere, as was something called X3DOM. I met the Web3D Consortium and saw first-hand how 3D can be put to work inside browsers and educational systems to build a better world for us to live in."
-featured-image: "/img/2016/siggraph_selfie.jpg"
+title: "Joining the Edge Platform Team at Microsoft"
+excerpt: "I'm proud to announce that I'm joining the Edge Team to help build the Web forward."
+featured-image: "/img/2016/p_rachel-in-the-cubicle.png"
 ---
 
 I'm proud to announce that on November 7th I'll be joining the Microsoft Edge Team as a program manager. There I will represent the Web design and animation communities on the team and at conferences and continue my work with the W3C.
@@ -24,3 +24,7 @@ Sadly, this position does mean I'll be leaving Portland. The past three years he
 I'd also like to give a shout out to features editor [Ivana McConnell](http://www.ivanamcconnell.com/) for manning [Web Animation Weekly](http://webanimationweekly) while I'm getting situated. Also thanks to our wonderful guest editors including [Val Head](http://valhead.com/), [Rachel Smith](https://rachsmith.com/), and [Petr Tichy](https://ihatetomatoes.net/). They are some of my favorite leaders in the Web Animation Community, and we are honored to have them contributing.
 
 </aside>
+
+There are some things I want to do, have to do, must do&mdash;for myself and for the community. And at Microsoft, I feel I'll have the backing to accomplish those things. I'd list my goals here, but I've found that publicly displaying my agenda is the surest way of disappointing everyone&mdash;including myself&mdash;when projects take longer than anticipated or must be abandoned.
+
+But you know me. And you know what I like to do. I'm sure you can imagine what I'm going to get up to on the Edge team. I look forward to building the Web forward&hellip; with you.
