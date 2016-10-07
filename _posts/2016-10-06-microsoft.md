@@ -17,11 +17,13 @@ Of course, there'll be a lot of personal growth happening as well! This will be 
 
 Sadly, this position does mean I'll be leaving Portland. The past three years here have been the best of my life, and I'm not exaggerating. Portland is beautiful, wonderful. I've wanted to be here ever since I was a teenager. But I'm ready to try another Pacific Northwest city: Seattle.
 
-<img src="/img/2016/p_rachel-in-the-cubicle.png" srcset="/img/2016/p_rachel-in-the-cubicle2x.png 2x" height="338" width="600" alt="A manga-style illustration of Rachel Nabors winking from behind a computer monitor in an implied Microsoft cubicle.">
+<hr />
 
 There are some things I want to do, have to do, must do&mdash;for myself and for the community. And at Microsoft, I feel I'll have the backing to accomplish those things. I'd list my goals here, but I've found that publicly displaying my agenda is the surest way of disappointing everyone&mdash;including myself&mdash;when projects take longer than anticipated or must be abandoned.
 
 But you know me. And you know what I like to do. I'm sure you can imagine what I'm going to get up to on the Edge team. I look forward to building the Web forward&hellip; with you.
+
+<img src="/img/2016/p_rachel-in-the-cubicle.png" srcset="/img/2016/p_rachel-in-the-cubicle2x.png 2x" height="338" width="600" alt="A manga-style illustration of Rachel Nabors winking from behind a computer monitor in an implied Microsoft cubicle.">
 
 <aside class="note">
 I'd also like to give a shout out to features editor <a href="http://www.ivanamcconnell.com/">Ivana McConnell</a> for manning <a href="http://webanimationweekly">Web Animation Weekly</a> while I'm getting situated. Also thanks to our wonderful guest editors including <a href="http://valhead.com/">Val Head</a>, <a href="https://rachsmith.com/">Rachel Smith</a>, and <a href="https://ihatetomatoes.net/">Petr Tichy</a>. They are some of my favorite leaders in the Web Animation Community, and we are honored to have them contributing.
