@@ -115,8 +115,14 @@ excerpt: Rachel Nabors travels the world speaking about web animation, UX, and e
           {% endif %}
 
           </div>
-          {% if event.talkSlides or event.talkRecording or event.feedback %}
+          {% if event.keynoteSlides or event.keynoteRecording %}
           <ul class="materials">
+            {% if event.keynoteSlides %}
+            <li><a href="{{event.keynoteSlides}}">Keynote Slides</a></li>
+            {% endif %}
+            {% if event.keynoteRecording %}
+            <li><a href="{{event.keynoteRecording}}">Keynote Recording</a></li>
+            {% endif %}
             {% if event.talkSlides %}
             <li><a href="{{event.talkSlides}}">Slides</a></li>
             {% endif %}
