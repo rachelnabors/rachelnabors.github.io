@@ -7,7 +7,7 @@ eventUrl: http://allthingsopen.org/
 workshop:
 workshopUrl:
 keynote: "Design Is not a Bug Ticket"
-keynoteUrl: http://www.slideshare.net/CrowChick/design-is-not-a-bug-ticket-all-things-open-2016-keynote
+keynoteSlides: http://www.slideshare.net/CrowChick/design-is-not-a-bug-ticket-all-things-open-2016-keynote
 keynoteRecording:
 talk: "Communicating Animation"
 talkUrl: http://www.slideshare.net/CrowChick/communicating-animation-slides
