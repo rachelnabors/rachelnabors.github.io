@@ -39,6 +39,8 @@ I love CSS, because it’s a powerful tool that just about everyone uses. CSS sk
 
 The exercises in Web Animation Essentials are all hands-on CodePens with recorded, captioned videos where I walk you through the problems&mdash;and their solutions. The entire course can be completed over a few lunch breaks or a weekend. After watching the videos and trying everything out for yourself, you’ll be confident handling CSS transitions, CSS animations, animation sequencing, performance optimization, *and* you’ll know your way around the best browser tools!
 
+Finally, if you are still on the fence, [this team took my course and wrote about their experience](https://zu.com/blog/web-animation-and-zu-and-you/). Disclaimer: I didn’t even have the chance to give them this course for a discount or anything! They came in during the soft launch earlier this year and wrote all this of their own accord.
+
 I’ll end with another quote from my article:
 
 <blockquote>Since animation’s return to the web development and design toolkit, we’ve been using it to tell stories and entertain; to increase the perceived speed of interactions; to further brand ourselves and our products; and to improve our users’ experiences. And we’re just getting started.</blockquote>
