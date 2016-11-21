@@ -16,7 +16,7 @@ What’s more, I even made an adorable cheat sheet (which is almost a comic), wh
 
 <figure>
 <a href="http://rachelnabors.com/css-animations-course/"><img src="/img/2016/p_css-animations-transitions-cheat-sheet.png" srcset="/img/2016/p_css-animations-transitions-cheat-sheet2x.png 2x" width="390" height="233" alt="Psst. FREE CSS animations and transitions cheat sheet for download!"></a>
-<figcaption><a href="http://rachelnabors.com/css-animations-course/">Download this handy cheat sheet for free</a>, whether or note you take the course!
+<figcaption><a href="http://rachelnabors.com/css-animations-course/">Download this handy cheat sheet for free</a>, whether or note you take the course!</figcaption>
 </figure>
 
 ## Why animation?
