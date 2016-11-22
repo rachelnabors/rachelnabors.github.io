@@ -12,11 +12,11 @@ Most of the CSS animation courses I’ve looked at over the years start by teach
 
 With just four hours of video and interactive exercises, my course teaches you to animate an adorable cat with CSS animations and transitions and then shows you how these skills apply to your everyday work. When you’re done, you’ll be able to move sidebars, animate sprites, and create stateful transitions, while fondly remembering your glorious cat animation days! You will know everything I know about CSS Animations and Transitions!
 
-What’s more, I even made an adorable cheat sheet (which is almost a comic), which you get when you enroll [or just for signing up for my newsletter](http://rachelnabors.com/css-animations-course/#cheat-sheet). My gift to my fellow web animation wonks!
+What’s more, I even made an adorable cheat sheet (which is almost a comic), which you get when you enroll [or just for signing up for my newsletter](http://rachelnabors.com/css-animations-course). My gift to my fellow web animation wonks!
 
 <figure>
 <a href="http://rachelnabors.com/css-animations-course/"><img src="/img/2016/p_css-animations-transitions-cheat-sheet.png" srcset="/img/2016/p_css-animations-transitions-cheat-sheet2x.png 2x" width="390" height="233" alt="Psst. FREE CSS animations and transitions cheat sheet for download!"></a>
-<figcaption><a href="http://rachelnabors.com/css-animations-course/">Download this handy cheat sheet for free</a>, whether or note you take the course!</figcaption>
+<figcaption><a href="http://rachelnabors.com/css-animations-course/">Download this handy cheat sheet for free</a>, whether or not you take the course!</figcaption>
 </figure>
 
 ## Why animation?
