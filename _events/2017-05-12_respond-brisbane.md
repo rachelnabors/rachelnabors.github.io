@@ -1,8 +1,8 @@
 ---
 name: Respond
-date: 2017-05-08
-endDate: 2017-05-09
-location: Melbourne
+date: 2017-05-12
+endDate:
+location: Brisbane
 eventUrl: https://www.webdirections.org/respond/
 workshop:
 workshopUrl:
