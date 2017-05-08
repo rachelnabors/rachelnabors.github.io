@@ -14,7 +14,7 @@ talkSlides:
 talkRecording:
 lightningTalk:
 lightningTalkSlides:
-feedback:
+feedback: https://storify.com/rachelnabors/night-with-sydney-s-ixda-sydcss-and-sydjs
 canceled:
 cancellationReason:
 ---
