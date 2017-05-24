@@ -10,11 +10,11 @@ keynote:
 keynoteSlides:
 keynoteRecording:
 talk: The Web in Motion
-talkSlides:
+talkSlides: https://www.slideshare.net/CrowChick/the-web-in-motion-animations-impact-on-ui-and-web-design
 talkRecording:
 lightningTalk:
 lightningTalkSlides:
-feedback:
+feedback: https://storify.com/rachelnabors/respond-brisbane-20917
 canceled:
 cancellationReason:
 ---
