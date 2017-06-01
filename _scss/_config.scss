@@ -1,35 +1,81 @@
-// Susy Grids
-$susy: (
-    columns: 15,
-    gutters: .3107,
-    gutter-position: inside,
-    debug: (
-        // image: show
-    )
-);
-$colNum: 9;
-
-// Animations
-$easeBounce: cubic-bezier(.24,.88,.47,1.16);
-$easeOutQuint: cubic-bezier(0.23, 1, 0.32, 1);
-
-
 // Site Colors
+$color-nonReproBlue: #93C6DE;
+$color-nonReproBlue-light: #C5E9FB;
+$color-nonReproBlue-dark: #244C5E;
+$color-nonReproBlue-bright: #56B5E3;
+$color-nonReproGrey-dark: #3F555F;
+$color-nonReproGrey-light: #7398AA;
+$color-nonReproPink: #AB617F;
+$color-nonReproPink-dark: #925A71;
 
-$black: #141f31;
-$grey: #5f697a;
-$grey_light: #bbc8ce;
-$grey_dark: #333b47;
-$bg_blue: #e3edf2;
-$blue_active: #dfeff6; //more saturated
-$blue_light: #e3edf2;
-$lime: #ced92e;
-$blade: #67B877;
-$cyan: #0097c0; //a bit bright on the bg_blue
-$lavender: #a69feb;
-$mauve: #c774b3;
-$magenta: #e64988;
-$rust: #56001d;
+$colors: (
+  background: $color-nonReproBlue-light,
+  backgroundAlt: $color-nonReproBlue-dark,
+  copy: $color-nonReproBlue-dark,
+  copyAlt: $color-nonReproBlue-light,
+  link: $color-nonReproBlue,
+  linkVisited: $color-nonReproPink-dark,
+  linkHover: $color-nonReproBlue-bright,
+  linkAlt: $color-nonReproBlue-bright,
+  linkAltVisited: $color-nonReproPink,
+  linkAltHover: $color-nonReproBlue-light,
+);
 
-$link:adjust-lightness($magenta, -20%);
-$link-visited:adjust-lightness($mauve, -20%);
+// Now, getting colors... use like color(copy)
+@function color($key) {
+  @if map-has-key($colors, $key) {
+    @return map-get($colors, $key);
+  }
+
+  @warn "Unknown `#{$key}` in $color.";
+  @return null;
+}
+
+// Easings
+$easeBounceIn: cubic-bezier(.47,-0.16,.76,.12);
+$easeBounceOut: cubic-bezier(.24,.88,.47,1.16);
+$easeBounceInOut: cubic-bezier(.47,-0.16,.47,1.17);
+$easeOutQuint: cubic-bezier(0.23, 1, 0.32, 1);
+$easeInQuint: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+$easeInOutQuint: cubic-bezier(0.86, 0, 0.07, 1);
+
+$easings: (
+  In: $easeInQuint,
+  Out: $easeOutQuint,
+  inOut: $easeInOutQuint,
+  bounceIn: $easeBounceIn,
+  bounceOut: $easeBounceOut,
+  bounceInOut: $easeBounceInOut
+);
+
+@function ease($key) {
+  @if map-has-key($easings, $key) {
+    @return map-get($easings, $key);
+  }
+
+  @warn "Unknown `#{$key}` in $easings.";
+  @return null;
+}
+
+// Timings
+$durations: (
+  fast: 200ms,
+  timely: 300ms,
+  slow: 500ms,
+  slower: 800ms,
+  slowest: 1.3s,
+  days: 2.1s,
+  weeks: 3.4s,
+  months: 5.5s,
+  years: 8.9s,
+  eons: 14.4s,
+);
+
+@function duration($key) {
+  @if map-has-key($durations, $key) {
+    @return map-get($durations, $key);
+  }
+
+  @warn "Unknown `#{$key}` in $durations.";
+  @return null;
+}
