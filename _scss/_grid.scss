@@ -1,323 +1,329 @@
-// Using Susy Grids!
-
-$maxWidthUnit: 48/9;
-
-@function calc-em($num) {
-    @return $num/16px * 1em;
+.container {
+    margin: 0 auto;
+    max-width: width(maxContentWidth);
+    padding: .5rem;
 }
 
-$single-col-all-the-things: calc-em(400px);
+// // Using Susy Grids!
 
-$tri-col-footer: calc-em(666px);
-$up-to-tri-col-footer: max-width calc-em(665px);
+// $maxWidthUnit: 48/9;
 
-$with-sidebar: calc-em(724px);
-$up-to-with-sidebar: max-width calc-em(723px);
+// @function calc-em($num) {
+//     @return $num/16px * 1em;
+// }
 
-$with-foldout: calc-em(936px);
-$up-to-with-foldout: max-width calc-em(935px);
+// $single-col-all-the-things: calc-em(400px);
 
-$double-columns: screen $with-sidebar calc-em(638px), screen $with-foldout;
+// $tri-col-footer: calc-em(666px);
+// $up-to-tri-col-footer: max-width calc-em(665px);
 
-$narrow-cols: 6;
-$med-cols: 10;
-$beefy-cols: 12;
+// $with-sidebar: calc-em(724px);
+// $up-to-with-sidebar: max-width calc-em(723px);
 
-$content-max-cols: 9;
+// $with-foldout: calc-em(936px);
+// $up-to-with-foldout: max-width calc-em(935px);
 
-.masthead, .main, .fold-out {
-    @include container(6);
-    @include gutters(6);
-}
+// $double-columns: screen $with-sidebar calc-em(638px), screen $with-foldout;
 
-@include breakpoint(calc-em(450px)) {
-    @include nested($narrow-cols) {
-        .google-rachel {
-            input[type=search] {
-                @include span(4);
-            }
-            input[type=submit] {
-                @include span(2 narrow last);
-            }
-        }
-    }
-}
+// $narrow-cols: 6;
+// $med-cols: 10;
+// $beefy-cols: 12;
 
-@include breakpoint($up-to-tri-col-footer) {
-    @include nested($narrow-cols) {
-        .module-animation li {
-            display: inline-block;
-            max-width: span(3 wide) - gutter()/2;
-            &:nth-child(odd) {
-                margin-right: gutter();
-            }
-        }
-    }
-}
+// $content-max-cols: 9;
 
-@include breakpoint((min-width $tri-col-footer) (max-width $with-sidebar)) {
-    @include nested($med-cols) {
-        .fold-out {
-            .schedule {
-                @include span(3);
-            }
-            .module-writings {
-                @include span(5);
-            }
-            .module-animation {
-                @include span(2 last);
-                li {
-                    @include margin-trailer(1/3);
-                }
-                img {
-                    width: 100%
-                }
-            }
-        }
-    }
-}
+// .masthead, .main, .fold-out {
+//     @include container(6);
+//     @include gutters(6);
+// }
 
-@include breakpoint((min-width $with-sidebar) (max-width $with-foldout)) {
-    @include nested(8) {
-        .fold-out {
-            .schedule {
-                @include span(3);
-            }
-            .module-writings {
-                @include span(3);
-            }
-            .module-animation {
-                @include span(2 last);
-            }
-        }
-    }
-}
+// @include breakpoint(calc-em(450px)) {
+//     @include nested($narrow-cols) {
+//         .google-rachel {
+//             input[type=search] {
+//                 @include span(4);
+//             }
+//             input[type=submit] {
+//                 @include span(2 narrow last);
+//             }
+//         }
+//     }
+// }
 
-@include breakpoint($up-to-with-sidebar){
-    @include nested($narrow-cols) {
-        .js .masthead-wrapper {
-            position: fixed;
-            top: 0; left: 0;
-            box-sizing: border-box;
-            overflow-y: auto;
-            width: 100%; height: calc(100% + 3em);
-            z-index: 3;
-            @include margin-leader(-2);
-        }
-        html[data-masthead=open] body {
-            overflow: hidden;
-        }
-        html[data-masthead=closed] .masthead-wrapper {
-            transform: translateY(calc(-100% - -9.5em));
-            overflow: hidden;
-        }
-        .masthead-content {
-            position: relative;
-        }
-        div.masthead {
-            @include padding-leader(3);
-            @include margin-trailer(3);
-            @include padding-trailer(4);
-            html[data-masthead=closed] & {
-                bottom: 0;
-                position: absolute;
-            }
-            div.rachel {
-                width: rhythm(6);
-                position: absolute;
-                bottom: 0;
-                transform: translateY(rhythm(7));
-                a {
-                    border: $black .25em solid;
-                }
-            }
-        }
-        .site-logo {
-            width: span(3 narrow);
-            margin: 0 auto;
-        }
-        #content h1:first-child {
-            @include padding-leader(5/3);
-        }
-        %time-li {
-            li {
-                time {
-                    opacity: .8;
-                }
-            }
-        }
-    }
-}
+// @include breakpoint($up-to-tri-col-footer) {
+//     @include nested($narrow-cols) {
+//         .module-animation li {
+//             display: inline-block;
+//             max-width: span(3 wide) - gutter()/2;
+//             &:nth-child(odd) {
+//                 margin-right: gutter();
+//             }
+//         }
+//     }
+// }
 
-@include breakpoint($with-sidebar){
-    .container {
-        @include container(12);
-    }
+// @include breakpoint((min-width $tri-col-footer) (max-width $with-sidebar)) {
+//     @include nested($med-cols) {
+//         .fold-out {
+//             .schedule {
+//                 @include span(3);
+//             }
+//             .module-writings {
+//                 @include span(5);
+//             }
+//             .module-animation {
+//                 @include span(2 last);
+//                 li {
+//                     @include margin-trailer(1/3);
+//                 }
+//                 img {
+//                     width: 100%
+//                 }
+//             }
+//         }
+//     }
+// }
 
-    @include nested($beefy-cols) {
-        .masthead {
-            @include span(2 rtl);
-            max-width: $maxWidthUnit * 2em;
-            position: fixed;
-            .rachel, .site-logo { width: span(2 of 2 narrow); }
-        }
-        .fold-out {
-            @include span(12);
-            padding-left: span(2);
-            clear: both;
-        }
-        .main {
-            @include span(isolate 10 at 3 ltr);
-        }
-    }
-    %time-li {
-        li {
-            position: relative;
-            padding-left: 2.5em;
-            time {
-                position: absolute;
-                left: 0;
-                display: block;
-            }
-        }
-    }
-    .content-text .schedule-speaking {
-        time { top: 0;}
-        li { padding-left: 4em;}
-    }
-}
+// @include breakpoint((min-width $with-sidebar) (max-width $with-foldout)) {
+//     @include nested(8) {
+//         .fold-out {
+//             .schedule {
+//                 @include span(3);
+//             }
+//             .module-writings {
+//                 @include span(3);
+//             }
+//             .module-animation {
+//                 @include span(2 last);
+//             }
+//         }
+//     }
+// }
 
-@include breakpoint($double-columns){
-    .current-talks {//
-        .talk {
-            margin-left: span(1 of 9);
-        }
-    }
-    .post-nav-link {
-        @include span(4 of 9);
-        padding: rhythm(1/3) gutter();
-    }
-    .next-post {
-        margin-left: span(1 of 9);
-    }
-}
+// @include breakpoint($up-to-with-sidebar){
+//     @include nested($narrow-cols) {
+//         .js .masthead-wrapper {
+//             position: fixed;
+//             top: 0; left: 0;
+//             box-sizing: border-box;
+//             overflow-y: auto;
+//             width: 100%; height: calc(100% + 3em);
+//             z-index: 3;
+//             @include margin-leader(-2);
+//         }
+//         html[data-masthead=open] body {
+//             overflow: hidden;
+//         }
+//         html[data-masthead=closed] .masthead-wrapper {
+//             transform: translateY(calc(-100% - -9.5em));
+//             overflow: hidden;
+//         }
+//         .masthead-content {
+//             position: relative;
+//         }
+//         div.masthead {
+//             @include padding-leader(3);
+//             @include margin-trailer(3);
+//             @include padding-trailer(4);
+//             html[data-masthead=closed] & {
+//                 bottom: 0;
+//                 position: absolute;
+//             }
+//             div.rachel {
+//                 width: rhythm(6);
+//                 position: absolute;
+//                 bottom: 0;
+//                 transform: translateY(rhythm(7));
+//                 a {
+//                     border: $black .25em solid;
+//                 }
+//             }
+//         }
+//         .site-logo {
+//             width: span(3 narrow);
+//             margin: 0 auto;
+//         }
+//         #content h1:first-child {
+//             @include padding-leader(5/3);
+//         }
+//         %time-li {
+//             li {
+//                 time {
+//                     opacity: .8;
+//                 }
+//             }
+//         }
+//     }
+// }
 
-@include breakpoint($up-to-with-foldout){
-    #blogs-from-2010-ref {
-        img {
-            @include margin-leader(-2);
-            @include margin-trailer();
-        }
-        figure .fig1 {
-            @include span(3 of 10);
-            @include squish(1 of 10);
-        }
-        figure .fig2 {
-            @include span(3 of 10);
-            @include squish(1 of 10);
-        }
-    }
-}
+// @include breakpoint($with-sidebar){
+//     .container {
+//         @include container(12);
+//     }
 
-@include breakpoint($with-foldout){
-    .container {
-        @include container();
-        max-width: $maxWidthUnit * 15em;
-    }
-    @include nested(15){
-        .main {
-            @include span(isolate 9 at 6 ltr);
-            max-width: $maxWidthUnit * 9em;
-        }
-        .masthead {
-            @include span(2 rtl);
-            max-width: $maxWidthUnit * 2em;
-        }
-        .fold-out {
-            padding-left: 0;//overwrite above
-            clear: none;//overwrite above
-            @include span(3 rtl nest);
-            left: span(2) - gutter();
-            max-width: $maxWidthUnit * 4em;
-            min-height: 100%;
-            position: fixed;
-            .fold-out-wrapper {
-                @include span(2.5 of 3);
-                // margin-left: -(gutter(4)*2);
-                padding-left: gutter(3)*2;
-            }
-            .toggle {
-                margin-left: span(2.5 of 3) - gutter(4);
-            }
-            img {
-                width: 100%;
-            }
-            .module-animation li {
-                margin-left: -(gutter(2.5));
-                width: span(2.6 of 2.5 wider);
-            }
-        }
-    }
-    @include nested($content-max-cols){
-        .content-text{
-            blockquote {
-                width: span(5);
-                cite, + p cite {
-                    width: span(5);
-                }
-            }
-            li {
-                margin-left: (span(1));
-            }
-        }
-        .google-rachel {
-            input[type=search] {
-                @include span(6);
-            }
-            input[type=submit] {
-                @include span(3 narrow last);
-            }
-        }
+//     @include nested($beefy-cols) {
+//         .masthead {
+//             @include span(2 rtl);
+//             max-width: $maxWidthUnit * 2em;
+//             position: fixed;
+//             .rachel, .site-logo { width: span(2 of 2 narrow); }
+//         }
+//         .fold-out {
+//             @include span(12);
+//             padding-left: span(2);
+//             clear: both;
+//         }
+//         .main {
+//             @include span(isolate 10 at 3 ltr);
+//         }
+//     }
+//     %time-li {
+//         li {
+//             position: relative;
+//             padding-left: 2.5em;
+//             time {
+//                 position: absolute;
+//                 left: 0;
+//                 display: block;
+//             }
+//         }
+//     }
+//     .content-text .schedule-speaking {
+//         time { top: 0;}
+//         li { padding-left: 4em;}
+//     }
+// }
 
-        #blogs-from-2010-ref {
-            figure .fig1 {
-                @include span(3);
-            }
-            figure .fig2 {
-                @include span(3 rtl);
-                margin-right: -(span(1.5));
-            }
-            figcaption {
-                @include span(4.5 rtl);
-            }
-        }
-        .archive-articles, .archive-bloggage, .archive-blog {
-            ul {
-                margin-left: span(1) -  gutter(9);
-            }
-        }
+// @include breakpoint($double-columns){
+//     .current-talks {//
+//         .talk {
+//             margin-left: span(1 of 9);
+//         }
+//     }
+//     .post-nav-link {
+//         @include span(4 of 9);
+//         padding: rhythm(1/3) gutter();
+//     }
+//     .next-post {
+//         margin-left: span(1 of 9);
+//     }
+// }
 
-        .speaking-history_era {
-            > ul {
-                li {
-                    margin-right: span(1);
-                }
-            }
-        }
+// @include breakpoint($up-to-with-foldout){
+//     #blogs-from-2010-ref {
+//         img {
+//             @include margin-leader(-2);
+//             @include margin-trailer();
+//         }
+//         figure .fig1 {
+//             @include span(3 of 10);
+//             @include squish(1 of 10);
+//         }
+//         figure .fig2 {
+//             @include span(3 of 10);
+//             @include squish(1 of 10);
+//         }
+//     }
+// }
 
-        .speaking-history_col1 {
-            @include span(4 isolate);
-        }
+// @include breakpoint($with-foldout){
+//     .container {
+//         @include container();
+//         max-width: $maxWidthUnit * 15em;
+//     }
+//     @include nested(15){
+//         .main {
+//             @include span(isolate 9 at 6 ltr);
+//             max-width: $maxWidthUnit * 9em;
+//         }
+//         .masthead {
+//             @include span(2 rtl);
+//             max-width: $maxWidthUnit * 2em;
+//         }
+//         .fold-out {
+//             padding-left: 0;//overwrite above
+//             clear: none;//overwrite above
+//             @include span(3 rtl nest);
+//             left: span(2) - gutter();
+//             max-width: $maxWidthUnit * 4em;
+//             min-height: 100%;
+//             position: fixed;
+//             .fold-out-wrapper {
+//                 @include span(2.5 of 3);
+//                 // margin-left: -(gutter(4)*2);
+//                 padding-left: gutter(3)*2;
+//             }
+//             .toggle {
+//                 margin-left: span(2.5 of 3) - gutter(4);
+//             }
+//             img {
+//                 width: 100%;
+//             }
+//             .module-animation li {
+//                 margin-left: -(gutter(2.5));
+//                 width: span(2.6 of 2.5 wider);
+//             }
+//         }
+//     }
+//     @include nested($content-max-cols){
+//         .content-text{
+//             blockquote {
+//                 width: span(5);
+//                 cite, + p cite {
+//                     width: span(5);
+//                 }
+//             }
+//             li {
+//                 margin-left: (span(1));
+//             }
+//         }
+//         .google-rachel {
+//             input[type=search] {
+//                 @include span(6);
+//             }
+//             input[type=submit] {
+//                 @include span(3 narrow last);
+//             }
+//         }
 
-        .speaking-history_col2 {//
-            @include span(4 last);
-        }
-    }
+//         #blogs-from-2010-ref {
+//             figure .fig1 {
+//                 @include span(3);
+//             }
+//             figure .fig2 {
+//                 @include span(3 rtl);
+//                 margin-right: -(span(1.5));
+//             }
+//             figcaption {
+//                 @include span(4.5 rtl);
+//             }
+//         }
+//         .archive-articles, .archive-bloggage, .archive-blog {
+//             ul {
+//                 margin-left: span(1) -  gutter(9);
+//             }
+//         }
 
-}
+//         .speaking-history_era {
+//             > ul {
+//                 li {
+//                     margin-right: span(1);
+//                 }
+//             }
+//         }
 
-@include breakpoint($maxWidthUnit * 16em) {
-    .fold-out {
-        left:  ($maxWidthUnit * 2em) + (6 * .3107em);
-    }
-}
+//         .speaking-history_col1 {
+//             @include span(4 isolate);
+//         }
+
+//         .speaking-history_col2 {//
+//             @include span(4 last);
+//         }
+//     }
+
+// }
+
+// @include breakpoint($maxWidthUnit * 16em) {
+//     .fold-out {
+//         left:  ($maxWidthUnit * 2em) + (6 * .3107em);
+//     }
+// }

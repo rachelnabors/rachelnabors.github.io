@@ -1,180 +1,484 @@
-@import "compass/typography/vertical_rhythm";
 // Font Config
-$league: 'LeagueGothicRegular', sans-serif;
-$ostrich: 'OstrichSansMedium', sans-serif;
-$georgia: 'Georgia', serif;
+@function font($key) {
+  @if map-has-key($fontWeights, $key) {
+    @return map-get($fontWeights, $key);
+  }
+
+  @warn "Unknown `#{$key}` in $fontWeights.";
+  @return null;
+}
+//font(italic);
+%fontItalic {
+    font-style: italic; font-weight: 300;
+}
+
+%fontBold {
+    font-style: none; font-weight: 700;
+}
+
+%fontReset {
+    font-style: none; font-weight: 300;
+}
+
 $monospace: monospace;
-$franklin: franklin-gothic-urw, sans-serif;
-    $bold: 700;
-    $normal: 400;
 
-// Vertical Rhythm
-$browser-default-font-size: 16px;
-$relative-font-sizing: true;
-$rhythm-unit: "rem";
-$base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-$base-font-weight: $normal;
-$base-font-color: $black;
+// ----
+// Sass (v3.4.21)
+// Compass (v1.0.3)
+// ----
 
-// Base Font Sizes
-$base-line-height: 30px;
+// Interpolate v1.0
 
-// Modular Scale
-$ms-base: 10px;
-$ms-ratio: 1.3;
+// This mixin generates CSS for interpolation of length properties.
+// It has 5 required values, including the target property, initial
+// screen size, initial value, final screen size and final value.
 
-$tiny-font-size: $ms-base;
-$tiny-font-leading: 1/3;
-$small-font-size: $ms-base * $ms-ratio;
-$small-font-leading: 2/3;
-$base-font-size: $ms-base * $ms-ratio * $ms-ratio;
-$base-font-leading: 1;
-$medium-font-size: $ms-base * $ms-ratio * $ms-ratio * $ms-ratio;
-$medium-font-leading: 1;
-$large-font-size: $ms-base * $ms-ratio * $ms-ratio * $ms-ratio * $ms-ratio;
-$large-font-leading: 4/3;
-$xlarge-font-size: $ms-base * $ms-ratio * $ms-ratio * $ms-ratio * $ms-ratio * $ms-ratio;
-$xlarge-font-leading: 4/3;
-$xxlarge-font-size: $ms-base * $ms-ratio * $ms-ratio * $ms-ratio * $ms-ratio * $ms-ratio * $ms-ratio;
-$xxlarge-font-leading: 5/3;
-$xxxlarge-font-size: $ms-base * $ms-ratio * $ms-ratio * $ms-ratio * $ms-ratio * $ms-ratio * $ms-ratio * $ms-ratio;
-$xxxlarge-font-leading: 6/3;
+// It has two optional values which include an easing property,
+// which is a string, representing a CSS animation-timing-function
+// and finally a number of bending-points, that determines how many
+// interpolations steps are applied along the easing function.
 
-@include establish-baseline;
+// Author: Mike Riethmuller - @MikeRiethmuller
+// More information: http://codepen.io/MadeByMike/pen/a2249946658b139b7625b2a58cf03a65?editors=0100
 
+///
+/// @param {String} $property - The CSS property to interpolate
+/// @param {Unit} $min-screen - A CSS length unit
+/// @param {Unit} $min-value - A CSS length unit
+/// @param {Unit} $max-screen - Value to be parsed
+/// @param {Unit} $max-value - Value to be parsed
+/// @param {String} $easing - Value to be parsed
+/// @param {Integer} $bending-points - Value to be parsed
+///
 
-// Font Families
-@font-face {
-    font-family: 'LeagueGothicRegular';
-    src: url('/fonts/league_gothic-webfont.eot');
-    src: url('/fonts/league_gothic-webfont.eot?#iefix') format('embedded-opentype'),
-         url('/fonts/league_gothic-webfont.woff') format('woff'),
-         url('/fonts/league_gothic-webfont.ttf') format('truetype'),
-         url('/fonts/league_gothic-webfont.svg#LeagueGothicRegular') format('svg');
-    font-weight: normal;
-    font-style: normal;
+// Examples on line 258
+
+// Issues:
+
+// - cubic-bezier requires whitespace
+// - cubic-bezier cannot parse negative values
+
+@mixin interpolate($property, $min-screen, $min-value, $max-screen, $max-value, $easing: 'linear', $bending-points: 2) {
+
+    // Default Easing 'Linear'
+    $p0: 0;
+    $p1: 0;
+    $p2: 1;
+    $p3: 1;
+
+    // Parse Cubic Bezier string
+    @if(str-slice($easing, 1, 12) == 'cubic-bezier') {
+        // Get the values between the brackets
+        // TODO: Deal with different whitespace
+        $i: str-index($easing,')'); // Get index of closing bracket
+        $values: str-slice($easing, 14, $i - 1); // Extract values between brackts
+        $list: explode($values, ', '); // Split the values into a list
+
+    @debug($list);
+
+        // Cast values to numebrs
+        $p0: number(nth($list, 1));
+        $p1: number(nth($list, 2));
+        $p2: number(nth($list, 3));
+        $p3: number(nth($list, 4));
+
+    }
+
+    @if($easing == 'ease') {
+        $p0: 0.25;
+        $p1: 1;
+        $p2: 0.25;
+        $p3: 1;
+    }
+
+    @if($easing == 'ease-in-out') {
+        $p0: 0.42;
+        $p1: 0;
+        $p2: 0.58;
+        $p3: 1;
+    }
+
+    @if($easing == 'ease-in') {
+        $p0: 0.42;
+        $p1: 0;
+        $p2: 1;
+        $p3: 1;
+    }
+
+    @if($easing == 'ease-out') {
+        $p0: 0;
+        $p1: 0;
+        $p2: 0.58;
+        $p3: 1;
+    }
+
+    #{$property}: $min-value;
+
+    @if($easing == 'linear' or $bending-points < 1) {
+        @media screen and (min-width: $min-screen) {
+            #{$property}: calc-interpolation($min-screen, $min-value, $max-screen, $max-value);
+        }
+
+    } @else {
+
+        // Loop through bending points
+        $t: 1 / ($bending-points + 1);
+        $i:1;
+        $prev-screen: $min-screen;
+        $prev-value: $min-value;
+
+        @while $t*$i <= 1 {
+            $bending-point: $t*$i;
+            $value: cubic-bezier($p0,$p1,$p2,$p3, $bending-point);
+            $screen-int: lerp($min-screen, $max-screen, $bending-point);
+            $value-int: lerp($min-value, $max-value, $value);
+
+            @media screen and  (min-width: $prev-screen) {
+                #{$property}: calc-interpolation($prev-screen, $prev-value, $screen-int, $value-int);
+            }
+
+            $prev-screen: $screen-int;
+            $prev-value: $value-int;
+            $i: $i+1;
+        }
+    }
+
+    @media screen and (min-width:$max-screen) {
+        #{$property}: $max-value;
+    }
+
 }
 
-@font-face {
-    font-family: 'OstrichSansMedium';
-    src: url('/fonts/ostrich-regular-webfont.eot');
-    src: url('/fonts/ostrich-regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('/fonts/ostrich-regular-webfont.woff') format('woff'),
-         url('/fonts/ostrich-regular-webfont.ttf') format('truetype'),
-         url('/fonts/ostrich-regular-webfont.svg#OstrichSansMedium') format('svg');
-    font-weight: normal;
-    font-style: normal;
+// Requires several helper functions including: pow, calc-interpolation, cubic-bezier, number and explode
+
+// Math functions:
+
+// Linear interpolations in CSS as a Sass function
+// Author: Mike Riethmuller | https://madebymike.com.au/writing/precise-control-responsive-typography/ I
+
+@function calc-interpolation($min-screen, $min-value, $max-screen, $max-value) {
+    $a: ($max-value - $min-value) / ($max-screen - $min-screen);
+    $b: $min-value - $a * $min-screen;
+
+    $sign: "+";
+    @if ($b < 0) {
+        $sign: "-";
+        $b: abs($b);
+    }
+
+    @return calc(#{$a*100}vw #{$sign} #{$b});
 }
 
-@font-face {
-    font-family: 'RNicons';
-    src: url('/fonts/rn-icons.eot');
-    src: url('/fonts/rn-icons.eot?#iefix') format('embedded-opentype'),
-         url('/fonts/rn-icons.woff') format('woff'),
-         url('/fonts/rn-icons.ttf') format('truetype'),
-         url('/fonts/rn-icons.svg#icomoon') format('svg');
-    font-weight: normal;
-    font-style: normal;
+// This is a crude Sass port webkits cubic-bezier function. Looking to simplify this if you can help.
+@function solve-bexier-x($p1x, $p1y, $p2x, $p2y, $x) {
+
+        $cx: 3.0 * $p1x;
+        $bx: 3.0 * ($p2x - $p1x) - $cx;
+        $ax: 1.0 - $cx -$bx;
+
+        $t0: 0.0;
+        $t1: 1.0;
+        $t2: $x;
+        $x2: 0;
+        $res: 1000;
+
+        @while ($t0 < $t1 or $break) {
+            $x2: (($ax * $t2 + $bx) * $t2 + $cx) * $t2;
+            @if (abs($x2 - $x) < $res) {
+                @return $t2;
+            }
+            @if ($x > $x2) {
+                $t0: $t2;
+            } @else {
+                $t1: $t2;
+            }
+            $t2: ($t1 - $t0) * 0.5 + $t0;
+        }
+
+        @return $t2;
 }
 
-@mixin typeSize($size) {
- @if $size == "tiny" {
-  @include adjust-font-size-to($tiny-font-size, $tiny-font-leading);
- }
- @if $size == "small" {
-  @include adjust-font-size-to($small-font-size, $small-font-leading);
- }
- @if $size == "base" {
-  @include adjust-font-size-to($base-font-size, $base-font-leading);
- }
- @if $size == "medium" {
-  @include adjust-font-size-to($medium-font-size, $medium-font-leading);
- }
- @if $size == "large" {
-  @include adjust-font-size-to($large-font-size, $large-font-leading);
- }
- @if $size == "xlarge" {
-  @include adjust-font-size-to($xlarge-font-size, $xlarge-font-leading);
- }
- @if $size == "xxlarge" {
-  @include adjust-font-size-to($xxlarge-font-size, $xxlarge-font-leading);
- }
- @if $size == "xxxlarge" {
-  @include adjust-font-size-to($xxxlarge-font-size, $xxxlarge-font-leading);
- }
+@function cubic-bezier($p1x, $p1y, $p2x, $p2y, $x) {
+    $cy: 3.0 * $p1y;
+    $by: 3.0 * ($p2y - $p1y) - $cy;
+    $ay: 1.0 - $cy - $by;
+    $t: solve-bexier-x($p1x, $p1y, $p2x, $p2y, $x);
+    @return (($ay * $t + $by) * $t + $cy) * $t;
 }
 
-// Type size variants
-%t-tiny {
- @include typeSize(tiny);
+// A stright up lerp
+// Credit: Ancient Greeks possibly Hipparchus of Rhodes
+@function lerp($a, $b, $t) {
+    @return $a + ($b - $a) * $t;
 }
+
+// String functions:
+
+// Cast string to number
+// Credit: Hugo Giraudel | https://www.sassmeister.com/gist/9fa19d254864f33d4a80
+@function number($value) {
+    @if type-of($value) == 'number' {
+        @return $value;
+    } @else if type-of($value) != 'string' {
+        $_: log('Value for `to-number` should be a number or a string.');
+    }
+
+    $result: 0;
+    $digits: 0;
+    $minus: str-slice($value, 1, 1) == '-';
+    $numbers: ('0': 0, '1': 1, '2': 2, '3': 3, '4': 4, '5': 5, '6': 6, '7': 7, '8': 8, '9': 9);
+
+    @for $i from if($minus, 2, 1) through str-length($value) {
+        $character: str-slice($value, $i, $i);
+
+        @if not (index(map-keys($numbers), $character) or $character == '.') {
+            @return to-length(if($minus, -$result, $result), str-slice($value, $i))
+                }
+
+        @if $character == '.' {
+            $digits: 1;
+        } @else if $digits == 0 {
+            $result: $result * 10 + map-get($numbers, $character);
+        } @else {
+            $digits: $digits * 10;
+            $result: $result + map-get($numbers, $character) / $digits;
+        }
+    }
+
+    @return if($minus, -$result, $result);;
+}
+
+// Explode a string by a delimiter
+// Credit: https://gist.github.com/danielpchen/3677421ea15dcf2579ff
+@function explode($string, $delimiter) {
+    $result: ();
+    @if $delimiter == "" {
+        @for $i from 1 through str-length($string) {
+            $result: append($result, str-slice($string, $i, $i));
+        }
+        @return $result;
+    }
+    $exploding: true;
+    @while $exploding {
+        $d-index: str-index($string, $delimiter);
+        @if $d-index {
+            @if $d-index > 1 {
+                $result: append($result, str-slice($string, 1, $d-index - 1));
+                $string: str-slice($string, $d-index + str-length($delimiter));
+            } @else if $d-index == 1 {
+                $string: str-slice($string, 1, $d-index + str-length($delimiter));
+            } @else {
+                $result: append($result, $string);
+                $exploding: false;
+            }
+        } @else {
+            $result: append($result, $string);
+            $exploding: false;
+        }
+    }
+    @return $result;
+}
+
+// Using vertical rhythm methods from https://scotch.io/tutorials/aesthetic-sass-3-typography-and-vertical-rhythm
+// Using perfect 8/9 for low contrast and perfect fifth 2/3 for high
+$type-scale: (
+  -1: 0.889rem,  // small text
+  0: 1rem,      // body text
+  1: 1.125rem,
+  2: 1.266rem,  // large text
+  3: 1.424rem   // main heading
+);
+
+@function type-scale($level) {
+  @if map-has-key($type-scale, $level) {
+    @return map-get($type-scale, $level);
+  }
+
+  @warn "Unknown `#{$level}` in $type-scale.";
+  @return null;
+}
+
+// $type-scale-contrast: (
+//   -1: 0.667rem,  // small text
+//   0: 1rem,      // body text
+//   1: 1.5rem,  // large text
+//   2: 2.25rem,   // heading
+//   3: 3.375rem   // main heading
+// );
+
+$type-scale-contrast: (
+  -1: 1rem,  // small text
+  0: 1.3333rem,      // body text
+  1: 1.777rem,  // large text
+  2: 2.369rem,   // heading
+  3: 3.157rem   // main heading
+);
+
+@function type-scale-contrast($level) {
+  @if map-has-key($type-scale-contrast, $level) {
+    @return map-get($type-scale-contrast, $level);
+  }
+
+  @warn "Unknown `#{$level}` in $type-scale-contrast.";
+  @return null;
+}
+
+$base-font-size: 1rem;
+$base-line-height: $base-font-size * 1.25;
+
+$line-heights: (
+  -1: $base-line-height,
+  0: $base-line-height,
+  1: $base-line-height * 1.5,
+  2: $base-line-height * 1.5,
+  3: $base-line-height * 1.5
+);
+
+@function line-height($level) {
+  @if map-has-key($line-heights, $level) {
+    @return map-get($line-heights, $level);
+  }
+
+  @warn "Unknown `#{$level}` in $line-height.";
+  @return null;
+}
+
+$base-line-height-contrast: $base-line-height;
+
+$line-heights-contrast: (
+  -1: $base-line-height-contrast,
+  0: $base-line-height-contrast * 2,
+  1: $base-line-height-contrast * 2,
+  2: $base-line-height-contrast * 2,
+  3: $base-line-height * 3
+);
+
+@function line-height-contrast($level) {
+  @if map-has-key($line-heights-contrast, $level) {
+    @return map-get($line-heights-contrast, $level);
+  }
+
+  @warn "Unknown `#{$level}` in $line-heights-contrast.";
+  @return null;
+}
+
+// Mixing these two sets of mixins ala Rachel:
+@mixin got-rhythm($level: 0) {
+    @include interpolate('font-size', width(minContentWidth), type-scale($level), width(maxContentWidth), type-scale-contrast($level));
+    @include interpolate('line-height', width(minContentWidth), line-height($level), width(maxContentWidth), line-height-contrast($level));
+}
+
+%t-xxlarge {
+    @include got-rhythm(3);
+}
+
+%t-xlarge {
+    @include got-rhythm(2);
+}
+
+%t-large {
+    @include got-rhythm(1);
+}
+
 %t-small {
- @include typeSize(small);
-}
-%t-base {
- @include typeSize(base);
+    @include got-rhythm(-1);
 }
 %t-medium {
- @include typeSize(medium);
+    @include got-rhythm(0);
 }
-%t-large {
- @include typeSize(large);
-}
-%t-xlarge {
- @include typeSize(xlarge);
-}
-%t-xxlarge {
- @include typeSize(xxlarge);
-}
-%t-xxxlarge {
- @include typeSize(xxxlarge);
-}
+
+
+// Vertical Rhythm
+// $browser-default-font-size: 16px;
+// $relative-font-sizing: true;
+// $rhythm-unit: "rem";
+// $base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+// $base-font-weight: $normal;
+// $base-font-color: $black;
+
+// // Base Font Sizes
+// $base-line-height: 30px;
+
+// // Modular Scale
+// $ms-base: 10px;
+// $ms-ratio: 1.3;
+
+// $tiny-font-size: $ms-base;
+// $tiny-font-leading: 1/3;
+// $small-font-size: $ms-base * $ms-ratio;
+// $small-font-leading: 2/3;
+// $base-font-size: $ms-base * $ms-ratio * $ms-ratio;
+// $base-font-leading: 1;
+// $medium-font-size: $ms-base * $ms-ratio * $ms-ratio * $ms-ratio;
+// $medium-font-leading: 1;
+// $large-font-size: $ms-base * $ms-ratio * $ms-ratio * $ms-ratio * $ms-ratio;
+// $large-font-leading: 4/3;
+// $xlarge-font-size: $ms-base * $ms-ratio * $ms-ratio * $ms-ratio * $ms-ratio * $ms-ratio;
+// $xlarge-font-leading: 4/3;
+// $xxlarge-font-size: $ms-base * $ms-ratio * $ms-ratio * $ms-ratio * $ms-ratio * $ms-ratio * $ms-ratio;
+// $xxlarge-font-leading: 5/3;
+// $xxxlarge-font-size: $ms-base * $ms-ratio * $ms-ratio * $ms-ratio * $ms-ratio * $ms-ratio * $ms-ratio * $ms-ratio;
+// $xxxlarge-font-leading: 6/3;
+
+
+// @mixin typeSize($size) {
+//  @if $size == "tiny" {
+//   @include adjust-font-size-to($tiny-font-size, $tiny-font-leading);
+//  }
+//  @if $size == "small" {
+//   @include adjust-font-size-to($small-font-size, $small-font-leading);
+//  }
+//  @if $size == "base" {
+//   @include adjust-font-size-to($base-font-size, $base-font-leading);
+//  }
+//  @if $size == "medium" {
+//   @include adjust-font-size-to($medium-font-size, $medium-font-leading);
+//  }
+//  @if $size == "large" {
+//   @include adjust-font-size-to($large-font-size, $large-font-leading);
+//  }
+//  @if $size == "xlarge" {
+//   @include adjust-font-size-to($xlarge-font-size, $xlarge-font-leading);
+//  }
+//  @if $size == "xxlarge" {
+//   @include adjust-font-size-to($xxlarge-font-size, $xxlarge-font-leading);
+//  }
+//  @if $size == "xxxlarge" {
+//   @include adjust-font-size-to($xxxlarge-font-size, $xxxlarge-font-leading);
+//  }
+// }
+
+// // Type size variants
+// %t-tiny {
+//  @include typeSize(tiny);
+// }
+// %t-small {
+//  @include typeSize(small);
+// }
+// %t-base {
+//  @include typeSize(base);
+// }
+// %t-medium {
+//  @include typeSize(medium);
+// }
+// %t-large {
+//  @include typeSize(large);
+// }
+// %t-xlarge {
+//  @include typeSize(xlarge);
+// }
+// %t-xxlarge {
+//  @include typeSize(xxlarge);
+// }
+// %t-xxxlarge {
+//  @include typeSize(xxxlarge);
+// }
 
 // Type — headings
-#{headings(6)} {
+h1, h2, h3, h4, h5, h6 {
     margin: 0;
     padding: 0;
-    font-weight: $normal;
+    @extend %fontBold;
+    color: color(heading);
 }
 
-body {
-    font-family: sans-serif;
-}
-
-.LeagueGothicRegular %fontOstrich {
-    font-family: $ostrich;
-}
-
-.OstrichSansMedium %fontLeague {
-    font-family: $league;
-}
-
-// Icon short-list
-/*
-deviantart: "\e000" &#57344
-
-feed: "\e001" &#57345
-
-twitter: "\e002" &#57346
-
-google-plus: "\e005" &#57349
-
-forrst: "\e006" &#57350
-
-dribbble: "\e003" &#57347
-
-codepen "\e004" &#57348
-
-linkedin: "\e007" &#57351
-
-star: "\2729" &#10025
-
-arrow-right: "\27f6" &#10230
-
-arrow-left: "\27f5" &#10229
-
-heart: "\2764" &#10084
-
-headphones: "\e008" &#57352
-
-*/

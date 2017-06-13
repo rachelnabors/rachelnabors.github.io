@@ -1,24 +1,45 @@
+// Widths
+$widths: (
+  maxContentWidth: 50rem,
+  minContentWidth: 25rem
+);
+
+// Now, getting colors... use like color(copy)
+@function width($key) {
+  @if map-has-key($widths, $key) {
+    @return map-get($widths, $key);
+  }
+
+  @warn "Unknown `#{$key}` in $widths.";
+  @return null;
+}
+
 // Site Colors
 $color-nonReproBlue: #93C6DE;
-$color-nonReproBlue-light: #C5E9FB;
+$color-nonReproBlue-light: #EEFAFF;
 $color-nonReproBlue-dark: #244C5E;
 $color-nonReproBlue-bright: #56B5E3;
 $color-nonReproGrey-dark: #3F555F;
 $color-nonReproGrey-light: #7398AA;
 $color-nonReproPink: #AB617F;
 $color-nonReproPink-dark: #925A71;
+$color-nonReproPink-bright: #792B8E;
 
 $colors: (
-  background: $color-nonReproBlue-light,
+  background: #fff,
   backgroundAlt: $color-nonReproBlue-dark,
   copy: $color-nonReproBlue-dark,
   copyAlt: $color-nonReproBlue-light,
+  heading: $color-nonReproGrey-dark,
+  headingAlt: $color-nonReproGrey-light,
   link: $color-nonReproBlue,
   linkVisited: $color-nonReproPink-dark,
-  linkHover: $color-nonReproBlue-bright,
+  linkActive: $color-nonReproBlue-bright,
   linkAlt: $color-nonReproBlue-bright,
   linkAltVisited: $color-nonReproPink,
-  linkAltHover: $color-nonReproBlue-light,
+  linkAltActive: $color-nonReproBlue-light,
+  grey: $color-nonReproGrey-light,
+  callOut: $color-nonReproPink-bright
 );
 
 // Now, getting colors... use like color(copy)

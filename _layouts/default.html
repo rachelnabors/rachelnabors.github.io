@@ -3,9 +3,11 @@
 <div class="container">
     {% include masthead.html %}
 
-    <div class="main" id="content" role="main">
-        {{ content }}
-        <small class="copyright">Copyright &copy; 2008 &ndash; {{ site.time | date: "%Y" }} Rachel Nabors</small>
+    <div id="barba-wrapper">
+        <div class="main" id="content" role="main">
+            {{ content }}
+            <small class="copyright">Copyright &copy; 2008 &ndash; {{ site.time | date: "%Y" }} Rachel Nabors</small>
+        </div>
     </div>
 
     {% include sidebar.html %}
