@@ -10,7 +10,7 @@ keynote:
 keynoteSlides:
 keynoteRecording:
 talk: Alice in Web Animations API Land
-talkSlides: http://www.slideshare.net/CrowChick/communicating-animation-slides
+talkSlides: http://www.slideshare.net/CrowChick/alice-in-web-animations-api-land
 talkRecording:
 lightningTalk:
 lightningTalkSlides:
