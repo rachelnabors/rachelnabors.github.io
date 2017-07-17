@@ -4,10 +4,12 @@ body_id: archive
 excerpt: Rachel Nabors's blog posts and articles on web animation, UX, comics, and HTML5.
 ---
 
-<h1>Writings on Web Animation, UX, Comics and More</h1>
-<p class="tagline">(But mostly web animation. Mostly.)</p>
+<header class="section-header">
+  <h1>Writings on Web Animation, UX, Comics and More</h1>
+  <p class="tagline">(But mostly web animation. Mostly.)</p>
+</header>
 
-<section class="archive-articles block">
+<section class="archive-articles block sectioned">
   <h2>Articles</h2>
   <ul>
     <li><a href="http://alistapart.com/article/communicating-animation">Communicating Animation</a> <span class="source">A List Apart</span></li>
@@ -31,21 +33,20 @@ excerpt: Rachel Nabors's blog posts and articles on web animation, UX, comics, a
   </ul>
 </section>
 
-<section class="archive-bloggage">
-<header class="title-bloggage">
+<section class="archive-blog block sectioned">
   <h2>Bloggage</h2>
     <form class="google-rachel" action="https://www.google.com/search">
       <input type="hidden" name="as_sitesearch" value="rachelnabors.com" />
       <input type="search" name="q" />
       <input type="submit" value="Search" />
     </form>
-  </header>
+</section>
 {% for post in site.posts  %}
     {% capture this_year %}{{ post.date | date: "%Y" }}{% endcapture %}
     {% capture next_year %}{{ post.previous.date | date: "%Y" }}{% endcapture %}
 
     {% if forloop.first %}
-    <section id="blogs-from-{{ this_year }}-ref" class="archive-blog">
+    <section id="blogs-from-{{ this_year }}-ref" class="archive-blog block sectioned">
     <h3>{{this_year}}</h3>
     <ul>
     {% endif %}
@@ -58,7 +59,7 @@ excerpt: Rachel Nabors's blog posts and articles on web animation, UX, comics, a
         {% if this_year != next_year %}
         </ul>
       </section>
-      <section class="archive-blog block" id="blogs-from-{{ next_year }}-ref">
+      <section class="archive-blog block sectioned" id="blogs-from-{{ next_year }}-ref">
         <h3>{{next_year}}</h3>
             {% case next_year %}
               {% when "2008" %}

@@ -30,6 +30,7 @@ collections:
 #     output: true
 #     permalink: /animations/:path/
 - projects
+- publications
 
 defaults:
   -

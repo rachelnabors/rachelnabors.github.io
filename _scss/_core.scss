@@ -8,6 +8,11 @@ body {
     @extend %t-medium;
 }
 
+.masthead {
+    background: color(backgroundAlt);
+    @extend %alt-links;
+}
+
 // .container {
 //     @extend %clearfix;
 //     position: absolute;

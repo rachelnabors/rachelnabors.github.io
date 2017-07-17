@@ -25,6 +25,23 @@ $color-nonReproPink: #AB617F;
 $color-nonReproPink-dark: #925A71;
 $color-nonReproPink-bright: #792B8E;
 
+:root{
+  --color-background: #fff;
+  --color-backgroundAlt: $color-nonReproBlue-dark;
+  --color-copy: $color-nonReproBlue-dark;
+  --color-copyAlt: $color-nonReproBlue-light;
+  --color-heading: $color-nonReproGrey-dark;
+  --color-headingAlt: $color-nonReproGrey-light;
+  --color-link: $color-nonReproBlue;
+  --color-linkVisited: $color-nonReproPink-dark;
+  --color-linkActive: $color-nonReproBlue-bright;
+  --color-linkAlt: $color-nonReproBlue-bright;
+  --color-linkAltVisited: $color-nonReproPink;
+  --color-linkAltActive: $color-nonReproBlue-light;
+  --color-grey: $color-nonReproGrey-light;
+  --color-callOut: $color-nonReproPink-bright;
+ }
+
 $colors: (
   background: #fff,
   backgroundAlt: $color-nonReproBlue-dark,

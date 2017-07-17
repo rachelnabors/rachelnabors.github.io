@@ -1,7 +1,54 @@
-.container {
-    margin: 0 auto;
-    max-width: width(maxContentWidth);
-    padding: .5rem;
+// .container {
+//     margin: 0 auto;
+//     max-width: width(maxContentWidth);
+//     // padding: .5rem;
+// }
+
+@media screen and (min-width: width(maxContentWidth)) {
+
+    .container {
+      display: grid;
+      grid-template-rows: minmax(0px, min-content) minmax(auto, max-content) minmax(0px, min-content);
+    }
+
+    .masthead { grid-row: 1 / span 1; }
+
+    // stick this on .main if you ever get rif of this wrapper.
+    #barba-wrapper { grid-row: 2 / span 1; }
+
+    #additional {
+        grid-row: 3 / span 1;
+    }
+
+    .main {
+        display: grid;
+        grid-template-columns: minmax(0, 25%) minmax(width(maxContentWidth), 50%) minmax(0, 25%);
+    }
+
+    .entry-header {
+        grid-column: 1 / 3;
+    }
+
+    .content-text, .sectioned {
+        grid-column: 2 / 3;
+    }
+
+    .section-header {
+        grid-column: 1 / span 3;
+    }
+
+    .post-nav {
+        grid-column: 1 / 4;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .prev-post {
+        grid-column: 1 / span 1;
+    }
+    .next-post {
+        grid-column: 2 / span 1;
+    }
 }
 
 // // Using Susy Grids!

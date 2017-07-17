@@ -1,11 +1,21 @@
 %default-links {
-  	a:link, a:visited {
+  	a:link {
 		color: color(link);
 	}
+    a:visited { color: color(linkVisited);}
     a:hover, a:active, a:focus {
         color: color(linkActive);
     }
-	a:visited { color: color(linkVisited);}
+}
+
+%alt-links {
+    a:link {
+        color: color(linkAlt);
+    }
+    a:visited { color: color(linkAltVisited);}
+    a:hover, a:active, a:focus {
+        color: color(linkAltActive);
+    }
 }
 
 

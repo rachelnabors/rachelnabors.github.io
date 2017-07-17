@@ -3,32 +3,30 @@ body_id: post
 layout: default
 ---
 
-<article class="hentry" role="article">
-	<header class="entry-header">
-		<h1 class="entry-title">{{ page.title }}</h1>
-		<p class="meta">
-			<time>{{ page.date | date_to_long_string }}</time>
-			{% if site.disqus_short_name and page.comments != false and post.comments != false and site.disqus_show_comment_count == true %}
-				| <a href="#disqus_thread">Comments</a>
-			{% endif %}
-		</p>
-	</header>
-	<div class="content-text">
-		{{ content | expand_urls: root_url }}
-	</div>
+<header class="entry-header">
+	<h1 class="entry-title">{{ page.title }}</h1>
+	<p class="meta">
+		<time>{{ page.date | date_to_long_string }}</time>
+		{% if site.disqus_short_name and page.comments != false and post.comments != false and site.disqus_show_comment_count == true %}
+			| <a href="#disqus_thread">Comments</a>
+		{% endif %}
+	</p>
+</header>
+<div class="content-text">
+	{{ content | expand_urls: root_url }}
+</div>
 
-	<nav class="post-nav">
-	  {% if page.previous.url %}
-		<a class="prev-post post-nav-link" href="{{page.previous.url}}" title="Previous Post: {{page.previous.title}}"><span aria-hidden="true" data-icon="&#10229;" class="icon"></span> {{page.previous.title}}</a>
-	  {% endif %}
-	  {% if page.next.url %}
-		<a class="next-post post-nav-link" href="{{page.next.url}}" title="Next Post: {{page.next.title}}">{{page.next.title}} <span aria-hidden="true" data-icon="&#10230;" class="icon"></span></a>
-	  {% endif %}
-	</nav>
-</article>
+<nav class="post-nav">
+  {% if page.previous.url %}
+	<a class="prev-post post-nav-link" href="{{page.previous.url}}" title="Previous Post: {{page.previous.title}}"><span aria-hidden="true" data-icon="&#10229;" class="icon"></span> {{page.previous.title}}</a>
+  {% endif %}
+  {% if page.next.url %}
+	<a class="next-post post-nav-link" href="{{page.next.url}}" title="Next Post: {{page.next.title}}">{{page.next.title}} <span aria-hidden="true" data-icon="&#10230;" class="icon"></span></a>
+  {% endif %}
+</nav>
 
 {% if site.disqus_short_name and page.comments != false %}
-<section id="comments">
+<section class="sectioned" id="comments">
 	<h1>Comments</h1>
 	<div id="disqus_thread" aria-live="polite"></div>
 	<script type="text/javascript">
