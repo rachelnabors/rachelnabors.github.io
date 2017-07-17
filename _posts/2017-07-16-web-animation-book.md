@@ -1,7 +1,9 @@
 ---
 layout: post
 title: "Announcing my upcoming book with A Book Apart"
-excerpt: ""
+excerpt: "It is with great pride that I am announcing Animation at Work, my upcoming book with A Book Apart."
+featured-image: "/img/2017/aba-briefs-cover2x.png"
+
 ---
 
 It is with great pride that I am announcing my upcoming A Book Apart book, _[Animation at Work](https://abookapart.com/products/animation-at-work)!_ This book condenses everything I have learned about practical animation for the web over years of working with clients and advocating for the web animation community. It covers how to put animation to work for your users, how to incoroporate it into a design system, what to avoid and why.
