@@ -9,7 +9,7 @@ featured-image: "/img/2017/aba-briefs-cover2x.png"
 It is with great pride that I am announcing my upcoming A Book Apart book, _[Animation at Work](https://abookapart.com/products/animation-at-work)!_ This book condenses everything I have learned about practical animation for the web over years of working with clients and advocating for the web animation community. It covers how to put animation to work for your users, how to incoroporate it into a design system, what to avoid and why.
 
 <figure>
-<a href="https://abookapart.com/products/animation-at-work"><img src="/img/2017/aba-briefs-cover.png" srcset="/img/2017/aba-briefs-cover2x.png 2x" width="300" height="464" alt="Animation at Work book cover with foreward by Dan Mall."></a>
+<a href="https://abookapart.com/products/animation-at-work"><img src="/img/2017/aba-briefs-cover.png" srcset="/img/2017/aba-briefs-cover2x.png 2x" width="400" height="619" alt="Animation at Work book cover with foreward by Dan Mall."></a>
 <figcaption>Coming soon from A Book Apart, <i><a href="https://abookapart.com/products/animation-at-work">Animation at Work</a>!</i></figcaption>
 </figure>
 

@@ -64,6 +64,8 @@ DEPENDENCIES
   compass
   jekyll
   oily_png
-  rb-fsevent (<= 0.9.4)
   sass
   susy
+
+BUNDLED WITH
+   1.15.1
