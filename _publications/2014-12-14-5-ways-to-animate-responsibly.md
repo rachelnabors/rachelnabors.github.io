@@ -1,6 +1,6 @@
 ---
-name: "Five Ways to Animate Responsibly"
-liveDate: 2014-12-14
+title: "Five Ways to Animate Responsibly"
+date: 2014-12-14
 url: https://24ways.org/2014/five-ways-to-animate-responsibly/
 image:
 publisher: 24 Ways
