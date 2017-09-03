@@ -26,7 +26,7 @@ I made this book for front-end developers, motion designers, product designers, 
     <dt>Communicating animation</dt>
     <dd>Discover how to craft an animation language and incorporate motion design into design systems with storyboards, animatics, and prototypes. Then see how put them to work to generate buy-in from across the team.</dd>
     <dt>Best practices and other educated guesses</dt>
-    <dd>Learn to animated responsibly: why consistency is key, framerates are unreliable, and how to respect user cognitive differences.</dd>
+    <dd>Learn to animate responsibly: why consistency is key, framerates are unreliable, and how to respect user cognitive differences.</dd>
 </dl>
 
 <p class="cta"><a class="button" href="https://abookapart.com/products/animation-at-work">Get your copy today</a></p>
