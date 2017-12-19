@@ -6,7 +6,7 @@ featured-image: ""
 ---
 As of yesterday I am no longer working for Microsoft. 
 
-<img src="/img/2017/p_tuna.jpg" srcset="/img/2017/p_tuna2x.jpg 2x" width="831" height="623" alt="An illustration of Tuna the cat curled up cutely.">
+<img src="/img/2017/p_tuna.png" srcset="/img/2017/p_tuna2x.png 2x" width="416" height="312" alt="An illustration of Tuna the cat curled up cutely.">
 
 It's been an amazing journey behind the scenes, seeing how Microsoft's Edge browser is made. I had the honor and privilege to meet and work alongside people who built one of the very first browsers I ever opened, a browser that over a decade ago set the stage for the way we use and build the Web today. (Seriously, <a href="https://youtu.be/vMEzMVk8yAU">watch this talk I gave at JS Kongress</a> about how Internet Explorer 4 and 5 changed the Internet forever!)
 
