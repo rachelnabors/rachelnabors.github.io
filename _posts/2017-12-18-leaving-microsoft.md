@@ -28,6 +28,3 @@ All of these people are folks of the highest caliber, and I look forward to seei
 I'm looking forward to taking some time off to reconnect with the technologies I love; master algorithms, Vue.js, and WebXR.  
 
 I have no idea what comes next, but I'm interested to hear your ideas: <a href="https://docs.google.com/forms/d/e/1FAIpQLSek7XSkSnpqOBC0RP7kYJ7AjDu0_HypZ2qAIsPKJWDox3akmw/viewform?usp=sf_link">drop me a note!</a>
-
-
-<p><iframe width="560" height="315" src="https://www.youtube.com/embed/Qy9_lfjQopU" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe></p>
