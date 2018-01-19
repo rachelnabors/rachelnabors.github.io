@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "2017 Reading List: sailing forward in rough waters"
-excerpt: "I read a lot of books in 2017 to help me chart a course for 2018. If you are a little like me (fear failure, serial quitter, woman in tech), some of them might be for you!"
+excerpt: "I read a lot of books in 2017 to help me chart a course for 2018. If you are a little like me , some of them might be for you!"
 featured-image: ""
 ---
 
@@ -37,9 +37,9 @@ At the beginning of 2017 I took a look through [my Goodreads](https://www.goodre
 
 Time is a finite quantity, so I’ve adopted a new set of guidelines to help me focus on helpful books I’ll remember and learn relevant things from while giving myself permission to toss ones that don’t pan out:
 
-	1. Author must have a similar background or have a wide enough worldview to speak to people from my background.
-	2. I must be be able to flip to three random pages and be intrigued each time. 
-	3. Shorter is better.
-	4. If the book contains too much teasing about future chapters, that’s a red flag for fluff.
+1. Author must have a similar background or have a wide enough worldview to speak to people from my background.
+2. I must be be able to flip to three random pages and be intrigued each time. 
+3. Shorter is better.
+4. If the book contains too much teasing about future chapters, that’s a red flag for fluff.
 
 The books in my list have all helped me in one way or another this year. And if you're a little bit like me, hopefully one or two of them will help you, too! Or not. Be thoughtful about what you consume and where you spend your energy, and every book you finish will change the course of your life!
