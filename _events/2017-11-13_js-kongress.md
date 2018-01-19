@@ -6,15 +6,15 @@ location: Munich
 eventUrl: https://2017.js-kongress.de/
 workshop:
 workshopUrl:
-keynote:
-keynoteSlides:
-keynoteRecording:
+keynote: "The browser is not a document reader!"
+keynoteSlides: https://www.slideshare.net/CrowChick/the-browser-is-not-a-document-reader-82077443/
+keynoteRecording: https://www.youtube.com/watch?v=vMEzMVk8yAU
 talk:
-talkSlides:
-talkRecording:
+talkSlides: 
+talkRecording: 
 lightningTalk:
 lightningTalkSlides:
-feedback:
+feedback: https://storify.com/rachelnabors/js-kongress-2017
 canceled:
 cancellationReason:
 ---
