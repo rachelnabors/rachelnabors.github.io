@@ -239,3 +239,8 @@ header .meta {
         padding-top: $base-line-height / 3;
     }
 }
+
+dt {
+    font-weight: bold;
+    @include padding-leader(1/3);
+}

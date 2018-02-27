@@ -28,6 +28,7 @@ That's why from now till the end of Cyber Monday, all of my online courses are 5
 
 <p class="cta"><a class="button" href="https://courses.rachelnabors.com/?coupon_code=2017BLACKFRIDAY">Get in on this!</a></p>
 
+<<<<<<< HEAD
 <figure><a href="http://www.patrickcountybookmobilefund.org/"><img src="/img/2017/p_aba-books.jpg" srcset="/img/2017/p_aba-books2x.jpg 2x" width="1000" height="750" alt="The A Book Apart Collection on the shelf at my old library."></a>
 <figcaption>Help me <a href="http://www.patrickcountybookmobilefund.org/">help the Bookmobile &ldquo;keep reading rolling&ldquo;</a> in Patrick County, Virginia!</figcaption>
 </figure>
@@ -35,3 +36,7 @@ That's why from now till the end of Cyber Monday, all of my online courses are 5
 <figure><img src="/img/2017/p_bookmobile.jpg" srcset="/img/2017/p_bookmobile2x.jpg 2x" width="1000" height="750" alt="The A Book Apart Collection on the shelf at my old library.">
 <figcaption>Soon after <a href="https://abookapart.com/products/animation-at-work">Animation at Work</a> was published, I sent the entire A Book Apart print collection to <a href="http://www.patrickcountybookmobilefund.org/">my childhood library</a>.</figcaption>
 </figure>
+=======
+<figure><img src="/img/2017/p_bookmobile.jpg" srcset="/img/2017/p_bookmobile2x.jpg 2x" width="1000" height="750" alt="Behold the Patrick County Bookmbile."><figcaption>Help me <a href="http://www.patrickcountybookmobilefund.org/">help the Bookmobile &ldquo;keep reading rolling&ldquo;</a> in Patrick County, Virginia!</figcaption>
+</figure>
+>>>>>>> d7c5b6a82195b7cb2d5f660a49c2096d016a018f

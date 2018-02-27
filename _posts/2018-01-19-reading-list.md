@@ -1,0 +1,45 @@
+---
+layout: post
+title: "2017 Reading List: sailing forward in rough waters"
+excerpt: "I read a lot of books in 2017 to help me chart a course for 2018. If you are a little like me , some of them might be for you!"
+featured-image: ""
+---
+
+2017 was an interesting year. I published [my first technical book](https://abookapart.com/products/animation-at-work) with _A Book Apart,_ was in a [comics documentary](http://www.24hourcomicmovie.com/) alongside my personal hero [Scott McCloud](http://scottmccloud.com/), gave a [keynote in a dirndl](https://www.youtube.com/watch?v=vMEzMVk8yAU) in Munich (bucket list!), donated all the profits of my course sale [to my hometown Bookmobile](http://www.patrickcountybookmobilefund.org/news/2018/1/10/rachel-the-great-patrick-county-native-rachel-nabors-donates-profits-from-online-courses-to-the-bookmobile-fund), and [left Microsoft](http://rachelnabors.com/2017/12/18/leaving-microsoft/) just in time for 2018. Dang, 2017 took no prisoners!
+
+I would normally post a retrospective around this time of year, looking back on what happened and setting goals for the next year. But I can't because honestly, aside from keynoting [Scotland CSS](http://scotlandcss.com/) alongside some of my absolute favorite people in front end development (squee!), I have no idea what comes next! 
+
+And that's kind of magical. 
+
+I'm taking the time to play, to strategize, and to learn all the things I've been holding back from or too busy to do for the past year or so (see also speaking at [Vue Conf](http://vueconf.us/) in March). 
+
+Finding out What Comes Next is a full time job. I've been reading a number of books that have helped me make sense out of a lot of things and find the direction I want to go in. So I thought, why not do the year in review&mdash;with books? So here it is!
+
+## On to the Next: a 2017 Reading List
+
+_[What's Stopping You?](http://amzn.to/2DQiH2H)_ is technically a book I read at the start of 2016, but it had an impact on the path I took leading up to 2017. It's probably the only self-help book I haven't rolled my eyes at while reading at some point. The author is not self-confident, optimistic, or conventionally inspiring. He writes from a place of deep fear—a fear of failure. And this is a book for those suffering from fear of failure, who "are often able to take extreme risks in situations where failure is almost certain. Meanwhile, they find themselves paralyzed by everyday situations that involve only moderate but often very public risks." I have this trait, but this book helped me become aware of and learn how to work around and with it. I’ll probably re-read it in 2018 as a refresher.
+
+Although it’s title suggests otherwise, _[Quitter](http://amzn.to/2DikWup)_ is not actually about quitting. It's about reconciling your day job with your passions. Americans tend to get wrapped up in the notion that you should do what you love for a living. This book says, hey, doing what you love for a living too soon can spoil the thing that you love ([something I'm familiar with](https://byrslf.co/dont-do-what-you-love-41312c943e2))/lead to ruin/might not be possible in your life situation right now. So what do you do? Learn how to feed your passion with your day job&mdash;and how to spot when it might be time to dive all in. This book’s lessons help keep me from romanticizing all my cute pet projects into crackpot business plans that I know from experience won't go anywhere!
+
+Even though I'm not usually a fan of Seth Godin's books, _[The Dip](http://amzn.to/2DMsCGt)_ resonated with me. _The Dip_ is about what happens when you get bored, things get tough, or you feel stuck. Seth says there are three kinds of paths to our goals, which, when drawn as line graphs look like a cliff, a cul-de-sac, and the proverbial Dip. If you are stuck in anything but a Dip, you want to GTFO because your hours in this world are limited and Ain't Got No Time For That. (Cliff = incremental rewards over a long period of time; cul-de-sac = going nowhere.) But a *Dip* is when competition gets bored, the weak and tired fall behind, and the barriers to continuing grow ever higher. If you're in a Dip, you have to decide if the rewards on the other side are worth toughing/fighting/waiting it out, or if you need to look for your next path to a Dip. It's a good book if you're going through a rough patch and wondering, "Should I keep at this and hope things get better or move on to something else?"
+
+_[What Happened](http://amzn.to/2EW2cBw)_ is Hillary Rodham Clinton's painstakingly detailed recollection of the entire election leading up to where we are today. Truth is the 2016 presidential election left me feeling gutted and depressed for the better part of 2017. Ever since I noticed that women and men are treated differently, I believed that if I tried very hard, I could somehow overcome this. But as I advance into mid-career, I've watched more and more of the women I know and work with suffering from the same burn out, anxiety, depression, and angst over this invisible force pressing down from above all career long. *This election just made that force feel so much more palpable,* blotting out the hope of workplace equality like the solar eclipse. But listening to Hillary reading her book on Audible gave me the closure I needed and more. In Hillary's earnest, heartfelt reading, there is hope restored: We are hardly the first nor the last generation to push for equality among humankind.
+
+What is _[Good Strategy/Bad Strategy](http://amzn.to/2DlCINB)_? If you've worked in a startup incubator or for a large company, you've probably been exposed to some seriously bad strategy: maybe it was setting goals that read more like a wishlist of miracles you'd need to succeed, or perhaps you've had one or two brainstorming sessions where you worry more about discovering your values and slogans than talking about that nagging sensation everyone has been feeling for months that things are not well. Good strategy can't please everyone because it is saying no to some things to focus on others. Good strategy isn't about a list of goals, things you would like to happen or need to happen. Good strategy is about how to overcome obstacles between you(r company) and success. Got a competitor who's nabbing all your business? How do you woo your business back so you can be profitable again? The goal is to be profitable again, but that goal isn't enough. Strategy is how to get there (maybe a game plan for launching unique new features and promoting them to old and new customers). It's a book I wish everyone in business—for themselves or others—would read. 
+
+_[Designing Your Life](http://amzn.to/2EUshkm)_ will resonate when you find yourself at a cross roads. It is both a "guide to a life well lived" and a workbook for finding out What's Next for you. The exercises are meant to be done as a group, so I cobbled together some friends who I thought would also benefit from reading it. You may recall fear of failure, all the way at the top of this list: I'm always fretting, "Am I living the Right Life? Is this My Best Life??" This book was a real comfort in that it asserts many times that there is no "one right way": life is an intricate network of branching decisions, and whichever you choose _is_ the Right Way because it's also _your life._ So take a moment to reflect, experiment, and plan out where you want to head to and get on with that journey.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/MtnidBqnB7k?start=58" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+## Don't waste time reading irrelevant books
+
+At the beginning of 2017 I took a look through [my Goodreads](https://www.goodreads.com/author/show/3064073.Rachel_Nabors) and saw a lot of self help books I remember powering through for the sake of completion (one of my many weaknesses that serves double duty as a strength). But the funny thing was that I couldn’t remember anything helpful about them! What a waste of time, plowing through books that weren’t very helpful let alone memorable! I could’ve learned about WebGL with that time instead! 
+
+Time is a finite quantity, so I’ve adopted a new set of guidelines to help me focus on helpful books I’ll remember and learn relevant things from while giving myself permission to toss ones that don’t pan out:
+
+1. Author must have a similar background or have a wide enough worldview to speak to people from my background.
+2. I must be be able to flip to three random pages and be intrigued each time. 
+3. Shorter is better.
+4. If the book contains too much teasing about future chapters, that’s a red flag for fluff.
+
+The books in my list have all helped me in one way or another this year. And if you're a little bit like me, hopefully one or two of them will help you, too! Or not. Be thoughtful about what you consume and where you spend your energy, and every book you finish will change the course of your life!
