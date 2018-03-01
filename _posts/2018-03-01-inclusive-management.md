@@ -5,9 +5,7 @@ excerpt: "Want to increase diversity in tech but frustrated at society's lack of
 featured-image: "/img/2018/are-you-hiring.jpg"
 ---
 
-<img src="/img/2018/are-you-hiring.jpg" srcset="/img/2017/are-you-hiring2x.jpg 2x" width="1004" height="1106" alt="A young man says, 'I want to a be a part of the solution! How can I help?' and a woman of color replies, 'Are you hiring?'">
-
----
+<img src="/img/2018/are-you-hiring.jpg" srcset="/img/2017/are-you-hiring2x.jpg 2x" width="500" height="558" alt="A young man says, 'I want to a be a part of the solution! How can I help?' and a woman of color replies, 'Are you hiring?'">
 
 You want to increase diversity in tech. You’re a person of privilege, probably white, passably male, perhaps even well-heeled. You already know the benefits of having a diverse and inclusive team: many kinds of eyes make for more insights and fewer surprises. It pains you to hear the sad stories of your underrepresented peers. You want to help but don’t know how.
 
