@@ -15,6 +15,7 @@ talkSlides:
 talkRecording: 
 lightningTalk: 
 lightningTalkSlides: 
+lightningTalkRecording: 
 feedback: 
 canceled:
 cancellationReason:
