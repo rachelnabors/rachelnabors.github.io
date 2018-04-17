@@ -1,18 +1,17 @@
----
-title: "Web animation talks and slides"
-body_id: speaking
-excerpt: Rachel Nabors travels the world speaking about web animation, UX, and even cartooning!
----
+--- title: "Web animation talks and slides" body_id: speaking excerpt: Rachel Nabors travels the world speaking about web
+animation, UX, and even cartooning! ---
 
 <h1>Speaking, Talks, and Slides</h1>
 {% include schedule-speaking.html %}
 
 <section class="available-to-speak cta">
-    <h2 class="cta-title">Available for speaking engagements</h2>
-  	<div class="cta-content">
-      I take pride in my talks, and I enjoy traveling to deliver them to great people. If your company or event could benefit from learning about web animation, motion design, or cartooning, <a href="mailto:aloha@rachelnabors.com">drop me a line</a>.
-    </div>
-    <a href="mailto:aloha@rachelnabors.com" class="big-cta">Let's talk!</a>
+  <h2 class="cta-title">Available for speaking engagements</h2>
+  <div class="cta-content">
+    I take pride in my talks, and I enjoy traveling to deliver them to great people. If your company or event could benefit from
+    learning about web animation, motion design, or cartooning,
+    <a href="mailto:aloha@rachelnabors.com">drop me a line</a>.
+  </div>
+  <a href="mailto:aloha@rachelnabors.com" class="big-cta">Let's talk!</a>
 </section>
 
 <!-- <section class="current-talks">
@@ -43,112 +42,130 @@ excerpt: Rachel Nabors travels the world speaking about web animation, UX, and e
 <section class="slides">
   <h2>Slides &amp; Recordings</h2>
   <ul>
-  	<li><a href="http://www.slideshare.net/CrowChick/state-of-the-animation-2014">State of the Animation 2014</a> | <a href="https://fronteers.nl/congres/2014/sessions/rachel-nabors-state-of-the-animation-2014">Recording</a></li>
-  	<li><a href="https://medium.com/@rachelnabors/storytelling-on-the-shoulders-of-giants-a57a850b935d">Storytelling on the Shoulders of Giants OSCON Keynote</a> | <a href="https://www.youtube.com/watch?v=Q9CB7EiU9xg">Recording</a></li>
-  	<li><a href="http://www.slideshare.net/CrowChick/animation-and-the-future-of-ux-33573726">Animation and the Future of UX</a> | <a href="http://www.futureinsights.com/home/video-advent-calendar-day-15-animation-and-the-future-of-ux.html">Recording</a></li>
-  	<li><a href="http://rachelnabors.com/alice-in-videoland/talk/">Alice in Videoland: Building an interactive storybook in HTML5</a></li>
-  	<li><a href="http://rachelnabors.com/css-amv-talk/">Animated Music Videos Talk</a> | <a href="https://vimeo.com/89400965">Recording</a></li>
-  	<li><a href="http://rachelnabors.com/animation-workshop/">Animated Music Videos Workshop</a></li>
-  	<li><a href="http://rachelnabors.com/javascript-for-designers/">JavaScript for Designers</a> | <a href="http://www.youtube.com/watch?v=rkR0RCfI0XM">Recording</a></li>
-  	<li><a href="http://rachelnabors.com/css-amv-talk/animation-power-techniques.html">Animation Studio Power Techniques with CSS3</a> | <a href="http://www.youtube.com/watch?v=iFUGSiz0Muc">Recording</a></li>
+    <li>
+      <a href="http://www.slideshare.net/CrowChick/state-of-the-animation-2014">State of the Animation 2014</a> |
+      <a href="https://fronteers.nl/congres/2014/sessions/rachel-nabors-state-of-the-animation-2014">Recording</a>
+    </li>
+    <li>
+      <a href="https://medium.com/@rachelnabors/storytelling-on-the-shoulders-of-giants-a57a850b935d">Storytelling on the Shoulders of Giants OSCON Keynote</a> |
+      <a href="https://www.youtube.com/watch?v=Q9CB7EiU9xg">Recording</a>
+    </li>
+    <li>
+      <a href="http://www.slideshare.net/CrowChick/animation-and-the-future-of-ux-33573726">Animation and the Future of UX</a> |
+      <a href="http://www.futureinsights.com/home/video-advent-calendar-day-15-animation-and-the-future-of-ux.html">Recording</a>
+    </li>
+    <li>
+      <a href="http://rachelnabors.com/alice-in-videoland/talk/">Alice in Videoland: Building an interactive storybook in HTML5</a>
+    </li>
+    <li>
+      <a href="http://rachelnabors.com/css-amv-talk/">Animated Music Videos Talk</a> |
+      <a href="https://vimeo.com/89400965">Recording</a>
+    </li>
+    <li>
+      <a href="http://rachelnabors.com/animation-workshop/">Animated Music Videos Workshop</a>
+    </li>
+    <li>
+      <a href="http://rachelnabors.com/javascript-for-designers/">JavaScript for Designers</a> |
+      <a href="http://www.youtube.com/watch?v=rkR0RCfI0XM">Recording</a>
+    </li>
+    <li>
+      <a href="http://rachelnabors.com/css-amv-talk/animation-power-techniques.html">Animation Studio Power Techniques with CSS3</a> |
+      <a href="http://www.youtube.com/watch?v=iFUGSiz0Muc">Recording</a>
+    </li>
   </ul>
 </section>
 
 <section class="speaking-history">
   <h2>Speaking Timeline</h2>
 
-{% assign next_year = 'now' | date: "%Y" %}
-
-{% for event in site.events reversed %}
-
-  {% capture this_year %}{{ event.date | date: "%Y" }}{% endcapture %}
-  {% capture posttime %}{{event.date | date: '%s'}}{% endcapture %}
-
-    {% if forloop.first %}
-    <section class="speaking-history_current speaking-history_era" id="talks-from-{{ this_year }}-ref">
-      <h3>{{ this_year }}</h3>
-      <figure>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/q_V-gYoiz3E?list=PLRyLn6THA5wPlq5gphSOAdRZASuFRrfW7" frameborder="0" allowfullscreen></iframe>
-        <figcaption>My winding career path and what is success even, illustrated, in 12 minutes.</figcaption>
-      </figure>
-      <ul>
-    {% elsif this_year != next_year %}
-      </ul>
-    </section>
-    {% case this_year %}
-      {% when "2012" %}
-    <div class="speaking-history_light speaking-history_era">
-      <section class="speaking-history_col1 speaking-history_col" id="talks-from-{{ this_year }}-ref">
+  {% assign next_year = 'now' | date: "%Y" %} {% for event in site.events reversed %} {% capture this_year %}{{ event.date
+  | date: "%Y" }}{% endcapture %} {% capture posttime %}{{event.date | date: '%s'}}{% endcapture %} {% if forloop.first %}
+  <section class="speaking-history_current speaking-history_era" id="talks-from-{{ this_year }}-ref">
+    <h3>{{ this_year }}</h3>
+    <figure>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/q_V-gYoiz3E?list=PLRyLn6THA5wPlq5gphSOAdRZASuFRrfW7"
+        frameborder="0" allowfullscreen></iframe>
+      <figcaption>My winding career path and what is success even, illustrated, in 12 minutes.</figcaption>
+    </figure>
+    <ul>
+      {% elsif this_year != next_year %}
+    </ul>
+  </section>
+  {% case this_year %} {% when "2012" %}
+  <div class="speaking-history_light speaking-history_era">
+    <section class="speaking-history_col1 speaking-history_col" id="talks-from-{{ this_year }}-ref">
       {% when "2011" %}
       <section class="speaking-history_col2 speaking-history_col" id="talks-from-{{ this_year }}-ref">
-      {% else %}
-    <section class="speaking-history_bulk speaking-history_era" id="talks-from-{{ this_year }}-ref">
-    {% endcase %}
-        <h3>{{this_year}}</h3>
-            {% case this_year %}
-              {% when "2015" %}
-                <figure>
-                  <iframe width="560" height="315" src="https://www.youtube.com/embed/GxOq1bnlZXk" frameborder="0" allowfullscreen></iframe>
-                  <figcaption>Delivering the State of the Animation at SFHTML5</figcaption>
-                </figure>
-              {% when "2014" %}
-                <figure>
-                  <iframe width="560" height="315" src="https://www.youtube.com/embed/Q9CB7EiU9xg" frameborder="0" allowfullscreen></iframe>
-                  <figcaption>Keynoting at OSCON</figcaption>
-                </figure>
-              {% when "2013" %}
-                <figure>
-                  <iframe width="560" height="315" src="https://www.youtube.com/embed/zd9fVvVQUVs" frameborder="0" allowfullscreen></iframe>
-                  <figcaption>Lightning Talk on <em>wabi-sabi</em> at Fluent</figcaption>
-                </figure>
-            {% endcase %}
+        {% else %}
+        <section class="speaking-history_bulk speaking-history_era" id="talks-from-{{ this_year }}-ref">
+          {% endcase %}
+          <h3>{{this_year}}</h3>
+          {% case this_year %} {% when "2015" %}
+          <figure>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/GxOq1bnlZXk" frameborder="0" allowfullscreen></iframe>
+            <figcaption>Delivering the State of the Animation at SFHTML5</figcaption>
+          </figure>
+          {% when "2014" %}
+          <figure>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Q9CB7EiU9xg" frameborder="0" allowfullscreen></iframe>
+            <figcaption>Keynoting at OSCON</figcaption>
+          </figure>
+          {% when "2013" %}
+          <figure>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/zd9fVvVQUVs" frameborder="0" allowfullscreen></iframe>
+            <figcaption>Lightning Talk on
+              <em>wabi-sabi</em> at Fluent</figcaption>
+          </figure>
+          {% endcase %}
           <ul>
-        {% endif %}
+            {% endif %} {% unless event.canceled %}
+            <li>
+              <time>{{ event.date | date: "%b" }}</time>
+              <span class="event">
+                <div class="event-deets">
+                  {% if event.talkUrl %}
+                  <a href="{{ event.talkUrl }}">{% elsif event.eventUrl %}
+                    <a href="{{ event.eventUrl }}">{% endif %}{{ event.name }}{% if event.url or event.talkUrl %}</a>{% endif %}{% if event.location %},
+                    {{ event.location }}{% endif %} {% if event.keynote %}
+                    <span class="type">Keynote</span>
+                    {% endif %} {% if event.role %}
+                    <span class="type">{{ event.role }}</span>
+                    {% endif %}
 
-        {% unless event.canceled %}
-        <li>
-        <time>{{ event.date | date: "%b" }}</time>
-        <span class="event">
-          <div class="event-deets">
-          {% if event.talkUrl %}<a href="{{ event.talkUrl }}">{% elsif event.eventUrl %}<a href="{{ event.eventUrl }}">{% endif %}{{ event.name }}{% if event.url or event.talkUrl %}</a>{% endif %}{% if event.location %}, {{ event.location }}{% endif %} {% if event.keynote %}
-            <span class="type">Keynote</span>
-          {% endif %}
-
-          </div>
-          {% if event.keynoteSlides or event.keynoteRecording or event.talkSlides or event.talkRecording %}
-          <ul class="materials">
-            {% if event.keynoteSlides %}
-            <li><a href="{{event.keynoteSlides}}">Keynote Slides</a></li>
-            {% endif %}
-            {% if event.keynoteRecording %}
-            <li><a href="{{event.keynoteRecording}}">Keynote Recording</a></li>
-            {% endif %}
-            {% if event.talkSlides %}
-            <li><a href="{{event.talkSlides}}">Slides</a></li>
-            {% endif %}
-            {% if event.talkRecording %}
-            <li><a href="{{event.talkRecording}}">Recording</a></li>
-            {% endif %}
-            {% if event.lightningTalkRecording or event.lightningTalkSlides %}
-            <li><a href="{% if event.lightningTalkRecording %}{{event.lightningTalkRecording}}{% elsif event.lightningTalkSlides %}{{event.lightningTalkSlides}}{% endif %}">Lightning Talk</a></li>
-            {% endif %}
-            {% if event.feedback %}
-            <li><a href="{{event.feedback}}">Feedback</a></li>
-            {% endif %}
-            {% if event.workshop %}
-            <li>&amp; Workshop</li>
-            {% endif %}
+                </div>
+                {% if event.keynote or event.talk or event.lightningTalk %}
+                <ul class="materials">
+                  {% if event.keynoteSlides %}
+                  <li>
+                    <a href="{{event.keynoteSlides}}">Keynote Slides</a>
+                  </li>
+                  {% endif %} {% if event.keynoteRecording %}
+                  <li>
+                    <a href="{{event.keynoteRecording}}">Keynote Recording</a>
+                  </li>
+                  {% endif %} {% if event.talkSlides %}
+                  <li>
+                    <a href="{{event.talkSlides}}">Slides</a>
+                  </li>
+                  {% endif %} {% if event.talkRecording %}
+                  <li>
+                    <a href="{{event.talkRecording}}">Recording</a>
+                  </li>
+                  {% endif %} {% if event.lightningTalkRecording or event.lightningTalkSlides %}
+                  <li>
+                    <a href="{% if event.lightningTalkRecording %}{{event.lightningTalkRecording}}{% elsif event.lightningTalkSlides %}{{event.lightningTalkSlides}}{% endif %}">Lightning Talk</a>
+                  </li>
+                  {% endif %} {% if event.feedback %}
+                  <li>
+                    <a href="{{event.feedback}}">Feedback</a>
+                  </li>
+                  {% endif %} {% if event.workshop %}
+                  <li>&amp; Workshop</li>
+                  {% endif %}
+                </ul>
+                {% endif %} {% endunless %} {% if forloop.last %}
           </ul>
-          {% endif %}
-
-        {% endunless %}
-    {% if forloop.last %}
-      </ul>
-    </section>
+        </section>
   </div>
-    {% endif %}
-
-    {% assign next_year = event.date | date: "%Y" %}
-
-{% endfor %}
-</section>
+  {% endif %} {% assign next_year = event.date | date: "%Y" %} {% endfor %}
+  </section>
