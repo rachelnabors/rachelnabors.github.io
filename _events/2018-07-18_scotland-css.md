@@ -16,6 +16,6 @@ talkRecording:
 lightningTalk: 
 lightningTalkSlides: 
 feedback: 
-canceled:
-cancellationReason:
+canceled: true
+cancellationReason: "UK did not return passport or approve visa in time to attend."
 ---
